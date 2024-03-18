@@ -1,0 +1,94 @@
+@media all and (min-width: 320px) {
+    body {
+        font-family: Arial, sans-serif;
+        background-color: lightgray;
+        width: 100%
+    }
+    .container-header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+    }
+    .container-header .logo {
+        width: 140px;
+        height: 70px;
+        margin-left: -250px;
+    }
+    .container-header-welcome {
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
+        transform: translateX(250px);
+        
+    }
+    .container-header-welcome span{
+        
+        margin: 0px 30px 0px 5px;
+    }
+    .background-image{
+        width: 100%;
+        height: auto;
+    }
+    .image-container {
+        position: relative;
+        width: 100%; /* Điều chỉnh kích thước container ảnh theo ý của bạn */
+        height: auto; /* Điều chỉnh kích thước container ảnh theo ý của bạn */
+      }
+      
+    .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0; /* Ẩn tất cả ảnh ban đầu */
+        transition: opacity 1s ease-in-out;
+        animation: showImage 6s infinite;
+    }
+      
+      /* Định dạng các ảnh */
+    .image-container img:nth-child(1) {
+        animation: showImage 3s infinite 1s;
+    }
+      
+    .image-container img:nth-child(2) {
+        animation: showImage 3s infinite 2s; /* Ảnh thứ hai bắt đầu hiển thị sau 1 giây */
+    }
+      
+    .image-container img:nth-child(3) {
+        animation: showImage 3s infinite 3s; /* Ảnh thứ ba bắt đầu hiển thị sau 2 giây */
+    }
+
+    @keyframes showImage {
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+    }
+
+    .title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+        width: 100%;
+        font-size: 2rem;
+        
+    }
+    .subtitle {
+        position: absolute;
+        top: calc(50% + 30px); /* Cách tiêu đề một khoảng */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2; /* Đảm bảo phụ đề hiển thị trên các ảnh */
+    }
+    
+}
