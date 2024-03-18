@@ -59,6 +59,7 @@ aside .toggle{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 aside .toggle .close{
@@ -66,9 +67,13 @@ aside .toggle .close{
 }
 
 aside .toggle .accounts{
-    margin-right: 5%;
+    margin-right: 8%;
 }
 
+aside .toggle .accounts a span{
+    padding-left: 15px;
+    font-size: 1.6rem;
+}
 
 aside .toggle .logo{
     display: flex; 
@@ -91,7 +96,6 @@ aside .sidebar{
     border-radius: 15px;
     height: 80vh;
     top: 1.5rem;
-    
     cursor: pointer;
     transition: all 0.5s;
 }
