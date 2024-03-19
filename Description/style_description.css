@@ -162,6 +162,7 @@ body {
 .container-body .aside .contact {
     width: 100%;
     margin-top: 0px;
+    gap: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,9 +176,37 @@ body {
 }
 .container-body .aside .contact button{
     display: block;
-    margin-top: 2%;
-    width: 70%;
+    width: 90%;
     padding: 10px;
+    font-weight: bold; 
+    border-radius: 8px; 
+}
+.container-body .aside .contact .btn-phone {
+    border: 1px solid cadetblue;
+    color: cadetblue;
+    background-color: white;
+}
+.container-body .aside .contact .btn-phone:hover {
+    background-color: cadetblue;
+    color: white;
+}
+.container-body .aside .contact .btn-zalo {
+    border: 1px solid rgb(0, 153, 255);
+    color: rgb(0, 153, 255);
+    background-color: white;
+}
+.container-body .aside .contact .btn-zalo:hover {
+    background-color: rgb(0, 153, 255);
+    color: white;
+}
+.container-body .aside .contact .btn-request {
+    border: 1px solid brown;
+    color: brown;
+    background-color: white;
+}
+.container-body .aside .contact .btn-request:hover {
+    background-color: brown;
+    color: white;
 }
 .container-body .aside .contact .avatar {
     width: 50%;
@@ -186,7 +215,6 @@ body {
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid silver;
-    margin-bottom: 5%;
     position: relative; /* Đặt vị trí tương đối để có thể định vị img bên trong */
 }
 .container-body .aside .contact .avatar img {
