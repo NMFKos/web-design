@@ -138,3 +138,28 @@ aside .sidebar a.active::before{
     background-color: rgb(13, 8, 8);
 }
 
+aside .sidebar a.active span{
+    margin-left: calc(1rem-3px);
+}
+
+aside .sidebar a:hover span{
+    margin-left: 0.6rem;
+}
+
+aside .sidebar .reports-count{
+    background-color: rgb(233, 0, 0);
+    padding: 2px 6px;
+    font-size: 11px;
+    color: white;
+    border-radius: 5px;
+}
+
+main{
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+main .analyse{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
