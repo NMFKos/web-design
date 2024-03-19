@@ -15,7 +15,9 @@
     .container-header .logo {
         width: 140px;
         height: 70px;
-        margin-left: -250px;
+        margin-left: -270px;
+
+    
     }
     .container-header-welcome {
         display: flex;
@@ -34,30 +36,30 @@
     }
     .image-container {
         position: relative;
-        width: 100%; /* Điều chỉnh kích thước container ảnh theo ý của bạn */
-        height: auto; /* Điều chỉnh kích thước container ảnh theo ý của bạn */
+        width: 100%; 
+        height: auto; 
       }
       
     .image-container img {
         position: absolute;
         top: 0;
         left: 0;
-        opacity: 0; /* Ẩn tất cả ảnh ban đầu */
+        opacity: 0; 
         transition: opacity 1s ease-in-out;
         animation: showImage 6s infinite;
     }
       
-      /* Định dạng các ảnh */
+      /* Chỉnh thời gian showImage */
     .image-container img:nth-child(1) {
         animation: showImage 3s infinite 1s;
     }
       
     .image-container img:nth-child(2) {
-        animation: showImage 3s infinite 2s; /* Ảnh thứ hai bắt đầu hiển thị sau 1 giây */
+        animation: showImage 3s infinite 2s; 
     }
       
     .image-container img:nth-child(3) {
-        animation: showImage 3s infinite 3s; /* Ảnh thứ ba bắt đầu hiển thị sau 2 giây */
+        animation: showImage 3s infinite 3s; 
     }
 
     @keyframes showImage {
@@ -72,23 +74,31 @@
         }
     }
 
-    .title{
+    .title-container {
         position: absolute;
-        top: 50%;
+        top: 60%; 
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
         z-index: 2;
         text-align: center;
         width: 100%;
-        font-size: 2rem;
-        
     }
+    
+    .title {
+        margin-top: 80px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: red;
+        font-size: 40px;
+    }
+    
     .subtitle {
-        position: absolute;
-        top: calc(50% + 30px); /* Cách tiêu đề một khoảng */
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 2; /* Đảm bảo phụ đề hiển thị trên các ảnh */
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: red;
+        font-size: 24px;
+        
     }
     
 }
