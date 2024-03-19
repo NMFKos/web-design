@@ -11,7 +11,7 @@
 
 :root{
     --color-light: rgba(132, 139, 200, 0.18);
-    --box-shadow: 2rem 2rem 3rem var(--color-light);
+    --box-shadow: 0 2rem 3rem var(--color-light);
     --color-background: #f6f6f9;
 
 }
@@ -163,13 +163,17 @@ main .analyses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
+    height: 10rem;
 }
 
 main .analyses > div{
     background-color: 0#ffffff;
-    border-radius: 5px;
+    border-radius: 2rem;
     margin-top: 1rem;
+    margin-left: 2rem;
     box-shadow: var(--box-shadow);
+    align-items: center;
+    width: 18rem;
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -181,7 +185,7 @@ main .analyses > div:hover{
 main .analyses > div .status{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 main .analyses h3{
@@ -215,7 +219,7 @@ main .analyses .sales svg circle{
 }
 
 main .analyses .visits svg circle{
-    stroke: rgb(2, 127, 98);
+    stroke: rgb(216, 9, 85);
     stroke-dashoffset: -30;
     stroke-dasharray: 200;
 }
