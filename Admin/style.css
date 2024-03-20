@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@
 
 :root{
     --color-light: rgba(132, 139, 200, 0.18);
-    --box-shadow: 2rem 2rem 3rem var(--color-light);
+    --box-shadow: 0 2rem 3rem var(--color-light);
     --color-background: #f6f6f9;
 
 }
@@ -38,7 +39,7 @@ img{
 }
 
 .danger{
-    color:red;  
+    color: rgb(3, 22, 47);  
 }
 
 .container{
@@ -73,18 +74,27 @@ aside .toggle .accounts{
 aside .toggle .accounts a span{
     padding-left: 15px;
     font-size: 1.6rem;
+    transition: all 0.1s ease;
+    font-weight: light;
+}
+
+aside .toggle .accounts a span:hover{
+    font-weight: bolder;
 }
 
 aside .toggle .logo{
     display: flex; 
     gap: 0.5rem;
     align-items: center;
+    border-radius: 0.5rem;
+    
 }
 
 
 aside .toggle .logo img{
     width: 100px;
     height: 50px;
+
 }
 
 aside .sidebar{
@@ -163,13 +173,17 @@ main .analyses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
+    height: 10rem;
 }
 
 main .analyses > div{
     background-color: 0#ffffff;
-    border-radius: 5px;
+    border-radius: 2rem;
     margin-top: 1rem;
+    margin-left: 2rem;
     box-shadow: var(--box-shadow);
+    align-items: center;
+    width: 18rem;
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -181,7 +195,7 @@ main .analyses > div:hover{
 main .analyses > div .status{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 main .analyses h3{
@@ -215,7 +229,7 @@ main .analyses .sales svg circle{
 }
 
 main .analyses .visits svg circle{
-    stroke: rgb(2, 127, 98);
+    stroke: rgb(216, 9, 85);
     stroke-dashoffset: -30;
     stroke-dasharray: 200;
 }
@@ -233,5 +247,103 @@ main .analyses .progress .percentage{
     display: flex;
     align-items: center;
     justify-content: center;
+} 
+
+main .requests{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    height: 10rem;
 }
 
+main .requests .title{
+    display: grid;
+    font-size: 1rem;
+    height: 5px;
+    padding-top: 5px;
+    width: max-content;
+}
+
+main .requests .status{
+    background-color: 0#ffffff;
+    border-radius: 2rem 2rem;
+    margin-top: 3rem;
+    margin-left: -6rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    width: 18rem;
+    height: 18rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+main .requests .status:hover{
+    box-shadow: none;
+}
+
+main .requests .status img{
+    width: 100%;
+    height: 10rem;
+    border-radius: 2rem;
+}
+
+main .requests .status .info{
+    margin-top: 0.5rem;
+    margin-left: 0rem;
+}
+
+
+main .requests .status1{
+    background-color: 0#ffffff;
+    border-radius: 2rem 2rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    width: 18rem;
+    height: 18rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+main .requests .status1:hover{
+    box-shadow: none;
+}
+
+main .requests .status1 img{
+    width: 100%;
+    height: 10rem;
+    border-radius: 2rem;
+}
+
+main .requests .status1 .info{
+    margin-top: 0.5rem;
+    margin-left: 0rem;
+}
+
+main .requests .status2{
+    background-color: 0#ffffff;
+    border-radius: 2rem 2rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    width: 18rem;
+    height: 18rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+main .requests .status2:hover{
+    box-shadow: none;
+}
+
+main .requests .status2 img{
+    width: 100%;
+    height: 10rem;
+    border-radius: 2rem;
+}
+
+main .requests .status2 .info{
+    margin-top: 0.5rem;
+    margin-left: 0rem;
+}
