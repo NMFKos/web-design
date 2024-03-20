@@ -38,9 +38,7 @@ img{
     object-fit: cover;   
 }
 
-.danger{
-    color: rgb(3, 22, 47);  
-}
+
 
 .container{
     display: grid;
@@ -49,6 +47,10 @@ img{
     margin: 0 auto;
     gap: 1.8rem;
     grid-template-columns: 12rem auto 23rem;
+}
+
+.danger{
+    color: rgb(4, 112, 162);
 }
 
 aside{
