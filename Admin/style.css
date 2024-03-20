@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -73,6 +74,12 @@ aside .toggle .accounts{
 aside .toggle .accounts a span{
     padding-left: 15px;
     font-size: 1.6rem;
+    transition: all 0.1s ease;
+    font-weight: light;
+}
+
+aside .toggle .accounts a span:hover{
+    font-weight: bolder;
 }
 
 aside .toggle .logo{
@@ -237,5 +244,5 @@ main .analyses .progress .percentage{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} 
 
