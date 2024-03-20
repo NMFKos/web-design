@@ -256,8 +256,11 @@ main .requests{
 }
 
 main .requests .title{
+    display: grid;
     font-size: 1rem;
     height: 5px;
+    padding-top: 5px;
+    width: max-content;
 }
 
 main .requests .status{
