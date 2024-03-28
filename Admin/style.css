@@ -26,6 +26,7 @@ body{
     height: 100vw;
     overflow-x: hidden;
     color: black;
+    background-color:rgb(246, 246, 249);
 }
 
 a{
@@ -38,9 +39,7 @@ img{
     object-fit: cover;   
 }
 
-.danger{
-    color: rgb(3, 22, 47);  
-}
+
 
 .container{
     display: grid;
@@ -49,6 +48,10 @@ img{
     margin: 0 auto;
     gap: 1.8rem;
     grid-template-columns: 12rem auto 23rem;
+}
+
+.danger{
+    color: rgb(4, 112, 162);
 }
 
 aside{
@@ -198,6 +201,21 @@ main .analyses > div .status{
     justify-content: center;
 }
 
+main .analyses > div .status h3 title{
+    margin-left: 30%
+}
+
+main .analyses > div .status .info .total{
+    font-size: 25px;
+    margin-top: 2px;
+}
+
+main .analyses > div .status .info .units{
+    font-size: 25px;
+    margin-top: 2px;
+    margin-left: 30%;
+}
+
 main .analyses h3{
     margin-left: 0.6rem; 
     font-size: 1rem;
@@ -259,19 +277,19 @@ main .requests .title{
     display: grid;
     font-size: 1rem;
     height: 5px;
-    padding-top: 5px;
+    padding-top: 3rem;
     width: max-content;
 }
 
 main .requests .status{
     background-color: 0#ffffff;
     border-radius: 2rem 2rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
     margin-left: -6rem;
     box-shadow: var(--box-shadow);
     align-items: center;
     width: 18rem;
-    height: 18rem;
+    height: 20rem;
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -295,12 +313,12 @@ main .requests .status .info{
 main .requests .status1{
     background-color: 0#ffffff;
     border-radius: 2rem 2rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
     margin-left: 4rem;
     box-shadow: var(--box-shadow);
     align-items: center;
     width: 18rem;
-    height: 18rem;
+    height: 20rem;
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -323,12 +341,12 @@ main .requests .status1 .info{
 main .requests .status2{
     background-color: 0#ffffff;
     border-radius: 2rem 2rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
     margin-left: 4rem;
     box-shadow: var(--box-shadow);
     align-items: center;
     width: 18rem;
-    height: 18rem;
+    height: 20rem;
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -346,4 +364,9 @@ main .requests .status2 img{
 main .requests .status2 .info{
     margin-top: 0.5rem;
     margin-left: 0rem;
+}
+
+.info {
+    padding-top: 20px;
+    padding-left: 10px;
 }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - Đăng ký</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .container h2 {
+            text-align: center;
+        }
+        .container form input[type="text"],
+        .container form input[type="password"],
+        .container form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .container form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .container form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .container form .register-link {
+            text-align: center;
+            color: inherit;
+            
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Đăng nhập</h2>
+    <form action="#" method="post">
+        <input type="text" name="username" placeholder="Tên người dùng" required>
+        <input type="password" name="password" placeholder="Mật khẩu" required>
+        <input type="submit" value="Đăng nhập">
+    </form>
+    <div class="register-link">
+        <a href="register.html">Chưa có tài khoản, đăng ký ngay</a>
+    </div>
+</div>
+
+</body>
+</html>
+
+
