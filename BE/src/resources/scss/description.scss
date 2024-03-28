@@ -1,0 +1,277 @@
+@media all and (min-width:320px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+    }
+    .webpage {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .container-header {
+        width: 100%; 
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container-header .logo {
+        width: 25%;
+        height: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: left;
+    }
+    .container-header .logo .text-frame {
+        margin-left: 10px;
+    }
+    .container-header .logo img {
+        width: 30%;
+        height: auto;
+        margin-left: 0;
+    }
+    .container-header-welcome {
+        width: 80%;
+        height: 100%;
+        gap: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .container-header-welcome a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .container-body {
+        margin-top: 10px;
+        display: flex;
+        gap: 3%;
+    }
+    .container-body .main {
+        width: 70%;
+        margin-left: 0;
+        display: block;
+        background-color: white;
+    }
+    .container-body .main .image {
+        width: 100%;
+        height: 450px;
+        margin-top: 0;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.805);
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Đảm bảo hình ảnh không vượt ra khỏi phần tử */
+        border-radius: 5px;
+    }
+    .container-body .main .image img {
+        width: auto;
+        height: auto;
+        max-width: 100%; /* Giữ nguyên tỉ lệ gốc và không vượt quá kích thước của phần tử cha */
+        max-height: 100%; /* Giữ nguyên tỉ lệ gốc và không vượt quá kích thước của phần tử cha */
+        object-fit: contain; /* Hiển thị hình ảnh mà không bị căng ra hoặc co lại, giữ nguyên tỉ lệ gốc */
+    }
+    .container-body .main .image-list {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        gap: 1%;
+        overflow: hidden;
+    }
+    .container-body .main .image-list img {
+        width: auto;
+        height: auto;
+        max-width: 100%; /* Giữ nguyên tỉ lệ gốc và không vượt quá kích thước của phần tử cha */
+        max-height: 100%; /* Giữ nguyên tỉ lệ gốc và không vượt quá kích thước của phần tử cha */
+        object-fit: contain; /* Hiển thị hình ảnh mà không bị căng ra hoặc co lại, giữ nguyên tỉ lệ gốc */
+        border-radius: 5px;
+    }
+    .container-body .main .content {
+        width: 100%;
+        margin-top: 2%;
+    }
+    .container-body .main .content title {
+        background-color: white;
+    }
+    .container-body .main .content .title-frame {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container-body .main .content .title-address {
+        width: auto;
+        align-items: center;
+        justify-content: left;
+    }
+    .container-body .main .content .title-action {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .container-body .main .content .title-action span {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+    .container-body .main .content .description {
+        background-color: white;
+    }
+    .container-body .main .content .character {
+        background-color: white;
+    }
+    .container-body .main .content .character .frame {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+    .container-body .main .content .character .frame .item {
+        width: 45%;
+        margin-top: 5px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        border-bottom: 1px solid silver;
+    }
+    .container-body .main .content .map {
+        background-color: white;
+    }
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+    /* .container-body .aside {
+        width: 25%;
+        gap: 10%;
+        display: block;
+    }
+    .container-body .aside .contact {
+        width: 100%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 0.5px solid silver;
+        height: auto;
+        padding: 10px 10px;
+        border-radius: 10px;
+    } Khong menu co dinh khi lan chuot */
+    .container-body .aside {
+        width: 25%;
+        gap: 10%;
+        display: block;
+        position: relative; /* Đặt vị trí tương đối cho .aside */
+    }
+    .container-body .aside .contact {
+        width: 100%;
+        margin-top: 0px;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 0.5px solid silver;
+        height: auto;
+        padding: 10px 10px;
+        border-radius: 10px;
+        position: sticky; /* Đặt vị trí dính */
+        top: 5px; /* Khoảng cách từ đỉnh của container */
+        z-index: 1; /* Đảm bảo .contact hiển thị trên .warning */
+    }
+    .container-body .aside .contact button{
+        display: block;
+        width: 90%;
+        padding: 10px;
+        font-weight: bold; 
+        border-radius: 8px; 
+    }
+    .container-body .aside .contact .btn-phone {
+        border: 1px solid cadetblue;
+        color: cadetblue;
+        background-color: white;
+    }
+    .container-body .aside .contact .btn-phone:hover {
+        background-color: cadetblue;
+        color: white;
+    }
+    .container-body .aside .contact .btn-zalo {
+        border: 1px solid rgb(0, 153, 255);
+        color: rgb(0, 153, 255);
+        background-color: white;
+    }
+    .container-body .aside .contact .btn-zalo:hover {
+        background-color: rgb(0, 153, 255);
+        color: white;
+    }
+    .container-body .aside .contact .btn-request {
+        border: 1px solid brown;
+        color: brown;
+        background-color: white;
+    }
+    .container-body .aside .contact .btn-request:hover {
+        background-color: brown;
+        color: white;
+    }
+    .container-body .aside .contact .avatar {
+        width: 50%;
+        height: 0;
+        padding-bottom: 55%; /* Tạo khung hình tròn */
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid silver;
+        position: relative; /* Đặt vị trí tương đối để có thể định vị img bên trong */
+    }
+    .container-body .aside .contact .avatar img {
+        width: 100%; /* Đảm bảo ảnh lấp đầy khung */
+        height: 100%; /* Đảm bảo ảnh lấp đầy khung */
+        object-fit: cover; /* Đảm bảo hình ảnh không bị biến dạng và lấp đầy khung */
+        object-position: center; /* Đảm bảo hình ảnh luôn được căn giữa */
+        position: absolute; /* Đặt vị trí tuyệt đối để có thể căn chỉnh */
+        top: 50%; /* Đưa ảnh lên trên */
+        left: 50%; /* Đưa ảnh về giữa */
+        transform: translate(-50%, -50%); /* Đưa ảnh về vị trí chính giữa */
+    }
+    .container-body .aside .warning {
+        width: 100%;
+        margin-top: 10px;
+        border: 0.5px solid silver;
+        height: auto;
+        padding: 10px;
+        border-radius: 10px;
+        position: sticky; /* Đặt vị trí dính */
+        top: 375px; /* Khoảng cách từ đỉnh của container */
+    }
+    .container-body .aside .warning .content {
+        display: flex;
+        border: 0;
+        padding: 0;
+        margin-top: 0;
+        gap: 10px;
+    }
+    .container-body .aside .warning .logo {
+        margin-top: 0;
+        display: flex;
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        align-items: flex-start; /* Căn ở trên theo chiều dọc */
+        width: auto;
+        height: auto;
+        font-size: 150%;
+    }
+    .container-body .aside .warning .description {
+        justify-content: center;
+        font-size: small;
+        display: block;
+    }
+    .container-body .aside .warning .description .report {
+        margin-top: 10px;
+        display: flex;
+        justify-content: left;
+        gap: 5px;
+    }
+    .container-body .aside .warning .description .report a {
+        text-decoration: none;
+        font-weight: bold;
+        color: inherit;
+    }
+}
