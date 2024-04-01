@@ -8,14 +8,15 @@
         width: 100%;
         height: auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         background-color: whitesmoke;
+        
     }
     .container-header .logo {
         width: 100px;
         height:auto;
-        margin-right: 500px;
+        margin-left: 30px;
     }
     /* .container-header .logo{
         display: flex; 
@@ -61,20 +62,20 @@
         left: 0;
         opacity: 0; 
         transition: opacity 1s ease-in-out;
-        animation: showImage 6s infinite;
+        animation: showImage 7.5s infinite;
     }
       
       /* Chỉnh thời gian showImage */
     .image-container img:nth-child(1) {
-        animation: showImage 3s infinite 1s;
+        animation: showImage 3s infinite 1.5s;
     }
       
     .image-container img:nth-child(2) {
-        animation: showImage 3s infinite 2s; 
+        animation: showImage 3s infinite 2.5s; 
     }
       
     .image-container img:nth-child(3) {
-        animation: showImage 3s infinite 3s; 
+        animation: showImage 3s infinite 3.5s; 
     }
 
     @keyframes showImage {
