@@ -1,9 +1,9 @@
 Nhóm 1 gồm các thành viên:  
-Nguyễn Cao Cường - 2252174  
-Dương Thế Đạt - 22520209  
-Đoàn Mạnh Đức - 22520264  
-Lê Trần Gia Lạc - 22520731  
-Lương Hoàng Minh - 22520868  
+  22520174 - Nguyễn Cao Cường  
+  22520209 - Dương Thế Đạt  
+  22520264 - Đoàn Mạnh Đức  
+  22520731 - Lê Trần Gia Lạc  
+  22520868 - Lương Hoàng Minh  
 
 Website cho thuê phòng trọ:
 - User side:
