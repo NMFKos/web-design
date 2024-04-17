@@ -18,25 +18,26 @@
                 </div>
             </div>
             <div class="container-header-welcome">
-                <a href="http://uit.edu.vn">
+                <a href="#">
                     <i class="fa-solid fa-heart"></i>
                     <span>Love</span>
                 </a>
-                <a href="http://uit.edu.vn">
+                <a href="#">
                     <i class="fa-solid fa-user-plus"></i>
                     <span>Login</span>
                 </a>
-                <a href="http://uit.edu.vn">
+                <a href="#">
                     <i class="fa-solid fa-right-to-bracket"></i>
                     <span>Register</span>
                 </a>
-                <a href="http://uit.edu.vn">
+                <a href="#">
                     <i class="fa-solid fa-circle-plus"></i>
                     <span>Post news</span>
                 </a>
             </div>
         </div>
         <div class="container-body">
+            {{#if house}}
             <div class="container-body main">
                 <div class="container-body main image">
                     <img src="https://file4.batdongsan.com.vn/resize/1275x717/2024/03/17/20240317084843-632a_wm.jpg" alt="anh dai dien">
@@ -49,10 +50,10 @@
                 </div>
                 <div class="container-body main content">
                     <div class="container-body main content title">
-                        <h1>Cần Bán Nhà 56m2 Nguyễn Ngọc Vũ, 7 Tầng Thang Máy 12 Phòng Khép Kín CCMN, Dòng tiền 800tr/năm.</h2>
+                        <h1>{{house.title}}</h2>
                         <div class="container-body main content title-frame">
                             <div class="container-body main content title-address">
-                                <span>Phường Trung Hòa, Cầu Giấy, Hà Nội</span>
+                                <span>{{house.address}}</span>
                             </div>
                             <div class="container-body main content title-action">
                                 <i class="fa-solid fa-share-nodes"></i>
@@ -68,17 +69,7 @@
                     </div>
                     <div class="container-body main content description">
                         <h2>Thông tin mô tả</h3>
-                        <span>Nguyễn Ngọc Vũ 54m² 7 tầng ngang 5.32m Phường Trung Hoà - Cầu Giấy.
-                            <br>Mô tả :
-                            <br>7 tầng thang máy
-                            <br>- Căn Hộ dòng tiền vừa ở vừa cho thuê : 9 phòng ( nếu không ở thì cho thuê toàn bộ thì được 12 phòng )
-                            <br>- 6 tầng + 1 tum
-                            <br>- Cách 10m oto tránh ,20m mặt phố Nguyễn Ngọc Vũ
-                            <br>- Tầng 1 để xe + 1 vs + giặt sấy.( tầng 1 có thể thêm 1 phòng rộng rãi)
-                            <br>- Tầng 2 + 3 + 4 + 5
-                            <br>2 phòng + vskk
-                            <br>- Tầng 6 ở hoặc cho thuê : phòng khách, bếp, phòng thờ và ngủ ( riêng thang máy lên tầng 6 phải có thẻ )
-                            <br>- Sổ vuông đẹp cất két, sẵn sàng giao dịch.</span>
+                        <span>{{house.description}}</span>
                     </div>
                     <div class="container-body main content character">
                         <h2>Đặc điểm căn hộ</h3>
@@ -124,9 +115,6 @@
                     <div class="container-body main content map">
                         <h2>Xem trên bản đồ</h3>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3724.56806984805!2d105.80003080963475!3d21.00994438055391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDAwJzM1LjgiTiAxMDXCsDQ4JzA5LjQiRQ!5e0!3m2!1sen!2s!4v1710727765271!5m2!1sen!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <!-- <div id="map"></div>
-                        <script src="function.js"></script>
-                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAti71WzqGLtPqzwgHNIUIaZP8-hhRdqYY&callback=initMap" async defer></script> -->
                     </div>
                 </div>
             </div>
@@ -138,11 +126,13 @@
                     <div style="color: silver; margin-top: 10px;">
                         Được đăng bởi
                     </div>
+                    {{#if user}}
                     <div style="font-weight: bold;">
-                        Nghi Nghi
+                        {{user.name}}
                     </div>
+                    {{/if}}
                     <button class="container-body aside contact btn-phone">
-                        0123 456 789
+                        {{house.number_phone}}
                     </button>
                     <button class="container-body aside contact btn-zalo">
                         Chat qua Zalo
@@ -169,6 +159,7 @@
                 </div>
             </div>
         </div>
+        {{/if}}
     </div>
 </body>
 </html>

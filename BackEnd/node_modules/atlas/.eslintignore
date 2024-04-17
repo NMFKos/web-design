@@ -1,0 +1,5 @@
+**/node_modules/**/*.js
+**/__fixtures__/**/*.js
+**/dist/**/*.js
+**/lib/**/*.js
+**/*.js.flow

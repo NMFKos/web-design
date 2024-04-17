@@ -1,0 +1,11 @@
+[ignore]
+.*/node_modules/react\(-dom\)?/.*
+.*/.*\.config\.js
+.*/Gulpfile\.js
+.*/json5/test/.*
+
+[include]
+
+[libs]
+
+[options]

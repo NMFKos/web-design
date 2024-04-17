@@ -1,9 +1,10 @@
+const { ObjectId } = require("mongodb");
 const { mongoose } = require("mongoose");
 const Schema = mongoose.Schema;
 
 const House = new Schema({
-    _id: {type: String, length: 8},
-    user_id: { type: String, length: 8 },
+    _id: { type: ObjectId },
+    user_id: { type: ObjectId },
     title: { type: String, min: 10},
     price: { type: String },
     description: { type: String },

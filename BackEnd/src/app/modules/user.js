@@ -1,8 +1,9 @@
+const { ObjectId } = require("mongodb");
 const { mongoose } = require("mongoose");
 const Schema = mongoose.Schema;
 
 const User = new Schema({
-    _id: {type: String, length: 8},
+    _id: { type: ObjectId },
     name: { type: String, min: 10},
     password: { type: String, match: /[a-zA-Z0-9]/ },
     email: { type: String, match: /[a-zA-Z0-9@.]/ },
