@@ -22,11 +22,11 @@ html{
 
 body{
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     overflow-x: hidden;
     color: black;
     background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background: linear-gradient(to left, #e2e2e2, #c9d6ff);
 }
 
 a{
@@ -63,6 +63,7 @@ aside .toggle{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
 }
 
@@ -175,13 +176,14 @@ main{
 main .analyses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
     gap: 7rem;
     height: 10rem;
     padding-bottom: 2rem;
 }
 
 main .analyses > div{
-    background: 0#ffffff;
+    background: 0#eeeff8;
     border-radius: 2rem;
     margin-top: 1rem;
     margin-left: 2rem;
@@ -273,9 +275,16 @@ main .analyses .progress .percentage{
 
 main .request-area{
     display: grid;
+    margin-top: 2rem;
     grid-template-columns: repeat(3, 1fr);
     gap: 7rem;
     height: 20rem;
+    padding-bottom: 2rem;
+}
+
+main .request-area h2{
+    width: 100px;
+    height: 1px;
 }
 
 main .request-area .request .status 
@@ -289,7 +298,9 @@ main .request-area .request .status .images img{
 }
 
 main .request-area > div.request > div{
-    background: 0#ffffff;
+    display: flex; 
+    flex-wrap: wrap;
+    background: 0#eeeff8;
     border-radius: 2rem;
     margin-top: 1rem;
     margin-left: 2rem;
@@ -319,3 +330,46 @@ main .request-area .request .status .info{
     left: 15px;
 }
 
+@media screen and (max-width: 900px)
+{
+    .container{
+        width: 95%; 
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+    aside .logo h2{
+        display: none;
+    }
+    
+    aside .sidebar{
+        width: 110px;
+    }
+    
+    .reports-count{
+        font-size: 7px;
+    }
+
+    aside .sidebar h3{
+        display: none;
+    }
+
+    aside .sidebar a{
+        width: 5.6rem;
+    }
+
+    aside .sidebar a:last-child{
+        position: relative; 
+        margin-top: 1.8rem;       
+    }
+
+    main .analyses{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    main .request-area{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+}
