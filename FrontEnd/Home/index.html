@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneHouse.com - Kênh thuê trọ uy tín hàng đầu Việt Nam</title>
     <link rel = "stylesheet" href="sty1e.css">
@@ -11,36 +12,54 @@
 </head>
 
 <body>
-    <div class="container-header">
-        <a href="http://127.0.0.1:5500/index.html">
-                <img src="logo.png" alt="Logo_Home_Credit" class="logo">
-        </a>
-        <div class="container-header-welcome">
-            <i class="fa-solid fa-heart"></i><span>Yêu thích</span>
-            <i class="fa-solid fa-user-plus"></i>
-            <div>
-                <a href = "login.html" ; style = "color: inherit"><span>Đăng nhập</span></a> 
+    <header>
+        <div class="navigation-bar">
+            
+            <div class = "logo">
+                <img src="logo.png" class = "logo-image" alt="logo">
+                <a href = "#"> OneHouse </a> 
             </div>
             
-            <i class="fa-solid fa-circle-plus"></i><span>Đăng bài</span>
+            <ul class="links">
+                <li> <a href="home">Trang chủ</a></li>
+                <li> <a href="about">Về chúng tôi</a></li>
+                <li> <a href="contact">Liên hệ</a></li>
+            </ul>
+            <a href="login.html" class = "login-button"> Đăng nhập </a>
+            <div class="toggle-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-    </div>
-    <div class="image-container" >
-        <img src = "https://s-media-cache-ak0.pinimg.com/564x/3a/96/2a/3a962a098e132aad5276079bc5081292.jpg" alt = "image" class="background-image">
-        <img src = "https://3.bp.blogspot.com/-1udOSy1S95A/WIY5yEEv9fI/AAAAAAAAYhQ/ZQMOTe7XDa424h-Y88_ifccOXSoNd0suwCLcB/s400/20130507_135638.jpg" alt = "image" class = "background-image">
-        <img src = "https://m.cbhomes.com/p/94/5646712/E9BEfa69e7484d0/full.jpg" alt = "image" class = "background-image">
-        <div class ="title-container">
-            <body>
-                <h1 class="title" > OneHouse </h1>
-                <h2 class="subtitle" > Kênh thuê trọ uy tín số 1 Việt Nam</h2>
-            </body>
-            
+        <div class = "dropdown_menu">
+            <li> <a href="home">Trang chủ</a></li>
+            <li> <a href="about">Về chúng tôi</a></li>
+            <li> <a href="contact">Liên hệ</a></li>
+            <li><a href="login.html" class = "login-button"> Đăng nhập </a> </li>
         </div>
-        <!-- <h1 class="title" style = "color:red"> OneHouse </h1>
-        <h2 class="subtitle" style="color: rgb(37, 156, 37)"> Kênh thuê trọ uy tín số 1 làng DoDo</h2> -->
-    </div>
+    </header>  
 
-    
-    
+    <main>
+        <section id = "title">
+            <h1>Welcome</h1>
+            <p>
+                Amidst the tranquil whispers of dawn, the city awakens to the gentle embrace of sunlight,<br/> 
+                casting shadows that dance upon the cobblestone streets
+            </p>
+        </section>
+    </main>
+    <script>
+        const toggle_button = document.querySelector('.toggle-button')
+        const toggle_button_Icon = document.querySelector('.toggle-button i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggle_button.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggle_button_Icon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script> 
 </body>
 </html>

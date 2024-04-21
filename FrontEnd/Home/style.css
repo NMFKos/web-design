@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body{
@@ -198,6 +197,7 @@ body{
 
 .container.active .toggle-left{
     transform: translateX(0);
+    border-radius: 0;
 }
 
 .toggle-right{
@@ -208,3 +208,79 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+/* Add this media query for mobile devices */
+@media (max-width: 992px) {
+    /* Adjust the container width and max-width */
+   .container {
+      max-width: 90%;
+    }
+  
+    /* Adjust the form container padding */
+   .container form {
+      padding: 0 20px;
+    }
+  
+    /* Adjust the input field width */
+   .container input {
+      width: 100%;
+    }
+  
+    /* Adjust the social icons margin */
+   .social-icons {
+      margin: 10px 0;
+    }
+  
+    /* Adjust the toggle container width and border radius */
+   .toggle-container {
+      width: 50%;
+      border-radius: 100px 0 0 100px;
+    }
+    .container.active .toggle-container{
+        transform: translateX(-100%);
+        border-radius: 0 100px 100px 0;
+    }
+    
+    /* Adjust the toggle panel padding */
+   .toggle-panel {
+      padding: 0 15px;
+    }
+  }
+  
+  /* Add this media query for smaller mobile devices */
+  @media (max-width: 576px) {
+    /* Adjust the container width and max-width */
+   .container {
+      max-width: 95%;
+    }
+  
+    /* Adjust the form container padding */
+   .container form {
+      padding: 0 10px;
+    }
+  
+    /* Adjust the input field width */
+   .container input {
+      width: 100%;
+    }
+  
+    /* Adjust the social icons margin */
+   .social-icons {
+      margin: 5px 0;
+    }
+  
+    /* Adjust the toggle container width and border radius */
+   .toggle-container {
+      width: 50%;
+      border-radius: 50px 0 0 50px;
+    }
+    .container.active .toggle-container{
+        transform: translateX(-100%);
+        border-radius: 0 50px 50px 0;
+    }
+  
+    /* Adjust the toggle panel padding */
+   .toggle-panel {
+      padding: 0 10px;
+    }
+  }
