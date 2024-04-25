@@ -17,11 +17,18 @@ app.use(morgan('combined'))
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Template engine
-app.engine('handlebars', engine());
+app.engine('handlebars', engine(
+    {
+        defaultLayout: path.join(__dirname, 'resources/views/layouts/main.handlebars'),
+        layoutsDir: path.join(__dirname, "resources/views/layouts"),
+        partialsDir: path.join(__dirname,  "resources/views/partials")
+    }
+));
+
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'resources/views')); 
 
 // Routes & Controllers
 route(app);
 
-app.listen(12345)
+app.listen(9999)
