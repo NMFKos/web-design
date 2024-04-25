@@ -1,99 +1,99 @@
 @media all and (min-width: 320px) {
-    body {
-        font-family: Arial, sans-serif;
-        background-color: lightgray;
-        width: 100%
+    .webpage {
+        margin: 0 auto;
+        width: 95%;
     }
-    .container-header {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: whitesmoke;
+    .preview {
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-    .container-header img {
-        width: 20%;
-        margin-left: 50px;
-    }
-    .container-header-welcome {
-        display: flex;
-        margin-right: 20px;
-        align-items: center;
-    }
-    .container-header-welcome span{
-        
-        margin: 0px 30px 0px 5px;
-    }
-    .background-image{
-        width: 100%;
-        height: auto;
-    }
-    .image-container {
-        position: relative;
-        width: 100%; 
-        height: auto; 
-      }
-      
-    .image-container img {
-        position: absolute;
+    .background-image {
+        position: fixed;
         top: 0;
         left: 0;
-        opacity: 0; 
-        transition: opacity 1s ease-in-out;
-        animation: showImage 6s infinite;
-    }
-      
-      /* Chỉnh thời gian showImage */
-    .image-container img:nth-child(1) {
-        animation: showImage 3s infinite 1s;
-    }
-      
-    .image-container img:nth-child(2) {
-        animation: showImage 3s infinite 2s; 
-    }
-      
-    .image-container img:nth-child(3) {
-        animation: showImage 3s infinite 3s; 
-    }
-
-    @keyframes showImage {
-        0% {
-          opacity: 0;
-        }
-        25% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-        }
-    }
-
-    .title-container {
-        position: absolute;
-        top: 60%; 
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 2;
-        text-align: center;
         width: 100%;
+        height: 100%;
+        background-position: center;
+        background-image: url('https://cdn3.ivivu.com/2023/10/du-lich-sai-gon-ivivu.jpg');
+        background-size: cover;
+        opacity: 0.5; /* Độ mờ của hình ảnh */
+        z-index: 1; /* Đảm bảo thẻ div này ở phía dưới thẻ carouselExampleIndicators */
     }
     
-    .title {
-        margin-top: 80px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: red;
-        font-size: 40px;
+    .over {
+        position: relative; /* Thiết lập vị trí tương đối để quản lý các phần tử con */
+        z-index: 2; /* Đảm bảo thẻ div này ở phía trên thẻ div chứa nó */
     }
     
-    .subtitle {
-        margin-top: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        color: red;
-        font-size: 24px;
+    .list-group-char {
+        gap: 10px;
+        position: relative; /* Thiết lập vị trí tương đối để quản lý các phần tử con */
+        z-index: 2; /* Đảm bảo thẻ div này ở phía trên thẻ div chứa nó */
+    }
+    
+    .image-char {
+        width: 25%;
+    }
+    
+    .content-frame {
+        display: block;
+        margin-left: 18px;
+        width: 75%;
+    }
+    
+    .content-first,
+    .content-second,
+    .content-third {
+        flex-grow: 1;
+    }
+    
+    .content-first {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .content-second {
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .content-second div {
+        margin-bottom: 10px; /* Cách nhau 10px */
+    }
+    
+    .content-third {
+        display: flex;
+        justify-content: right;
         
     }
     
+    .price-border {
+        border: 2px solid #ccc; /* Border xám */
+        padding: 5px; /* Khoảng cách bên trong */
+        border-radius: 12px;
+        color: black; /* Màu chữ đen */
+        font-weight: bold;
+        display: flex;
+        width: 170px;
+        justify-content: center;
+    }
+    
+    #heart-icon {
+        font-size: 24px; /* Đặt kích thước mong muốn */
+    }
+    
+    .view-border {
+        border: 2px solid #ccc; /* Border xám */
+        border-radius: 10px;
+        padding: 5px;
+        color: rgb(255, 255, 255); /* Màu chữ đen */
+        background-color: blueviolet;
+        display: flex;
+        font-weight: bold;
+        justify-content: center;
+        margin-bottom: 0;
+    }    
 }
