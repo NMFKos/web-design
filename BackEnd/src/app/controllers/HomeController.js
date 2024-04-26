@@ -1,9 +1,9 @@
 class SiteController {
     index(req, res) {
-        res.render('home');
+        res.render('home', { showHeader: true });
     }
     login(req, res) {
-        res.render('login');
+        res.render('login', { showHeader: false });
     }
 }
 

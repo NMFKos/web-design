@@ -1,6 +1,6 @@
 class PostController {
     index(req, res) {
-        res.render('post');
+        res.render('post', { showHeader: true });
     }
 }
 

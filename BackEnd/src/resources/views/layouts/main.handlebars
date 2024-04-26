@@ -8,7 +8,11 @@
 </head>
 <body>
     <div>
-        {{> header}}
+        {{#if showHeader}} <!-- Sử dụng đối số showHeader để quyết định xem có hiển thị phần header hay không -->
+            <div>
+                {{> header}}
+            </div>
+        {{/if}}
     </div>
     <div>
         {{{body}}}

@@ -52,7 +52,7 @@
     .content-first {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     
     .content-second {
@@ -81,8 +81,9 @@
         justify-content: center;
     }
     
-    #heart-icon {
+    #icon {
         font-size: 24px; /* Đặt kích thước mong muốn */
+        color: black;
     }
     
     .view-border {
