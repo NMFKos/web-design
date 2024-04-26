@@ -9,7 +9,7 @@ function route(app) {
     app.use('/news', newsRouter);
     app.use('/admin', adminRouter);
     app.use('/post', postRouter);
-    app.use('/description', descriptionRouter);
+    app.use('/cho-thue-phong-tro', descriptionRouter);
     app.use('/login', loginRouter);
     app.use('/', homeRouter);
 }

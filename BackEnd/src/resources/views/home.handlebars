@@ -41,6 +41,7 @@
         </div>
         <div>
             <ul class="list-group list-group-char">
+                {{#each houseData}}
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     <div class="d-flex">
                         <!-- Hình ảnh (đặt mã hình ảnh ở đây) -->
@@ -49,7 +50,7 @@
                         <div class="content-frame">
                             <div class="content-first">
                                 <div class="price-border">
-                                    5 triệu VND/tháng
+                                    {{this.price}} VND/tháng
                                 </div>
                                 <div style="gap: 20px; display:flex">
                                     <a href="#">
@@ -62,21 +63,19 @@
                             </div>
                             <div class="content-second">
                                 <div style="font-weight:bold; font-size:large;">
-                                    Diện tích 12m2 - 2 phòng ngủ - 4 người
+                                    {{this.title}}
                                 </div>
                                 <div style="font-size:medium;">
-                                    2PN+ bếp riêng, ban công thoáng mát;
-                                    full nội thất đầy đủ tiện nghi;
-                                    giờ giấc tự do, ko chung chủ.
+                                    {{this.description}}
                                 </div>
                                 <div>
                                     <i class="fa-solid fa-location-dot"></i>
-                                    <span style="font-size: large;">Tân Bình, TP. Hồ Chí Minh</span>
+                                    <span style="font-size: large;">{{this.address}}</span>
                                 </div>
                             </div>
                             <div class="content-third">
                                 <div class="view-border">
-                                    <a href="#" style="text-decoration: none; color: white">
+                                    <a href="/cho-thue-phong-tro" style="text-decoration: none; color: white">
                                         Xem chi tiết
                                     </a>
                                 </div>
@@ -84,6 +83,7 @@
                         </div>
                     </div>
                 </li>
+                {{/each}}
             </ul>
         </div>
     </div>
