@@ -2,15 +2,17 @@ const homeRouter = require('./home')
 const newsRouter = require('./news')
 const adminRouter = require('./admin')
 const postRouter = require('./post')
-const descriptionRouter = require('./description')
+const detailRouter = require('./detailpage')
 const loginRouter = require('./login')
+const testRouter = require('./test')
 
 function route(app) {
     app.use('/news', newsRouter);
     app.use('/admin', adminRouter);
     app.use('/post', postRouter);
-    app.use('/cho-thue-phong-tro', descriptionRouter);
+    app.use('/phong-tro', detailRouter);
     app.use('/login', loginRouter);
+    app.use('/test', testRouter);
     app.use('/', homeRouter);
 }
 

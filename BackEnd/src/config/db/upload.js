@@ -17,7 +17,10 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 // Đường dẫn đến thư mục chứa các ảnh trên máy của bạn
-const localFolderPath = "Tân Bình";
+const localFolderPath = "Q10";
+const metadata = {
+  contentType: 'image/jpeg',
+};
 
 // Hàm đẩy ảnh lên Firebase Storage và lưu trong các thư mục tương tự
 async function uploadImagesToFirebase(localFolderPath) {
@@ -35,8 +38,8 @@ async function uploadImagesToFirebase(localFolderPath) {
         // Nếu là file, xác định tên thư mục chứa và tên file
         const storageRef = ref(storage, `images/${filePath}`);
         console.log(filePath)
-        const fileData = readFileSync(filePath, 'utf8');
-        await uploadBytes(storageRef, fileData);
+        const fileData = readFileSync(filePath);
+        await uploadBytes(storageRef, fileData, metadata);
         console.log(`${file} uploaded successfully.`);
       }
     }
