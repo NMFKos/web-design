@@ -4,9 +4,8 @@ const User = require('../modules/user');
 class DescriptionController {
     index(req, res) {
         let houseData, userData;
-
         // Truy vấn thông tin về house
-        House.findOne({ _id: '22dd0267796cac51abef224b' })
+        House.findOne({ slug: req.params.slug })
         .then(house => {
             if (!house) {
                 // Nếu không tìm thấy house với _id cụ thể, trả về lỗi 404

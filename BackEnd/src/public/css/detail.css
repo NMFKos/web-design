@@ -1,0 +1,142 @@
+.webpage {
+    margin: 0 auto;
+    width: 95%;
+}
+.preview {
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+/* Nội dung chi tiết và tóm tắt phòng trọ */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.title {
+    border: solid 2px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: rgb(187, 0, 255);
+    display: inline-block;
+    font-size: large;
+}
+/* Chi tiết bài đăng */
+.post-details {
+    justify-content: left;
+    width: 45%;
+}
+.post-details div {
+    width: 100%;
+    margin-bottom: 25px;
+}
+.post-details div:nth-child(2) {
+    font-size: large;
+}
+/* button liên hệ nhanh (gửi qua email) */
+.contact-btn {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    float: right;
+    font-weight: bold;
+}
+/* Tóm tắt nhanh bài đăng theo tiêu chí địa chỉ, khu vực, trạng thái và loại phòng */
+.post-summary {
+    justify-content: left;
+    width: 45%;
+}
+.post-summary div {
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+.post-summary > div > span:nth-child(1) {
+    font-weight: bold;
+}
+/* Các tiên ích như bản đồ, video (nếu có) */
+.service-container {
+    display: flex;
+    justify-content: center;
+}
+.service {
+    display: block;
+}
+.service-title {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.service-title button {
+    border: 0px;
+    width: 15%;
+    background-color: whitesmoke;
+    
+}
+.service-title button:focus {
+    outline: none;
+    border: solid 2px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: rgb(187, 0, 255);
+}
+.contact-frame {
+    width: 640px;
+    height: 400px;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.avatar {
+    width: 310px;
+    overflow: hidden;
+}
+.avatar img {
+    display: block;
+    width: 100%;
+    height: auto; /* Đảm bảo tỷ lệ khung hình của ảnh được bảo toàn */
+}
+.infor-frame {
+    width: 310px;
+}
+.infor-frame div {
+    display: flex;
+    width: 100%;
+    margin-bottom: 8px;
+    justify-content: space-between;
+}
+.infor-frame > div > span:nth-child(1) {
+    font-weight: bold;
+}
+.infor-frame > div > span:nth-child(2) {
+    font-size: 14px;
+}
+.infor-frame .buttons {
+    text-align: center; /* Căn giữa các button */
+    margin-top: 10px; /* Khoảng cách từ các button đến nội dung trên */
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.label-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.submit-button {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    float: right;
+    font-weight: bold;
+}

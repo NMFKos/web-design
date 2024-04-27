@@ -8,7 +8,8 @@ class SiteController {
                 // Nếu không tìm thấy nhà, trả về lỗi 404
                 throw new Error('404 Not found');
             }
-            // Điều chỉnh từ toOject() thành toObject()
+            // đối với find sử dụng toObject() cho mỗi phần tử
+            // đối với findOne sử dụng toObject() cho chính nó
             const houseData = houses.map(h => h.toObject());
             res.render('home', { showHeader: true, houseData });
         })
