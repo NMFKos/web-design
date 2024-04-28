@@ -1,5 +1,7 @@
 const House = require('../modules/house');
 const User = require('../modules/user');
+const Report = require('../modules/report');
+const mongoose = require('mongoose')
 
 class DetailController {
     index(req, res) {
@@ -31,7 +33,45 @@ class DetailController {
             console.error('Error:', error);
             res.status(500).send('Internal Server Error');
         });
-    }    
+    }
+
+    report(req, res) {
+        let houseData, userData;
+        House.findOne({ slug: req.params.slug })
+            .then(house => {
+                if (!house) {
+                    throw new Error('House not found');
+                }
+                houseData = house.toObject();
+                return User.findOne({ _id: house.user_id });
+            })
+            .then(user => {
+                if (!user) {
+                    throw new Error('User not found');
+                }
+                userData = user.toObject();
+                const payload = req.body;
+                // Tạo một instance của model Report
+                const newReport = new Report({
+                    _id: new mongoose.Types.ObjectId(),
+                    user_id: userData._id,
+                    house_id: houseData._id,
+                    name: userData.name,
+                    email: userData.email,
+                    content: payload['content']
+                });
+                // Lưu dữ liệu vào MongoDB
+                return newReport.save();
+            })
+            .then(() => {
+                console.log('Data has been saved successfully');
+                res.render('detailpage', { showHeader: true, houseData, userData })
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                res.status(500).send('Internal Server Error');
+            });
+    }
 }
 
 module.exports = new DetailController;

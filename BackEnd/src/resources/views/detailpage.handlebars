@@ -121,13 +121,13 @@
                                         <span>Zalo liên lạc:</span>
                                         <span>{{zalo_contact}}</span>
                                     </div>
-                                    <form>
+                                    <form method="post" action="">
                                         <div class="form-group">
                                             <label for="report-form" class="label-text">Gửi phản hồi</label>
-                                            <textarea id="report-form" rows="3" placeholder="Có điều gì đó không ổn? Phản hồi cho chúng tôi ngay."></textarea>
+                                            <textarea id="report-form" name="content" rows="3" placeholder="Có điều gì đó không ổn? Phản hồi cho chúng tôi ngay."></textarea>
                                         </div>
-                                    </form>                                    
-                                    <button class="submit-button">Submit</button>
+                                        <button type="submit" class="submit-button">Submit</button>
+                                    </form>
                                 </div>
                                 {{/with}}
                             </div>

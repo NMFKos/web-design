@@ -4,15 +4,14 @@ const Schema = mongoose.Schema;
 
 const House = new Schema({
     _id: { type: ObjectId },
-    user_id: { type: ObjectId },
-    title: { type: String, min: 10},
-    price: { type: String },
+    user_id: { type: String },
+    title: { type: String },
+    price: { type: Number },
     description: { type: String },
-    address: { type: String, match: /[a-zA-Z0-9]/ },
+    address: { type: String },
+    area: { type: String },
     createdAt: { type: Date, default: Date.now },
-    updatedAt: { type: Date, default: Date.now },
-    number_phone: { type: String, match: /[0-9]/ },
-    zalo_contact: { type: String, match: /[0-9]/ }
+    updatedAt: { type: Date, default: Date.now }
   });
 
 module.exports = mongoose.model('House', House)

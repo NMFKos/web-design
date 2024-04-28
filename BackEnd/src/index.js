@@ -16,6 +16,11 @@ app.use(morgan('combined'))
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(express.urlencoded({
+    extended: true
+}));
+app.use(express.json());
+
 // Template engine
 app.engine('handlebars', engine(
     {
