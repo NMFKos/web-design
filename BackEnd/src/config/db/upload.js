@@ -2,6 +2,7 @@
 const { initializeApp } = require("firebase/app");
 const { getStorage, ref, uploadBytes } = require("firebase/storage");
 const { readdirSync, statSync, readFileSync } = require("fs");
+const path = require('path');
 
 const firebaseConfig = {
   apiKey: "AIzaSyDF36H8mFiTkXTyvRD6z-4YHmqsNCZ4yxE",
@@ -17,7 +18,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 // Đường dẫn đến thư mục chứa các ảnh trên máy của bạn
-const localFolderPath = "Q10";
+const localFolderPath = "Tân Bình"; //, , Q3, Tân Bình
 const metadata = {
   contentType: 'image/jpeg',
 };
@@ -30,17 +31,21 @@ async function uploadImagesToFirebase(localFolderPath) {
     for (const file of files) {
       const filePath = `${localFolderPath}/${file}`;
       const stats = statSync(filePath);
+      const extname = path.extname(filePath).toLowerCase();
 
       if (stats.isDirectory()) {
         // Nếu là thư mục, gọi lại hàm đệ quy để xử lý thư mục con
         await uploadImagesToFirebase(filePath);
-      } else {
-        // Nếu là file, xác định tên thư mục chứa và tên file
+      } else if (extname === '.jpg' || extname === '.jpeg') {
+        // Nếu là file ảnh JPG, xác định tên thư mục chứa và tên file
         const storageRef = ref(storage, `images/${filePath}`);
-        console.log(filePath)
+        console.log(filePath);
         const fileData = readFileSync(filePath);
         await uploadBytes(storageRef, fileData, metadata);
-        console.log(`${file} uploaded successfully.`);
+        console.log(`${filePath} uploaded successfully.`);
+      } else {
+        // Nếu là file không phải ảnh JPG, bỏ qua và không tải lên Firebase
+        console.log(`${filePath} is not a JPG image. Skipping upload.`);
       }
     }
   } catch (error) {

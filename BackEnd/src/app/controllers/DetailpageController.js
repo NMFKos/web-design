@@ -1,22 +1,22 @@
-const House = require('../modules/house');
+const Post = require('../modules/post');
 const User = require('../modules/user');
 const Report = require('../modules/report');
 const mongoose = require('mongoose')
 
 class DetailController {
     index(req, res) {
-        let houseData, userData;
+        let postData, userData;
         // Truy vấn thông tin về house
-        House.findOne({ slug: req.params.slug })
-        .then(house => {
-            if (!house) {
+        Post.findOne({ slug: req.params.slug })
+        .then(post => {
+            if (!post) {
                 // Nếu không tìm thấy house với _id cụ thể, trả về lỗi 404
                 throw new Error('House not found');
             }
             // Lưu dữ liệu house
-            houseData = house.toObject();
+            postData = post.toObject();
             // Tiếp tục truy vấn thông tin về user
-            return User.findOne({ _id: house.user_id });
+            return User.findOne({ _id: post.user_id });
         })
         .then(user => {
             if (!user) {
@@ -26,7 +26,7 @@ class DetailController {
             // Lưu dữ liệu user
             userData = user.toObject();
             // Render template description với dữ liệu của cả house và user
-            res.render('detailpage', { showHeader: true, houseData, userData });
+            res.render('detailpage', { showHeader: true, postData, userData });
         })
         .catch(error => {
             // Xử lý lỗi nếu có
