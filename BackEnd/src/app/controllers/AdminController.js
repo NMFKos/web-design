@@ -1,6 +1,6 @@
 class AdminController {
     index(req, res) {
-        res.render('admin');
+        res.render('admin', { layout: false });
     }
 }
 
