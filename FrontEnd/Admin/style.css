@@ -65,8 +65,9 @@ img{
 
 
 h1{
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.8rem;
+    font-family: sans-serif;
 }
 
 h2{
@@ -218,7 +219,7 @@ aside .sidebar .message-count{
 }
 
 main{
-    margin-top: 1.4rem;
+    margin-top: 6rem;
 }
 
 main .analyse{
