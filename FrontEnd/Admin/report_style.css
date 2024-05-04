@@ -103,7 +103,7 @@ b{
 }
 
 .danger{
-    color: rgb(4, 112, 162);
+    color: var(--color-danger);
 }
 
 .success{
@@ -112,6 +112,10 @@ b{
 
 .warning{
     color: var(--color-warning);
+}
+
+.onehouse{
+    color: rgb(4, 112, 162);
 }
 
 .container{
@@ -258,4 +262,16 @@ main .reported_posts a
     display: block;
     margin: 1rem auto;
     color: var(--color-primary);
+}
+
+main .reported_posts table tbody td
+{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+main .reported_posts table tbody tr:last-child td
+{
+    border: None;
 }
