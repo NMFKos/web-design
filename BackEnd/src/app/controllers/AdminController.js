@@ -2,13 +2,13 @@ const User = require("../modules/user")
 
 class AdminController {
     index(req, res) {
-        User.find({})
-        .then(user=> {
+        User.find({}).exec()
+        .then(async user=> {
             if(!user){
                 //Nếu không tìm thấy thông tin user
                 throw new Error('404 NOT FOUND');
             }
-            const userData = user.map(user => user.toObject());
+            const userData = user.slice(30, 42).map(user => user.toObject());
             res.render('admin', {showHeader: true, userData});
         })
         .catch(error => {
@@ -16,6 +16,11 @@ class AdminController {
             res.status(500).send('INTERNAL SERVER ERROR');
         })
     }
+
+    
+
+
+
 }
 
 module.exports = new AdminController;

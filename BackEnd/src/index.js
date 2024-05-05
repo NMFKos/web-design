@@ -2,7 +2,6 @@ const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const { engine } = require('express-handlebars')
-require('./helpers/customHelper')
 
 const app = express();
 const route = require('./routes/index.js');
