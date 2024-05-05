@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const { engine } = require('express-handlebars')
+require('./helpers/customHelper')
 
 const app = express();
 const route = require('./routes/index.js');
@@ -29,7 +30,6 @@ app.engine('handlebars', engine(
         partialsDir: path.join(__dirname,  "resources/views/partials")
     }
 ));
-
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'resources/views')); 
 
@@ -39,4 +39,6 @@ route(app);
 app.listen(8888, 'localhost', () => {
     console.log('Server is running on http://localhost:8888');
   });
+
+
   

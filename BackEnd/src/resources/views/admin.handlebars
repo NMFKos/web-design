@@ -100,8 +100,25 @@
             </div>
             <!-- End of Analyses -->
 
-            <!-- New Users Section -->
+            <!-- Read users info from database-->
             <div class="new-users">
+                <h2>Người dùng mới</h2>
+                <div class="user-list">
+                {{#each userData}}    
+                    {{#if (eq @index 9)}}
+                        break;
+                    {{/if}}
+                    <div class="user">
+                        <img src={{this.avatar}}>
+                        <h2>{{this.name}}</h2>
+                    </div>
+                    
+                {{/each}}
+                </div>
+            </div>
+           
+            <!-- New Users Section -->
+            {{!-- <div class="new-users">
                 <h2>Người dùng mới</h2>
                 <div class="user-list">
                     <div class="user">
@@ -125,7 +142,7 @@
                         <p>New User</p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- End of New Users Section -->
 
             <!-- Recent Orders Table -->

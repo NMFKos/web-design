@@ -1,6 +1,20 @@
+const User = require("../modules/user")
+
 class AdminController {
     index(req, res) {
-        res.render('admin', { layout: false });
+        User.find({})
+        .then(user=> {
+            if(!user){
+                //Nếu không tìm thấy thông tin user
+                throw new Error('404 NOT FOUND');
+            }
+            const userData = user.map(user => user.toObject());
+            res.render('admin', {showHeader: true, userData});
+        })
+        .catch(error => {
+            console.error('Error fetching user from database');
+            res.status(500).send('INTERNAL SERVER ERROR');
+        })
     }
 }
 
