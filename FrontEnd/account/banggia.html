@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đổi mật khẩu</title>
-    <link rel="stylesheet" href="changepassword.css">
+    <title>Đăng tin mới</title>
+    <link rel="stylesheet" href="banggia.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
     <!-- Google Map -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     
@@ -90,22 +89,55 @@
             <div class="grid2-container">
                 <div class="left2-side">
             <div class="header">
-                <span class="title ml-2">Đổi mật khẩu</span>
+                <span class="title ml-2">Bảng giá dịch vụ</span>
             </div>
-            
             <hr style="border-top: 1px solid #b0acac; margin-left: 30px; margin-right: 30px;"> <!-- Dòng kẻ ngang màu đen -->
-            
-            <div class="oldpassword">
-                <label for="oldpassword">Mật khẩu cũ </label>
-                <input type="text" id="oldpassword" name="oldpassword">
+            <div class="flex-container" style="display: flex;">
+                <div class="retangle1" style="width: 350px; height: 90px; background: rgba(249.46, 20.58, 20.58, 0.84); margin-top: 50px;margin-left: 100px;">
+                    <p style="color: white; text-align: center; padding-top: 23px; font-size: 25px;">Tin VIP</p>
+                </div>
+                <div class="retangle2" style="width: 350px; height: 90px; background: #2D89CB; margin-top: 50px;margin-left: 200px;">
+                    <p style="color: white; text-align: center; padding-top: 23px; font-size: 25px;">Tin Thường</p>
+                </div>
             </div>
-            <div class="newpassword">
-                <label for="newpassword">Mật khẩu mới </label>
-                <input type="text" id="newpassword" name="newpassword">
+            <div class="flex-container" style="display: flex;">
+                <div class="retangle3" style="width: 350px; height: 450px; background: rgba(217, 217, 217, 0.40); margin-top: 50px;margin-left: 100px;">
+                    <p style="color: black; text-align: center; padding-top: 15px; font-size: 25px;">ƯU ĐIỂM
+                    <br>
+                    <p style="color: black; font-size: 18px;margin-left: 15px;margin-top: 20px;">- Lượt xem gấp 3 lần so với tin thường.
+                    <br>
+                    <br>
+                    - Ưu việt, tiếp cận tối đa khách hàng.
+                    <br>
+                    <br>
+                    - Xuất hiện vị trí đầu tiên trên trang chủ.
+                    <hr style="border-top: 1px solid black; margin-left: 30px; margin-right: 30px;margin-top: 30px;">
+                    <p style="color: black; font-size: 18px;margin-left: 15px;margin-top: 20px;">- GIÁ NGÀY : 50.000đ
+                    <br>
+                    <br>
+                    - GIÁ TUẦN : 300.000đ
+                    <br>
+                    <br>
+                    - GIÁ ĐẨY BÀI : 25.000đ
+                </p>
+                </div>
+                <div class="retangle4" style="width: 350px; height: 450px; background: rgba(217, 217, 217, 0.40); margin-top: 50px;margin-left: 200px;">
+                    <p style="color: black; text-align: center; padding-top: 15px; font-size: 25px;">ƯU ĐIỂM</p>
+                    <br>
+                    <p style="color: black; font-size: 18px;margin-left: 15px;margin-bottom: 40px;">- Tiếp cận với khách hàng khá tốt.
+                    <br>
+                    <br>
+                    - Xuất hiện ở sau các tin VIP
+                    <hr style="border-top: 1px solid black; margin-left: 30px; margin-right: 30px;margin-top: 75px;">
+                    <p style="color: black; font-size: 18px;margin-left: 15px;margin-top: 20px;">- GIÁ NGÀY : 30.000đ
+                    <br>
+                    <br>
+                    - GIÁ TUẦN : 180.000đ
+                    <br>
+                    <br>
+                    - GIÁ ĐẨY BÀI : 15.000đ
+                </div>
             </div>
-            <button class="savingpassword-button">
-            Cập nhật
-            </button>
         </div>
         <script>
             $(window).scroll(function() {

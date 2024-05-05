@@ -16,12 +16,11 @@
                   <div class="carousel-item active">
                     <img class="d-block w-100" src="/imgs/img1.jpg" alt="First slide">
                   </div>
+                  {{#each imagesData}}
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="/imgs/img2.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="{{this}}" alt="Second slide">
                   </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="/imgs/img3.jpg" alt="Third slide">
-                  </div>
+                  {{/each}}
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -35,6 +34,15 @@
         </div>
         <div class="content">
             {{#with postData}}
+            <div class="post-details">
+                <div class="title">
+                    Chi tiết bài đăng
+                </div>
+                <div>
+                    {{description}}
+                </div>
+                <button class="contact-btn">Liên hệ nhanh</button>
+            </div>
             <div class="post-summary">
                 <div class="title">
                     Tóm tắt bài đăng
@@ -45,7 +53,7 @@
                 </div>
                 <div>
                     <span>Loại phòng:</span>
-                    <span>1PN</span>
+                    <span>{{type_house}}</span>
                 </div>
                 <div>
                     <span>Trạng thái:</span>
@@ -55,15 +63,6 @@
                     <span>Khu vực:</span>
                     <span>TP. Hồ Chí Minh</span>
                 </div>
-            </div>
-            <div class="post-details">
-                <div class="title">
-                    Chi tiết bài đăng
-                </div>
-                <div>
-                    {{description}}
-                </div>
-                <button class="contact-btn">Liên hệ nhanh</button>
             </div>
             {{/with}}
         </div>

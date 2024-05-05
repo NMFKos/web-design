@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TRANG CHỦ - One House</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel = "stylesheet" href="sty1e.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navigation-bar">
+            
+            <div class = "logo">
+                <img src="logo.png" class = "logo-image" alt="logo">
+                <a href = "#"> OneHouse </a> 
+            </div>
+            
+            <ul class="links">
+                <li> <a href="home">Trang chủ</a></li>
+                <li> <a href="about">Về chúng tôi</a></li>
+                <li> <a href="contact">Liên hệ</a></li>
+            </ul>
+            <a href="login.html" class = "login-button"> Đăng nhập </a>
+            <div class="toggle-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class = "dropdown_menu">
+            <li> <a href="home">Trang chủ</a></li>
+            <li> <a href="about">Về chúng tôi</a></li>
+            <li> <a href="contact">Liên hệ</a></li>
+            <li><a href="login.html" class = "login-button"> Đăng nhập </a> </li>
+        </div>
+    </header>  
+
+    <main>
+        <section id = "title">
+            <h1>Welcome</h1>
+            <p>
+                Amidst the tranquil whispers of dawn, the city awakens to the gentle embrace of sunlight,<br/> 
+                casting shadows that dance upon the cobblestone streets
+            </p>
+        </section>
+    </main>
+    <script>
+        const toggle_button = document.querySelector('.toggle-button')
+        const toggle_button_Icon = document.querySelector('.toggle-button i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggle_button.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggle_button_Icon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script> 
+</body>
+</html>

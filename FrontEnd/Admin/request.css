@@ -78,7 +78,7 @@ h2{
 h3{
     font-weight: 1000;
     font-size: 0.8rem;
-
+    font-family: sans-serif;
 }
 
 small{
@@ -226,17 +226,17 @@ main{
     margin-top: 6rem;
 }
 
-main .reported_posts
+main .request_list
 {
     margin-top: 1.3rem;
 }
 
-main .reported_posts h2
+main .request_list h2
 {
     margin-bottom: 0.8rem;
 }
 
-main .reported_posts table
+main .request_list table
 {
     background-color: var(--color-white);
     width: 100%;
@@ -247,12 +247,12 @@ main .reported_posts table
     transition: all 0.3s ease;
 }
 
-main .reported_posts table:hover
+main .request_list table:hover
 {
     box-shadow: none;
 }
 
-main .reported_posts a
+main .request_list a
 {
     text-align: center;
     display: block;
@@ -260,14 +260,14 @@ main .reported_posts a
     color: var(--color-primary);
 }
 
-main .reported_posts table tbody td
+main .request_list table tbody td
 {
     height: 2.8rem;
     border-bottom: 1px solid var(--color-light);
     color: var(--color-dark-variant);
 }
 
-main .reported_posts table tbody tr:last-child td
+main .request_list table tbody tr:last-child td
 {
     border: None;
 }
@@ -279,41 +279,22 @@ main .reported_posts table tbody tr:last-child td
     border: 1px solid;
 }
 
-main .reported_posts table tbody tr td.success
+main .request_list table tbody tr td.success
 {
     color: var(--color-success);
 }
 
-main .reported_posts table tbody tr td.warning
+main .request_list table tbody tr td.warning
 {
     color: var(--color-warning);
 }
 
-main .reported_posts table tbody tr td.danger
+main .request_list table tbody tr td.danger
 {
     color: var(--color-danger);
 }
 
-
-/*Tablet*/
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
-    
+main .request_list table tbody tr td.premium
+{
+    color: #f5bf03;
 }
-
-/*Mobile*/
-@media only screen and (max-width: 46.1875em) {
-    aside
-    {
-        display: none;
-    }
-    
-    main
-    {
-        margin-top: 2rem;;
-    }
-
-    main .reported_posts table
-    {
-        align-items: center;
-    }
-}  
