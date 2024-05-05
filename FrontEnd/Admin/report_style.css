@@ -293,3 +293,29 @@ main .reported_posts table tbody tr td.danger
 {
     color: var(--color-danger);
 }
+
+
+/*Tablet*/
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    
+}
+
+/*Mobile*/
+@media only screen and (max-width: 450px) {
+    aside
+    {
+        display: none;
+    }
+    
+    main
+    {
+        margin-top: 2rem;;
+        align-items: center;
+        
+    }
+
+    main > div{
+        display: grid;
+        
+    }
+}  
