@@ -2,34 +2,64 @@ const Post = require('../modules/post');
 const User = require('../modules/user');
 const Report = require('../modules/report');
 const mongoose = require('mongoose')
+const { initializeApp } = require("firebase/app");
+const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDF36H8mFiTkXTyvRD6z-4YHmqsNCZ4yxE",
+  authDomain: "images-a66c0.firebaseapp.com",
+  projectId: "images-a66c0",
+  storageBucket: "images-a66c0.appspot.com",
+  messagingSenderId: "1081654025998",
+  appId: "1:1081654025998:web:7515c882788d914a3c415f",
+  measurementId: "G-Z6TTKT1H0N"
+};
+
+async function getImageUrls(folderPath) {
+    const app = initializeApp(firebaseConfig);
+    const storage = getStorage(app);
+
+    const listRef = ref(storage, folderPath);
+    const listResult = await listAll(listRef);
+
+    const imageUrls = [];
+    for (const item of listResult.items) {
+        const downloadUrl = await getDownloadURL(item);
+        imageUrls.push(downloadUrl);
+    }
+    return imageUrls
+}
+
+async function getImage(imgPath) {
+    const app = initializeApp(firebaseConfig);
+    const storage = getStorage(app);
+    const imageUrl = await getDownloadURL(ref(storage, imgPath));
+    return imageUrl
+}
 
 class DetailController {
     index(req, res) {
         let postData, userData;
-        // Truy vấn thông tin về house
         Post.findOne({ slug: req.params.slug })
         .then(post => {
             if (!post) {
-                // Nếu không tìm thấy house với _id cụ thể, trả về lỗi 404
                 throw new Error('House not found');
             }
-            // Lưu dữ liệu house
             postData = post.toObject();
-            // Tiếp tục truy vấn thông tin về user
             return User.findOne({ _id: post.user_id });
         })
-        .then(user => {
+        .then(async user => {
             if (!user) {
-                // Nếu không tìm thấy user, trả về lỗi 404
                 throw new Error('User not found');
             }
-            // Lưu dữ liệu user
             userData = user.toObject();
-            // Render template description với dữ liệu của cả house và user
-            res.render('detailpage', { showHeader: true, postData, userData });
+            const folderPath = postData.images;
+            const imagesData = await getImageUrls(folderPath);
+            const avatarData = await getImage(user.avatar);
+            userData.avatar_image = avatarData;
+            res.render('detailpage', { showHeader: true, postData, userData, imagesData });
         })
         .catch(error => {
-            // Xử lý lỗi nếu có
             console.error('Error:', error);
             res.status(500).send('Internal Server Error');
         });
