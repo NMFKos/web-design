@@ -121,6 +121,7 @@ b{
 }
 
 aside{
+    display: none;
     height: 100vh;
 }
 
@@ -301,7 +302,9 @@ main .analyse .progresss .percentage{
 }
 
 main .new-users{
+    display: grid;
     margin-top: 1.3rem;
+    width: 100%;
 }
 
 main .new-users .user-list{
@@ -318,6 +321,7 @@ main .new-users .user-list{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 
 main .new-users .user-list:hover{
     box-shadow: none;

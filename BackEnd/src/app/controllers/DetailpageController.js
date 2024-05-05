@@ -30,6 +30,13 @@ async function getImageUrls(folderPath) {
     return imageUrls
 }
 
+async function getImage(imgPath) {
+    const app = initializeApp(firebaseConfig);
+    const storage = getStorage(app);
+    const imageUrl = await getDownloadURL(ref(storage, imgPath));
+    return imageUrl
+}
+
 class DetailController {
     index(req, res) {
         let postData, userData;
@@ -48,6 +55,8 @@ class DetailController {
             userData = user.toObject();
             const folderPath = postData.images;
             const imagesData = await getImageUrls(folderPath);
+            const avatarData = await getImage(user.avatar);
+            userData.avatar_image = avatarData;
             res.render('detailpage', { showHeader: true, postData, userData, imagesData });
         })
         .catch(error => {

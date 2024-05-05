@@ -13,14 +13,17 @@
         <div class="preview">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="/imgs/img1.jpg" alt="First slide">
-                  </div>
-                  {{#each imagesData}}
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="{{this}}" alt="Second slide">
-                  </div>
-                  {{/each}}
+                    {{#each imagesData}}
+                    {{#if @first}}
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{this}}" alt="First slide">
+                    </div>
+                    {{else}}
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{this}}" alt="Slide">
+                    </div>
+                    {{/if}}
+                    {{/each}}
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -49,19 +52,19 @@
                 </div>
                 <div>
                     <span>Địa chỉ:</span>
-                    <span>{{address}}</span>
+                    <span>{{address}}, TP. Hồ Chí Minh</span>
                 </div>
                 <div>
                     <span>Loại phòng:</span>
                     <span>{{type_house}}</span>
                 </div>
                 <div>
-                    <span>Trạng thái:</span>
-                    <span>Còn trống</span>
+                    <span>Loại bài đăng:</span>
+                    <span>{{type_post}}</span>
                 </div>
                 <div>
                     <span>Khu vực:</span>
-                    <span>TP. Hồ Chí Minh</span>
+                    <span>{{address}}</span>
                 </div>
             </div>
             {{/with}}
@@ -69,8 +72,6 @@
         <div class="service-container">
             <div class="service">
                 <div class="service-title">
-                    <!-- Button to navigate to Video slide -->
-                    <button id="videoBtn">Video</button>
                     <!-- Button to navigate to Map slide -->
                     <button id="mapBtn">Bản đồ</button>
                     <!-- Button to navigate to Owner slide -->
@@ -81,24 +82,19 @@
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
-                        <!-- Slide 1: Video -->
+                        <!-- Slide 1: Map -->
                         <div class="carousel-item active">
-                            <iframe src="/imgs/video/myvid.mp4" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <!-- Slide 2: Map -->
-                        <div class="carousel-item">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2337779251357!2d106.66692710935789!3d10.793398789312011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292dca10e2d5%3A0xdf19a7972db22451!2zxJAuIEzDqiBWxINuIFPhu7ksIFTDom4gQsOsbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1714137181346!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <!-- Slide 3: Owner -->
+                        <!-- Slide 2: Owner -->
                         <div class="carousel-item">
                             <div class="contact-frame">
                                 {{#with userData}}
                                 <div class="avatar">
-                                    <img src="/imgs/avatar.png" alt="ảnh đại diện">
+                                    <img src="{{avatar_image}}" alt="ảnh đại diện">
                                 </div>
                                 <div class="infor-frame">
                                     <div class="title">
@@ -113,12 +109,12 @@
                                         <span>{{email}}</span>
                                     </div>
                                     <div>
-                                        <span>Số điện thoại:</span>
-                                        <span>{{number_phone}}</span>
+                                        <span>Zalo liên lạc:</span>
+                                        <span>{{phone}}</span>
                                     </div>
                                     <div>
-                                        <span>Zalo liên lạc:</span>
-                                        <span>{{zalo_contact}}</span>
+                                        <span>Địa chỉ:</span>
+                                        <span>{{address}}</span>
                                     </div>
                                     <form method="post" action="">
                                         <div class="form-group">
@@ -141,20 +137,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
-            // Bắt sự kiện click cho nút Video
-            $('#videoBtn').click(function(){
-                // Điều hướng carousel đến slide Video (index 0)
-                $('#carouselExampleIndicators').carousel(0);
-            });
             // Bắt sự kiện click cho nút Bản đồ
             $('#mapBtn').click(function(){
-                // Điều hướng carousel đến slide Bản đồ (index 1)
-                $('#carouselExampleIndicators').carousel(1);
+                // Điều hướng carousel đến slide Bản đồ (index 0)
+                $('#carouselExampleIndicators').carousel(0);
             });
             // Bắt sự kiện click cho nút Liên lạc
             $('#ownerBtn').click(function(){
-                // Điều hướng carousel đến slide Liên lạc (index 2)
-                $('#carouselExampleIndicators').carousel(2);
+                // Điều hướng carousel đến slide Liên lạc (index 1)
+                $('#carouselExampleIndicators').carousel(1);
             });
         });
     </script>
