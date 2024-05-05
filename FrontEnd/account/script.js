@@ -15,3 +15,12 @@ console.log(`Selected file: ${fileName}, size: ${fileSize}, type: ${fileType}`);
 
   // Upload the video file here
 });
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > $('.left-side-container').offset().top) {
+        $('.left-side').css('position', 'fixed');
+        $('.left-side').css('top', '0');
+    } else {
+        $('.left-side').css('position', 'static');
+    }
+});

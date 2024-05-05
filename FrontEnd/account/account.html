@@ -3,37 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang quản lý tài khoản</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Thông tin cá nhân</title>
+    <link rel="stylesheet" href="account.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- Google Map -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
 </head>
 <body>
-    <header class="bg-blue-800 text-white p-4">
-        <div class="flex items-center justify-between">
-            <div class="font-bold text-xl">WANNAHOUSE</div>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="hover:underline">Trang chủ</a></li>
-                <li><a href="#" class="hover:underline">Phòng trọ</a></li>
-                <li><a href="#" class="hover:underline">Nhà cho thuê</a></li>
-                <li><a href="#" class="hover:underline">Mặt bằng</a></li>
-                <li><a href="#" class="hover:underline">Căn hộ</a></li>
-                <li><a href="#" class="hover:underline">Bảng giá dịch vụ</a></li>
+
+<!-- Narbav Start -->
+    <header class="bg-black-custom text-white p-4">
+        <div class="flex items-center space-x-8">
+            <img src="onehouse.png" alt="logo" class="flex">
+            <div class="font-bold text-xl" style ="font-size: 25px;">OneHouse</div>
+            <span></span>
+            <span></span>
+            <ul class="flex space-x-8" style="font-size: 18px;">
+                <li><a href="#" class="hover:underline ">Trang chủ</a></li>
+                <li><a href="#" class="hover:underline ">Phòng trọ</a></li>
+                <li><a href="#" class="hover:underline ">Nhà cho thuê</a></li>
+                <li><a href="#" class="hover:underline ">Mặt bằng</a></li>
+                <li><a href="#" class="hover:underline ">Căn hộ</a></li>
+                <li><a href="#" class="hover:underline ">Bảng giá dịch vụ</a></li>
             </ul>
         </div>
     </header>
-    <div class="grid-container">
-        <div class="left-side">
+<!-- Narbav End -->
+
+<div class="grid-container">
+        <div class="left-side-container">
+            <div class="left-side">
             <div class="flex items-center gap-4">
-                <img src="anonAvatar" alt="avatar" class="w-10 h-10 object-cover rounded-full border-2 border-white ml-4 mt-4">
+                <img src="avtmacdinh.jpg" alt="avatar" class="w-10 h-10 object-cover rounded-full border-2 border-white ml-4 mt-4">
                 <div class="flex flex-col justify-center">
                     <span class="font-semibold mt-4">Đoàn Đức</span>
                     <span>0867779162</span>
                 </div>
             </div>
-            <span class="mt-4 block ml-4">Mã thành viên: </span>
+            <span class="mt-4 block ml-4">TK Chính: </span>
+            <button class="mt-2 bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2 ml-4">
+                Nạp tiền
+            </button>
+            <a href="post.html" class="mt-2 bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2 ml-4">
+                Đăng Tin
+            </a>
             <ul class="list-unstyled mt-4">
                 <li class="mb-2">
                     <a href="#" class="active">
@@ -41,167 +60,96 @@
                         <span class="ml-2">Quản lý tin đăng</span>
                     </a></li>
                 <li class="mb-2">
-                    <a href="#">
-                        <span class="material-icons-outlined ml-4">add_circle_outline</span>
-                        <span class="ml-2">Đăng tin cho thuê</span>
+                    <a href="account.html">
+                        <span class="material-icons-outlined ml-4 mt-1">person_outline</span>
+                        <span class="ml-2 ">Sửa thông tin cá nhân</span>
                     </a>
                 </li>
                 <li class="mb-2">
                     <a href="#">
-                        <span class="material-icons-outlined ml-4">person_outline</span>
-                        <span class="ml-2">Sửa thông tin cá nhân</span>
+                        <span class="material-icons-outlined ml-4 mt-1">money</span>
+                        <span class="ml-2 ">Nạp tiền</span>
                     </a>
                 </li>
                 <li class="mb-2">
                     <a href="#">
-                        <span class="material-icons-outlined ml-4">contact_page</span>
-                        <span class="ml-2">Liên Hệ</span>
+                        <span class="material-icons-outlined ml-4 mt-1">contact_page</span>
+                        <span class="ml-2 ">Liên Hệ</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="material-icons-outlined ml-4">logout</span>
+                        <span class="material-icons-outlined ml-4 mt-1">logout</span>
                         <span class="ml-2">Thoát</span>
                     </a>
                 </li>
             </ul>
         </div>
+    </div>
         <div class="right-side">
             <div class="grid2-container">
                 <div class="left2-side">
             <div class="header">
-                <span class="title">Đăng tin mới</span>
-            </div>
-            <div class="address-title">
-                <span>Địa chỉ cho thuê</span>
-            </div>
-            <div class="quanhuyen">
-                <span>Quận/Huyện</span>
+                <span class="title ml-2">Cập nhật thông tin cá nhân</span>
             </div>
             
-            <select class="select">
-                <option>--Chọn quận/huyện--</option>
-                <option>Quận 1</option>
-                <option>Quận 2</option>
-                <option>Quận 3</option>
-                <option>Quận 4</option>
-                <option>Quận 5</option>
-                <option>Quận 6</option>
-                <option>Quận 7</option>
-                <option>Quận 8</option>
-                <option>Quận 9</option>
-                <option>Quận 10</option>
-                <option>Quận 11</option>
-                <option>Quận 12</option>
-                <option>Quận Bình Thạnh</option>
-                <option>Quận Bình Tân</option>
-                <option>Quận Gò Vấp</option>
-                <option>Quận Phú Nhuận</option>
-                <option>Quận Tân Bình</option>
-                <option>Quận Tân Phú</option>
-                <option>Thủ Đức</option>
-                <option>Huyện Bình Chánh</option>
-                <option>Huyện Cần Giờ</option>
-                <option>Huyện Củ Chi</option>
-                <option>Huyện Hóc Môn</option>
-                <option>Huyện Nhà Bè</option>
-            </select>
-            <div class="addressexact">
-                <label for="address-exact">Địa chỉ chính xác </label>
-                <br>
-                <input type="text" id="address-exact" name="address-exact">
+            <hr style="border-top: 1px solid #b0acac; margin-left: 30px; margin-right: 30px;"> <!-- Dòng kẻ ngang màu đen -->
+            
+            <div class="name">
+                <label for="name">Tên hiển thị </label>
+                <input type="text" id="name" name="name">
             </div>
-            <div class="infomation">
-                <span>Thông tin mô tả</span>
+            <div class="phone1">
+                <label for="phone1">Số điện thoại </label>
+                <input type="text" id="phone1" name="phone1">
             </div>
-            <div class="chuyenmuc">
-                <span>Loại chuyên mục</span>
+            <div class="email">
+                <label for="phone">Email </label>
+                <input type="text" id="email" name="email">
             </div>
-            <select class="select">
-                <option>--Chọn loại chuyên mục--</option>
-                <option>Cho thuê căn hộ</option>
-                <option>Cho thuê mặt bằng</option>
-                <option>Cho thuê phòng trọ</option>
-                <option>Nhà cho thuê</option>
-            </select>
-            <div class="tieude">
-                <label for="tieude-text">Tiêu đề </label>
-                <br>
-                <input type="text" id="tieude-text" name="tieude-text">
+            <div class="address">
+                <label for="phone">Địa chỉ </label>
+                <input type="text" id="address" name="address">
             </div>
-            <div class="mota">
-                <label for="mota-text">Nội dung mô tả </label>
-                <br>
-                <input type="text" id="mota-text" name="mota-text">
+            <div class="password">
+                <label for="password">Mật khẩu </label>
+                <a href="changepassword.html" class="change-password-link ml-12" style="color: rgb(26, 72, 146);font-size: 20px margin-left 2px;;">Đổi mật khẩu</a>
             </div>
-            <div class="lienhe">
-                <label for="lienhe-text">Thông tin liên hệ </label>
-                <br>
-                <input type="text" id="lienhe-text" name="lienhe-text">
+            <div class="avatar">
+                <label for="avatar">Ảnh đại diện </label>
+                <img id="avatar" src="avtmacdinh.jpg" alt="avatar" style="border: 1px solid black; border-radius: 50%; width: 160px; height: 160px; margin-left: 200px; margin-bottom: 50px;">
+                <input type="file" id="upload-avatar" name="avatar" accept="image/*" style="display: none;">
+                <button id="upload-button" type="button" style="border:1px solid black; margin-left:240px">Chọn ảnh</button>
             </div>
-            <div class="phone">
-                <label for="phone-text">Điện thoại </label>
-                <br>
-                <input type="text" id="phone-text" name="phone-text">
-            </div>
-            <div class="price">
-                <label for="price-text">Giá cho thuê (VNĐ)</label>
-                <br>
-                <input type="text" id="price-text" name="price-text">
-            </div>
-            <div class="dientich">
-                <label for="dientich-text">Diện tích (m²)</label>
-                <br>
-                <input type="text" id="dientich-text" name="dientich-text">
-            </div>
-            <div class="doituong">
-                <span>Đối tượng cho thuê</span>
-            </div>
-            <select class="select">
-                <option>--Tất cả--</option>
-                <option>Nam</option>
-                <option>Nữ</option>
-            </select>
-            <div class="picture">
-                <span>Hình ảnh</span>
-            </div>
-            <div class="picture-text">
-                <span>Cập nhật hình ảnh rõ ràng sẽ cho thuê nhanh hơn</span>
-            </div>
-            <div class="update-image-container">
-                <i class="fas fa-camera update-image-button"></i>
-                <input type="file" class="update-image-input" accept="image/*">
-            </div>
-            <div class="video">
-                <span>VIDEO</span>
-            </div>
-            <div class="video-link-box">
-                <label for="video-link-box-text">Video Link (Youtube)</label>
-                <br>
-                <input type="text" id="dientich-text" name="dientich-text">
-            </div>
-            <div class="video-text">
-                <span>Hoặc upload Video từ máy của bạn</span>
-            </div>
-            <div class="upload-video-container mt-4">
-                <div class="upload-video-box">
-                <input type="file" id="upload-video-input" name="upload-video-input" accept="video/*" class="hidden">
-                <label for="upload-video-input">
-                    <i class="fas fa-video upload-video-button"></i>
-                </label>
-                </div>
-            </div>
-            <button class="continue-button">
-                Tiếp tục
+            
+            <script>
+            document.getElementById('upload-button').addEventListener('click', function() {
+                document.getElementById('upload-avatar').click();
+            });
+            
+            document.getElementById('upload-avatar').addEventListener('change', function(e) {
+                const reader = new FileReader();
+                reader.onload = function() {
+                    document.getElementById('avatar').src = reader.result;
+                }
+                reader.readAsDataURL(e.target.files[0]);
+            });
+            </script>
+
+            <button class="saving-button">
+            Lưu & Cập nhật
             </button>
         </div>
-    </div>
-    <div class="right2-side">
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501725.41843254614!2d106.3655570378177!3d10.755292870470331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1710904243709!5m2!1svi!2s"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-    </div>
+        <script>
+            $(window).scroll(function() {
+        if ($(window).scrollTop() > $('.left-side-container').offset().top) {
+        $('.left-side').css('position', 'fixed');
+        $('.left-side').css('top', '0');
+    } else {
+        $('.left-side').css('position', 'static');
+    }
+});
+        </script>
 </div>
 <script src ="script.js"></script>
 </body>
