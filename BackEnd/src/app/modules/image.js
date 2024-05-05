@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 const Image = new Schema({
     _id: { type: ObjectId },
-    house_id: { type: String },
+    post_id: { type: ObjectId },
     url: { type: String }
   });
 
