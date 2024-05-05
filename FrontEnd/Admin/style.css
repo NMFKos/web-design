@@ -532,8 +532,8 @@ main .recent-orders a{
     align-items: center;
     gap: 0.6rem;
 }
-
-@media screen and (max-width: 1200px) {
+/*Tablet*/
+ @media only screen and (max-width: 1200px) {
     .container{
         width: 95%;
         grid-template-columns: 7rem auto 23rem;
@@ -588,6 +588,7 @@ main .recent-orders a{
     }
 
 }
+
 
 @media screen and (max-width: 768px) {
     .container{
