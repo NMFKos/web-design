@@ -301,7 +301,7 @@ main .reported_posts table tbody tr td.danger
 }
 
 /*Mobile*/
-@media only screen and (max-width: 46.1875em) {
+@media only screen and (max-width: 450px) {
     aside
     {
         display: none;
@@ -310,10 +310,12 @@ main .reported_posts table tbody tr td.danger
     main
     {
         margin-top: 2rem;;
+        align-items: center;
+        
     }
 
-    main .reported_posts table
-    {
-        align-items: center;
+    main > div{
+        display: grid;
+        
     }
 }  
