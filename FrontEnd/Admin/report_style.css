@@ -45,7 +45,6 @@ body{
     font-size: 1rem;
     user-select: none;
     overflow-x: hidden;
-    margin-left: 5vh;
     color: var(--color-dark);
     background-color: #c9d6ff;
     background: linear-gradient(to left, #e2e2e2, #c9d6ff);
@@ -111,7 +110,7 @@ b{
 }
 
 .warning{
-    color: var(--color-warning);
+    color: var(--color-warning)
 }
 
 .onehouse{
@@ -140,7 +139,6 @@ aside .toggle{
 aside .toggle .logo{
     display: flex;
     gap: 0.5rem;
-    right: 1.5rem;
 }
 
 aside .sidebar{
@@ -150,10 +148,8 @@ aside .sidebar{
     box-shadow: var(--box-shadow);
     border-radius: 15px;
     height: 88vh;
-    width: 23vh;
     position: relative;
     top: 1.5rem;
-    right: 1.5rem;
     transition: all 0.3s ease;
 }
 
@@ -274,4 +270,26 @@ main .reported_posts table tbody td
 main .reported_posts table tbody tr:last-child td
 {
     border: None;
+}
+
+.rectangle-background
+{
+    background-color: var(--color-white);
+    padding:10px;
+    border: 1px solid;
+}
+
+main .reported_posts table tbody tr td.success
+{
+    color: var(--color-success);
+}
+
+main .reported_posts table tbody tr td.warning
+{
+    color: var(--color-warning);
+}
+
+main .reported_posts table tbody tr td.danger
+{
+    color: var(--color-danger);
 }
