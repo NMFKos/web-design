@@ -141,89 +141,9 @@ aside .toggle .logo{
     gap: 0.5rem;
 }
 
-aside .sidebar{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
-    border-radius: 15px;
-    height: 88vh;
-    position: relative;
-    top: 1.5rem;
-    transition: all 0.3s ease;
-}
-
-aside .sidebar:hover{
-    box-shadow: none;
-}
-
-aside .sidebar a{
-    display: flex;
-    align-items: center;
-    height: 3.7rem;
-    gap: 1rem;
-    position: relative;
-    margin-left: 2rem;
-    transition: all 0.3s ease;
-}
-
-aside .sidebar a span{
-    font-size: 1.6rem;
-    transition: all 0.3s ease;
-}
-
-aside .sidebar a:last-child{
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-}
-
-aside .sidebar a.active{
-    width: 100%;
-    color: var(--color-primary);
-    background-color: var(--color-light);
-    margin-left: 0;
-}
-
-aside .sidebar a.active::before{
-    content: '';
-    width: 6px;
-    height: 18px;
-    background-color: var(--color-primary);
-}
-
-aside .sidebar a.active span{
-    color: var(--color-primary);
-    margin-left: calc(1rem - 3px);
-}
-
-aside .sidebar a span.reports-count{
-    background-color: rgb(233, 0, 0);
-    padding: 2px 6px;
-    font-size: 11px;
-    color: white;
-    border-radius: 5px;
-}
-
-aside .sidebar a:hover{
-    color: var(--color-primary);
-}
-
-aside .sidebar a:hover span{
-    margin-left: 0.6rem;
-}
-
-
-aside .sidebar .message-count{
-    background-color: var(--color-danger);
-    padding: 2px 6px;
-    color: var(--color-white);
-    font-size: 11px;
-    border-radius: var(--border-radius-1);
-}
 
 main{
-    margin-top: 6rem;
+    margin-top: 8rem;
 }
 
 main .request_list
@@ -233,6 +153,8 @@ main .request_list
 
 main .request_list h2
 {
+    display: flex;
+    align-items: center;
     margin-bottom: 0.8rem;
 }
 
@@ -297,4 +219,25 @@ main .request_list table tbody tr td.danger
 main .request_list table tbody tr td.premium
 {
     color: #f5bf03;
+}
+
+main .Avatar table
+{
+    position: fixed;
+    top: 0.2rem;
+    right: 0rem;
+    background-color: #c9d6ff;
+    padding: 10px;
+}
+
+main .Avatar table td
+{
+    padding: 5px;
+}
+
+main .Avatar table img
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
