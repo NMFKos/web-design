@@ -1,0 +1,45 @@
+.container-fluid {
+    font-size: 20px;
+    color: #1F2937;
+    margin-bottom: 24px;
+    margin-left: 30px;
+    flex: auto;
+    margin-top: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 17% 83%;
+    height: 1000px;
+    overflow-x: hidden;
+    
+}
+.left-side {
+    background-color: #DDDDDD;
+    top: 0;
+    
+}
+.left-side-container {
+    height: 1000px;
+    background-color: #DDDDDD;
+    top: 0;
+}
+.right-side {
+    background-color: #ffffff;
+}
+.bg-black-custom {
+    background-color: #000000;
+}
+.header {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1F2937;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    flex: auto;
+    margin-top: 15px;
+}
+header img {
+    width: 50px;
+    height: 50px;
+}
