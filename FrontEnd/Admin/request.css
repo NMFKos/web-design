@@ -226,7 +226,7 @@ main .Avatar table
     position: fixed;
     top: 0.2rem;
     right: 0rem;
-    background-color: #c9d6ff;
+    background-color:#e2e2e2;
     padding: 10px;
 }
 
@@ -240,4 +240,26 @@ main .Avatar table img
     width: 20px;
     height: 20px;
     border-radius: 50%;
+}
+.button {
+    border: 1px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:flex;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.Accept_button
+{
+    background-color: #1B9C85;
+}
+
+.Reject_button
+{
+    background-color:#FF0060;
 }
