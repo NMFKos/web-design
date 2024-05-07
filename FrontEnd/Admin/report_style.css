@@ -330,7 +330,6 @@ main .reported_posts table tbody tr td.danger
     }
 
     main > div{
-        display: grid;
-        
+        display: grid;  
     }
 }  
