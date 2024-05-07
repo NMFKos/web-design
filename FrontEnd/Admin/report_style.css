@@ -12,7 +12,7 @@
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
 
-    --card-border-radius: 2rem;
+    --card-border-radius: 1rem;
     --border-radius-1: 0.4rem;
     --border-radius-2: 1.2rem;
 
@@ -223,6 +223,8 @@ aside .sidebar .message-count{
 }
 
 main{
+    width: 80%;
+    position: absolute;
     margin-top: 6rem;
 }
 
@@ -250,6 +252,19 @@ main .reported_posts table
 main .reported_posts table:hover
 {
     box-shadow: none;
+}
+
+main .reported_users .reported_posts table
+{
+    background-color: var(--color-white);
+    width: 100%;
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
+    gap: 5rem;
+    justify-content: space-between;
 }
 
 main .reported_posts a
