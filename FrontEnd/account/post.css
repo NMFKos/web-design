@@ -9,18 +9,47 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 17% 83%;
-    height: 2000px;
+    grid-template-columns: 20% 80%;
+    height: 2100px;
     overflow-x: hidden;
-    
 }
+@media screen and (max-width: 992px) {
+    .left-side,
+    .left-side-container {
+        display: none;
+    }
+
+    .grid-container {
+        display: flex; /* Changed from grid to flex */
+        flex-direction: column; /* Stack the items vertically */
+        height: 2100px; /* Adjust the height to fit the content */
+    }
+}
+@media screen and (max-width: 786px) {
+    .left-side,
+    .left-side-container {
+        display: none;
+    }
+
+    .grid-container {
+        display: flex; /* Changed from grid to flex */
+        flex-direction: column; /* Stack the items vertically */
+        height: 2100px; /* Adjust the height to fit the content */
+    }
+    .right2-side {
+        display: none;
+    }
+}
+
+
+
 .left-side {
     background-color: #DDDDDD;
     top: 0;
     
 }
 .left-side-container {
-    height: 2000px;
+    height: 2100px;
     background-color: #DDDDDD;
     top: 0;
 }

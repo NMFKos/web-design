@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="account.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <!-- Google Map -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -18,21 +21,35 @@
 <body>
 
 <!-- Narbav Start -->
-    <header class="bg-black-custom text-white p-4">
-        <div class="flex items-center space-x-8">
-            <img src="onehouse.png" alt="logo" class="flex">
-            <div class="font-bold text-xl" style ="font-size: 25px;">OneHouse</div>
-            <span></span>
-            <span></span>
-            <ul class="flex space-x-8" style="font-size: 18px;">
-                <li><a href="#" class="hover:underline ">Trang chủ</a></li>
-                <li><a href="#" class="hover:underline ">Phòng trọ</a></li>
-                <li><a href="#" class="hover:underline ">Nhà cho thuê</a></li>
-                <li><a href="#" class="hover:underline ">Mặt bằng</a></li>
-                <li><a href="#" class="hover:underline ">Căn hộ</a></li>
-                <li><a href="banggia.html" class="hover:underline ">Bảng giá dịch vụ</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark over">
+            <img src="onehouse.png" alt="logo" style="width: 6%; margin-right: 10px;">
+            <a class="navbar-brand" href="/">
+            <span style="color: white; margin-right: 5px;">One</span><span style="color: #1f8bff;">House</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="/">Trang chủ<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/login">Đăng nhập</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/login">Yêu thích</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/post">Đăng bài</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="banggia.html">Bảng giá dịch vụ</a>
+                </li>
             </ul>
-        </div>
+            </div>
+        </nav>
     </header>
 <!-- Narbav End -->
 
@@ -152,5 +169,8 @@
         </script>
 </div>
 <script src ="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
