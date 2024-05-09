@@ -37,7 +37,7 @@ class SiteController {
             if (!posts) {
                 throw new Error('404 Not found');
             }
-            const postData = posts.map(p => p.toObject());
+            const postData = posts.slice(30, 42).map(p => p.toObject());
             for (const post of postData) {
                 const folderPath = post.images;
                 const imagesData = await getFirstImageUrl(folderPath);
