@@ -118,112 +118,16 @@ b{
 }
 
 .container{
-    display: grid;
-    width: 96%;
+    display: flex;
+    width: 100%;
     margin: 0 auto;
     gap: 1.8rem;
     grid-template-columns: 12rem auto 23rem;
 }
 
-aside{
-    height: 100vh;
-}
-
-aside .toggle{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
-}
-
-aside .toggle .logo{
-    display: flex;
-    gap: 0.5rem;
-}
-
-aside .sidebar{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
-    border-radius: 15px;
-    height: 88vh;
-    position: relative;
-    top: 1.5rem;
-    transition: all 0.3s ease;
-}
-
-aside .sidebar:hover{
-    box-shadow: none;
-}
-
-aside .sidebar a{
-    display: flex;
-    align-items: center;
-    height: 3.7rem;
-    gap: 1rem;
-    position: relative;
-    margin-left: 2rem;
-    transition: all 0.3s ease;
-}
-
-aside .sidebar a span{
-    font-size: 1.6rem;
-    transition: all 0.3s ease;
-}
-
-aside .sidebar a:last-child{
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-}
-
-aside .sidebar a.active{
-    width: 100%;
-    color: var(--color-primary);
-    background-color: var(--color-light);
-    margin-left: 0;
-}
-
-aside .sidebar a.active::before{
-    content: '';
-    width: 6px;
-    height: 18px;
-    background-color: var(--color-primary);
-}
-
-aside .sidebar a.active span{
-    color: var(--color-primary);
-    margin-left: calc(1rem - 3px);
-}
-
-aside .sidebar a span.reports-count{
-    background-color: rgb(233, 0, 0);
-    padding: 2px 6px;
-    font-size: 11px;
-    color: white;
-    border-radius: 5px;
-}
-
-aside .sidebar a:hover{
-    color: var(--color-primary);
-}
-
-aside .sidebar a:hover span{
-    margin-left: 0.6rem;
-}
-
-
-aside .sidebar .message-count{
-    background-color: var(--color-danger);
-    padding: 2px 6px;
-    color: var(--color-white);
-    font-size: 11px;
-    border-radius: var(--border-radius-1);
-}
-
 main{
-    margin-top: 6rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
 }
 
 main .request_list
@@ -233,11 +137,14 @@ main .request_list
 
 main .request_list h2
 {
+    display: flex;
+    align-items: center;
     margin-bottom: 0.8rem;
 }
 
 main .request_list table
 {
+    border-collapse: collapse;
     background-color: var(--color-white);
     width: 100%;
     padding: var(--card-padding);
@@ -252,31 +159,18 @@ main .request_list table:hover
     box-shadow: none;
 }
 
-main .request_list a
-{
-    text-align: center;
-    display: block;
-    margin: 1rem auto;
-    color: var(--color-primary);
-}
 
 main .request_list table tbody td
 {
     height: 2.8rem;
     border-bottom: 1px solid var(--color-light);
     color: var(--color-dark-variant);
+    padding: 7px;
 }
 
 main .request_list table tbody tr:last-child td
 {
     border: None;
-}
-
-.rectangle-background
-{
-    background-color: var(--color-white);
-    padding:10px;
-    border: 1px solid;
 }
 
 main .request_list table tbody tr td.success
@@ -297,4 +191,143 @@ main .request_list table tbody tr td.danger
 main .request_list table tbody tr td.premium
 {
     color: #f5bf03;
+}
+
+.button {
+    border: 1px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:flex;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.Accept_button
+{
+    background-color: #1B9C85;
+}
+
+.Reject_button
+{
+    background-color:#FF0060;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 650px)
+{
+    th{
+        display: none;
+    }
+
+    td{
+        text-align: left;
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    tr
+    {
+        border-bottom: 1px solid #ccc; /* Viền dưới cho mỗi hàng */
+    }
+    
+    .main .request_list table tbody tr:nth-child(odd) {
+        background-color: var(--color-dark-variant);
+    }
+
+    td:first-child{
+        padding-top: 0.5rem;
+    }
+
+    td:last-child{
+        padding-bottom: 0.5rem;
+    }
+
+    td:nth-of-type(1)::before
+    {
+        content: "Tên người dùng: ";
+        color: black;
+        font-weight: 700;
+    }
+
+    td:nth-of-type(2)::before
+    {
+        content: "Gói thành viên: ";
+        color: black;
+        font-weight: 700;
+    }
+
+    td:nth-of-type(3)::before
+    {
+        content: "ID bài viết: ";
+        color: black;
+        font-weight: 700;
+    }
+
+    td:nth-of-type(4)::before
+    {
+        content: "Mô tả: ";
+        color: black;
+        font-weight: 700;
+    }
+
+    td:nth-of-type(5)::before
+    {
+        content: "Địa chỉ: ";
+        color: black;
+        font-weight: 700;
+    }
+
+    td:nth-of-type(6)::before
+    {
+        content: "Giá: ";
+        color: black;
+        font-weight: 700;
+    }
+
+    td:nth-of-type(7)::before
+    {
+        content: "Hình ảnh/Video: ";
+        color: black;
+        font-weight: 700;
+    }
+
+    td:nth-of-type(8)::before
+    {   
+        content: "Liên hệ: ";
+        color: black;
+        font-weight: 700;
+    }
+
+    td:nth-of-type(9)::before
+    {
+        content: "Duyệt: ";
+        color: black;
+        font-weight: 700;
+    }
+
+    td:nth-of-type(10)::before
+    {
+        content: "Gỡ: ";
+        color: black;
+        font-weight: 700;
+    }
+
+    td .button
+    {
+        margin-left: 3.5rem;
+        margin-top: -1.85rem;
+        padding: 5px 9px;
+    }
+
+
+}
+
+/*Tablet*/
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em)
+{
+
 }

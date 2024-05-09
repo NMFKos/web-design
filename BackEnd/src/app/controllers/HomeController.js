@@ -13,16 +13,22 @@ const firebaseConfig = {
   measurementId: "G-Z6TTKT1H0N"
 };
 
-async function getImage(folderPath) {
+async function getFirstImageUrl(folderPath) {
     const app = initializeApp(firebaseConfig);
     const storage = getStorage(app);
 
     const listRef = ref(storage, folderPath);
     const listResult = await listAll(listRef);
 
-    const firstDownloadUrl = await getDownloadURL(listResult.items[0]);
-    return firstDownloadUrl;
+    let firstImageUrl = null;
+    if (listResult.items.length > 0) {
+        const item = listResult.items[0];
+        firstImageUrl = await getDownloadURL(item);
+    }
+    
+    return firstImageUrl;
 }
+
 
 class SiteController {
     index(req, res) {
@@ -31,13 +37,12 @@ class SiteController {
             if (!posts) {
                 throw new Error('404 Not found');
             }
-            const postData = posts.slice(30, 40).map(p => p.toObject());
-            // Thêm mã để lấy imagesData cho mỗi bài đăng
-            // for (const post of postData) {
-            //     const folderPath = post.images;
-            //     const imagesData = await getImage(folderPath);
-            //     post.thumbnailData = imagesData;
-            // }
+            const postData = posts.slice(30, 42).map(p => p.toObject());
+            for (const post of postData) {
+                const folderPath = post.images;
+                const imagesData = await getFirstImageUrl(folderPath);
+                post.thumbnailData = imagesData;
+            }
             res.render('home', { showHeader: true, postData });
         })
         .catch(error => {

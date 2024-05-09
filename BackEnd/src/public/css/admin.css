@@ -92,6 +92,7 @@ b {
   grid-template-columns: 12rem auto 23rem; }
 
 aside {
+  display: none;
   height: 100vh; }
 
 aside .toggle {
@@ -243,15 +244,18 @@ main .analyse .progresss .percentage {
   width: 100%; }
 
 main .new-users {
-  margin-top: 1.3rem; }
+  display: grid;
+  margin-top: 1.3rem;
+  width: 100%; }
 
 main .new-users .user-list {
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--color-white);
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
   margin-top: 1rem;
   box-shadow: var(--box-shadow);
-  display: flex;
+  display: grid;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1.4rem;

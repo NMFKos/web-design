@@ -4,8 +4,9 @@
 }
 .preview {
     margin: 0 auto;
-    width: 50%;
+    width: 75%;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 .background-image {
     position: fixed;
@@ -20,7 +21,53 @@
     z-index: 1; /* Đảm bảo thẻ div này ở phía dưới thẻ carouselExampleIndicators */
 }
 
-.over {
+.btn-container {
+    display: flex;
+    gap: 30px;
+    color: white;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.designed-menu {
+    margin-top: 10px;
+}
+
+.post-btn {
+    border: white solid 1px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.post-btn a {
+    text-decoration: none;
+    color: silver;
+}
+.post-btn a:hover {
+    color: rgb(226, 225, 225);
+}
+
+.account-btn {
+    color: silver;
+}
+.account-btn:hover {
+    color: rgb(226, 225, 225);
+}
+
+
+.fa-regular {
+    font-size: 24px;
+}
+.fa-solid {
+    font-size: 24px;
+}
+
+.top-over {
+    position: relative;
+    z-index: 3;
+}
+
+.middle-over {
     position: relative; /* Thiết lập vị trí tương đối để quản lý các phần tử con */
     z-index: 2; /* Đảm bảo thẻ div này ở phía trên thẻ div chứa nó */
 }

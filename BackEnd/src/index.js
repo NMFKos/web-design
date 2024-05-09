@@ -29,7 +29,6 @@ app.engine('handlebars', engine(
         partialsDir: path.join(__dirname,  "resources/views/partials")
     }
 ));
-
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'resources/views')); 
 
@@ -39,4 +38,6 @@ route(app);
 app.listen(8888, 'localhost', () => {
     console.log('Server is running on http://localhost:8888');
   });
+
+
   
