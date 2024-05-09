@@ -12,7 +12,7 @@
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
 
-    --card-border-radius: 2rem;
+    --card-border-radius: 1rem;
     --border-radius-1: 0.4rem;
     --border-radius-2: 1.2rem;
 
@@ -125,105 +125,12 @@ b{
     grid-template-columns: 12rem auto 23rem;
 }
 
-aside{
-    height: 100vh;
-}
-
-aside .toggle{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
-}
-
-aside .toggle .logo{
-    display: flex;
-    gap: 0.5rem;
-}
-
-aside .sidebar{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
-    border-radius: 15px;
-    height: 88vh;
-    position: relative;
-    top: 1.5rem;
-    transition: all 0.3s ease;
-}
-
-aside .sidebar:hover{
-    box-shadow: none;
-}
-
-aside .sidebar a{
-    display: flex;
-    align-items: center;
-    height: 3.7rem;
-    gap: 1rem;
-    position: relative;
-    margin-left: 2rem;
-    transition: all 0.3s ease;
-}
-
-aside .sidebar a span{
-    font-size: 1.6rem;
-    transition: all 0.3s ease;
-}
-
-aside .sidebar a:last-child{
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-}
-
-aside .sidebar a.active{
-    width: 100%;
-    color: var(--color-primary);
-    background-color: var(--color-light);
-    margin-left: 0;
-}
-
-aside .sidebar a.active::before{
-    content: '';
-    width: 6px;
-    height: 18px;
-    background-color: var(--color-primary);
-}
-
-aside .sidebar a.active span{
-    color: var(--color-primary);
-    margin-left: calc(1rem - 3px);
-}
-
-aside .sidebar a span.reports-count{
-    background-color: rgb(233, 0, 0);
-    padding: 2px 6px;
-    font-size: 11px;
-    color: white;
-    border-radius: 5px;
-}
-
-aside .sidebar a:hover{
-    color: var(--color-primary);
-}
-
-aside .sidebar a:hover span{
-    margin-left: 0.6rem;
-}
-
-
-aside .sidebar .message-count{
-    background-color: var(--color-danger);
-    padding: 2px 6px;
-    color: var(--color-white);
-    font-size: 11px;
-    border-radius: var(--border-radius-1);
-}
 
 main{
+    width: 80%;
+    position: absolute;
     margin-top: 6rem;
+    margin-right: 15rem;
 }
 
 main .reported_posts
@@ -250,6 +157,19 @@ main .reported_posts table
 main .reported_posts table:hover
 {
     box-shadow: none;
+}
+
+main .reported_users .reported_posts table
+{
+    background-color: var(--color-white);
+    width: 100%;
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
+    gap: 5rem;
+    justify-content: space-between;
 }
 
 main .reported_posts a
@@ -315,7 +235,6 @@ main .reported_posts table tbody tr td.danger
     }
 
     main > div{
-        display: grid;
-        
+        display: grid;  
     }
 }  
