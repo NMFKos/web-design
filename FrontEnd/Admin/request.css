@@ -253,7 +253,7 @@ tbody tr.hide td p {
     font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 10%;
+    border-radius: var(--card-border-radius)
 }
 
 .Accept_button
