@@ -46,77 +46,137 @@
             </div>
           </nav>
     </header>
-    <div class="container">
-        <!-- Sidebar Section -->
-        <main>
-            <div class="request_list">
-                <h1 class="title">Yêu cầu duyệt bài đăng</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tên tài khoản</th>
-                            <th>Gói thành viên</th>
-                            <th>ID bài viết</th>
-                            <th>Mô tả</th>
-                            <th>Địa chỉ</th>
-                            <th>Giá</th>
-                            <th>Hình ảnh/Video</th>
-                            <th>Thông tin liên hệ</th>
-                            <th>Phê duyệt</th>
-                            <th>Gỡ</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="url">hoangminh1912</a></td>
-                            <td class="basic">Basic</td>
-                            <td><a href="url">1249</a></td>
-                            <td>Cho thuê...</td>
-                            <td>Bạch Đằng, Phường 2, Quận Tân Bình</td>
-                            <td>7tr9</td>
-                            <td><a href="url">Hình ảnh</a></td>
-                            <td>0911334535</td>
-                            <td>
-                                <button class=" button Accept_button">
-                                    <span class="icon"><i class="fas fa-check"></i></span>
-                                    <span>Duyệt</span>
-                                </button>
-                            </td>
-                            <td>
-                                <button class="button Reject_button">
-                                    <span class="icon"><i class="fas fa-times"></i></span>
-                                    <span>Gỡ</span>
-                                </button>
-                            </td>
-                            
-                        </tr>
+    <main class="table" id="request_table">
+        <section class="table__header">
+          <h1>Danh sách duyệt bài</h1>
+        </section>
+        <section class="table__body">
+          <table>
+            <thead>
+              <tr>
+                <th>ID <span class="icon-arrow">&UpArrow;</span> </th>
+                <th>Tên tài khoản <span class="icon-arrow">&UpArrow;</span> </th>
+                <th>Thành viên <span class="icon-arrow">&UpArrow;</span> </th>
+                <th>Mô tả <span class="icon-arrow">&UpArrow;</span> </th>
+                <th>Địa chỉ <span class="icon-arrow">&UpArrow;</span> </th>
+                <th>Giá <span class="icon-arrow">&UpArrow;</span> </th>
+                <th>Liên hệ <span class="icon-arrow">&UpArrow;</span> </th>
+                <th>Ảnh<span class="icon-arrow">&UpArrow;</span> </th>
+                <th>Duyệt/Gỡ <span class="icon-arrow">&UpArrow;</span> </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1234</td>
+                <td>hoangminh1912</td>
+                <td>Basic</td>
+                <td>Cho thuê 1PN tách bếp...</td>
+                <td>Bạch Đằng, Phường 1, Quận Bình Thạnh</td>
+                <td>7tr9</td>
+                <td>0813374744</td>
+                <td>Click here</td>
+                <td>Duyệt</td>
+              </tr>
 
-                        <tr>
-                            <td><a href="url">hoangminh1912</a></td>
-                            <td class="premium">Premium</td>
-                            <td><a href="url">1249</a></td>
-                            <td>Cho thuê...</td>
-                            <td>Bạch Đằng, Phường 2, Quận Tân Bình</td>
-                            <td>7tr9</td>
-                            <td><a href="url">Hình ảnh</a></td>
-                            <td>0911334535</td>
-                            <td>
-                                <button class=" button Accept_button">
-                                    <span class="icon"><i class="fas fa-check"></i></span>
-                                    <span>Duyệt</span>
-                                </button>
-                            </td>
-                            <td>
-                                <button class="button Reject_button">
-                                    <span class="icon"><i class="fas fa-times"></i></span>
-                                    <span>Gỡ</span>
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </main>
+              <tr>
+                <td>1234</td>
+                <td>hoangminh1912</td>
+                <td>Basic</td>
+                <td>Cho thuê 1PN tách bếp...</td>
+                <td>Bạch Đằng, Phường 1, Quận Bình Thạnh</td>
+                <td>7tr9</td>
+                <td>0813374744</td>
+                <td>Click here</td>
+                <td>Duyệt</td>
+              </tr>
+
+              <tr>
+                <td>1234</td>
+                <td>hoangminh1912</td>
+                <td>Basic</td>
+                <td>Cho thuê 1PN tách bếp...</td>
+                <td>Bạch Đằng, Phường 1, Quận Bình Thạnh</td>
+                <td>7tr9</td>
+                <td>0813374744</td>
+                <td>Click here</td>
+                <td>Duyệt</td>
+              </tr>
+              
+              <tr>
+                <td>1234</td>
+                <td>hoangminh1912</td>
+                <td class="premium">Basic</td>
+                <td>Cho thuê 1PN tách bếp...</td>
+                <td>Bạch Đằng, Phường 1, Quận Bình Thạnh</td>
+                <td>7tr9</td>
+                <td>0813374744</td>
+                <td>Click here</td>
+                <td>Duyệt</td>
+              </tr>
+
+              <tr><td>1234</td>
+                <td>hoangminh1912</td>
+                <td>Premium</td>
+                <td>Cho thuê 1PN tách bếp...</td>
+                <td>Bạch Đằng, Phường 1, Quận Bình Thạnh</td>
+                <td>7tr9</td>
+                <td>0813374744</td>
+                <td>Click here</td>
+                <td>Duyệt</td>
+              </tr>
+
+              <tr>
+                <td>1234</td>
+                <td>hoangminh1912</td>
+                <td>Premium</td>
+                <td>Cho thuê 1PN tách bếp...</td>
+                <td>Bạch Đằng, Phường 1, Quận Bình Thạnh</td>
+                <td>7tr9</td>
+                <td>0813374744</td>
+                <td>Click here</td>
+                <td>Duyệt</td>
+              </tr>
+
+              <tr>
+                <td>1234</td>
+                <td>hoangminh1912</td>
+                <td class="premium">Basic</td>
+                <td>Cho thuê 1PN tách bếp...</td>
+                <td>Bạch Đằng, Phường 1, Quận Bình Thạnh</td>
+                <td>7tr9</td>
+                <td>0813374744</td>
+                <td>Click here</td>
+                <td>Duyệt</td>
+              </tr>
+
+              <tr>
+                <td>1234</td>
+                <td>hoangminh1912</td>
+                <td class="premium">Basic</td>
+                <td>Cho thuê 1PN tách bếp...</td>
+                <td>Bạch Đằng, Phường 1, Quận Bình Thạnh</td>
+                <td>7tr9</td>
+                <td>0813374744</td>
+                <td>Click here</td>
+                <td>Duyệt</td>
+              </tr>
+
+              <tr>
+                <td>1234</td>
+                <td>hoangminh1912</td>
+                <td class="premium">Basic</td>
+                <td>Cho thuê 1PN tách bếp...</td>
+                <td>Bạch Đằng, Phường 1, Quận Bình Thạnh</td>
+                <td>7tr9</td>
+                <td>0813374744</td>
+                <td>Click here</td>
+                <td>Duyệt</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </section>
+    </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

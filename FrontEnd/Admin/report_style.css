@@ -223,8 +223,11 @@ main .reported_posts table tbody tr td.danger
 }
 
 /*Mobile*/
-@media only screen and (max-width: 450px) {
-    
+@media only screen and (max-width: 650px)
+{   
+    main{
+        display: w;
+    }
     th{
         display: none;
     }
@@ -236,4 +239,53 @@ main .reported_posts table tbody tr td.danger
         border-bottom: none;
     }
 
+    tr
+    {
+    }
+
+    td:first-child{
+        padding-top: 0.5rem;
+    }
+
+    
+
+    main .reported_posts table tbody{
+    }
+    main .reported_users .reported_posts table tbody
+    {
+        td:nth-of-type(1)::before
+        {
+            content: "Tên tài khoản báo cáo: ";
+            color: black;
+            font-weight: 700;
+        }
+    
+        td:nth-of-type(2)::before
+        {
+            content: "Tên tài khoản vi phạm: ";
+            color: black;
+            font-weight: 700;
+        }
+    
+        td:nth-of-type(3)::before
+        {
+            content: "Lí do: ";
+            color: black;
+            font-weight: 700;
+        }
+    
+        td:nth-of-type(4)::before
+        {
+            content: "Thời gian báo cáo: ";
+            color: black;
+            font-weight: 700;
+        }
+    
+        td:nth-of-type(5)::before
+        {
+            content: "Tình trạng: ";
+            color: black;
+            font-weight: 700;
+        }
+    }
 }  
