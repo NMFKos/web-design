@@ -21,7 +21,14 @@
 
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
-
+@media print{
+    .table .table__body
+    {
+        overflow: visible;
+        height: auto;
+        width: auto;
+    }
+}
 
 *{
     margin: 0;
@@ -120,24 +127,15 @@ b{
     color: rgb(4, 112, 162);
 }
 
-.container{
-    display: grid;
-    width: 96%;
-    margin: 0 auto;
-    gap: 1.8rem;
-    grid-template-columns: 12rem auto 23rem;
-}
-
 
 main{
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-left: 3rem;
 }
 
 
 main.table{
     width: 82vw;
-    height: 90vh;
     background-color: linear-gradient(to left, #e2e2e2, #c9d6ff);
     box-shadow: var(--box-shadow);
     border-radius: var(--card-border-radius);
@@ -156,7 +154,7 @@ main.table{
 
 .table__body
 {
-    width: 100%;
+    width: 95%;
     max-height: calc(89% - 1.6rem);
     background-color: var(--color-background);
     
@@ -241,30 +239,4 @@ tbody tr.hide td p {
     padding: 0;
     font: 0 / 0 sans-serif;
     transition: .2s ease-in-out .5s;
-}
-
-
-main .reported_posts table tbody tr td.success
-{
-    color: var(--color-success);
-}
-
-main .reported_posts table tbody tr td.warning
-{
-    color: var(--color-warning);
-}
-
-main .reported_posts table tbody tr td.danger
-{
-    color: var(--color-danger);
-}
-
-@media (max-width: 1000px) {
-    td:not(:first-of-type) {
-        min-width: 12.1rem;
-    }
-
-    main .table{
-        margin-left: 200rem;
-    }
 }
