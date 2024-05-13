@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThueTro88.com - Kênh thuê trọ uy tín hàng đầu Việt Nam</title>
+    <link rel="stylesheet" href="/css/reports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+</head>
+
+
+<body>
+    <main class="table" id="request_table">
+    <div class="requests">
+      <section class="table__header">
+        <h1>Danh sách duyệt bài</h1>
+      </section>
+
+      <section class="table__body">
+
+        <table>
+          <thead>
+            <tr>
+              <th>Tên tài khoản</th>
+              <th>ID bài viết</th>
+              <th>Lí do</th>
+              <th>Thời gian báo cáo</th>
+              <th>Tình trạng</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each reportData}}
+            <tr>
+              <td >{{this.user_name}}</td>
+              <td class="row-id"><a href="url-cua-trang-khac">{{this.post_id}}</a></td>
+              <td>{{this.reason}}</td>
+              <td class="row-time">{{this.time}}</td>
+              <td class="warning">{{this.state}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <div class="reported-user">
+      <section class="table__header">
+        <h1>Danh sách duyệt bài</h1>
+      </section>
+      <section class="table__body">
+        <table>
+          <thead>
+            <tr>
+              <th>Tên tài khoản</th>
+              <th>ID bài viết</th>
+              <th>Lí do</th>
+              <th>Thời gian báo cáo</th>
+              <th>Tình trạng</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each reportData}}
+            <tr>
+              <td>{{this.user_name}}</td>
+              <td><a href="url-cua-trang-khac">{{this.post_id}}</a></td>
+              <td>{{this.reason}}</td>
+              <td>{{this.time}}</td>
+              <td class="warning">{{this.state}}</td>
+            </tr>
+            {{/each}}        
+          </tbody>
+        </table>
+      </section>
+    </div>
+    </main>
+</body>

@@ -204,6 +204,7 @@ main .analyse .progresss .percentage{
 }
 
 main .new-users{
+    position:relative;
     display: grid;
     margin-top: 1.3rem;
     width: 100%;
@@ -550,6 +551,10 @@ main .recent-orders a{
     main{
         margin-top: 8rem;
         padding: 0 1rem;
+    }
+    main .new-users .user-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     main .new-users .user-list .user{

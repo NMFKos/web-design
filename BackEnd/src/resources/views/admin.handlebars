@@ -17,11 +17,12 @@
             <h1 class="title">Số liệu thống kê</h1>
             <!-- Analyses -->
             <div class="analyse">
+                {{#with statsData}}
                 <div class="sales">
                     <div class="status">
                         <div class="info">
                             <h3>Tổng doanh thu</h3>
-                            <h1>100.000 VND</h1>
+                            <h1>{{profits}}</h1>
                         </div>
                         <div class="progresss">
                             <svg>
@@ -37,7 +38,7 @@
                     <div class="status">
                         <div class="info">
                             <h3>Lượt truy cập</h3>
-                            <h1>12,345</h1>
+                            <h1>{{accesses}}</h1>
                         </div>
                         <div class="progresss">
                             <svg>
@@ -53,7 +54,7 @@
                     <div class="status">
                         <div class="info">
                             <h3>Lượt tìm kiếm</h3>
-                            <h1>99,999</h1>
+                            <h1>{{searchs}}</h1>
                         </div>
                         <div class="progresss">
                             <svg>
@@ -65,6 +66,7 @@
                         </div>
                     </div>
                 </div>
+                {{/with}}
             </div>
             <!-- End of Analyses -->
 
@@ -72,9 +74,15 @@
             <div class="new-users">
                 <h2>Người dùng mới</h2>
                 <div class="user-list">
+<<<<<<< HEAD
                 {{#each userData}}
                     <div class="user">
                         <img src={{this.avatar}}>
+=======
+                {{#each userData}}    
+                      <div class="user">
+                        <img src="{{this.avatar}}">
+>>>>>>> cc1eacb00e6e9563987cf248ff22e12fde18bda5
                         <h2>{{this.name}}</h2>
                     </div>
                 {{/each}}

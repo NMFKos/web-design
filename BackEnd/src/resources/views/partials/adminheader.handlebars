@@ -3,9 +3,50 @@
     position: relative; /* Thiết lập vị trí tương đối để quản lý các phần tử con */
     z-index: 2; /* Đảm bảo thẻ div này ở phía trên thẻ div chứa nó */
   }
+  .btn-container {
+    display: flex;
+    gap: 30px;
+    color: white;
+    margin-right: 30px;
+    align-items: center;
+  }
+  .designed-menu {
+      margin-top: 10px;
+  }
+  .post-btn {
+      border: white solid 1px;
+      padding: 10px 20px;
+      border-radius: 10px;
+  }
+  .post-btn a {
+      text-decoration: none;
+      color: silver;
+  }
+  .post-btn a:hover {
+      color: rgb(226, 225, 225);
+  }
+
+  .account-btn {
+      color: silver;
+  }
+  .account-btn:hover {
+      color: rgb(226, 225, 225);
+  }
+  .fa-regular {
+      font-size: 24px;
+  }
+  .fa-solid {
+      font-size: 24px;
+  }
+
+  a.nav-link{
+    font-size: 20px;
+  }
+
+
 </style>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark over">
-  <img src="/imgs/2.png" alt="logo" style="width: 6%; margin-right: 10px;">
+  <img src="/imgs/2.png" alt="logo" style="width: 6%; margin-right: 10px; border-radius: 5px">
   <a class="navbar-brand" href="/">
     <span style="color: white; margin-right: 5px;">One</span><span style="color: #1f8bff;">House</span>
   </a>
@@ -18,21 +59,31 @@
         <a class="nav-link" href="/"><span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/login">Yêu cầu</a>
+        <a class="nav-link" href="/admin/yeu-cau">Yêu cầu</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/login">Phân tích</a>
+        <a class="nav-link" href="/admin">Phân tích</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/post">Báo cáo</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/news">Cài đặt</a>
+        <a class="nav-link" href="/admin/bao-cao">Báo cáo</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+     <div class="btn-container">
+          <i id="heart-icon" class="fa-regular fa-heart"></i>
+          <i id="bell-icon" class="fa-regular fa-bell"></i>
+      </div>
+      <img src="/imgs/2.png" alt="Anh dai dien" style="border-radius: 50%; width: 5%;">
+      <div class="dropdown">
+          <a class="nav-link dropdown-toggle account-btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Nguyễn Cao Cường
+          </a>
+          <div class="dropdown-menu designed-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Quản lý tin đăng</a>
+              <a class="dropdown-item" href="#">Quản lý thông tin</a>
+              <a class="dropdown-item" href="#">Thay đổi mật khẩu</a>
+              <a class="dropdown-item" href="#">Nạp tiền</a>
+              <a class="dropdown-item" href="#">Đăng xuất</a>
+          </div>
+      </div>
   </div>
 </nav>

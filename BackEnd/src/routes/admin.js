@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 const adminController = require('../app/controllers/AdminController');
-router.get('/', adminController.index, adminController.stats)
+router.use('/bao-cao', (req, res) => {
+    adminController.reports(req, res);
+})
+
+router.get('/', adminController.index)
 
 module.exports = router;
