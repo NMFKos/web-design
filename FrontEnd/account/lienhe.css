@@ -43,10 +43,6 @@ header img {
 
 @media screen and (max-width: 992px) {
     .flex-container,
-    .box {
-        width: 100%; /* Full width for smaller screens */
-    }
-
     .flex-container {
         display: flex; /* Changed from grid to flex */
         flex-direction: column; /* Stack the items vertically */
