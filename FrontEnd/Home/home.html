@@ -43,10 +43,10 @@
                     <i id="heart-icon" class="fa-regular fa-heart"></i>
                     <i id="bell-icon" class="fa-regular fa-bell"></i>
                 </div>
-                <img src="./logo.png" alt="Anh dai dien" style="border-radius: 50%; width: 5%;">
+                <img src="./logo.png" id="avatar-logo" alt="Anh dai dien" style="border-radius: 50%; width: 5%;">
                 <div class="dropdown">
                     <a class="nav-link dropdown-toggle account-btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Account
+                        Nguyễn Cao Cường
                     </a>
                     <div class="dropdown-menu designed-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Quản lý tin đăng</a>
@@ -63,7 +63,39 @@
           </nav>
     </header>
     <div class="webpage">
-        <!-- https://cdn3.ivivu.com/2023/10/du-lich-sai-gon-ivivu.jpg -->
+        <div class="search-container middle-over">
+            <select id="house-select" class="form-select" aria-label="Default select example">
+                <option selected>Loại căn hộ</option>
+                <option>Căn hộ 1PN</option>
+                <option>Căn hộ 2PN</option>
+                <option>Căn hộ Duplex</option>
+                <option>Căn hộ Studio</option>
+            </select>
+            <select id="area-select" class="form-select" aria-label="Default select example">
+                <option selected>TP. Hồ Chí Minh</option>
+                <option>Bình Thạnh</option>
+                <option>Quận 1</option>
+                <option>Quân 3</option>
+                <option>Quận 10</option>
+                <option>Phú Nhuận</option>
+                <option>Tân Bình</option>
+            </select>
+            <select id="price-select" class="form-select" aria-label="Default select example">
+                <option selected>Chọn giá</option>
+                <option>4 đến 5 triệu đồng</option>
+                <option>5 đến 7 triệu đồng</option>
+                <option>7 đến 10 triệu đồng</option>
+                <option>Trên 10 triệu đồng</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Loại căn hộ</option>
+                <option>Căn hộ 1PN</option>
+                <option>Căn hộ 2PN</option>
+                <option>Căn hộ Duplex</option>
+                <option>Căn hộ Studio</option>
+            </select>
+            <button class="search-button">Search</button>
+        </div>
         <div class="background-image"></div>
         <div class="preview">
             <div id="carouselExampleIndicators" class="carousel slide middle-over " data-ride="carousel">

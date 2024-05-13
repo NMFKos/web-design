@@ -4,8 +4,8 @@ const Schema = mongoose.Schema;
 
 const Image = new Schema({
     _id: { type: ObjectId },
-    post_id: { type: ObjectId },
-    url: { type: String }
+    url: { type: String },
+    folder: { type: String }
   });
 
 module.exports = mongoose.model('Image', Image)
