@@ -50,6 +50,26 @@ class SiteController {
             res.status(500).send('Internal Server Error');
         });
     }
+
+    filter(req, res, type_house) {
+        Posts.find({ type_house }).exec()
+        .then(async posts => {
+            if (posts.length === 0) {
+                throw new Error('404 Not found');
+            }
+            const postData = posts.slice(1, 10).map(p => p.toObject());
+            for (const post of postData) {
+                const folderPath = post.images;
+                const imagesData = await getFirstImageUrl(folderPath);
+                post.thumbnailData = imagesData;
+            }
+            res.render('home', { showHeader: true, postData });
+        })
+        .catch(error => {
+            console.error('Error fetching houses from database:', error);
+            res.status(500).send('Internal Server Error');
+        });
+    }
     
     login(req, res) {
         res.render('login', { showHeader: false });

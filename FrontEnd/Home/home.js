@@ -1,5 +1,8 @@
 const heartIcon = document.getElementById('heart-icon');
 const notiIcon = document.getElementById('bell-icon');
+const houseSec = document.getElementById('house-select');
+const areaSec = document.getElementById('area-select');
+const priceSec = document.getElementById('price-select');
 
 // Thêm sự kiện mouseover
 heartIcon.addEventListener('mouseover', function() {
@@ -27,4 +30,19 @@ notiIcon.addEventListener('mouseout', function() {
     // Thay đổi class của icon để quay lại icon ban đầu
     notiIcon.classList.remove('fa-solid');
     notiIcon.classList.add('fa-regular');
+});
+
+houseSec.addEventListener('click', function() {
+    const firstOption = houseSec.querySelector('option');
+    firstOption.hidden = true;
+});
+
+areaSec.addEventListener('click', function() {
+    const firstOption = areaSec.querySelector('option');
+    firstOption.hidden = true;
+});
+
+priceSec.addEventListener('click', function() {
+    const firstOption = priceSec.querySelector('option');
+    firstOption.hidden = true;
 });
