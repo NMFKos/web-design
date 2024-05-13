@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,96 +29,16 @@
               <th>Tình trạng</th>
             </tr>
           </thead>
-
           <tbody>
+            {{#each reportData}}
             <tr>
-              <td>hoangminh1912</td>
-              <td><a href="url-cua-trang-khac">15389</a></td>
-              <td>Hình ảnh không đúng với thực tế</td>
-              <td>7:30 24/05/2024</td>
-              <td class="warning">Chờ duyệt</td>
+              <td >{{this.user_name}}</td>
+              <td class="row-id"><a href="url-cua-trang-khac">{{this.post_id}}</a></td>
+              <td>{{this.reason}}</td>
+              <td class="row-time">{{this.time}}</td>
+              <td class="warning">{{this.state}}</td>
             </tr>
-
-            <tr>
-              <td>glac04</td>
-              <td><a href="url-cua-trang-khac">3425</a></td>
-              <td>Môi giới lừa đảo</td>
-              <td>19:00 01/05/2024</td>
-              <td class="danger">Từ chối</td>
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-            
+            {{/each}}
           </tbody>
         </table>
       </section>
@@ -128,9 +47,7 @@
       <section class="table__header">
         <h1>Danh sách duyệt bài</h1>
       </section>
-
       <section class="table__body">
-
         <table>
           <thead>
             <tr>
@@ -141,103 +58,19 @@
               <th>Tình trạng</th>
             </tr>
           </thead>
-
           <tbody>
+            {{#each reportData}}
             <tr>
-              <td>hoangminh1912</td>
-              <td><a href="url-cua-trang-khac">15389</a></td>
-              <td>Hình ảnh không đúng với thực tế</td>
-              <td>7:30 24/05/2024</td>
-              <td class="warning">Chờ duyệt</td>
+              <td>{{this.user_name}}</td>
+              <td><a href="url-cua-trang-khac">{{this.post_id}}</a></td>
+              <td>{{this.reason}}</td>
+              <td>{{this.time}}</td>
+              <td class="warning">{{this.state}}</td>
             </tr>
-
-            <tr>
-              <td>glac04</td>
-              <td><a href="url-cua-trang-khac">3425</a></td>
-              <td>Môi giới lừa đảo</td>
-              <td>19:00 01/05/2024</td>
-              <td class="danger">Từ chối</td>
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-
-            <tr>
-              <td>trollVN123</td>
-              <td><a href="url-cua-trang-khac">5481</a></td>
-              <td>Chủ nhà không uy tín</td>
-              <td>20:32 04/05/2024</td>
-              <td class="success">Chấp nhận</td>                         
-            </tr>
-            
+            {{/each}}        
           </tbody>
         </table>
       </section>
     </div>
     </main>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
