@@ -29,7 +29,7 @@
     background-color: #ffffff;
 }
 
-/* Styles for smaller screens */
+/*responsive*/
 @media screen and (max-width: 992px) {
     .left-side,
     .left-side-container {
@@ -42,6 +42,13 @@
         height: auto; /* Adjust the height to fit the content */
         justify-content: flex-start; /* Align items to the start of the main axis */
         text-align: left; /* Align text to the left */
+        padding-left: 0; /* Remove left padding */
+        margin-left: 0; /* Set left margin to 0 */
+    }
+    
+    .header {
+        font-size: 20px; /* Smaller font size for mobile */
+        margin-left: 0; /* Remove left margin */
     }
 }
 .bg-black-custom {
