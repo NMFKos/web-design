@@ -65,5 +65,16 @@ class AdminController {
             res.status(500).send(error);
         })
     }
+
+    reports(req, res) {
+        Post.find({}).exec()
+        .then(async posts =>{
+            if(!posts){
+                throw new Error('Posts not found');
+            }
+            const postData = posts.slice(30, 42).map(post => post.toObject());
+            res.render('reports', { showAdmin: true, postData });
+        })
+    }
 }
 module.exports = new AdminController;
