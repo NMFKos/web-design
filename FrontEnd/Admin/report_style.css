@@ -48,6 +48,7 @@ body{
     color: var(--color-dark);
     background-color: #c9d6ff;
     background: linear-gradient(to left, #e2e2e2, #c9d6ff);
+    
 }
 
 
@@ -131,6 +132,7 @@ main{
     position: absolute;
     margin-top: 6rem;
     margin-right: 15rem;
+    padding-right: 20em;
 }
 
 main .reported_posts
@@ -222,19 +224,16 @@ main .reported_posts table tbody tr td.danger
 
 /*Mobile*/
 @media only screen and (max-width: 450px) {
-    aside
-    {
+    
+    th{
         display: none;
     }
-    
-    main
-    {
-        margin-top: 2rem;;
-        align-items: center;
-        
+
+    td{
+        text-align: left;
+        display: block;
+        padding: 1rem 1rem;
+        border-bottom: none;
     }
 
-    main > div{
-        display: grid;  
-    }
 }  

@@ -193,6 +193,16 @@ main .request_list table tbody tr td.premium
     color: #f5bf03;
 }
 
+main .request_list table tbody tr td.basic
+{
+    color:var(--color-dark);
+}
+
+a 
+{        
+    color: var(--color-primary);
+}
+
 .button {
     border: 1px solid;
     color: white;
@@ -226,7 +236,8 @@ main .request_list table tbody tr td.premium
     td{
         text-align: left;
         display: block;
-        padding: 0.5rem 1rem;
+        padding: 1rem 1rem;
+        border-bottom: none;
     }
 
     tr
@@ -234,10 +245,6 @@ main .request_list table tbody tr td.premium
         border-bottom: 1px solid #ccc; /* Viền dưới cho mỗi hàng */
     }
     
-    .main .request_list table tbody tr:nth-child(odd) {
-        background-color: var(--color-dark-variant);
-    }
-
     td:first-child{
         padding-top: 0.5rem;
     }
