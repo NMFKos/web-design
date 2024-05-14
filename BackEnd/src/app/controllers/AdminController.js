@@ -68,7 +68,6 @@ class AdminController {
     }
 
     reports(req, res) {
-        let postData, userData;
         Reports.find({}).exec()
         .then(reports => {
             if(!reports){
@@ -84,18 +83,34 @@ class AdminController {
     }
 
     requests(req, res){
-        Reports.find({}).exec()
-        .then(reports => {
-            if(!reports){
-                throw new Error('Reports not found');
+        let userData;
+        User.find({}).exec()
+        .then(user => {
+            if(!user){
+                throw new Error('User not found');
             }
-            const reportData = reports.map(p=>p.toObject());
-            res.render('request', {showAdmin: true, reportData});
+            userData = user.map(user => user.toObject());
+            return Post.find({}).exec();
+        })
+        .then(posts => {
+            if(!posts){
+                throw new Error('Post not found');
+            }
+            const postData = posts.filter(p => p.status==0).map(p=>p.toObject());
+            let newPosts = postData.map( post => {
+                let user = userData.find(user => user._id === post.user_id);
+                return{
+                    ...post,
+                    username: user ? user.username: 'unknown'
+                };
+            });
+            
+            res.render('request', {showAdmin: true, newPosts});
         })
         .catch(error => {
-            console.log('Error fetching reports from database');
+            console.error('Error fetching new posts from database');
             res.status(500).send(error);
-        })
+        }) 
     }
 }
 module.exports = new AdminController;

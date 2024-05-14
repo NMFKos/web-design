@@ -32,13 +32,14 @@
               </tr>
             </thead>
             <tbody>
+              {{#each newPosts}}
               <tr>
-                <td class="user-id">1234</td>
-                <td>hoangminh1912</td>
+                <td class="user-id">{{this.user_id}}</td>
+                <td>{{this.username}}</td>
                 <td class="membershp=ip">Basic</td>
-                <td>Cho thuê 1PN tách bếp...</td>
-                <td>Bạch Đằng, Phường 1, Quận Bình Thạnh</td>
-                <td>7tr9</td>
+                <td>{{this.title}}</td>
+                <td>{{this.description}}</td>
+                <td>{{this.price}}</td>
                 <td>0813374744</td>
                 <td class="house-images">Click here</td>
                 <td class="buttons">
@@ -46,35 +47,8 @@
                    <button class="Reject_button">Gỡ</button> 
                 </td>
               </tr>
-
-              <tr>
-                <td>1234</td>
-                <td>hoangminh1912</td>
-                <td>Basic</td>
-                <td>Cho thuê 1PN tách bếp...</td>
-                <td>Bạch Đằng, Phường 1, Quận Bình Thạnh</td>
-                <td>7tr9</td>
-                <td>0813374744</td>
-                <td>Click here</td>
-                <td class="buttons">
-                   <button class="Accept_button">Duyệt</button>
-                   <button class="Reject_button">Gỡ</button> 
-                </td>
-              </tr>
-              <tr>
-                <td>1234</td>
-                <td>hoangminh1912</td>
-                <td class="premium">Basic</td>
-                <td>Cho thuê 1PN tách bếp...</td>
-                <td>Bạch Đằng, Phường 1, Quận Bình Thạnh</td>
-                <td>7tr9</td>
-                <td>0813374744</td>
-                <td>Click here</td>
-                <td class="buttons">
-                   <button class="Accept_button">Duyệt</button>
-                   <button class="Reject_button">Gỡ</button> 
-                </td>
-              </tr>
+              {{/each}}
+              
 
             </tbody>
           </table>
