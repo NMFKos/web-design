@@ -20,38 +20,37 @@
           <table>
             <thead>
               <tr>
-                <th class="user-id">ID</th>
+                <th class="_id">ID Bài Viết</th>
                 <th class="user-name">Tên tài khoản</th>
                 <th class="membership">Thành viên</th>
                 <th class="title">Tiêu đề</th>
-                <th>Mô tả</th>
+                <th class="description">Mô tả</th>
                 <th class="price">Giá</th>
                 <th class="contact">Liên hệ</th>
-                <th class="house-images">Ảnh</th>
                 <th></th>
               </tr>
             </thead>
             <tbody>
               {{#each newPosts}}
               <tr>
-                <td class="user-id">{{this.user_id}}</td>
+                <td class="_id"><a href="/phong-tro/{{this.slug}}">{{this._id}}</a></td>
                 <td class="user-name">{{this.username}}</td>
                 <td class="membership">Basic</td>
                 <td class="title">{{this.title}}</td>
-                <td>{{this.description}}</td>
+                <td class="description">{{this.description}}</td>
                 <td class="price">{{this.price}}</td>
                 <td class="contact">0813374744</td>
-                <td class="house-images">Click here</td>
                 <td class="buttons">
-                   <button class="Accept_button">Duyệt</button>
-                   <button class="Reject_button">Gỡ</button> 
+                   <button class="Accept_button"  onclick="updatePostStatus('{{this._id}}', '1')"><a href="" style="text-decoration: none; color: white">Duyệt</a></button>
+                   <button class="Reject_button" onclick="updatePostStatus('{{this._id}}', '0')"><a href="" style="text-decoration: none; color: white">Gỡ</a></button> 
                 </td>
               </tr>
               {{/each}}
             </tbody>
           </table>
-
         </section>
     </main>
-</body>
+
+</script>
+
 </body>

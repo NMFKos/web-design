@@ -219,8 +219,8 @@ td.buttons button.Reject_button {
 @media (max-width: 450px) {
   td:not(:first-of-type) {
     min-width: 12.1rem; }
-  th.user-id,
-  td.user-id,
+  th.description,
+  td.description,
   th.membership,
   td.membership,
   th.contact,
@@ -237,5 +237,5 @@ td.buttons button.Reject_button {
   main {
     margin-left: 1rem; }
   main#request-table.table {
-    width: 93vh;
+    width: 100vh;
     margin-left: 20rem; } }

@@ -38,6 +38,29 @@ async function getImage(imgPath){
     return imageUrl;
 }
 
+function updatePostStatus(postId, status) {
+    fetch('/update-post-status', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ id: postId, status: status }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Cập nhật thành công');
+            location.reload(); // Tải lại trang để cập nhật thay đổi
+        } else {
+            alert('Có lỗi xảy ra, vui lòng thử lại');
+        }
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('Có lỗi xảy ra, vui lòng thử lại');
+    });
+}
+
 class AdminController {
     index(req, res) {
         let postData, statsData;

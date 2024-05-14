@@ -284,8 +284,8 @@ td.buttons button.Reject_button
         min-width: 12.1rem;
     }
 
-    th.user-id,
-    td.user-id,
+    th.description,
+    td.description,
     th.membership,
     td.membership,
     th.contact,
@@ -306,7 +306,7 @@ td.buttons button.Reject_button
     }
 
     main#request-table.table{
-        width: 93vh;
+        width: 100vh;
         margin-left: 20rem;
     }
 }
