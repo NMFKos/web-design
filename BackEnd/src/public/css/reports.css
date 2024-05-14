@@ -184,9 +184,43 @@ tbody tr.hide td p {
   font: 0 / 0 sans-serif;
   transition: .2s ease-in-out .5s; }
 
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+td.buttons button.Accept_button {
+  border: 1px solid;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10%;
+  background-color: #1B9C85; }
+
+td.buttons button.Reject_button {
+  border: 1px solid;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10%;
+  background-color: #FF0060; }
+
 @media screen and (max-width: 500px) {
   th.row-id,
   td.row-id,
   th.row-time,
   td.row-time {
-    display: none; } }
+    display: none; }
+  td:not(:first-of-type) {
+    min-width: 12.1rem; }
+  main .table {
+    margin-left: 200rem; } }

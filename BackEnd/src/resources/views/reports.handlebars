@@ -16,7 +16,6 @@
       <section class="table__header">
         <h1>Danh sách duyệt bài</h1>
       </section>
-
       <section class="table__body">
 
         <table>
@@ -26,51 +25,25 @@
               <th class="row-id">ID bài viết</th>
               <th>Lí do</th>
               <th class="row-time">Thời gian báo cáo</th>
-              <th>Tình trạng</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
             {{#each reportData}}
             <tr>
               <td >{{this.user_name}}</td>
-              <td class="row-id"><a href="url-cua-trang-khac">{{this.post_id}}</a></td>
+              <td class="row-id"><a href="/phong-tro/{{this.slug}}">{{this.post_id}}</a></td>
               <td>{{this.reason}}</td>
               <td class="row-time">{{this.time}}</td>
-              <td class="warning">{{this.state}}</td>
+              <td class="buttons">
+                  <button class="Accept_button">Duyệt</button>
+                  <button class="Reject_button">Gỡ</button> 
+              </td>
             </tr>
             {{/each}}
           </tbody>
         </table>
       </section>
     </div>
-    <div class="reported-user">
-      <section class="table__header">
-        <h1>Danh sách duyệt bài</h1>
-      </section>
-      <section class="table__body">
-        <table>
-          <thead>
-            <tr>
-              <th>Tên tài khoản</th>
-              <th>ID bài viết</th>
-              <th>Lí do</th>
-              <th>Thời gian báo cáo</th>
-              <th>Tình trạng</th>
-            </tr>
-          </thead>
-          <tbody>
-            {{#each reportData}}
-            <tr>
-              <td>{{this.user_name}}</td>
-              <td><a href="url-cua-trang-khac">{{this.post_id}}</a></td>
-              <td>{{this.reason}}</td>
-              <td>{{this.time}}</td>
-              <td class="warning">{{this.state}}</td>
-            </tr>
-            {{/each}}        
-          </tbody>
-        </table>
-      </section>
-    </div>
-    </main>
+   </main>
 </body>
