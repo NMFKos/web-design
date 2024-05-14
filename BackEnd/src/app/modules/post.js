@@ -14,6 +14,8 @@ const Post = new Schema({
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
     endAt: { type: Date, default: Date.now },
+    status: {type: Number},
+    are: {type: Number},
     slug: { type: String }
   });
 
