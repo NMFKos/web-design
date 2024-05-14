@@ -240,3 +240,12 @@ tbody tr.hide td p {
     font: 0 / 0 sans-serif;
     transition: .2s ease-in-out .5s;
 }
+
+@media screen and (max-width: 500px){
+    th.row-id,
+    td.row-id,
+    th.row-time,
+    td.row-time{
+        display: none;
+    }
+}

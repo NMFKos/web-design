@@ -243,7 +243,14 @@ tbody tr.hide td p {
 
 
 
-.button {
+.buttons {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+td.buttons button.Accept_button
+{
     border: 1px solid;
     color: white;
     padding: 15px 32px;
@@ -253,16 +260,22 @@ tbody tr.hide td p {
     font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: var(--card-border-radius)
-}
-
-.Accept_button
-{
+    border-radius: 10%;
     background-color: #1B9C85;
 }
 
-.Reject_button
+td.buttons button.Reject_button
 {
+    border: 1px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:flex;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10%;
     background-color:#FF0060;
 }
 
