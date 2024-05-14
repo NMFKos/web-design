@@ -309,4 +309,34 @@ td.buttons button.Reject_button
         width: 100vh;
         margin-left: 20rem;
     }
+
+        td.buttons button.Accept_button
+    {
+        border: 1px solid;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display:flex;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10%;
+        background-color: #1B9C85;
+    }
+
+    td.buttons button.Reject_button
+    {
+        border: 1px solid;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display:flex;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10%;
+        background-color:#FF0060;
+    }
 }
