@@ -102,7 +102,7 @@ main {
   margin-left: 3rem; }
 
 main.table {
-  width: 82vw;
+  width: 95vw;
   height: 90vh;
   background-color: linear-gradient(to left, #e2e2e2, #c9d6ff);
   box-shadow: var(--box-shadow);
@@ -216,8 +216,26 @@ td.buttons button.Reject_button {
   border-radius: 10%;
   background-color: #FF0060; }
 
-@media (max-width: 1000px) {
+@media (max-width: 450px) {
   td:not(:first-of-type) {
     min-width: 12.1rem; }
-  main .table {
-    margin-left: 200rem; } }
+  th.user-id,
+  td.user-id,
+  th.membership,
+  td.membership,
+  th.contact,
+  td.contact,
+  th.house-images,
+  td.house-images,
+  th.user-name,
+  td.user-name,
+  th.price,
+  td.price,
+  th.title,
+  td.title {
+    display: none; }
+  main {
+    margin-left: 1rem; }
+  main#request-table.table {
+    width: 93vh;
+    margin-left: 20rem; } }
