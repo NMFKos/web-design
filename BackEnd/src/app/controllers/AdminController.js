@@ -77,40 +77,25 @@ class AdminController {
             const reportData = reports.map(p=>p.toObject());
             res.render('reports', {showAdmin: true, reportData});
         })
-        // .then(posts =>{
-        //     if(!posts){
-        //         throw new Error('Posts not found');
-        //     }
-        //     postData = posts.slice(30, 42).map(post => post.toObject());
-        //     return User.find({}).exec();
-            
-        // })
-        // .then(user => {
-        //     if(!user){
-        //         throw new Error('User not found');
-        //     }
-        //     userData = user.slice(30, 42).map(user => user.toObject());
-        //     res.render('reports', { showAdmin: true, postData , userData});
-        // })
         .catch(error => {
             console.log('Error fetching reports from database');
             res.status(500).send(error);
         })
     }
 
-    // reports(req, res){
-    //     Reports.find({})
-    //     .then(report => {
-    //         if(!report){
-    //             throw new Error('Reports not found');
-    //         }
-    //         const reportData = reports.map(rep => rep.toObject());
-    //         res.render('reports', {showAdmin: true, reportData});
-    //     })
-    //     .catch(error => {
-    //         console.log('Error fetching reports from database');
-    //         res.status(500).send(error);
-    //     })
-    // }
+    requests(req, res){
+        Reports.find({}).exec()
+        .then(reports => {
+            if(!reports){
+                throw new Error('Reports not found');
+            }
+            const reportData = reports.map(p=>p.toObject());
+            res.render('request', {showAdmin: true, reportData});
+        })
+        .catch(error => {
+            console.log('Error fetching reports from database');
+            res.status(500).send(error);
+        })
+    }
 }
 module.exports = new AdminController;
