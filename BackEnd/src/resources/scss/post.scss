@@ -1,28 +1,33 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 20% 80%;
-    height: 2000px;
-    
+    height: 1000px;
 }
-
-.left-side {
-    background-color: #DDDDDD;
-    top: 0;
+@media screen and (max-width: 992px) {
+    .grid-container {
+        display: flex; /* Changed from grid to flex */
+        flex-direction: column; /* Stack the items vertically */
+        height: auto; /* Adjust the height to fit the content */
+    }
 }
-
-.right-side {
-    background-color: #ffffff;
+@media screen and (max-width: 786px) {
+    .grid-container {
+        display: flex; /* Changed from grid to flex */
+        flex-direction: column; /* Stack the items vertically */
+        height: auto; /* Adjust the height to fit the content */
+    }
+    .right2-side {
+        display: none;
+    }
 }
 .header {
     font-size: 40px;
     font-weight: bold;
     color: #1F2937;
     margin-bottom: 24px;
-    margin-left: 30px;
+    margin-left: 20px;
     flex: auto;
     margin-top: 15px;
 }
-
 .address-title {
     margin-top: 32px;
     font-size: 20px;
@@ -39,8 +44,9 @@
 .select {
     margin-top: 15px;
     margin-left: 30px;
+    font-size:15px;
+    box-shadow: 0 0 0 0.5px #000
 }
-
 .addressexact {
     margin-top: 25px;
     font-size: 20px;
@@ -152,12 +158,6 @@
     width: 50%;
     box-shadow: 0 0 0 0.5px #000;
 }
-.doituong {
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 30px;
-    margin-top: 10px;
-}
 .update-image-container {
     position: relative;
     width: 50%;
@@ -202,45 +202,21 @@
     margin-left: 30px;
     margin-top: 15px;
 }
-.video {
-    margin-top: 25px;
+.continue-button {
+    background-color: #008000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 30px;
-}
-.video-link-box {
-    margin-top: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 30px;
-}
-.video-link-box input[type="text"] {
-    background-color: white;
-    margin-top: 10px;
-    font-size:18px;
-    padding:5px;
     width: 50%;
-    box-shadow: 0 0 0 0.5px #000;
-}
-.video-text {
-    font-size: 15px;
+    height: 50px;
     margin-left: 30px;
-    margin-top: 15px;
+    margin-top: 30px;
 }
-.upload-video-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 200px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-left: 30px;
-}
-.upload-video-button {
-    font-size: 2rem;
-    color: #007bff;
-    cursor: pointer;
+
+.continue-button:hover {
+    background-color: #006400;
 }

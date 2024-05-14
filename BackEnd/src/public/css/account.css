@@ -1,0 +1,145 @@
+.grid-container {
+    display: grid;
+    height: 1000px;
+}
+
+/*responsive*/
+@media screen and (max-width: 992px) {
+    .grid-container {
+        display: flex; /* Changed from grid to flex */
+        flex-direction: column; /* Stack the items vertically */
+        height: auto; /* Adjust the height to fit the content */
+    }
+    .name,.phone1,.email, .address{
+        display: flex;
+        flex-direction: column;
+    }
+    .name input[type="text"],.phone1 input[type="text"],.email input[type="text"], .address input[type="text"]{
+        width: 100%;
+        box-sizing: border-box;}
+}
+@media screen and (max-width: 786px) {
+    .grid-container {
+        display: flex; /* Changed from grid to flex */
+        flex-direction: column; /* Stack the items vertically */
+        height: auto; /* Adjust the height to fit the content */
+    }
+    .name,.phone1,.email, .address{
+        display: flex;
+        flex-direction: column;
+    }
+    .name input[type="text"],.phone1 input[type="text"],.email input[type="text"], .address input[type="text"]{
+        width: 100%;
+        box-sizing: border-box;}
+}
+.header {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1F2937;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    flex: auto;
+    margin-top: 15px;
+}
+
+.name {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.name input[type="text"] {
+    background-color: white;
+    margin-top: 30px;
+    font-size:18px;
+    padding: 5px;
+    width: 45%;
+    box-shadow: 0 0 0 0.5px #000;
+    margin-left: 30px;
+}
+
+.phone1 {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.phone1 input[type="text"] {
+    background-color: white;
+    margin-top: 20px;
+    font-size:18px;
+    padding: 5px;
+    width: 45%;
+    box-shadow: 0 0 0 0.5px #000;
+    margin-left: 30px;
+}
+
+.email {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.email input[type="text"] {
+    background-color: white;
+    margin-top: 20px;
+    font-size:18px;
+    padding: 5px;
+    width: 45%;
+    box-shadow: 0 0 0 0.5px #000;
+    margin-left: 30px;
+}
+
+.address {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.address input[type="text"] {
+    background-color: white;
+    margin-top: 20px;
+    font-size:18px;
+    padding: 5px;
+    width: 45%;
+    box-shadow: 0 0 0 0.5px #000;
+    margin-left: 30px;
+}
+.password {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.avatar {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+
+.saving-button {
+    background-color: #362ab3;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    width: 60%;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+.saving-button:hover {
+    background-color: #1b39cd;
+}
+
+
