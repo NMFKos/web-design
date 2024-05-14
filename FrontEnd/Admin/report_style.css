@@ -21,6 +21,7 @@
 
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
+
 @media print{
     .table .table__body
     {
@@ -63,8 +64,6 @@ body{
     
 }
 
-
-
 a{
     color: var(--color-dark);
 }
@@ -74,8 +73,6 @@ img{
     width: 100%;
     object-fit: cover;
 }
-
-
 
 h1{
     font-weight: 700;
@@ -252,7 +249,7 @@ tbody tr.hide td p {
     padding: 5px 5px; /* Giảm giá trị này để thu nhỏ padding */
     text-align: center;
     text-decoration: none;
-    display:relative;
+    display:flex;
     font-size: 13px; 
     margin: 0.5px 0.5px; /* Giảm giá trị này để thu nhỏ margin */
     cursor: pointer;
