@@ -245,24 +245,40 @@ tbody tr.hide td p {
 
 .button {
     border: 1px solid;
-    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display:flex;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
     font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: var(--card-border-radius)
+    border-radius: var(--card-border-radius);
 }
 
 .Accept_button
 {
+    border: 1px solid;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display:flex;
     background-color: #1B9C85;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: var(--card-border-radius);
 }
 
 .Reject_button
 {
+    color: white;
+    display: flex;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: var(--card-border-radius);
     background-color:#FF0060;
 }
 

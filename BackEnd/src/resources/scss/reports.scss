@@ -248,4 +248,12 @@ tbody tr.hide td p {
     td.row-time{
         display: none;
     }
+
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+
+    main .table{
+        margin-left: 200rem;
+    }
 }
