@@ -1,63 +1,23 @@
-.container-fluid {
-    font-size: 20px;
-    color: #1F2937;
-    margin-bottom: 24px;
-    margin-left: 30px;
-    flex: auto;
-    margin-top: 15px;
-}
-
 .grid-container {
     display: grid;
-    grid-template-columns: 20% 80%;
-    height: 2100px;
-    overflow-x: hidden;
+    height: 1000px;
 }
 @media screen and (max-width: 992px) {
-    .left-side,
-    .left-side-container {
-        display: none;
-    }
-
     .grid-container {
         display: flex; /* Changed from grid to flex */
         flex-direction: column; /* Stack the items vertically */
-        height: 2100px; /* Adjust the height to fit the content */
+        height: auto; /* Adjust the height to fit the content */
     }
 }
 @media screen and (max-width: 786px) {
-    .left-side,
-    .left-side-container {
-        display: none;
-    }
-
     .grid-container {
         display: flex; /* Changed from grid to flex */
         flex-direction: column; /* Stack the items vertically */
-        height: 2100px; /* Adjust the height to fit the content */
+        height: auto; /* Adjust the height to fit the content */
     }
     .right2-side {
         display: none;
     }
-}
-
-
-
-.left-side {
-    background-color: #DDDDDD;
-    top: 0;
-    
-}
-.left-side-container {
-    height: 2100px;
-    background-color: #DDDDDD;
-    top: 0;
-}
-.right-side {
-    background-color: #ffffff;
-}
-.bg-black-custom {
-    background-color: #000000;
 }
 .header {
     font-size: 40px;
@@ -68,11 +28,6 @@
     flex: auto;
     margin-top: 15px;
 }
-header img {
-    width: 50px;
-    height: 50px;
-}
-
 .address-title {
     margin-top: 32px;
     font-size: 20px;
@@ -92,7 +47,6 @@ header img {
     font-size:15px;
     box-shadow: 0 0 0 0.5px #000
 }
-
 .addressexact {
     margin-top: 25px;
     font-size: 20px;
@@ -204,12 +158,6 @@ header img {
     width: 50%;
     box-shadow: 0 0 0 0.5px #000;
 }
-.doituong {
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 30px;
-    margin-top: 10px;
-}
 .update-image-container {
     position: relative;
     width: 50%;
@@ -253,63 +201,6 @@ header img {
     font-size: 15px;
     margin-left: 30px;
     margin-top: 15px;
-}
-.video {
-    margin-top: 25px;
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 30px;
-}
-.video-link-box {
-    margin-top: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 30px;
-}
-.video-link-box input[type="text"] {
-    background-color: white;
-    margin-top: 10px;
-    font-size:18px;
-    padding:5px;
-    width: 50%;
-    box-shadow: 0 0 0 0.5px #000;
-}
-.video-text {
-    font-size: 15px;
-    margin-left: 30px;
-    margin-top: 15px;
-}
-.upload-video-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 200px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-left: 30px;
-}
-.upload-video-button {
-    font-size: 2rem;
-    color: #007bff;
-    cursor: pointer;
-}
-.map-container {
-    width: 80%;
-    height: 600px;
-    margin-left: 60%;
-    margin-bottom: 100%;
-}
-.map-container iframe {
-    width: 50%;
-    height: 50%;
-}
-.grid2-container {
-    display: grid;
-    grid-template-columns: 110% 5%;
-    height: 120px;
 }
 .continue-button {
     background-color: #008000;

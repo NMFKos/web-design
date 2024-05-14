@@ -1,51 +1,36 @@
-.container-fluid {
-    font-size: 20px;
-    color: #1F2937;
-    margin-bottom: 24px;
-    margin-left: 30px;
-    flex: auto;
-    margin-top: 15px;
-}
-
 .grid-container {
     display: grid;
-    grid-template-columns: 20% 80%;
     height: 1000px;
-    overflow-x: hidden;
 }
 
-.left-side {
-    background-color: #DDDDDD;
-    top: 0;
-}
-
-.left-side-container {
-    height: 1000px;
-    background-color: #DDDDDD;
-    top: 0;
-}
-
-.right-side {
-    background-color: #ffffff;
-}
-
-/* Styles for smaller screens */
+/*responsive*/
 @media screen and (max-width: 992px) {
-    .left-side,
-    .left-side-container {
-        display: none;
-    }
-
     .grid-container {
         display: flex; /* Changed from grid to flex */
         flex-direction: column; /* Stack the items vertically */
         height: auto; /* Adjust the height to fit the content */
-        justify-content: flex-start; /* Align items to the start of the main axis */
-        text-align: left; /* Align text to the left */
     }
+    .name,.phone1,.email, .address{
+        display: flex;
+        flex-direction: column;
+    }
+    .name input[type="text"],.phone1 input[type="text"],.email input[type="text"], .address input[type="text"]{
+        width: 100%;
+        box-sizing: border-box;}
 }
-.bg-black-custom {
-    background-color: #000000;
+@media screen and (max-width: 786px) {
+    .grid-container {
+        display: flex; /* Changed from grid to flex */
+        flex-direction: column; /* Stack the items vertically */
+        height: auto; /* Adjust the height to fit the content */
+    }
+    .name,.phone1,.email, .address{
+        display: flex;
+        flex-direction: column;
+    }
+    .name input[type="text"],.phone1 input[type="text"],.email input[type="text"], .address input[type="text"]{
+        width: 100%;
+        box-sizing: border-box;}
 }
 .header {
     font-size: 40px;
@@ -56,15 +41,12 @@
     flex: auto;
     margin-top: 15px;
 }
-header img {
-    width: 50px;
-    height: 50px;
-}
+
 .name {
     margin-top: 25px;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 20px;
 }
 
 .name input[type="text"] {
@@ -72,7 +54,7 @@ header img {
     margin-top: 30px;
     font-size:18px;
     padding: 5px;
-    width: 50%;
+    width: 45%;
     box-shadow: 0 0 0 0.5px #000;
     margin-left: 30px;
 }
@@ -81,7 +63,7 @@ header img {
     margin-top: 25px;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 20px;
 }
 
 .phone1 input[type="text"] {
@@ -89,16 +71,16 @@ header img {
     margin-top: 20px;
     font-size:18px;
     padding: 5px;
-    width: 50%;
+    width: 45%;
     box-shadow: 0 0 0 0.5px #000;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 .email {
     margin-top: 25px;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 20px;
 }
 
 .email input[type="text"] {
@@ -106,16 +88,16 @@ header img {
     margin-top: 20px;
     font-size:18px;
     padding: 5px;
-    width: 50%;
+    width: 45%;
     box-shadow: 0 0 0 0.5px #000;
-    margin-left: 87px;
+    margin-left: 30px;
 }
 
 .address {
     margin-top: 25px;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 20px;
 }
 
 .address input[type="text"] {
@@ -123,23 +105,22 @@ header img {
     margin-top: 20px;
     font-size:18px;
     padding: 5px;
-    width: 50%;
+    width: 45%;
     box-shadow: 0 0 0 0.5px #000;
-    margin-left:75px;
+    margin-left: 30px;
 }
-
 .password {
     margin-top: 40px;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 20px;
 }
 
 .avatar {
     margin-top: 40px;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 20px;
 }
 
 
@@ -154,10 +135,11 @@ header img {
     font-weight: bold;
     width: 60%;
     height: 50px;
-    margin-left: 200px;
+    margin-left: 20px;
     margin-top: 70px;
 }
 .saving-button:hover {
     background-color: #1b39cd;
 }
+
 

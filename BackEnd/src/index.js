@@ -37,7 +37,6 @@ route(app);
 
 app.listen(8888, 'localhost', () => {
     console.log('Server is running on http://localhost:8888');
-  });
+});
 
 
-  
