@@ -6,6 +6,7 @@ const detailRouter = require('./detailpage')
 const loginRouter = require('./login')
 const accountRouter = require('./account')
 const reportRouter = require('./report')
+const accountRouter = require('./account')
 
 function route(app) {
     app.use('/news', newsRouter);
@@ -15,7 +16,8 @@ function route(app) {
     app.use('/phong-tro', detailRouter);
     app.use('/report', reportRouter),
     app.use('/login', loginRouter);
+    app.use('/test', testRouter);
+    app.use('/account', accountRouter);
     app.use('/', homeRouter);
 }
-
 module.exports = route;
