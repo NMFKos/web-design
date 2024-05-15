@@ -1,7 +1,9 @@
 const express = require('express');
 const router = express.Router();
-
 const homeController = require('../app/controllers/HomeController');
+
+router.use('/dang-nhap', homeController.showLogin);
+router.post('/dang-nhap', homeController.login);
 router.use('/can-ho-mot-phong-ngu', (req, res) => {
     homeController.filter(req, res, "1PN");
 });
@@ -14,6 +16,6 @@ router.use('/can-ho-duplex', (req, res) => {
 router.use('/can-ho-studio', (req, res) => {
     homeController.filter(req, res, "Studio");
 });
-router.use('/bang-gia', homeController.show);
+router.use('/bang-gia', homeController.showPriceList);
 router.use('/', homeController.index)
 module.exports = router;

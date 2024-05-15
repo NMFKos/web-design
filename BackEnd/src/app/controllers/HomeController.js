@@ -1,4 +1,5 @@
 const Posts = require('../modules/post')
+const Users = require('../modules/user')
 const Images = require('../modules/image')
 const { initializeApp } = require("firebase/app");
 const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
@@ -71,11 +72,28 @@ class SiteController {
         });
     }
 
-    show(req, res) {
+    showPriceList(req, res) {
         res.render('banggia', { showHeader: true });
     }
     
     login(req, res) {
+        const payload = req.body;
+        Users.findOne({ email: 'adminonehousedev@gmail.com', password: 'onehousedev' })
+        .then(user => {
+            if (!user) {
+                throw new Error('House not found');
+            }
+            userData = user.toObject();
+            console.log('Data has been saved successfully');
+            res.redirect('/');
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            res.status(500).send('Internal Server Error');
+        });
+    }    
+
+    showLogin(req, res) {
         res.render('login', { showHeader: false });
     }
 }
