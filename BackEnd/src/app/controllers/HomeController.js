@@ -70,6 +70,10 @@ class SiteController {
             res.status(500).send('Internal Server Error');
         });
     }
+
+    show(req, res) {
+        res.render('banggia', { showHeader: true });
+    }
     
     login(req, res) {
         res.render('login', { showHeader: false });

@@ -14,5 +14,6 @@ router.use('/can-ho-duplex', (req, res) => {
 router.use('/can-ho-studio', (req, res) => {
     homeController.filter(req, res, "Studio");
 });
+router.use('/bang-gia', homeController.show);
 router.use('/', homeController.index)
 module.exports = router;

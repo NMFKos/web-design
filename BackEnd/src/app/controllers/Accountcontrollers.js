@@ -35,18 +35,18 @@ class UserController {
     }
     // Trong UserController
     update(req, res) {
-    const id = req.params.id;
-    const updatedData = req.body;
-    // Cập nhật dữ liệu trong cơ sở dữ liệu
-    // Giả sử bạn đang sử dụng Mongoose để tương tác với MongoDB
-    User.findByIdAndUpdate(id, updatedData, { new: true }, function(err, result) {
-        if (err) {
-            res.send(err);
-        } else {
-            res.send(result);
-        }
-    });
-}
+        const id = req.params.id;
+        const updatedData = req.body;
+        // Cập nhật dữ liệu trong cơ sở dữ liệu
+        // Giả sử bạn đang sử dụng Mongoose để tương tác với MongoDB
+        User.findByIdAndUpdate(id, updatedData, { new: true }, function(err, result) {
+            if (err) {
+                res.send(err);
+            } else {
+                res.send(result);
+            }
+        });
+    }
 }
 
-module.exports = UserController;
+module.exports = new UserController;
