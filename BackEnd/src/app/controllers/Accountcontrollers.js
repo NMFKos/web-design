@@ -1,5 +1,4 @@
 const User = require('../modules/user')
-const bcrypt = require('bcrypt');
 const Images = require('../modules/image')
 const { initializeApp } = require("firebase/app");
 const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
