@@ -1,4 +1,5 @@
 const User = require('../modules/user')
+const bcrypt = require('bcrypt');
 const Images = require('../modules/image')
 const { initializeApp } = require("firebase/app");
 const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
@@ -35,18 +36,43 @@ class UserController {
     }
     // Trong UserController
     update(req, res) {
-    const id = req.params.id;
-    const updatedData = req.body;
-    // Cập nhật dữ liệu trong cơ sở dữ liệu
-    // Giả sử bạn đang sử dụng Mongoose để tương tác với MongoDB
-    User.findByIdAndUpdate(id, updatedData, { new: true }, function(err, result) {
-        if (err) {
-            res.send(err);
-        } else {
-            res.send(result);
+        const id = req.params.id;
+        const updatedData = req.body;
+        // Update the data in the database
+        // Assuming you're using Mongoose to interact with MongoDB
+        User.findByIdAndUpdate(id, updatedData, { new: true }, function(err, result) {
+            if (err) {
+                res.send(err);
+            } else {
+                res.send(result);
+            }
+        });
+    }
+
+    async changePassword(req, res) {
+        const { oldpassword, newpassword } = req.body;
+    
+        try {
+            // Find the user in the database
+            const user = await User.findOne({ _id: req.user._id });
+    
+            // Check if the old password is correct
+            if (oldpassword !== user.password) {
+                return res.status(400).send('Incorrect old password');
+            }
+    
+            // Update the password in the database
+            user.password = newpassword;
+            await user.save();
+    
+            res.send('Password updated successfully');
+        } catch (err) {
+            console.error(err);
+            res.status(500).send('Server error');
         }
-    });
-}
+    }
 }
 
-module.exports = UserController;
+module.exports = new UserController();
+
+

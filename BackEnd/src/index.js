@@ -35,8 +35,8 @@ app.set('views', path.join(__dirname, 'resources/views'));
 // Routes & Controllers
 route(app);
 
-app.listen(8888, 'localhost', () => {
-    console.log('Server is running on http://localhost:8888');
+app.listen(8989, 'localhost', () => {
+    console.log('Server is running on http://localhost:6000');
 });
 
 
