@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  body{
+    font-family: "poppins",sans-serif;
+    background-color: rgb(241, 245, 204);
+}
+  :root{
+    --box-shadow:5px 5px 7px rgb(67, 25, 114), -5px -5px 7px rgb(182, 141, 228);
+    --inset-box-shadow:inset 5px 5px 7px rgb(67, 25, 114),inset -5px -5px 7px rgb(182, 141, 228);
+    color: rgb(190, 188, 188);
+    --main-bg: rgb(150, 72, 240);
+    --font-color: white;
+}
+  ::placeholder {
+    color: var(--font-color);
+}
+  section{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(146, 64, 240)
+}
+  .container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  background-color: var(--main-bg);
+  box-shadow: var(--inset-box-shadow);
+}
+  h1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  
+  .email input{
+    width: 350px;
+}
+  .email-verify{
+    margin: 5px 0;
+    display: none;
+    gap: 10px;
+    
+}
+  .email-verify input{
+    flex: 8;
+}
+ .email-verify #btn-verify-otp{
+    flex: 4;
+}
+  .btn-send-otp{
+    padding: 7px;
+    margin: 10px 0;
+}
+  input{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .3px;
+    color: var(--font-color);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    &:focus{
+        box-shadow: var(--inset-box-shadow);
+    }
+   
+}
+  button{
+    font-weight: bold;
+    color: var(--font-color);
+    background-color: var(--main-bg);
+    border: none;
+    font-size: 1.4rem;
+    transition: all .3s;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    &:active{
+        box-shadow: var(--inset-box-shadow);
+    }
+}
+ 
