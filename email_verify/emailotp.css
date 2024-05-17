@@ -43,13 +43,13 @@
 {
   position: absolute;
   font-size: 30px;
-  transform: translateX(-140%);
-  top: 49%;
   color: #b4b4b4;
+  padding-top: 0.3rem;
+  transform: translateX(-140%);
 }
   
   .email input{
-    width: 27em;
+    width: 28em;
     color: #222831;
 }
   .email-verify{
