@@ -16,13 +16,14 @@ const firebaseConfig = {
 
 class UserController {
     index(req, res) {
-        User.findOne({ _id: req.params.id }) // Tìm kiếm người dùng theo id từ params
+        User.findOne({ _id: 'fe88fc4996855e8d511afc1e' }) // Tìm kiếm người dùng theo id từ params
         .then(user => {
             if (!user) {
                 throw new Error('User not found');
             }
             // Truyền dữ liệu người dùng tới view 'account'
             res.render('account', {
+                showHeader: true,
                 name: user.name,
                 email: user.email,
                 phone: user.phone,
@@ -36,7 +37,7 @@ class UserController {
     }
     // Trong UserController
     update(req, res) {
-        const id = req.params.id;
+        const id = 'fe88fc4996855e8d511afc1e';
         const updatedData = req.body;
         // Update the data in the database
         // Assuming you're using Mongoose to interact with MongoDB
@@ -48,13 +49,15 @@ class UserController {
             }
         });
     }
-
+    password(req, res) {
+        res.render('changepassword', { showHeader: true });
+    }
     async changePassword(req, res) {
         const { oldpassword, newpassword } = req.body;
     
         try {
             // Find the user in the database
-            const user = await User.findOne({ _id: req.user._id });
+            const user = await User.findOne({ _id: 'fe88fc4996855e8d511afc1e' });
     
             // Check if the old password is correct
             if (oldpassword !== user.password) {

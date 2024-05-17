@@ -65,7 +65,7 @@
             <a class="nav-link" href="/can-ho-studio">Studio</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Bảng giá dịch vụ</a>
+            <a class="nav-link" href="/bang-gia">Bảng giá dịch vụ</a>
         </li>
     </ul>
     <div class="btn-container">
@@ -74,19 +74,26 @@
     </div>
     <img src="/imgs/2.png" alt="Anh dai dien" style="border-radius: 50%; width: 5%;">
     <div class="dropdown">
+        {{#if false}}
         <a class="nav-link dropdown-toggle account-btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Nguyễn Cao Cường
         </a>
         <div class="dropdown-menu designed-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Quản lý tin đăng</a>
             <a class="dropdown-item" href="/account">Quản lý thông tin</a>
-            <a class="dropdown-item" href="#">Thay đổi mật khẩu</a>
+            <a class="dropdown-item" href="/account/change-password">Thay đổi mật khẩu</a>
             <a class="dropdown-item" href="#">Nạp tiền</a>
             <a class="dropdown-item" href="#">Đăng xuất</a>
         </div>
+        {{else}}
+        <a class="nav-link account-btn" href="/dang-nhap" id="navbarDropdown" role="button">
+            Đăng nhập
+        </a>
+        {{/if}}
     </div>
     <div class="post-btn nav-item">
         <a href="/post">Đăng bài</a>
     </div>
 </div>
 </nav>
+<script src="/script/header.js"></script>

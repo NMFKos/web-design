@@ -10,34 +10,32 @@
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up">
-            <form>
+            <form method="post" action="/dang-nhap">
                 <h1>Đăng ký</h1>
                 <div class="social-icons">
                     <a href="#" class="icon" style="background-color:  #DB4437;"><i class="fa-brands fa-google-plus-g" style="color: white;"></i></a>
                     <a href="#" class="icon" style="background-color: #0165E1;"><i class="fa-brands fa-facebook-f " style="color: white;"></i></a>
                 </div>
                 <!-- <span>or use your email for registeration</span> -->
-                <input type="text" placeholder="Họ tên">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Đặt mật khẩu">
-                <input type= "password-authentication" placeholder="Xác nhận mật khẩu">
-                <button>Đăng ký</button>
+                <input type="text" name="name" placeholder="Họ tên">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password1" placeholder="Đặt mật khẩu">
+                <input type= "password-authentication" name="password2" placeholder="Xác nhận mật khẩu">
+                <button type="submit">Đăng ký</button>
             </form>
         </div>
         <div class="form-container sign-in">
-            <form>
+            <form method="post" action="/dang-nhap">
                 <h1>Đăng nhập</h1>
                 <div class="social-icons">
                     <a href="#" class="icon" style="background-color:  #DB4437;"><i class="fa-brands fa-google-plus-g" style="color: white;"></i></a>
                     <a href="#" class="icon" style="background-color: #0165E1;"><i class="fa-brands fa-facebook-f " style="color: white;"></i></a>
                 </div>
                 <!-- <span>or use your email password</span> -->
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
                 <a href="#">Forget Your Password?</a>
-                <button>
-                    <a href="./home.handlebars" style="color:white;">Đăng nhập</a>
-                </button>
+                <button type="submit">Đăng nhập</button>
             </form>
         </div>
         <div class="toggle-container">
