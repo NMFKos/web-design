@@ -1,27 +1,26 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: var(--font-family);
 }
-  body{
-    font-family: 'Noto Sans', sans-serif;
-    background-color: rgb(241, 245, 204);
-}
+
   :root{
     --box-shadow:5px 5px 7px rgb(67, 25, 114), -5px -5px 7px rgb(182, 141, 228);
-    --inset-box-shadow:inset 5px 5px 7px rgb(67, 25, 114),inset -5px -5px 7px rgb(182, 141, 228);
+    --inset-box-shadow:inset 5px 5px 7px rgba(0, 0, 0, 30),inset -5px -5px 7px rgb(164, 164, 164);
     color: rgb(190, 188, 188);
     --main-bg: rgb(150, 72, 240);
     --font-color: white;
+    --font-family: Arial, Helvetica, sans-serif;
 }
   ::placeholder {
-    color: var(--font-color);
+    color: #b4b4b4;
 }
   section{
     height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(182, 141, 228)
+    background: linear-gradient(to left, #e2e2e2, #c9d6ff);
 }
   .container{
   display: flex;
@@ -29,19 +28,29 @@
   gap: 10px;
   padding: 30px 20px;
   border-radius: 20px;
-  background-color: var(--main-bg);
-  box-shadow: var(--inset-box-shadow);
+  background-color: linear-gradient(to left, #e2e2e2, #c9d6ff);
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.15);
 }
   h1{
-    color: white;
-    font-size: 3rem;
+    color: #222831;
+    font-size: 3em;
+    font-weight: 540;
     text-align: center;
     margin-bottom: 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.email .email-icon
+{
+  position: absolute;
+  font-size: 30px;
+  transform: translateX(-140%);
+  top: 49%;
+  color: #b4b4b4;
 }
   
   .email input{
-    width: 350px;
+    width: 27em;
+    color: #222831;
 }
   .email-verify{
     margin: 5px 0;
@@ -61,17 +70,17 @@
 }
   input{
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 0;
     letter-spacing: .3px;
     color: var(--font-color);
     border: none;
     outline: none;
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: var(--main-bg);
-    box-shadow: var(--box-shadow);
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 7px rgba(190, 190, 190, 0.1);
     &:focus{
-        box-shadow: var(--inset-box-shadow);
+      box-shadow: #DBE2EF;
     }
    
 }
@@ -85,7 +94,7 @@
     border-radius: 10px;
     letter-spacing: 1px;
     cursor: pointer;
-    box-shadow: var(--box-shadow);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.15);;
     &:active{
         box-shadow: var(--inset-box-shadow);
     }
