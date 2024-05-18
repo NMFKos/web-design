@@ -11,6 +11,7 @@ router.use('/yeu-cau', (req, res) => {
 })
 
 
-router.get('/', adminController.index)
+router.get('/', adminController.index);
+router.get('/dang-xuat', adminController.logout);
 
 module.exports = router;

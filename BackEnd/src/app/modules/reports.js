@@ -10,6 +10,6 @@ const Reports = new Schema({
     reason: {type: String},
     state: {type: String},
     time: { type: Date, default: Date.now }
-  });
+  }, { versionKey: false });
 
 module.exports = mongoose.model('Reports', Reports)

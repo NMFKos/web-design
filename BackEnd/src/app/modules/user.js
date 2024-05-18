@@ -13,6 +13,6 @@ const User = new Schema({
     avatar: { type: String },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now }
-  });
+  }, { versionKey: false });
 
 module.exports = mongoose.model('User', User)

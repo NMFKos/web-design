@@ -18,7 +18,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 // Đường dẫn đến thư mục chứa các ảnh trên máy của bạn
-const localFolderPath = "Tân Bình"; //, , Q3, Tân Bình
+const localFolderPath = "Tân Bình";
 const metadata = {
   contentType: 'image/jpeg',
 };

@@ -6,9 +6,42 @@
     .preview {
         margin: 0 auto;
         width: 75%;
-        margin-top: 10px;
         margin-bottom: 10px;
+        margin-top: 10px;
     }
+    .search-container {
+        border: 1px solid #343A40; /* Border với độ dày là 1px và màu đen */
+        border-radius: 10px; /* Border-radius là 10px */
+        background-color: #343A40; /* Background color là yellow */
+        padding: 10px 20px; /* Padding là 10px từ trên và dưới, 20px từ trái và phải */
+        display: flex; /* Hiển thị các phần tử trong container theo chiều ngang */
+        justify-content: space-between; /* Các phần tử trong container được căn cách nhau theo khoảng cách giống nhau */
+        align-items: center; /* Căn các phần tử theo trục dọc */
+        margin-bottom: 10px;
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .form-select {
+        width: 200px;
+        border-radius: 5px;
+        height: 35px;
+        color: gray;
+    }
+    .search-button {
+        padding: 10px 20px;; /* Padding của nút button */
+        width: 200px;
+        height: 35px;
+        border: none; /* Loại bỏ border của nút button */
+        border-radius: 5px; /* Border-radius của nút button */
+        background-color: #343A40; /* Màu nền của nút button */
+        display: flex; /* Hiển thị các phần tử trong container theo chiều ngang */
+        justify-content: center; /* Các phần tử trong container được căn cách nhau theo khoảng cách giống nhau */
+        align-items: center; /* Căn các phần tử theo trục dọc */
+        color: white; /* Màu chữ của nút button */
+        border: 1px solid white;
+        cursor: pointer; /* Thay đổi con trỏ thành kiểu tay khi di chuột qua nút button */
+    }
+    
     .background-image {
         position: fixed;
         top: 0;
@@ -21,8 +54,61 @@
         opacity: 0.5; /* Độ mờ của hình ảnh */
         z-index: 1; /* Đảm bảo thẻ div này ở phía dưới thẻ carouselExampleIndicators */
     }
+    @media (max-width: 990px) {
+        .btn-container {
+            display: none;
+        }
+        #avatar-logo, #heart-icon, #bell-icon {
+            display: none;
+        }
+    }
+    .btn-container {
+        display: flex;
+        gap: 30px;
+        color: white;
+        margin-right: 30px;
+        align-items: center;
+    }
     
-    .over {
+    .designed-menu {
+        margin-top: 10px;
+    }
+    
+    .post-btn {
+        border: white solid 1px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    
+    .post-btn a {
+        text-decoration: none;
+        color: silver;
+    }
+    .post-btn a:hover {
+        color: rgb(226, 225, 225);
+    }
+    
+    .account-btn {
+        color: silver;
+    }
+    .account-btn:hover {
+        color: rgb(226, 225, 225);
+    }
+    
+    
+    .fa-regular {
+        font-size: 24px;
+    }
+    .fa-solid {
+        font-size: 24px;
+    }
+    
+    .top-over {
+        position: relative;
+        z-index: 3;
+    }
+    
+    .middle-over {
         position: relative; /* Thiết lập vị trí tương đối để quản lý các phần tử con */
         z-index: 2; /* Đảm bảo thẻ div này ở phía trên thẻ div chứa nó */
     }
@@ -52,7 +138,7 @@
     .content-first {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     
     .content-second {
@@ -81,9 +167,8 @@
         justify-content: center;
     }
     
-    #icon {
+    #heart-icon {
         font-size: 24px; /* Đặt kích thước mong muốn */
-        color: black;
     }
     
     .view-border {

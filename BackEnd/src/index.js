@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
+const session = require('express-session');
 const { engine } = require('express-handlebars')
 
 const app = express();
@@ -12,6 +13,14 @@ db.connect()
 
 // HTTP logger
 app.use(morgan('combined'))
+
+// Cấu hình express-session
+app.use(session({
+    secret: 'aQw09^&2Qmz!3#xT~1L5p4d',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false }
+}));
 
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));
@@ -31,6 +40,11 @@ app.engine('handlebars', engine(
 ));
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'resources/views')); 
+
+app.use(function(req, res, next) {
+    res.locals.session = req.session;
+    next();
+});
 
 // Routes & Controllers
 route(app);

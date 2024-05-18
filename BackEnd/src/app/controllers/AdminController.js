@@ -135,5 +135,9 @@ class AdminController {
             res.status(500).send(error);
         }) 
     }
+    logout(req, res) {
+        req.session.destroy();
+        res.redirect('/');
+    }
 }
 module.exports = new AdminController;

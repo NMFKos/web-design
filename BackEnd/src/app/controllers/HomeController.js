@@ -1,6 +1,7 @@
 const Posts = require('../modules/post')
 const Users = require('../modules/user')
 const Images = require('../modules/image')
+const mongoose = require('mongoose')
 const { initializeApp } = require("firebase/app");
 const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
 
@@ -29,7 +30,6 @@ async function getFirstImageUrl(folderPath) {
     
     return firstImageUrl;
 }
-
 
 class SiteController {
     index(req, res) {
@@ -78,23 +78,65 @@ class SiteController {
     
     login(req, res) {
         const payload = req.body;
-        Users.findOne({ email: 'adminonehousedev@gmail.com', password: 'onehousedev' })
-        .then(user => {
-            if (!user) {
-                throw new Error('House not found');
+        // sign up
+        if (Object.keys(payload).length === 4) {
+            if (payload['password1'] !== payload['password2']) {
+                res.redirect('/dang-nhap');
+            } else {
+                const newUsers = new Users({
+                    _id: new mongoose.Types.ObjectId(),
+                    name: payload['name'],
+                    password: payload['password1'],
+                    email: payload['email'],
+                    address: "Việt Nam",
+                    phone: "0123456789",
+                    role: 0,
+                    avatar: "user-avatar/default-avatar.jpg"
+                });
+                newUsers.save()
+                    .then(() => {
+                        res.redirect('/dang-nhap');
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        res.status(500).send('Internal Server Error');
+                    });
             }
-            userData = user.toObject();
-            console.log('Data has been saved successfully');
-            res.redirect('/');
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            res.status(500).send('Internal Server Error');
-        });
+        }        
+        // sign in
+        else if (Object.keys(payload).length === 2) {
+            Users.findOne({ email: payload['email'], password: payload['password'] })
+            .then(user => {
+                if (!user) {
+                    res.redirect('/dang-nhap');
+                }
+                // Lưu ID người dùng vào session
+                req.session.userId = user._id;
+                if (user.role === 0) {
+                    res.redirect('/');
+                }
+                else {
+                    res.redirect('/admin');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                res.status(500).send('Internal Server Error');
+            });
+        }
+        // error
+        else {
+            res.send('Error');
+        }
     }    
 
     showLogin(req, res) {
         res.render('login', { showHeader: false });
+    }
+
+    logout(req, res) {
+        req.session.destroy();
+        res.redirect('/');
     }
 }
 

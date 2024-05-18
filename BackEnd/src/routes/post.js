@@ -18,10 +18,11 @@ const upload = multer({ storage: storage });
 const postController = require('../app/controllers/PostController');
 router.get('/', postController.index)
 
-// Xử lý yêu cầu POST để tải ảnh lên
-router.post('/', upload.array('image', 5), (req, res) => {
-    res.send('Ảnh đã được tải lên và lưu trữ thành công.');
-});
+// // Xử lý yêu cầu POST để tải ảnh lên
+// router.post('/', upload.array('image', 5), (req, res) => {
+//     postController.postnew;
+// });
 
+router.post('/', upload.array('image', 5), postController.postnew);
 
 module.exports = router;

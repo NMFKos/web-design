@@ -14,10 +14,11 @@
     <div class="container">
         <!-- Main Content -->
         <main>
-            <h1 class="title">Số liệu thống kê</h1>
+            <h2 class="title">Số liệu thống kê</h2>
             <!-- Analyses -->
             <div class="analyse">
-                {{#with statsData}}
+                {{#each statsData}}
+                {{#if @last}}
                 <div class="sales">
                     <div class="status">
                         <div class="info">
@@ -66,7 +67,8 @@
                         </div>
                     </div>
                 </div>
-                {{/with}}
+                {{/if}}
+                {{/each}}
             </div>
             <!-- End of Analyses -->
 
