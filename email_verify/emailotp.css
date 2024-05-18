@@ -100,3 +100,26 @@
     }
 }
  
+@media screen and (max-width: 768px)
+{
+  h1{
+    font-size: 2em;
+  }
+  .container
+  {
+    width: 87%;
+  }
+  .email input
+  {
+    width: 17.4em;
+  }
+
+  .email-verify input
+  {
+    width: 9em;
+  }
+
+  .email-verify button{
+    font-size: 1.3em;
+  }
+}
