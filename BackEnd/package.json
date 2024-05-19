@@ -11,6 +11,7 @@
   "author": "nguyencuong",
   "license": "ISC",
   "dependencies": {
+    "@google/generative-ai": "^0.11.3",
     "atlas": "^1.0.0-alpha.0",
     "bcrypt": "^5.1.1",
     "express": "^4.19.1",
