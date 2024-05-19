@@ -3,6 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const session = require('express-session');
 const { engine } = require('express-handlebars')
+const userIdMiddleware = require('./app/middleware/sessionUser');
 
 const app = express();
 const route = require('./routes/index.js');
@@ -45,6 +46,9 @@ app.use(function(req, res, next) {
     res.locals.session = req.session;
     next();
 });
+
+// Sử dụng middleware để thêm userId vào req
+app.use(userIdMiddleware);
 
 // Routes & Controllers
 route(app);

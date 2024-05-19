@@ -4,6 +4,7 @@ const Posts = require('../modules/post')
 const Images = require('../modules/image')
 const { initializeApp } = require("firebase/app");
 const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
+const { ObjectId } = require('mongodb');
 
 const firebaseConfig = {
     apiKey: "AIzaSyDF36H8mFiTkXTyvRD6z-4YHmqsNCZ4yxE",
@@ -33,8 +34,7 @@ async function getFirstImageUrl(folderPath) {
 
 class UserController {
     index(req, res) {
-        const userId = req.session.userId;
-        User.findOne({ _id: 'fe88fc4996855e8d511afc1e' }) // Tìm kiếm người dùng theo id từ params
+        User.findOne({ _id: req.userId }) // Tìm kiếm người dùng theo id từ params
         .then(user => {
             if (!user) {
                 throw new Error('User not found');
@@ -55,11 +55,11 @@ class UserController {
     }
     // Trong UserController
     update(req, res) {
-        const id = 'fe88fc4996855e8d511afc1e';
+        const id = req.userId;
         const updatedData = req.body;
         User.findByIdAndUpdate(id, updatedData, { new: true })
             .then(result => {
-                res.send(result);
+                res.redirect('/account');
             })
             .catch(err => {
                 res.send(err);
@@ -72,7 +72,7 @@ class UserController {
         const { oldpassword, newpassword } = req.body;
         try {
             // Find the user in the database
-            const user = await User.findOne({ _id: 'fe88fc4996855e8d511afc1e' });
+            const user = await User.findOne({ _id: req.userId });
             // Check if the old password is correct
             if (oldpassword !== user.password) {
                 return res.status(400).send('Incorrect old password');
@@ -88,7 +88,7 @@ class UserController {
         }
     }
     showPosts(req, res) {
-        Posts.find({ user_id: 'cbc66b632bd71ddb7ccbda8f' })
+        Posts.find({ user_id: req.userId })
         .then(async posts => {
             if (!posts) {
                 throw new Error('404 Not found');
