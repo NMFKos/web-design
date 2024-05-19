@@ -1,9 +1,11 @@
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
-const { engine } = require('express-handlebars')
+const { engine } = require('express-handlebars');
+
 
 const app = express();
+
 const route = require('./routes/index.js');
 const db = require('./config/db/index.js')
 
