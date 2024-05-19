@@ -40,7 +40,7 @@
                 <td class="description">{{this.description}}</td>
                 <td class="price">{{this.price}}</td>
                 <td class="contact">0813374744</td>
-                <td class="buttons">
+                <td>
                    <button class="Accept_button"  onclick="updatePostStatus('{{this._id}}', '1')"><a href="" style="text-decoration: none; color: white">Duyệt</a></button>
                    <button class="Reject_button" onclick="updatePostStatus('{{this._id}}', '0')"><a href="" style="text-decoration: none; color: white">Gỡ</a></button> 
                 </td>
@@ -50,7 +50,25 @@
           </table>
         </section>
     </main>
-
-</script>
-
+    <script>
+        function updatePostStatus(postId, status) {
+            fetch(`/update-post-status/${postId}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ status: status })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Cập nhật thành công');
+                    location.reload(); // Tải lại trang sau khi cập nhật
+                } else {
+                    alert('Có lỗi xảy ra');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
 </body>
