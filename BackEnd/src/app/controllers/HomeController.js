@@ -1,6 +1,7 @@
 const Posts = require('../modules/post')
 const Users = require('../modules/user')
 const Images = require('../modules/image')
+const mongoose = require('mongoose')
 const { initializeApp } = require("firebase/app");
 const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
 
@@ -14,10 +15,10 @@ const firebaseConfig = {
   measurementId: "G-Z6TTKT1H0N"
 };
 
-async function getFirstImageUrl(folderPath) {
-    const app = initializeApp(firebaseConfig);
-    const storage = getStorage(app);
+const app = initializeApp(firebaseConfig);
+const storage = getStorage(app);
 
+async function getFirstImageUrl(folderPath) {
     const listRef = ref(storage, folderPath);
     const listResult = await listAll(listRef);
 
@@ -30,6 +31,17 @@ async function getFirstImageUrl(folderPath) {
     return firstImageUrl;
 }
 
+async function getImageUrl(imagePath) {
+    try {
+        const storageRef = ref(storage, imagePath);
+        const imageUrl = await getDownloadURL(storageRef);
+        console.log(imageUrl);
+        return imageUrl;
+    } catch (error) {
+        console.error('Error getting image URL:', error);
+        throw error;
+    }
+}
 
 class SiteController {
     index(req, res) {
@@ -78,23 +90,67 @@ class SiteController {
     
     login(req, res) {
         const payload = req.body;
-        Users.findOne({ email: 'adminonehousedev@gmail.com', password: 'onehousedev' })
-        .then(user => {
-            if (!user) {
-                throw new Error('House not found');
+        // sign up
+        if (Object.keys(payload).length !== 2) {
+            if (payload['password'] !== payload['password-auth']) {
+                res.redirect('/dang-nhap');
+            } else {
+                const newUsers = new Users({
+                    _id: new mongoose.Types.ObjectId(),
+                    name: payload['username'],
+                    password: payload['password'],
+                    email: payload['email'],
+                    address: "Việt Nam",
+                    phone: payload['phone'],
+                    role: 0,
+                    avatar: "user-avatar/default-avatar.jpg"
+                });
+                newUsers.save()
+                .then(() => {
+                    res.redirect('/dang-nhap');
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    res.status(500).send('Internal Server Error');
+                });
             }
-            userData = user.toObject();
-            console.log('Data has been saved successfully');
-            res.redirect('/');
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            res.status(500).send('Internal Server Error');
-        });
+        }        
+        // sign in
+        else if (Object.keys(payload).length === 2) {
+            Users.findOne({ phone: payload['Login_phone'], password: payload['Login_password'] })
+            .then(async user => {
+                if (!user) {
+                    return res.redirect('/dang-nhap');
+                }
+                // Lưu ID người dùng vào session
+                req.session.userId = user._id;
+                req.session.username = user.name;
+                req.session.avatar = await getImageUrl(user.avatar);
+
+                if (user.role === 0) {
+                    return res.redirect('/');
+                } else {
+                    return res.redirect('/admin');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                res.redirect('/dang-nhap');
+            });
+        }
+        // error
+        else {
+            res.send('Error');
+        }
     }    
 
     showLogin(req, res) {
         res.render('login', { showHeader: false });
+    }
+
+    logout(req, res) {
+        req.session.destroy();
+        res.redirect('/');
     }
 }
 

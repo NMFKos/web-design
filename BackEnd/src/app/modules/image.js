@@ -6,6 +6,6 @@ const Image = new Schema({
     _id: { type: ObjectId },
     url: { type: String },
     folder: { type: String }
-  });
+  }, { versionKey: false });
 
 module.exports = mongoose.model('Image', Image)

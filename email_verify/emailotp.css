@@ -28,11 +28,11 @@
   gap: 10px;
   padding: 30px 20px;
   border-radius: 20px;
-  background-color: linear-gradient(to left, #e2e2e2, #c9d6ff);
+  background-color: #5D6EC7;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.15);
 }
   h1{
-    color: #222831;
+    color: white;
     font-size: 3em;
     font-weight: 540;
     text-align: center;
@@ -43,13 +43,13 @@
 {
   position: absolute;
   font-size: 30px;
-  transform: translateX(-140%);
-  top: 49%;
   color: #b4b4b4;
+  padding-top: 0.3rem;
+  transform: translateX(-140%);
 }
   
   .email input{
-    width: 27em;
+    width: 28em;
     color: #222831;
 }
   .email-verify{
@@ -87,7 +87,7 @@
   button{
     font-weight: bold;
     color: var(--font-color);
-    background-color: var(--main-bg);
+    background-color: #2A528A;
     border: none;
     font-size: 1.4rem;
     transition: all .3s;
@@ -100,3 +100,26 @@
     }
 }
  
+@media screen and (max-width: 768px)
+{
+  h1{
+    font-size: 2em;
+  }
+  .container
+  {
+    width: 87%;
+  }
+  .email input
+  {
+    width: 17.4em;
+  }
+
+  .email-verify input
+  {
+    width: 9em;
+  }
+
+  .email-verify button{
+    font-size: 1.3em;
+  }
+}

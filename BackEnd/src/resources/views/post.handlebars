@@ -20,6 +20,7 @@
     
 </head>
 <body>
+    <div class="background-image"></div>
     <div class="grid-container">
         <div class="right-side">
             <form method="post" action="" enctype="multipart/form-data">
@@ -73,40 +74,40 @@
                 </div>
                 <select class="select" name="type_house">
                     <option>--Chọn loại nhà--</option>
-                    <option>Cho thuê phòng 1 phòng ngủ</option>
-                    <option>Cho thuê phòng 2 phòng ngủ</option>
-                    <option>Cho thuê Duplex</option>
-                    <option>Cho thuê Studio</option>
+                    <option>Căn hộ 1PN</option>
+                    <option>Căn hộ 2PN</option>
+                    <option>Căn hộ Duplex</option>
+                    <option>Căn hộ Studio</option>
                 </select>
                 <div class="tieude">
                     <label for="tieude-text">Tiêu đề </label>
                     <br>
-                    <input type="text" id="tieude-text" name="tieude">
+                    <input type="text" id="tieude-text" name="title">
                 </div>
                 <div class="mota">
                     <label for="mota-text">Nội dung mô tả </label>
                     <br>
-                    <input type="text" id="tieude-text" name="noidung">
+                    <input type="text" id="tieude-text" name="description">
                 </div>
-                <div class="lienhe">
+                {{!-- <div class="lienhe">
                     <label for="lienhe-text">Thông tin liên hệ </label>
                     <br>
                     <input type="text" id="lienhe-text" name="lienhe">
-                </div>
-                <div class="phone">
+                </div> --}}
+                {{!-- <div class="phone">
                     <label for="phone-text">Điện thoại </label>
                     <br>
                     <input type="text" id="phone-text" name="phone">
-                </div>
+                </div> --}}
                 <div class="price">
-                    <label for="price-text">Giá cho thuê (VNĐ)</label>
+                    <label for="price-text">Giá cho thuê (triệu VNĐ)</label>
                     <br>
-                    <input type="text" id="price-text" name="giatien">
+                    <input type="text" id="price-text" name="price">
                 </div>
                 <div class="dientich">
                     <label for="dientich-text">Diện tích (m²)</label>
                     <br>
-                    <input type="text" id="dientich-text" name="dientich">
+                    <input type="text" id="dientich-text" name="area">
                 </div>
                 <div class="picture">
                     <span>Hình ảnh</span>
@@ -145,5 +146,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

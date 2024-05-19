@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body{
@@ -74,6 +72,10 @@ body{
     padding: 0 40px;
     height: 100%;
 }
+.container form * {
+    margin: 5px 0; /* Adjust the margin as needed */
+    
+}
 
 .container input{
     background-color: #eee;
@@ -84,6 +86,16 @@ body{
     border-radius: 8px;
     width: 100%;
     outline: none;
+}
+
+.container .fa-xmark{
+    position: absolute;
+    right: 30px;
+    top: 38%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: red;
+    display: none;
 }
 
 .form-container{
@@ -198,6 +210,7 @@ body{
 
 .container.active .toggle-left{
     transform: translateX(0);
+    border-radius: 0;
 }
 
 .toggle-right{

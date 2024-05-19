@@ -1,8 +1,10 @@
 const User = require('../modules/user')
 const bcrypt = require('bcrypt');
+const Posts = require('../modules/post')
 const Images = require('../modules/image')
 const { initializeApp } = require("firebase/app");
 const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
+const { ObjectId } = require('mongodb');
 
 const firebaseConfig = {
     apiKey: "AIzaSyDF36H8mFiTkXTyvRD6z-4YHmqsNCZ4yxE",
@@ -14,9 +16,25 @@ const firebaseConfig = {
     measurementId: "G-Z6TTKT1H0N"
 };
 
+async function getFirstImageUrl(folderPath) {
+    const app = initializeApp(firebaseConfig);
+    const storage = getStorage(app);
+
+    const listRef = ref(storage, folderPath);
+    const listResult = await listAll(listRef);
+
+    let firstImageUrl = null;
+    if (listResult.items.length > 0) {
+        const item = listResult.items[0];
+        firstImageUrl = await getDownloadURL(item);
+    }
+    
+    return firstImageUrl;
+}
+
 class UserController {
     index(req, res) {
-        User.findOne({ _id: 'fe88fc4996855e8d511afc1e' }) // Tìm kiếm người dùng theo id từ params
+        User.findOne({ _id: req.userId }) // Tìm kiếm người dùng theo id từ params
         .then(user => {
             if (!user) {
                 throw new Error('User not found');
@@ -37,33 +55,28 @@ class UserController {
     }
     // Trong UserController
     update(req, res) {
-        const id = 'fe88fc4996855e8d511afc1e';
+        const id = req.userId;
         const updatedData = req.body;
-        // Update the data in the database
-        // Assuming you're using Mongoose to interact with MongoDB
-        User.findByIdAndUpdate(id, updatedData, { new: true }, function(err, result) {
-            if (err) {
+        User.findByIdAndUpdate(id, updatedData, { new: true })
+            .then(result => {
+                res.redirect('/account');
+            })
+            .catch(err => {
                 res.send(err);
-            } else {
-                res.send(result);
-            }
-        });
+            });
     }
     password(req, res) {
         res.render('changepassword', { showHeader: true });
     }
     async changePassword(req, res) {
         const { oldpassword, newpassword } = req.body;
-    
         try {
             // Find the user in the database
-            const user = await User.findOne({ _id: 'fe88fc4996855e8d511afc1e' });
-    
+            const user = await User.findOne({ _id: req.userId });
             // Check if the old password is correct
             if (oldpassword !== user.password) {
                 return res.status(400).send('Incorrect old password');
             }
-    
             // Update the password in the database
             user.password = newpassword;
             await user.save();
@@ -73,6 +86,25 @@ class UserController {
             console.error(err);
             res.status(500).send('Server error');
         }
+    }
+    showPosts(req, res) {
+        Posts.find({ user_id: req.userId })
+        .then(async posts => {
+            if (!posts) {
+                throw new Error('404 Not found');
+            }
+            const postData = posts.map(p => p.toObject());
+            for (const post of postData) {
+                const folderPath = post.images;
+                const imagesData = await getFirstImageUrl(folderPath);
+                post.thumbnailData = imagesData;
+            }
+            res.render('uploadbaidang', { showHeader: true, postData });
+        })
+        .catch(error => {
+            console.error('Error fetching houses from database:', error);
+            res.status(500).send('Internal Server Error');
+        });
     }
 }
 
