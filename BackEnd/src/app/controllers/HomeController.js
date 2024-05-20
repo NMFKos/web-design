@@ -15,10 +15,10 @@ const firebaseConfig = {
   measurementId: "G-Z6TTKT1H0N"
 };
 
-const app = initializeApp(firebaseConfig);
-const storage = getStorage(app);
-
 async function getFirstImageUrl(folderPath) {
+    const app = initializeApp(firebaseConfig);
+    const storage = getStorage(app);
+
     const listRef = ref(storage, folderPath);
     const listResult = await listAll(listRef);
 
@@ -29,18 +29,6 @@ async function getFirstImageUrl(folderPath) {
     }
     
     return firstImageUrl;
-}
-
-async function getImageUrl(imagePath) {
-    try {
-        const storageRef = ref(storage, imagePath);
-        const imageUrl = await getDownloadURL(storageRef);
-        console.log(imageUrl);
-        return imageUrl;
-    } catch (error) {
-        console.error('Error getting image URL:', error);
-        throw error;
-    }
 }
 
 class SiteController {
@@ -91,51 +79,51 @@ class SiteController {
     login(req, res) {
         const payload = req.body;
         // sign up
-        if (Object.keys(payload).length !== 2) {
-            if (payload['password'] !== payload['password-auth']) {
+        if (Object.keys(payload).length === 6) {
+            if (payload['password1'] !== payload['password2']) {
                 res.redirect('/dang-nhap');
             } else {
                 const newUsers = new Users({
                     _id: new mongoose.Types.ObjectId(),
-                    name: payload['username'],
-                    password: payload['password'],
+                    name: payload['name'],
+                    password: payload['password1'],
                     email: payload['email'],
-                    address: "Việt Nam",
+                    address: payload['address'],
                     phone: payload['phone'],
                     role: 0,
                     avatar: "user-avatar/default-avatar.jpg"
                 });
                 newUsers.save()
-                .then(() => {
-                    res.redirect('/dang-nhap');
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    res.status(500).send('Internal Server Error');
-                });
+                    .then(() => {
+                        res.redirect('/dang-nhap');
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        res.status(500).send('Internal Server Error');
+                    });
             }
         }        
         // sign in
         else if (Object.keys(payload).length === 2) {
-            Users.findOne({ phone: payload['Login_phone'], password: payload['Login_password'] })
+            Users.findOne({ email: payload['email'], password: payload['password'] })
             .then(async user => {
                 if (!user) {
-                    return res.redirect('/dang-nhap');
+                    res.redirect('/dang-nhap');
                 }
                 // Lưu ID người dùng vào session
                 req.session.userId = user._id;
                 req.session.username = user.name;
-                req.session.avatar = await getImageUrl(user.avatar);
-
+                //req.session.avatar = await getImageUrl(user.avatar);
                 if (user.role === 0) {
-                    return res.redirect('/');
-                } else {
-                    return res.redirect('/admin');
+                    res.redirect('/');
+                }
+                else {
+                    res.redirect('/admin');
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
-                res.redirect('/dang-nhap');
+                res.status(500).send('Internal Server Error');
             });
         }
         // error
@@ -143,6 +131,7 @@ class SiteController {
             res.send('Error');
         }
     }    
+    
 
     showLogin(req, res) {
         res.render('login', { showHeader: false });
