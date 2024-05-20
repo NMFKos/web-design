@@ -135,6 +135,21 @@ class AdminController {
             res.status(500).send(error);
         }) 
     }
+
+    async updatePostStatus(req, res)
+    {
+        const {id, status} = req.body;
+        try {
+            const post = await Post.findByIdAndUpdate(id, { status: status }, { new: true });
+            if (!post) {
+                return res.status(404).json({ success: false, message: 'Post not found' });
+            }
+            res.json({ success: true, message: 'Post status updated successfully' });
+        } catch (error) {
+            console.error('Error updating post status:', error);
+            res.status(500).json({ success: false, message: 'Internal server error' });
+        }
+    }
     logout(req, res) {
         req.session.destroy();
         res.redirect('/');

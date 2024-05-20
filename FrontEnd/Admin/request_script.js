@@ -17,6 +17,8 @@ document.querySelectorAll('.Accept_button, .Reject_button').forEach(button => {
             price: data[5],
             phone_num: data[6],
             action: this.classList.contains('Accept_buttons') ? 'accept' : 'reject'
-        }
+        };
+
+        fetch
     }
 })
