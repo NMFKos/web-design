@@ -38,28 +38,6 @@ async function getImage(imgPath){
     return imageUrl;
 }
 
-function updatePostStatus(postId, status) {
-    fetch('/update-post-status', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ id: postId, status: status }),
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            alert('Cập nhật thành công');
-            location.reload(); // Tải lại trang để cập nhật thay đổi
-        } else {
-            alert('Có lỗi xảy ra, vui lòng thử lại');
-        }
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        alert('Có lỗi xảy ra, vui lòng thử lại');
-    });
-}
 
 class AdminController {
     index(req, res) {
@@ -136,20 +114,12 @@ class AdminController {
         }) 
     }
 
-    async updatePostStatus(req, res)
-    {
-        const {id, status} = req.body;
-        try {
-            const post = await Post.findByIdAndUpdate(id, { status: status }, { new: true });
-            if (!post) {
-                return res.status(404).json({ success: false, message: 'Post not found' });
-            }
-            res.json({ success: true, message: 'Post status updated successfully' });
-        } catch (error) {
-            console.error('Error updating post status:', error);
-            res.status(500).json({ success: false, message: 'Internal server error' });
-        }
+    updatePostStatus(req, res, next) {
+        Post.findByIdAndUpdate(req.params.id, { status: 1 }, { new: true })
+            .then(() => res.redirect("/yeu-cau"))
+            .catch(next);
     }
+
     logout(req, res) {
         req.session.destroy();
         res.redirect('/');
