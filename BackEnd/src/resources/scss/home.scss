@@ -182,9 +182,9 @@
         justify-content: center;
         margin-bottom: 0;
     }    
-    /* CHATBOX =============== */
+
 .chatbox {
-    position: sticky;
+    position: fixed;
     bottom: 30px;
     right: 30px;
     font-family: Arial, sans-serif;
@@ -193,11 +193,12 @@
   
   /* CONTENT IS CLOSE */
   .chatbox-support {
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: column;
     background: #f9f9f9;
     right: 0;
+    bottom: 100px;
     width: 350px;
     height: 450px;
     z-index: -1;
