@@ -5,6 +5,7 @@ const session = require('express-session');
 const { engine } = require('express-handlebars')
 const userIdMiddleware = require('./app/middleware/sessionUser');
 const {GoogleGenerativeAI, HarmCategory, HarmBlockThreshold,} = require("@google/generative-ai");
+const flash = require('connect-flash');
 
 const app = express();
 
@@ -113,6 +114,9 @@ app.post('/chat', async (req, res) => {
     
 // Sử dụng middleware để thêm userId vào req
 app.use(userIdMiddleware);
+
+//Use flash
+app.use(flash());
 
 // Routes & Controllers
 route(app);
