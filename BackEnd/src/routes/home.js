@@ -2,20 +2,21 @@ const express = require('express');
 const router = express.Router();
 const homeController = require('../app/controllers/HomeController');
 
-router.use('/dang-nhap', homeController.showLogin);
 router.post('/dang-nhap', homeController.login);
-router.use('/can-ho-mot-phong-ngu', (req, res) => {
+router.get('/dang-nhap', homeController.showLogin);
+router.get('/dang-xuat', homeController.logout);
+router.get('/can-ho-mot-phong-ngu', (req, res) => {
     homeController.filter(req, res, "1PN");
 });
-router.use('/can-ho-hai-phong-ngu', (req, res) => {
+router.get('/can-ho-hai-phong-ngu', (req, res) => {
     homeController.filter(req, res, "2PN");
 });
-router.use('/can-ho-duplex', (req, res) => {
+router.get('/can-ho-duplex', (req, res) => {
     homeController.filter(req, res, "Duplex");
 });
-router.use('/can-ho-studio', (req, res) => {
+router.get('/can-ho-studio', (req, res) => {
     homeController.filter(req, res, "Studio");
 });
-router.use('/bang-gia', homeController.showPriceList);
-router.use('/', homeController.index)
+router.get('/bang-gia', homeController.showPriceList);
+router.get('/', homeController.index)
 module.exports = router;

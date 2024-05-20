@@ -11,15 +11,18 @@
   "author": "nguyencuong",
   "license": "ISC",
   "dependencies": {
+    "@google/generative-ai": "^0.11.3",
     "atlas": "^1.0.0-alpha.0",
     "bcrypt": "^5.1.1",
     "express": "^4.19.1",
     "express-handlebars": "^7.1.2",
+    "express-session": "^1.18.0",
     "firebase": "^10.11.0",
     "fs": "^0.0.1-security",
     "mongodb": "^6.5.0",
     "mongoose": "^8.2.3",
-    "multer": "^1.4.5-lts.1"
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.47.1"
   },
   "devDependencies": {
     "morgan": "^1.10.0",

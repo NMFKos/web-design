@@ -40,9 +40,9 @@
                 <td class="description">{{this.description}}</td>
                 <td class="price">{{this.price}}</td>
                 <td class="contact">0813374744</td>
-                <td class="buttons">
-                   <button class="Accept_button"  onclick="updatePostStatus('{{this._id}}', '1')"><a href="" style="text-decoration: none; color: white">Duyệt</a></button>
-                   <button class="Reject_button" onclick="updatePostStatus('{{this._id}}', '0')"><a href="" style="text-decoration: none; color: white">Gỡ</a></button> 
+                <td>
+                    <button class="Accept_button" onclick="updatePostStatus('{{this._id}}', '1')" style="text-decoration: none; color: white">Duyệt</button>
+                    <button class="Reject_button" onclick="removePostRow('{{this._id}}')" style="text-decoration: none; color: white">Gỡ</button> 
                 </td>
               </tr>
               {{/each}}
@@ -50,7 +50,31 @@
           </table>
         </section>
     </main>
+    <script>
+      function updatePostStatus(postId, status) {
+        fetch('/update-post-status', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ id: postId, status: status }),
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            // Tìm và ẩn dòng tương ứng trong bảng
+            document.getElementById(`post_${postId}`).style.display = 'none';
+          } else {
+            console.error('Failed to update post status:', data.message);
+          }
+        })
+        .catch(error => console.error('Error:', error));
+      }
 
-</script>
+      function removePostRow(postId) {
+        // Chỉ ẩn dòng tương ứng trong bảng
+        document.getElementById(`post_${postId}`).style.display = 'none';
+      }
+    </script>
 
 </body>

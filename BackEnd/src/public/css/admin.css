@@ -49,7 +49,6 @@ img {
   object-fit: cover; }
 
 h1 {
-  font-weight: 800;
   font-size: 1.8rem; }
 
 h2 {
@@ -168,7 +167,7 @@ main .new-users {
   width: 100%; }
 
 main .new-users .user-list {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(7, 1fr);
   background-color: var(--color-white);
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
@@ -362,7 +361,7 @@ main .recent-orders a {
   align-items: center;
   gap: 0.6rem; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .container {
     width: 95%;
     grid-template-columns: 7rem auto 23rem; }

@@ -134,7 +134,7 @@ main{
 
 
 main.table{
-    width: 82vw;
+    width: 85vw;
     height: 90vh;
     background-color: linear-gradient(to left, #e2e2e2, #c9d6ff);
     box-shadow: var(--box-shadow);
@@ -243,43 +243,42 @@ tbody tr.hide td p {
 
 
 
-.button {
-    border: 1px solid;
-    padding: 15px 32px;
+button {
+    width: 5em;
+    display: inline-block;
     text-align: center;
-    text-decoration: none;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: var(--card-border-radius);
+    justify-content: center;
+    vertical-align: middle;
 }
 
 .Accept_button
 {
-    border: 1px solid;
-    padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
+    border: 1px solid;
     color: white;
-    display:flex;
-    background-color: #1B9C85;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: inline-block;
     font-size: 14px;
-    margin: 4px 2px;
+    margin: 2px 2px;
     cursor: pointer;
     border-radius: var(--card-border-radius);
+    background-color: #1B9C85;
 }
 
 .Reject_button
 {
+    text-align: center;
+    border: 1px solid;
     color: white;
-    display: flex;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: inline-block;
     font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: var(--card-border-radius);
-    background-color:#FF0060;
+    background-color: #FF0060;
 }
 
 @media (max-width: 1000px) {

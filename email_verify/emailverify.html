@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" type ="text/css" href="emailotp.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="emailotp.js" type = "module"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Xác thực email của bạn</h1>
+            <div class="email">
+                <input id="email" type="email" placeholder="Nhập email của bạn" autocomplete="off">
+                <i class="uil uil-envelope email-icon"></i>
+            </div>
+            <div class="email-verify">
+                <input id="otp-input" type="number" placeholder="Enter Code" autocomplete="off">
+                <button id="btn-verify-otp">Xác thực</button>
+            </div>
+            <button id = 'send-otp' class="btn-send-otp" >Gửi mã</button>
+        </div>
+    </section>
+    <!--Js for icon-->
+    <script>
+        const input = document.querySelector("input"),
+                emailIcon = document.querySelector(".email-icon")
+
+                input.addEventListener("keyup", () => {
+                    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+                    if(input.value === ""){
+                        emailIcon.classList.replace("uil-check-circle", "uil-envelope")
+                        return emailIcon.style.color = "#b4b4b4"
+                    }
+                    if(input.value.match(pattern))
+                    {
+                        emailIcon.classList.replace("uil-envelope", "uil-check-circle")
+                        return emailIcon.style.color = "#4bb543"
+                    }
+                    emailIcon.classList.replace("uil-check-circle", "uil-envelope")
+                    return emailIcon.style.color = "#de0601"
+                })
+    </script>
+</body>
+
+</html>

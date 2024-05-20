@@ -16,7 +16,8 @@ const Post = new Schema({
     endAt: { type: Date, default: Date.now },
     status: {type: Number},
     area: {type: Number},
-    slug: { type: String }
-  });
+    slug: { type: String },
+    images: {type: String}
+  }, { versionKey: false });
 
 module.exports = mongoose.model('Post', Post)
