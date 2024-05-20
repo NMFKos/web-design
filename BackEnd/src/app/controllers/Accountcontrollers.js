@@ -46,6 +46,8 @@ class UserController {
                 email: user.email,
                 phone: user.phone,
                 address: user.address,
+                successMessage: req.flash('success'),
+                errorMessage: req.flash('error'),
             });
         })
         .catch(error => {
@@ -59,14 +61,16 @@ class UserController {
         const updatedData = req.body;
         User.findByIdAndUpdate(id, updatedData, { new: true })
             .then(result => {
+                req.flash('success', 'Profile updated successfully');
                 res.redirect('/account');
             })
             .catch(err => {
-                res.send(err);
+                req.flash('error', 'An error occurred while updating the profile');
+                res.redirect('/account');
             });
     }
     password(req, res) {
-        res.render('changepassword', { showHeader: true });
+        res.render('changepassword', {showHeader: true, successMessage: req.flash('success'), errorMessage: req.flash('error') });
     }
     async changePassword(req, res) {
         const { oldpassword, newpassword } = req.body;
@@ -75,13 +79,14 @@ class UserController {
             const user = await User.findOne({ _id: req.userId });
             // Check if the old password is correct
             if (oldpassword !== user.password) {
-                return res.status(400).send('Incorrect old password');
+            req.flash('error', 'Incorrect old password');
+            return res.redirect('/account/change-password');
             }
             // Update the password in the database
             user.password = newpassword;
             await user.save();
-    
-            res.send('Password updated successfully');
+            req.flash('success', 'Password updated successfully');
+            res.redirect('/account/change-password');
         } catch (err) {
             console.error(err);
             res.status(500).send('Server error');
