@@ -88,21 +88,6 @@ async function runChat(userInput) {
         generationConfig,
         safetySettings,
         history: [
-<<<<<<< HEAD
-=======
-        //   {
-        //     role: "user",
-        //     parts: [
-        //       {text: "xin chào"},
-        //     ],
-        //   },
-        //   {
-        //     role: "model",
-        //     parts: [
-        //       {text: "Xin chào bạn! 👋  Rất vui được gặp bạn.  Bạn có thể cho mình biết tên của bạn được không?  😊  \n\nMình là TroGPT, một chatbot hỗ trợ người dùng tìm kiếm nhà trọ trên trang web OneHouse.  Bạn đang muốn tìm phòng trọ phải không?  Mình có thể giúp bạn tìm kiếm những căn phòng phù hợp nhất với nhu cầu của bạn đấy! \n"},
-        //     ],
-        //   },
->>>>>>> 2563719bcdd7268d7a4e051dd26d178b8a6e2ddb
         ],
       });
     
