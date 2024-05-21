@@ -33,6 +33,7 @@
             <tbody>
               {{#each newPosts}}
               <tr>
+                <form class="Accept" method="POST" action="/{{this._id}}?_method=PUT">
                 <td class="_id"><a href="/phong-tro/{{this.slug}}">{{this._id}}</a></td>
                 <td class="user-name">{{this.username}}</td>
                 <td class="membership">Basic</td>
@@ -41,7 +42,7 @@
                 <td class="price">{{this.price}}</td>
                 <td class="contact">0813374744</td>
                 <td>
-                    <button href="/yeu-cau/{{this._id}}" class="Accept_button" style="text-decoration: none; color: white">Duyệt</button>
+                    <button class="Accept_button" style="text-decoration: none; color: white">Duyệt</button>
                     <button class="Reject_button" style="text-decoration: none; color: white">Gỡ</button> 
                 </td>
               </tr>

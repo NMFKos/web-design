@@ -115,7 +115,7 @@ class AdminController {
     }
 
     updatePostStatus(req, res, next) {
-        Post.findByIdAndUpdate(req.params.id, { status: 1 }, { new: true })
+        Post.findByIdAndUpdate(req.id, { status: 1 }, { new: true })
             .then(() => res.redirect("/yeu-cau"))
             .catch(next);
     }
