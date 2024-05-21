@@ -41,7 +41,7 @@
                 <td class="price">{{this.price}}</td>
                 <td class="contact">0813374744</td>
                 <td>
-                    <button class="Accept_button" style="text-decoration: none; color: white">Duyệt</button>
+                    <button class="Accept_button" style="text-decoration: none; color: white" data-id="{{this._id}}">Duyệt</button>
                     <button class="Reject_button" style="text-decoration: none; color: white" data-id="{{this._id}}" data-bs-toggle="modal" data-bs-target="#delete-post-request">Gỡ</button> 
                 </td>
               </tr>
@@ -87,7 +87,8 @@
         });
 
         btnDelete.onclick = function(){
-            deleteForm.action = '/yeu-cau/' + postID + '?_method=DELETE';
+            deleteForm.action = postID + '?_method=DELETE';
+            deleteForm.submit();
         }
       });
 

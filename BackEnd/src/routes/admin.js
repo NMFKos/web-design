@@ -11,9 +11,10 @@ router.use('/bao-cao', (req, res) => {
 
 router.use('/yeu-cau', (req, res) => {
     adminController.requests(req, res);
-    router.delete('/:id', adminController.deletePost);
 })
 
+router.put('/:id', adminController.updatePostStatus);
+router.delete('/:id', adminController.deletePost);
 
 router.get('/', adminController.index);
 router.get('/dang-xuat', adminController.logout);
