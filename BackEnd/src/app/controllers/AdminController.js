@@ -120,6 +120,13 @@ class AdminController {
             .catch(next);
     }
 
+    deletePost(req, res, next)
+    {
+        Post.deleteOne({ _id: req.params.id})
+            .then(() => res.redirect('back'))
+            .catch(next);
+    }
+
     logout(req, res) {
         req.session.destroy();
         res.redirect('/');
