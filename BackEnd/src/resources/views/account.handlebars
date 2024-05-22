@@ -61,6 +61,17 @@
             <button type="submit" id="saving-button" class="saving-button">
                 Lưu & Cập nhật
             </button>
+            {{#if successMessage}}
+                <script>
+                    alert('{{successMessage}}');
+                </script>
+            {{/if}}
+
+            {{#if errorMessage}}
+                <script>
+                    alert('{{errorMessage}}');
+                </script>
+            {{/if}}
         </form>
     </div>
 </div>

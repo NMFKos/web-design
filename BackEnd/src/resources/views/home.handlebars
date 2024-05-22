@@ -6,6 +6,7 @@
     <title>OneHouse</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/typing.css">
 </head>
 <body>
     <div class="webpage">
@@ -139,6 +140,22 @@
                 {{/each}}
             </ul>
         </div>
+        <div class="chatbox">
+        <div class="chatbox-support">
+            <div class="chatbox-header">
+                TroGPT
+            </div>
+            <div id="chatbox-history"></div>
+            <form id="chat-form" class="chatbox-footer">
+                <input type="text" id="user-input" placeholder="Enter your message">
+                <button type="submit">Gửi</button>
+            </form>
+        </div>
+        <div class="chatbox-button">
+            <button>Branch-1</button>
+        </div>
+        </div>
     </div>
+    <script src="/script/Chat.js"></script>
 </body>
 </html>

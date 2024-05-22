@@ -1,9 +1,10 @@
 const User = require('../modules/user')
+const bcrypt = require('bcrypt');
 const Posts = require('../modules/post')
-const path = require('path');
+const Images = require('../modules/image')
 const { initializeApp } = require("firebase/app");
-const { getStorage, ref, uploadBytes, listAll, getDownloadURL} = require("firebase/storage");
-const { readdirSync, readFileSync, unlinkSync } = require("fs");
+const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
+const { ObjectId } = require('mongodb');
 
 const firebaseConfig = {
     apiKey: "AIzaSyDF36H8mFiTkXTyvRD6z-4YHmqsNCZ4yxE",
@@ -15,14 +16,10 @@ const firebaseConfig = {
     measurementId: "G-Z6TTKT1H0N"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const storage = getStorage(app);
-const metadata = {
-    contentType: 'image/jpeg',
-  };
-
 async function getFirstImageUrl(folderPath) {
+    const app = initializeApp(firebaseConfig);
+    const storage = getStorage(app);
+
     const listRef = ref(storage, folderPath);
     const listResult = await listAll(listRef);
 
@@ -34,55 +31,6 @@ async function getFirstImageUrl(folderPath) {
     
     return firstImageUrl;
 }
-
-async function getImageUrl(imagePath) {
-    try {
-        const storageRef = ref(storage, imagePath);
-        const imageUrl = await getDownloadURL(storageRef);
-        console.log(imageUrl);
-        return imageUrl;
-    } catch (error) {
-        console.error('Error getting image URL:', error);
-        throw error;
-    }
-}
-
-async function uploadLatestAvatarImage(userId) {
-    try {
-        const dirPath = 'src/public/avatar';
-        const files = readdirSync(dirPath);
-
-        if (files.length === 0) {
-            console.log('No files found in the directory.');
-            return;
-        }
-
-        // Lấy file mới nhất
-        const latestFile = files
-            .map(file => ({ file, time: statSync(path.join(dirPath, file)).mtime }))
-            .sort((a, b) => b.time - a.time)[0].file;
-
-        const filePath = path.join(dirPath, latestFile);
-        const uploadPath = `user-avatar/${userId}/${latestFile}`;
-        const extname = path.extname(filePath).toLowerCase();
-
-        if (extname === '.jpg' || extname === '.jpeg') {
-            const storageRef = ref(storage, uploadPath);
-            const fileData = readFileSync(filePath);
-            await uploadBytes(storageRef, fileData, metadata);
-            console.log(`${uploadPath} uploaded successfully.`);
-            //unlinkSync(filePath);
-            console.log(`${filePath} deleted successfully.`);
-        } else {
-            console.log(`${filePath} is not a JPG image. Skipping upload.`);
-        }
-
-        return uploadPath;
-    } catch (error) {
-        console.error('Error uploading the file:', error);
-    }
-}
-
 
 class UserController {
     index(req, res) {
@@ -98,6 +46,8 @@ class UserController {
                 email: user.email,
                 phone: user.phone,
                 address: user.address,
+                successMessage: req.flash('success'),
+                errorMessage: req.flash('error'),
             });
         })
         .catch(error => {
@@ -110,17 +60,17 @@ class UserController {
         const id = req.userId;
         const updatedData = req.body;
         User.findByIdAndUpdate(id, updatedData, { new: true })
-            .then(async result => {
-                // const avatarPath = uploadLatestAvatarImage(id);
-                // req.session.avatar = await getImageUrl(avatarPath);
+            .then(result => {
+                req.flash('success', 'Profile updated successfully');
                 res.redirect('/account');
             })
             .catch(err => {
-                res.send(err);
+                req.flash('error', 'An error occurred while updating the profile');
+                res.redirect('/account');
             });
     }
     password(req, res) {
-        res.render('changepassword', { showHeader: true });
+        res.render('changepassword', {showHeader: true, successMessage: req.flash('success'), errorMessage: req.flash('error') });
     }
     async changePassword(req, res) {
         const { oldpassword, newpassword } = req.body;
@@ -129,13 +79,14 @@ class UserController {
             const user = await User.findOne({ _id: req.userId });
             // Check if the old password is correct
             if (oldpassword !== user.password) {
-                return res.status(400).send('Incorrect old password');
+            req.flash('error', 'Incorrect old password');
+            return res.redirect('/account/change-password');
             }
             // Update the password in the database
             user.password = newpassword;
             await user.save();
-    
-            res.send('Password updated successfully');
+            req.flash('success', 'Password updated successfully');
+            res.redirect('/account/change-password');
         } catch (err) {
             console.error(err);
             res.status(500).send('Server error');

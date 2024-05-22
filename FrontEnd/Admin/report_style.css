@@ -243,27 +243,42 @@ tbody tr.hide td p {
     transition: .2s ease-in-out .5s;
 }
 
-.button {
-    border: 1px solid;
-    color: white;
-    padding: 5px 5px; /* Giảm giá trị này để thu nhỏ padding */
+button {
+    width: 5em;
+    display: inline-block;
     text-align: center;
-    text-decoration: none;
-    display:flex;
-    font-size: 13px; 
-    margin: 0.5px 0.5px; /* Giảm giá trị này để thu nhỏ margin */
-    cursor: pointer;
-    border-radius: var(--card-border-radius);
+    justify-content: center;
+    vertical-align: middle;
 }
 
 .Accept_button
 {
+    text-align: center;
+    border: 1px solid;
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: var(--card-border-radius);
     background-color: #1B9C85;
 }
 
 .Reject_button
 {
-    background-color:#FF0060;
+    text-align: center;
+    border: 1px solid;
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: var(--card-border-radius);
+    background-color: #FF0060;
 }
 
 @media (max-width: 1000px) {
