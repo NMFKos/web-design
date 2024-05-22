@@ -6,42 +6,63 @@
     <title>OneHouse</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/typing.css">
 </head>
 <body>
     <div class="webpage">
-        <div class="search-container middle-over">
-            <select id="house-select" class="form-select" aria-label="Default select example">
-                <option selected>Phòng trọ, nhà trọ</option>
-                <option>Căn hộ 1PN</option>
-                <option>Căn hộ 2PN</option>
-                <option>Căn hộ Duplex</option>
-                <option>Căn hộ Studio</option>
-            </select>
-            <select id="district-select" class="form-select" aria-label="Default select example">
-                <option selected>TP. Hồ Chí Minh</option>
-                <option>Bình Thạnh</option>
-                <option>Quận 1</option>
-                <option>Quân 3</option>
-                <option>Quận 10</option>
-                <option>Phú Nhuận</option>
-                <option>Tân Bình</option>
-            </select>
-            <select id="price-select" class="form-select" aria-label="Default select example">
-                <option selected>Chọn giá tiền</option>
-                <option>4 đến 5 triệu đồng</option>
-                <option>5 đến 7 triệu đồng</option>
-                <option>7 đến 10 triệu đồng</option>
-                <option>Trên 10 triệu đồng</option>
-            </select>
-            <select id="area-select" class="form-select" aria-label="Default select example">
-                <option selected>Chọn diện tích</option>
-                <option>25m2 đến 30m2</option>
-                <option>30m2 đến 35m2</option>
-                <option>35m2 đến 40m2</option>
-                <option>40m2 đến 50m2</option>
-            </select>
-            <button class="search-button">Search</button>
-        </div>
+        <form method="post" action="">
+            <div class="search-container middle-over">
+                <select id="house-select" name="typeHouse" class="form-select" aria-label="Default select example">
+                    <option selected>Phòng trọ, nhà trọ</option>
+                    <option>Căn hộ 1PN</option>
+                    <option>Căn hộ 2PN</option>
+                    <option>Căn hộ Duplex</option>
+                    <option>Căn hộ Studio</option>
+                </select>
+                <select id="district-select" name="district" class="form-select" aria-label="Default select example">
+                    <option selected>TP. Hồ Chí Minh</option>
+                    <option>Quận 1</option>
+                    <option>Quận 2</option>
+                    <option>Quận 3</option>
+                    <option>Quận 4</option>
+                    <option>Quận 5</option>
+                    <option>Quận 6</option>
+                    <option>Quận 7</option>
+                    <option>Quận 8</option>
+                    <option>Quận 9</option>
+                    <option>Quận 10</option>
+                    <option>Quận 11</option>
+                    <option>Quận 12</option>
+                    <option>Bình Thạnh</option>
+                    <option>Bình Tân</option>
+                    <option>Gò Vấp</option>
+                    <option>Phú Nhuận</option>
+                    <option>Tân Bình</option>
+                    <option>Tân Phú</option>
+                    <option>Thủ Đức</option>
+                    <option>Bình Chánh</option>
+                    <option>Cần Giờ</option>
+                    <option>Củ Chi</option>
+                    <option>Hóc Môn</option>
+                    <option>Nhà Bè</option>
+                </select>
+                <select id="price-select" name="price" class="form-select" aria-label="Default select example">
+                    <option selected>Chọn giá tiền</option>
+                    <option>4 đến 5 triệu đồng</option>
+                    <option>5 đến 7 triệu đồng</option>
+                    <option>7 đến 10 triệu đồng</option>
+                    <option>Trên 10 triệu đồng</option>
+                </select>
+                <select id="area-select" name="area" class="form-select" aria-label="Default select example">
+                    <option selected>Chọn diện tích</option>
+                    <option>25m2 đến 30m2</option>
+                    <option>30m2 đến 35m2</option>
+                    <option>35m2 đến 40m2</option>
+                    <option>40m2 đến 50m2</option>
+                </select>
+                <button type="submit" class="search-button">Search</button>
+            </div>
+        </form>
         <!-- https://cdn3.ivivu.com/2023/10/du-lich-sai-gon-ivivu.jpg -->
         <div class="background-image"></div>
         <div class="preview">

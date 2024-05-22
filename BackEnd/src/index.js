@@ -3,6 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const session = require('express-session');
 const { engine } = require('express-handlebars')
+const methodOverride = require('method-override')
 const userIdMiddleware = require('./app/middleware/sessionUser');
 const {GoogleGenerativeAI, HarmCategory, HarmBlockThreshold,} = require("@google/generative-ai");
 const flash = require('connect-flash');
@@ -25,6 +26,9 @@ app.use(session({
     saveUninitialized: true,
     cookie: { secure: false }
 }));
+
+// Override with POST having ?_method=PUT
+app.use(methodOverride('_method'))
 
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));

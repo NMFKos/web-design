@@ -41,40 +41,70 @@
                 <td class="price">{{this.price}}</td>
                 <td class="contact">0813374744</td>
                 <td>
-                    <button class="Accept_button" onclick="updatePostStatus('{{this._id}}', '1')" style="text-decoration: none; color: white">Duyệt</button>
-                    <button class="Reject_button" onclick="removePostRow('{{this._id}}')" style="text-decoration: none; color: white">Gỡ</button> 
+                    <button class="Accept_button" style="text-decoration: none; color: white" data-id="{{this._id}}">Duyệt</button>
+                    <button class="Reject_button" style="text-decoration: none; color: white" data-id="{{this._id}}" data-bs-toggle="modal" data-bs-target="#delete-post-request">Gỡ</button> 
                 </td>
               </tr>
               {{/each}}
             </tbody>
           </table>
         </section>
+
+        {{!-- Confirm delete --}}
+
+        <div id="delete-post-request" class="modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Gỡ yêu cầu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Bạn chắc chắn muốn gỡ bài đăng này ?</p>
+              </div>
+              <div class="modal-footer">
+                <button id="btn-delete" type="button" class="btn btn-danger">Gỡ</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </main>
+    {{!-- Delete hidden form --}}
+    <form name="delete-post-form" method="POST"></form>
+
+    {{!-- Accept hidden form --}}
+    <form name="accept-post-form" method="POST"></form>
+
+
     <script>
-      function updatePostStatus(postId, status) {
-        fetch('/update-post-status', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ id: postId, status: status }),
-        })
-        .then(response => response.json())
-        .then(data => {
-          if (data.success) {
-            // Tìm và ẩn dòng tương ứng trong bảng
-            document.getElementById(`post_${postId}`).style.display = 'none';
-          } else {
-            console.error('Failed to update post status:', data.message);
-          }
-        })
-        .catch(error => console.error('Error:', error));
-      }
+      document.addEventListener('DOMContentLoaded', function(){
+        var postID;
+        var deleteForm = document.forms['delete-post-form'];
+        var btnDelete = document.getElementById('btn-delete');
 
-      function removePostRow(postId) {
-        // Chỉ ẩn dòng tương ứng trong bảng
-        document.getElementById(`post_${postId}`).style.display = 'none';
-      }
+        $('#delete-post-request').on('show.bs.modal', function(event){
+          var button = $(event.relatedTarget);
+          postID = button.data('id');
+        });
+
+        btnDelete.onclick = function(){
+            deleteForm.action = postID + '?_method=DELETE';
+            deleteForm.submit();
+        }
+
+        var acceptPostID;
+        var acceptForm = document.forms['accept-post-form'];
+        document.querySelectorAll('.Accept_button').forEach(button => {
+          button.addEventListener('click', function(){
+              acceptPostID = button.getAttribute('data-id');
+              acceptForm.action =  acceptPostID  + '?_method=PUT';
+              acceptForm.submit();
+          });
+        });
+      });
+
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+

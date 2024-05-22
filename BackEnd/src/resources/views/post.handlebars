@@ -89,16 +89,6 @@
                     <br>
                     <input type="text" id="tieude-text" name="description">
                 </div>
-                {{!-- <div class="lienhe">
-                    <label for="lienhe-text">Thông tin liên hệ </label>
-                    <br>
-                    <input type="text" id="lienhe-text" name="lienhe">
-                </div> --}}
-                {{!-- <div class="phone">
-                    <label for="phone-text">Điện thoại </label>
-                    <br>
-                    <input type="text" id="phone-text" name="phone">
-                </div> --}}
                 <div class="price">
                     <label for="price-text">Giá cho thuê (triệu VNĐ)</label>
                     <br>
@@ -124,25 +114,9 @@
                     Tiếp tục
                 </button>
             </form>
-            <script>
-                document.querySelector('.update-image-input').addEventListener('change', function(e) {
-                    const files = e.target.files;
-                    for (const file of files) {
-                        const reader = new FileReader();
-                        reader.onload = function() {
-                            const img = document.createElement('img');
-                            img.src = reader.result;
-                            img.style.width = '100px';
-                            img.style.height = '100px';
-                            document.querySelector('.image-preview').appendChild(img);
-                        }
-                        reader.readAsDataURL(file);
-                    }
-                });
-            </script>
         </div>
     </div>
-    <script src ="script.js"></script>
+    <script src ="/script/post.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
