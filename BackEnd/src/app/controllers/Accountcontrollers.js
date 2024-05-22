@@ -1,10 +1,9 @@
 const User = require('../modules/user')
-const bcrypt = require('bcrypt');
 const Posts = require('../modules/post')
-const Images = require('../modules/image')
+const path = require('path');
 const { initializeApp } = require("firebase/app");
-const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
-const { ObjectId } = require('mongodb');
+const { getStorage, ref, uploadBytes, listAll, getDownloadURL} = require("firebase/storage");
+const { readdirSync, readFileSync, unlinkSync } = require("fs");
 
 const firebaseConfig = {
     apiKey: "AIzaSyDF36H8mFiTkXTyvRD6z-4YHmqsNCZ4yxE",
@@ -16,10 +15,14 @@ const firebaseConfig = {
     measurementId: "G-Z6TTKT1H0N"
 };
 
-async function getFirstImageUrl(folderPath) {
-    const app = initializeApp(firebaseConfig);
-    const storage = getStorage(app);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const storage = getStorage(app);
+const metadata = {
+    contentType: 'image/jpeg',
+  };
 
+async function getFirstImageUrl(folderPath) {
     const listRef = ref(storage, folderPath);
     const listResult = await listAll(listRef);
 
@@ -31,6 +34,55 @@ async function getFirstImageUrl(folderPath) {
     
     return firstImageUrl;
 }
+
+async function getImageUrl(imagePath) {
+    try {
+        const storageRef = ref(storage, imagePath);
+        const imageUrl = await getDownloadURL(storageRef);
+        console.log(imageUrl);
+        return imageUrl;
+    } catch (error) {
+        console.error('Error getting image URL:', error);
+        throw error;
+    }
+}
+
+async function uploadLatestAvatarImage(userId) {
+    try {
+        const dirPath = 'src/public/avatar';
+        const files = readdirSync(dirPath);
+
+        if (files.length === 0) {
+            console.log('No files found in the directory.');
+            return;
+        }
+
+        // Lấy file mới nhất
+        const latestFile = files
+            .map(file => ({ file, time: statSync(path.join(dirPath, file)).mtime }))
+            .sort((a, b) => b.time - a.time)[0].file;
+
+        const filePath = path.join(dirPath, latestFile);
+        const uploadPath = `user-avatar/${userId}/${latestFile}`;
+        const extname = path.extname(filePath).toLowerCase();
+
+        if (extname === '.jpg' || extname === '.jpeg') {
+            const storageRef = ref(storage, uploadPath);
+            const fileData = readFileSync(filePath);
+            await uploadBytes(storageRef, fileData, metadata);
+            console.log(`${uploadPath} uploaded successfully.`);
+            //unlinkSync(filePath);
+            console.log(`${filePath} deleted successfully.`);
+        } else {
+            console.log(`${filePath} is not a JPG image. Skipping upload.`);
+        }
+
+        return uploadPath;
+    } catch (error) {
+        console.error('Error uploading the file:', error);
+    }
+}
+
 
 class UserController {
     index(req, res) {
@@ -58,7 +110,9 @@ class UserController {
         const id = req.userId;
         const updatedData = req.body;
         User.findByIdAndUpdate(id, updatedData, { new: true })
-            .then(result => {
+            .then(async result => {
+                // const avatarPath = uploadLatestAvatarImage(id);
+                // req.session.avatar = await getImageUrl(avatarPath);
                 res.redirect('/account');
             })
             .catch(err => {

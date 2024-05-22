@@ -43,6 +43,12 @@ async function getImageUrl(imagePath) {
     }
 }
 
+function handler(m_string, regex) {
+    let match = m_string.match(regex);
+    console.log(match);
+    return match ? match.map(Number) : [];
+  }
+
 class SiteController {
     index(req, res) {
         Posts.find({}).exec()
@@ -82,6 +88,53 @@ class SiteController {
             console.error('Error fetching houses from database:', error);
             res.status(500).send('Internal Server Error');
         });
+    }
+
+    search(req, res) {
+        const payload = req.body;
+        const house = payload['typeHouse'].replace('Căn hộ', '').trim();
+        const district = payload['district'];
+        const districtRegex = new RegExp(`\\b${district}\\b`, 'i');
+
+        const matchArea = handler(payload['area'], /\d+(?=m2)/g);
+        let minArea = matchArea[0];
+        let maxArea = matchArea[1];
+
+        const matchPrice = handler(payload['price'], /\d+/g);
+        let minPrice = null;
+        let maxPrice = null;
+        if (matchPrice.length === 2) {
+            minPrice = matchPrice[0];
+            maxPrice = matchPrice[1];
+        }
+        else if (matchPrice.length === 1) {
+            minPrice = matchPrice[0];
+            maxPrice = 100;
+        }
+
+        Posts.find({ 
+            price: { $gte: minPrice, $lte: maxPrice },
+            area: { $gte: minArea, $lte: maxArea },
+            address: { $regex: districtRegex },
+            type_house: house
+         })
+        .then(async posts => {
+            if (posts.length === 0) {
+                throw new Error('404 Not found');
+            }
+            const postData = posts.map(p => p.toObject());
+            for (const post of postData) {
+                const folderPath = post.images;
+                const imagesData = await getFirstImageUrl(folderPath);
+                post.thumbnailData = imagesData;
+            }
+            res.render('home', { showHeader: true, postData });
+        })
+        .catch(error => {
+            console.error('Error fetching houses from database:', error);
+            res.status(500).send('Internal Server Error');
+        });
+        
     }
 
     showPriceList(req, res) {

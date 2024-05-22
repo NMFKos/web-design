@@ -18,5 +18,6 @@ router.get('/can-ho-studio', (req, res) => {
     homeController.filter(req, res, "Studio");
 });
 router.get('/bang-gia', homeController.showPriceList);
+router.post('/', homeController.search);
 router.get('/', homeController.index)
 module.exports = router;

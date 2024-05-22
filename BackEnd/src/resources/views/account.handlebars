@@ -48,34 +48,23 @@
             </div>
             <div class="password">
                 <label for="password">Mật khẩu </label>
-                <a href="/account/change-password" class="change-password-link ml-12" style="color: rgb(26, 72, 146);font-size: 20px margin-left 2px;;">Đổi mật khẩu</a>
+                <a href="/account/change-password" class="change-password-link ml-12" style="color: rgb(26, 72, 146);font-size: 20px margin-left 2px;">
+                    Đổi mật khẩu
+                </a>
             </div>
             <div class="avatar">
-                <label for="avatar">Ảnh đại diện </label>
-                <img id="avatar" src="{{session.avatar}}" alt="avatar" style="border: 1px solid black; border-radius: 50%; width: 160px; height: 160px; margin-left: 160px; margin-bottom: 50px;">
+                <label for="avatar">Ảnh đại diện</label>
                 <input type="file" id="upload-avatar" name="avatar" accept="image/*" style="display: none;">
+                <img id="avatar" src="{{session.avatar}}" alt="avatar" style="border: 1px solid black; border-radius: 50%; width: 160px; height: 160px; margin-left: 160px; margin-bottom: 50px;">
                 <button id="upload-button" type="button" style="border:1px solid black; margin-left:200px">Chọn ảnh</button>
             </div>
             <button type="submit" id="saving-button" class="saving-button">
                 Lưu & Cập nhật
             </button>
         </form>
-        <script>
-        document.getElementById('upload-button').addEventListener('click', function() {
-            document.getElementById('upload-avatar').click();
-        });
-        
-        document.getElementById('upload-avatar').addEventListener('change', function(e) {
-            const reader = new FileReader();
-            reader.onload = function() {
-                document.getElementById('avatar').src = reader.result;
-            }
-            reader.readAsDataURL(e.target.files[0]);
-        });
-        </script>
     </div>
 </div>
-<script src ="script.js"></script>
+<script src ="/script/account.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
