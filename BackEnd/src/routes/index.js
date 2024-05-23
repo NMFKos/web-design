@@ -5,6 +5,7 @@ const detailRouter = require('./detailpage')
 const loginRouter = require('./login')
 const reportRouter = require('./report')
 const accountRouter = require('./account')
+const paymentRouter = require('./payment')
 
 function route(app) {
     app.use('/admin', adminRouter);
@@ -13,6 +14,7 @@ function route(app) {
     app.use('/phong-tro', detailRouter);
     app.use('/report', reportRouter),
     app.use('/login', loginRouter);
+    app.use('/payment', paymentRouter)
     app.use('/', homeRouter);
 }
 module.exports = route;

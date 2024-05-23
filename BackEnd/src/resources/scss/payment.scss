@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container form{
+    width: 800px;
+    padding : 40px;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    border: 1px solid black;
+}
+
+form .row{
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;
+}
+
+.row .column{
+    flex: 1 1 250px;
+}
+
+.column .title{
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/* select */
+.select, .select2{
+    margin: 10px;
+}
+
+.select{
+    border: 1px solid black;
+}
+
+.select2{
+    border: 1px solid black;
+}
+
+.select3{
+    border: 1px solid black;
+}
+
+.select4{
+    border: 1px solid black;
+}
+
+.column .select{
+    margin: 15px 0;
+}
+
+.select span{
+    display:block;
+    margin-bottom: 10px;
+}
+
+.select input{
+    width: 100%;
+    padding: 10px, 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.flex .select{
+    margin-top: 5px;
+}
+
+/* select */
+
+.column .input-box{
+    margin: 15px 0;
+}
+
+.input-box span{
+    display:block;
+    margin-bottom: 10px;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 10px, 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.column .flex{
+    display: flex;
+    gap: 15px;
+}
+
+.flex .input-box{
+    margin-top: 5px;
+}
+
+form .btn {
+    width:100%;
+    padding: 12px;
+    background: #8175d3;
+    border: none;
+    outline:none;
+    border-radius: 6px;
+    font-size: 17px;
+    margin-top:5px;
+    cursor: pointer;
+}
+
+form .btn:hover{
+    background: #6a5acd;
+}

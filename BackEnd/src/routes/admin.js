@@ -9,6 +9,9 @@ router.use('/bao-cao', (req, res) => {
     adminController.reports(req, res);
 })
 
+router.delete('/:id', adminController.deleteReport);
+router.put('/:id', adminController.updateReportStatus);
+
 router.use('/yeu-cau', (req, res) => {
     adminController.requests(req, res);
 })

@@ -114,10 +114,22 @@ class AdminController {
         }) 
     }
 
-    updatePostStatus(req, res, next) {
-        Post.findByIdAndUpdate(req.id, { status: 1 }, { new: true })
-            .then(() => res.redirect("/yeu-cau"))
+    updateReportStatus(req, res, next){
+        Reports.findByIdAndUpdate(req.params.id, { state: "Đã duyệt" }, { new: true })
+            .then(() => res.redirect('back'))
             .catch(next);
+    }
+
+    updatePostStatus(req, res, next) {
+        Post.findByIdAndUpdate(req.params.id, { status: 1 }, { new: true })
+            .then(() => res.redirect('back'))
+            .catch(next);
+    }
+
+    deleteReport(req, res, next){
+        Reports.deleteOne({ _id: req.params.id})
+        .then(() => res.redirect('back'))
+        .catch(next);
     }
 
     deletePost(req, res, next)

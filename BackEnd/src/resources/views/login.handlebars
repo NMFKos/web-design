@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" type ="text/css" href="/css/login.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="/script/login.js" type="module"></script>
-    <title>Đăng nhập - Đăng ký</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Modern Login Page | AsmrProg</title>
 </head>
 <body>
     <div class="container" id="container">
@@ -15,28 +13,31 @@
             <form method="post" action="/dang-nhap">
                 <h1>Đăng ký</h1>
                 <div class="social-icons">
-                    <a href="#" class="icon" style="background-color:  #DB4437;"><i class="fa-brands fa-google-plus-g" style="color: white;"></i></a>
-                    <a href="#" class="icon" style="background-color: #0165E1;"><i class="fa-brands fa-facebook-f " style="color: white;"></i></a>
+                    <a href="/auth/google" class="icon" style="background-color:  #DB4437;"><i class="fa-brands fa-google-plus-g" style="color: white;"></i></a>
+                    <a href="/auth/facebook" class="icon" style="background-color: #0165E1;"><i class="fa-brands fa-facebook-f " style="color: white;"></i></a>
                 </div>
-                <input type="text" id = "username" name = "username" placeholder="Họ tên" required>
-                <input type="email" id = "email" name = "email" placeholder="Email" required>
+                <!-- <span>or use your email for registeration</span> -->
+                <input type="text" name="name" placeholder="Họ tên" required>
+                <input type="email" name="email" placeholder="Email" required>
                 <input type="phone" id = "phone" name = "phone" placeholder="Số điện thoại" required>
-                <input type="password" id = "password" name = "password" placeholder="Đặt mật khẩu" required>
-                <input type= "password" id = "password-auth" name = "password-auth" placeholder="Xác nhận mật khẩu" required>
-                <button>Đăng ký</button>
+                <input type="address" id = "address" name = "address" placeholder="Địa chỉ" required>
+                <input type="password" name="password1" placeholder="Đặt mật khẩu" required>
+                <input type= "password" name="password2" placeholder="Xác nhận mật khẩu" required>
+                <button type="submit">Đăng ký</button>
             </form>
         </div>
         <div class="form-container sign-in">
             <form method="post" action="/dang-nhap">
                 <h1>Đăng nhập</h1>
                 <div class="social-icons">
-                    <a href="#" class="icon" style="background-color:  #DB4437;"><i class="fa-brands fa-google-plus-g" style="color: white;"></i></a>
-                    <a href="#" class="icon" style="background-color: #0165E1;"><i class="fa-brands fa-facebook-f " style="color: white;"></i></a>
+                    <a href="/auth/google" class="icon" style="background-color:  #DB4437;"><i class="fa-brands fa-google-plus-g" style="color: white;"></i></a>
+                    <a href="/auth/facebook" class="icon" style="background-color: #0165E1;"><i class="fa-brands fa-facebook-f " style="color: white;"></i></a>
                 </div>
-                <input type="phone" id = "Login_phone" name = "Login_phone" placeholder="Số điện thoại" >
-                <input type="password" id = "Login_password" name = "Login_password" placeholder="Password">
-                <a href="/emailverify">Quên mật khẩu ?</a>
-                <button type = "submit" class="login_button">Đăng nhập</button>
+                <!-- <span>or use your email password</span> -->
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button type="submit">Đăng nhập</button>
             </form>
         </div>
         <div class="toggle-container">
@@ -54,5 +55,7 @@
             </div>
         </div>
     </div>
+    <script src="/script/login.js"></script>
 </body>
+
 </html>

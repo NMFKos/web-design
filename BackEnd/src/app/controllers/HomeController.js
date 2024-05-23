@@ -72,6 +72,53 @@ class SiteController {
         });
     }
 
+    search(req, res) {
+        const payload = req.body;
+        const house = payload['typeHouse'].replace('Căn hộ', '').trim();
+        const district = payload['district'];
+        const districtRegex = new RegExp(`\\b${district}\\b`, 'i');
+
+        const matchArea = handler(payload['area'], /\d+(?=m2)/g);
+        let minArea = matchArea[0];
+        let maxArea = matchArea[1];
+
+        const matchPrice = handler(payload['price'], /\d+/g);
+        let minPrice = null;
+        let maxPrice = null;
+        if (matchPrice.length === 2) {
+            minPrice = matchPrice[0];
+            maxPrice = matchPrice[1];
+        }
+        else if (matchPrice.length === 1) {
+            minPrice = matchPrice[0];
+            maxPrice = 100;
+        }
+
+        Posts.find({ 
+            price: { $gte: minPrice, $lte: maxPrice },
+            area: { $gte: minArea, $lte: maxArea },
+            address: { $regex: districtRegex },
+            type_house: house
+         })
+        .then(async posts => {
+            if (posts.length === 0) {
+                throw new Error('404 Not found');
+            }
+            const postData = posts.map(p => p.toObject());
+            for (const post of postData) {
+                const folderPath = post.images;
+                const imagesData = await getFirstImageUrl(folderPath);
+                post.thumbnailData = imagesData;
+            }
+            res.render('home', { showHeader: true, postData });
+        })
+        .catch(error => {
+            console.error('Error fetching houses from database:', error);
+            res.status(500).send('Internal Server Error');
+        });
+        
+    }
+
     showPriceList(req, res) {
         res.render('banggia', { showHeader: true });
     }
@@ -80,15 +127,15 @@ class SiteController {
         const payload = req.body;
         // sign up
         if (Object.keys(payload).length === 6) {
-            if (payload['password1'] !== payload['password2']) {
+            if (payload['password'] !== payload['password-auth']) {
                 res.redirect('/dang-nhap');
             } else {
                 const newUsers = new Users({
                     _id: new mongoose.Types.ObjectId(),
                     name: payload['name'],
-                    password: payload['password1'],
+                    password: payload['password'],
                     email: payload['email'],
-                    address: payload['address'],
+                    address: "Việt Nam",
                     phone: payload['phone'],
                     role: 0,
                     avatar: "user-avatar/default-avatar.jpg"
@@ -105,7 +152,7 @@ class SiteController {
         }        
         // sign in
         else if (Object.keys(payload).length === 2) {
-            Users.findOne({ email: payload['email'], password: payload['password'] })
+            Users.findOne({ phone: payload['phone'], password: payload['password'] })
             .then(async user => {
                 if (!user) {
                     res.redirect('/dang-nhap');
@@ -113,7 +160,7 @@ class SiteController {
                 // Lưu ID người dùng vào session
                 req.session.userId = user._id;
                 req.session.username = user.name;
-                //req.session.avatar = await getImageUrl(user.avatar);
+                req.session.avatar = await getImageUrl(user.avatar);
                 if (user.role === 0) {
                     res.redirect('/');
                 }
@@ -130,7 +177,7 @@ class SiteController {
         else {
             res.send('Error');
         }
-    }    
+    }
     
 
     showLogin(req, res) {

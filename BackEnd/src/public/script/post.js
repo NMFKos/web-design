@@ -1,17 +1,14 @@
-const select = document.querySelector('.select');
-
-select.addEventListener('change', ()=> {
-const selectedOption = select.options[select.selectedIndex];
-console.log(`Selected option: ${selectedOption.innerText}`);
-});
-const input = document.querySelector('#upload-video-input');
-input.addEventListener('change', (event) => {
-const file = event.target.files[0];
-const fileName = file.name;
-const fileSize = file.size;
-const fileType = file.type;
-
-console.log(`Selected file: ${fileName}, size: ${fileSize}, type: ${fileType}`);
-
-  // Upload the video file here
+document.querySelector('.update-image-input').addEventListener('change', function(e) {
+  const files = e.target.files;
+  for (const file of files) {
+      const reader = new FileReader();
+      reader.onload = function() {
+          const img = document.createElement('img');
+          img.src = reader.result;
+          img.style.width = '100px';
+          img.style.height = '100px';
+          document.querySelector('.image-preview').appendChild(img);
+      }
+      reader.readAsDataURL(file);
+  }
 });

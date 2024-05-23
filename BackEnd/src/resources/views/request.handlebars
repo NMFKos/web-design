@@ -73,13 +73,15 @@
     {{!-- Delete hidden form --}}
     <form name="delete-post-form" method="POST"></form>
 
+    {{!-- Accept hidden form --}}
+    <form name="accept-post-form" method="POST"></form>
+
 
     <script>
       document.addEventListener('DOMContentLoaded', function(){
         var postID;
         var deleteForm = document.forms['delete-post-form'];
         var btnDelete = document.getElementById('btn-delete');
-        console.log(btnDelete);
 
         $('#delete-post-request').on('show.bs.modal', function(event){
           var button = $(event.relatedTarget);
@@ -90,6 +92,16 @@
             deleteForm.action = postID + '?_method=DELETE';
             deleteForm.submit();
         }
+
+        var acceptPostID;
+        var acceptForm = document.forms['accept-post-form'];
+        document.querySelectorAll('.Accept_button').forEach(button => {
+          button.addEventListener('click', function(){
+              acceptPostID = button.getAttribute('data-id');
+              acceptForm.action =  acceptPostID  + '?_method=PUT';
+              acceptForm.submit();
+          });
+        });
       });
 
     </script>

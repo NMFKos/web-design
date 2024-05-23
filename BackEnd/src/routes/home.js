@@ -4,8 +4,9 @@ const homeController = require('../app/controllers/HomeController');
 const passport = require('passport')
 const  session = require('express-session');
 const googleAuthDal = require('../app/google-auth');
+const facebookAuthDal = require('../app/facebook-auth')
 require('../public/script/google-auth');
-
+require('../public/script/facebook-auth');
 router.post('/dang-nhap', homeController.login);
 router.get('/dang-nhap', homeController.showLogin);
 router.get('/dang-xuat', homeController.logout);
@@ -25,35 +26,67 @@ router.get('/can-ho-studio', (req, res) => {
 router.get('/bang-gia', homeController.showPriceList);
 router.get('/', homeController.index)
 
-function isLogged(req, res, next){
+function isLogged(req, res, next) {
     req.user ? next() : res.sendStatus(401);
 }
 
 router.get('/auth/google',
-  passport.authenticate('google', { scope:
-      [ 'email', 'profile' ] }
-));
+  passport.authenticate('google', { scope: [ 'email', 'profile' ] })
+);
 
-router.get( '/auth/google/callback',
-passport.authenticate( 'google', {
+router.get('/auth/google/callback',
+  passport.authenticate('google', {
     successRedirect: '/auth/google/success',
     failureRedirect: '/auth/google/failure'
-}));
+  })
+);
 
 router.use(session({
     secret: 'mysecret',
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false }
-  }));
+}));
 
 router.use(passport.initialize());
 router.use(passport.session());
-router.get('/auth/google/success',isLogged,async (req, res)=>{
-    await googleAuthDal.registerWithGoogle(req, res, userProfile);
-    
-})
-router.get('/auth/google/failure',isLogged, (res,req)=>{
-    res.redirect('/dang-nhap')
-})
+
+router.get('/auth/google/success', isLogged, async (req, res) => {
+    const userProfile = req.user; // Make sure `req.user` has the oauthUser profile info
+    const result = await googleAuthDal.registerWithGoogle(req, res, userProfile);
+    if (result) {
+        req.session.userId = result.userId;
+        req.session.username = result.username;
+    }
+    res.redirect('/');
+});
+
+router.get('/auth/google/failure', (req, res) => {
+    res.redirect('/dang-nhap');
+});
+router.get('/auth/facebook',
+  passport.authenticate('facebook', { scope: ['email'] })
+);
+
+router.get('/auth/facebook/callback',
+  passport.authenticate('facebook', {
+    failureRedirect: '/auth/facebook/failure'
+  }),
+  async (req, res) => {
+    const userProfile = req.user;
+    const result = await facebookAuthDal.registerWithFacebook(req, res, userProfile);
+    if (result) {
+        req.session.userId = result.userId;
+        req.session.username = result.username;
+    }
+    res.redirect('/');
+});
+
+router.get('/auth/facebook/success', isLogged, (req, res) => {
+    res.redirect('/');
+});
+
+router.get('/auth/facebook/failure', (req, res) => {
+    res.redirect('/dang-nhap');
+});
 module.exports = router;
