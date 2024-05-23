@@ -127,15 +127,15 @@ class SiteController {
         const payload = req.body;
         // sign up
         if (Object.keys(payload).length === 6) {
-            if (payload['password1'] !== payload['password2']) {
+            if (payload['password'] !== payload['password-auth']) {
                 res.redirect('/dang-nhap');
             } else {
                 const newUsers = new Users({
                     _id: new mongoose.Types.ObjectId(),
                     name: payload['name'],
-                    password: payload['password1'],
+                    password: payload['password'],
                     email: payload['email'],
-                    address: payload['address'],
+                    address: "Việt Nam",
                     phone: payload['phone'],
                     role: 0,
                     avatar: "user-avatar/default-avatar.jpg"
@@ -152,7 +152,7 @@ class SiteController {
         }        
         // sign in
         else if (Object.keys(payload).length === 2) {
-            Users.findOne({ email: payload['email'], password: payload['password'] })
+            Users.findOne({ phone: payload['phone'], password: payload['password'] })
             .then(async user => {
                 if (!user) {
                     res.redirect('/dang-nhap');
@@ -160,7 +160,7 @@ class SiteController {
                 // Lưu ID người dùng vào session
                 req.session.userId = user._id;
                 req.session.username = user.name;
-                //req.session.avatar = await getImageUrl(user.avatar);
+                req.session.avatar = await getImageUrl(user.avatar);
                 if (user.role === 0) {
                     res.redirect('/');
                 }
