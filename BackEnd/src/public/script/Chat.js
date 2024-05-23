@@ -12,6 +12,7 @@ class InteractiveChatbox {
         const {button, chatbox} = this.args;
         
         button.addEventListener('click', () => this.toggleState(chatbox))
+        
     }
 
     toggleState(chatbox) {
@@ -22,13 +23,17 @@ class InteractiveChatbox {
     showOrHideChatBox(chatbox, button) {
         if(this.state) {
             chatbox.classList.add('chatbox--active')
+            chatbox.style.display = 'flex';
             this.toggleIcon(true, button);
         } else if (!this.state) {
             chatbox.classList.remove('chatbox--active')
+            chatbox.style.display = 'none';
             this.toggleIcon(false, button);
         }
     }
-
+    
+      
+    
     toggleIcon(state, button) {
         const { isClicked, isNotClicked } = this.icons;
         let b = button.children[0].innerHTML;
