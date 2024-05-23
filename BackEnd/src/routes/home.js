@@ -23,38 +23,44 @@ router.get('/can-ho-studio', (req, res) => {
     homeController.filter(req, res, "Studio");
 });
 router.get('/bang-gia', homeController.showPriceList);
-router.post('/', homeController.search);
 router.get('/', homeController.index)
 
-function isLogged(req, res, next){
+function isLogged(req, res, next) {
     req.user ? next() : res.sendStatus(401);
 }
 
 router.get('/auth/google',
-  passport.authenticate('google', { scope:
-      [ 'email', 'profile' ] }
-));
+  passport.authenticate('google', { scope: [ 'email', 'profile' ] })
+);
 
-router.get( '/auth/google/callback',
-passport.authenticate( 'google', {
+router.get('/auth/google/callback',
+  passport.authenticate('google', {
     successRedirect: '/auth/google/success',
     failureRedirect: '/auth/google/failure'
-}));
+  })
+);
 
 router.use(session({
     secret: 'mysecret',
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false }
-  }));
+}));
 
 router.use(passport.initialize());
 router.use(passport.session());
-router.get('/auth/google/success',isLogged,async (req, res)=>{
-    await googleAuthDal.registerWithGoogle(req, res, userProfile);
-    
-})
-router.get('/auth/google/failure',isLogged, (res,req)=>{
-    res.redirect('/dang-nhap')
-})
+
+router.get('/auth/google/success', isLogged, async (req, res) => {
+    const userProfile = req.user; // Make sure `req.user` has the oauthUser profile info
+    const result = await googleAuthDal.registerWithGoogle(req, res, userProfile);
+    if (result) {
+        req.session.userId = result.userId;
+        req.session.username = result.username;
+    }
+    res.redirect('/');
+});
+
+router.get('/auth/google/failure', (req, res) => {
+    res.redirect('/dang-nhap');
+});
 module.exports = router;
