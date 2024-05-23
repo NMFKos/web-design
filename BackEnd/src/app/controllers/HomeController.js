@@ -127,15 +127,15 @@ class SiteController {
         const payload = req.body;
         // sign up
         if (Object.keys(payload).length === 6) {
-            if (payload['password1'] !== payload['password2']) {
+            if (payload['password'] !== payload['password-auth']) {
                 res.redirect('/dang-nhap');
             } else {
                 const newUsers = new Users({
                     _id: new mongoose.Types.ObjectId(),
                     name: payload['name'],
-                    password: payload['password1'],
+                    password: payload['password'],
                     email: payload['email'],
-                    address: payload['address'],
+                    address: "Việt Nam",
                     phone: payload['phone'],
                     role: 0,
                     avatar: "user-avatar/default-avatar.jpg"
@@ -152,7 +152,7 @@ class SiteController {
         }        
         // sign in
         else if (Object.keys(payload).length === 2) {
-            Users.findOne({ email: payload['email'], password: payload['password'] })
+            Users.findOne({ phone: payload['Login_phone'], password: payload['Login_password'] })
             .then(async user => {
                 if (!user) {
                     res.redirect('/dang-nhap');
@@ -177,7 +177,7 @@ class SiteController {
         else {
             res.send('Error');
         }
-    }    
+    }
     
 
     showLogin(req, res) {
