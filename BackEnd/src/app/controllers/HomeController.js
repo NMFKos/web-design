@@ -152,11 +152,7 @@ class SiteController {
         }        
         // sign in
         else if (Object.keys(payload).length === 2) {
-<<<<<<< HEAD
-            Users.findOne({ phone: payload['Login_phone'], password: payload['Login_password'] })
-=======
             Users.findOne({ phone: payload['phone'], password: payload['password'] })
->>>>>>> a0278a6ec93bef54393a57705e44aff7421a39fb
             .then(async user => {
                 if (!user) {
                     res.redirect('/dang-nhap');
