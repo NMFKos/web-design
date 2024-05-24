@@ -8,7 +8,7 @@ const facebookUser = new Schema({
     email: { type: String },
     address: { type: String },
     phone: { type: String, match: /[0-9]/ },
-    provider: {type: String},
+    provider: { type: String },
     role: { type: Number },
     avatar: { type: String },
     createdAt: { type: Date, default: Date.now },

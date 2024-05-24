@@ -1,7 +1,8 @@
 const User = require('../modules/user')
 const bcrypt = require('bcrypt');
 const Posts = require('../modules/post')
-const Images = require('../modules/image')
+const googleUser = require('../modules/google')
+const facebookUser = require('../modules/facebook')
 const { initializeApp } = require("firebase/app");
 const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
 const { ObjectId } = require('mongodb');
@@ -32,9 +33,31 @@ async function getFirstImageUrl(folderPath) {
     return firstImageUrl;
 }
 
+async function getImageUrl(ImagePath) {
+    const app = initializeApp(firebaseConfig);
+    const storage = getStorage(app);
+
+    const ImageRef = ref(storage, ImagePath);
+    ImageUrl = await getDownloadURL(ImageRef)
+    
+    return ImageUrl;
+}
+
 class UserController {
     index(req, res) {
         User.findOne({ _id: req.userId }) // Tìm kiếm người dùng theo id từ params
+        .then(user => {
+            if (!user) {
+                return googleUser.findOne({ _id: req.userId });
+            }
+            return user;
+        })
+        .then(user => {
+            if (!user) {
+                return facebookUser.findOne({ _id: req.userId });
+            }
+            return user;
+        })
         .then(user => {
             if (!user) {
                 throw new Error('User not found');
@@ -60,14 +83,30 @@ class UserController {
         const id = req.userId;
         const updatedData = req.body;
         User.findByIdAndUpdate(id, updatedData, { new: true })
-            .then(result => {
+        .then(result => {
+            if (!result) {
+                // Nếu không tìm thấy trong bảng User, thực hiện tìm kiếm trong bảng GgUser
+                return googleUser.findByIdAndUpdate(id, updatedData, { new: true });
+            }
+            // Nếu tìm thấy trong bảng User, trả về kết quả
+            req.flash('success', 'Profile updated successfully');
+            res.redirect('/account');
+        })
+        .then(result => {
+            if (!result) {
+                // Nếu không tìm thấy trong cả hai bảng User và GgUser, xử lý lỗi
+                req.flash('error', 'User not found');
+                res.redirect('/account');
+            } else {
+                // Nếu tìm thấy trong bảng GgUser, xử lý thành công
                 req.flash('success', 'Profile updated successfully');
                 res.redirect('/account');
-            })
-            .catch(err => {
-                req.flash('error', 'An error occurred while updating the profile');
-                res.redirect('/account');
-            });
+            }
+        })
+        .catch(err => {
+            req.flash('error', 'An error occurred while updating the profile');
+            res.redirect('/account');
+        });
     }
     password(req, res) {
         res.render('changepassword', {showHeader: true, successMessage: req.flash('success'), errorMessage: req.flash('error') });
