@@ -7,6 +7,15 @@
 body{
     background-color: #f0f0f0;
 }
+.header {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1F2937;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    flex: auto;
+    margin-top: 15px;
+}
 .card-container{
     display: flex;
     justify-content: center;
