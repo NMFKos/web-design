@@ -4,7 +4,8 @@ const Stats = require("../modules/stats")
 const Reports = require("../modules/reports")
 const mongoose = require('mongoose')
 const { initializeApp } = require('firebase/app')
-const {getStorage, ref, getDownloadURL, listAll} = require('firebase/storage')
+const {getStorage, ref, getDownloadURL, listAll} = require('firebase/storage');
+const { types } = require('node-sass');
 
 const firebaseConfig = {
     apiKey: "AIzaSyDF36H8mFiTkXTyvRD6z-4YHmqsNCZ4yxE",
@@ -16,28 +17,12 @@ const firebaseConfig = {
     measurementId: "G-Z6TTKT1H0N"
 };
 
-async function getImageUrls(folderPath) {
-    const app = initializeApp(firebaseConfig);
-    const storage = getStorage(app);
-
-    const listRef = ref(storage, folderPath);
-    const listResult = await listAll(listRef);
-
-    const imageUrls = [];
-    for (const item of listResult.items) {
-        const downloadUrl = await getDownloadURL(item);
-        imageUrls.push(downloadUrl);
-    }
-    return imageUrls
-}
-
 async function getImage(imgPath){
     const app = initializeApp(firebaseConfig);
     const storage = getStorage(app);
     const imageUrl = await getDownloadURL(ref(storage, imgPath));
     return imageUrl;
 }
-
 
 class AdminController {
     index(req, res) {
@@ -48,13 +33,13 @@ class AdminController {
                 throw new Error('Stats not found');
             }
             statsData = stats.map(stats => stats.toObject());
-            return User.find({}).exec();
+            return User.find({}).sort({ createdAt: -1 }).exec();
         })
         .then(async user=> {
             if(!user){
                 throw new Error('404 NOT FOUND');
             }
-            const userData = user.slice(30, 42).map(user => user.toObject());
+            const userData = user.slice(0, 14).map(user => user.toObject());
             for (const user of userData)
             {
                 const avatarData = await getImage(user.avatar); // lấy URL avatar của user
@@ -69,12 +54,12 @@ class AdminController {
     }
 
     reports(req, res) {
-        Reports.find({}).exec()
+        Reports.find({}).sort({state: 1}).exec()
         .then(reports => {
             if(!reports){
                 throw new Error('Reports not found');
             }
-            const reportData = reports.map(p=>p.toObject());
+            const reportData = reports.filter(p => p.state>=0).map(p=>p.toObject());
             res.render('reports', {showAdmin: true, reportData});
         })
         .catch(error => {
@@ -84,29 +69,21 @@ class AdminController {
     }
 
     requests(req, res){
-        let userData;
-        User.find({}).exec()
-        .then(user => {
-            if(!user){
+        let postData;
+        Post.find({status: 0}).sort({type_post: -1})
+        .then(async post => {
+            if(!post){
                 throw new Error('User not found');
             }
-            userData = user.map(user => user.toObject());
-            return Post.find({}).exec();
-        })
-        .then(posts => {
-            if(!posts){
-                throw new Error('Post not found');
-            }
-            const postData = posts.filter(p => p.status==0).map(p=>p.toObject());
-            let newPosts = postData.map( post => {
-                let user = userData.find(user => user._id === post.user_id);
-                return{
-                    ...post,
-                    username: user ? user.username: 'unknown'
-                };
-            });
-            
-            res.render('request', {showAdmin: true, newPosts});
+            postData = await Promise.all(post.map(async p => {
+                const postObject = p.toObject();
+                const user = await User.findById(p.user_id);
+                if (user) {
+                  postObject.user = user.toObject();
+                }
+                return postObject;
+              }));
+            res.render('request', {showAdmin: true, postData});
         })
         .catch(error => {
             console.error('Error fetching new posts from database');
@@ -115,7 +92,7 @@ class AdminController {
     }
 
     updateReportStatus(req, res, next){
-        Reports.findByIdAndUpdate(req.params.id, { state: "Đã duyệt" }, { new: true })
+        Reports.findByIdAndUpdate(req.params.id, { state: 1 }, { new: true })
             .then(() => res.redirect('back'))
             .catch(next);
     }
@@ -127,14 +104,14 @@ class AdminController {
     }
 
     deleteReport(req, res, next){
-        Reports.deleteOne({ _id: req.params.id})
-        .then(() => res.redirect('back'))
-        .catch(next);
+        Reports.findByIdAndUpdate(req.params.id, { state: -1 }, { new: true })
+            .then(() => res.redirect('back'))
+            .catch(next);
     }
 
     deletePost(req, res, next)
     {
-        Post.deleteOne({ _id: req.params.id})
+        Post.findByIdAndUpdate(req.params.id, { status: -1 }, { new: true })
             .then(() => res.redirect('back'))
             .catch(next);
     }

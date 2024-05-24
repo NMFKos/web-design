@@ -106,21 +106,21 @@
                                 <div class="price-border">
                                     {{this.price}} triệu VND/tháng
                                 </div>
-                                <div style="gap: 20px; display:flex">
+                                {{!-- <div style="gap: 20px; display:flex">
                                     <a href="#" style="text-decoration: none; color: black">
                                         <i class="fa-solid fa-arrow-up-from-bracket" id="share-icon"></i>
                                     </a>
                                     <a href="#" style="text-decoration: none; color: black">
                                         <i class="fa-regular fa-heart" id="heart-icon"></i>
                                     </a>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="content-second">
                                 <div style="font-weight:bold; font-size:large;">
                                     {{this.title}}
                                 </div>
                                 <div style="font-size:medium;">
-                                    {{this.description}}
+                                    {{limitedText this.description}}
                                 </div>
                                 <div>
                                     <i class="fa-solid fa-location-dot"></i>

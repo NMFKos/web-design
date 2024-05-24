@@ -31,11 +31,11 @@
           <tbody>
             {{#each reportData}}
             <tr>
-              <td >{{this.user_name}}</td>
+              <td >{{this.username}}</td>
               <td class="row-id"><a href="/phong-tro/{{this.slug}}">{{this.post_id}}</a></td>
-              <td>{{this.reason}}</td>
+              <td>{{this.comment}}</td>
               <td class="row-time">{{this.time}}</td>
-              <td>{{this.state}}</td>
+              <td>{{statusString this.state}}</td>
               <td>
                   <button class="Accept_button" data-id="{{this._id}}">Duyệt</button>
                   <button class="Reject_button" data-id="{{this._id}}" data-bs-toggle="modal" data-bs-target="#delete-report">Gỡ</button> 

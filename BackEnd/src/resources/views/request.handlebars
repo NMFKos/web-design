@@ -22,7 +22,6 @@
               <tr>
                 <th class="_id">ID Bài Viết</th>
                 <th class="user-name">Tên tài khoản</th>
-                <th class="membership">Thành viên</th>
                 <th class="title">Tiêu đề</th>
                 <th class="description">Mô tả</th>
                 <th class="price">Giá</th>
@@ -31,15 +30,14 @@
               </tr>
             </thead>
             <tbody>
-              {{#each newPosts}}
+              {{#each postData}}
               <tr>
                 <td class="_id"><a href="/phong-tro/{{this.slug}}">{{this._id}}</a></td>
-                <td class="user-name">{{this.username}}</td>
-                <td class="membership">Basic</td>
+                <td class="user-name">{{this.user.name}}</td>
                 <td class="title">{{this.title}}</td>
-                <td class="description">{{this.description}}</td>
+                <td class="description">{{nl2br this.description}}</td>
                 <td class="price">{{this.price}}</td>
-                <td class="contact">0813374744</td>
+                <td class="contact">{{this.user.phone}}</td>
                 <td>
                     <button class="Accept_button" style="text-decoration: none; color: white" data-id="{{this._id}}">Duyệt</button>
                     <button class="Reject_button" style="text-decoration: none; color: white" data-id="{{this._id}}" data-bs-toggle="modal" data-bs-target="#delete-post-request">Gỡ</button> 

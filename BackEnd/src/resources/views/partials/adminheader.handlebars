@@ -72,10 +72,10 @@
           <i id="heart-icon" class="fa-regular fa-heart"></i>
           <i id="bell-icon" class="fa-regular fa-bell"></i>
       </div>
-      <img src="/imgs/2.png" alt="Anh dai dien" style="border-radius: 50%; width: 4%;">
+      <img src="{{session.avatar}}" alt="Anh dai dien" style="border-radius: 50%; width: 4%;">
       <div class="dropdown">
           <a class="nav-link dropdown-toggle account-btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Nguyễn Cao Cường
+            {{session.username}}
           </a>
           <div class="dropdown-menu designed-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/account/change-password">Thay đổi mật khẩu</a>

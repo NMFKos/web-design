@@ -1,8 +1,11 @@
 const Post = require('../modules/post');
 const User = require('../modules/user');
+const Rate = require('../modules/rate')
+const Report = require('../modules/reports')
 const mongoose = require('mongoose')
 const { initializeApp } = require("firebase/app");
 const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
+const rate = require('../modules/rate');
 
 const firebaseConfig = {
   apiKey: "AIzaSyDF36H8mFiTkXTyvRD6z-4YHmqsNCZ4yxE",
@@ -37,69 +40,134 @@ async function getImage(imgPath) {
 }
 
 class DetailController {
-    index(req, res) {
-        let postData, userData;
-        Post.findOne({ slug: req.params.slug })
-        .then(post => {
+    async index(req, res) {
+        try {
+            const post = await Post.findOne({ slug: req.params.slug });
             if (!post) {
                 throw new Error('House not found');
             }
-            postData = post.toObject();
-            return User.findOne({ _id: post.user_id });
-        })
-        .then(async user => {
-            if (!user) {
-                throw new Error('User not found');
+            const postData = post.toObject();
+    
+            const rates = await Rate.find({ post_id: post._id });
+            const ratesData = rates.map(r => r.toObject());
+            // Tính trung bình cộng
+            const totalRate = ratesData.reduce((total, rate) => total + rate.rate, 0);
+            const avgRating = totalRate / ratesData.length;
+            ratesData.avg = avgRating.toFixed(1);
+    
+            const owner = await User.findOne({ _id: post.user_id });
+            if (!owner) {
+                throw new Error('Owner not found');
             }
-            userData = user.toObject();
+            const ownerData = owner.toObject();
+    
             const folderPath = postData.images;
             const imagesData = await getImageUrls(folderPath);
-            const avatarData = await getImage(user.avatar);
-            userData.avatar_image = avatarData;
-            res.render('detailpage', { showHeader: true, postData, userData, imagesData });
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            res.status(500).send('Internal Server Error');
-        });
-    }
-    // Hàm report không sử dụng
-    report(req, res) {
-        let houseData, userData;
-        House.findOne({ slug: req.params.slug })
-        .then(house => {
-            if (!house) {
-                throw new Error('House not found');
-            }
-            houseData = house.toObject();
-            return User.findOne({ _id: house.user_id });
-        })
-        .then(user => {
+
+            const user = await User.findOne({ _id: req.userId });
             if (!user) {
-                throw new Error('User not found');
+                res.render('detailpage', {
+                    showHeader: true,
+                    postData,
+                    ownerData,
+                    ratesData,
+                    imagesData
+                });
             }
-            userData = user.toObject();
-            const payload = req.body;
-            // Tạo một instance của model Report
-            const newReport = new Report({
-                _id: new mongoose.Types.ObjectId(),
-                user_id: userData._id,
-                house_id: houseData._id,
-                name: userData.name,
-                email: userData.email,
-                content: payload['content']
-            });
-            // Lưu dữ liệu vào MongoDB
-            return newReport.save();
-        })
-        .then(() => {
-            console.log('Data has been saved successfully');
-            res.render('detailpage', { showHeader: true, houseData, userData })
-        })
-        .catch(error => {
+            else {
+                const userData = user.toObject();
+
+                res.render('detailpage', {
+                    showHeader: true,
+                    postData,
+                    ownerData,
+                    userData,
+                    ratesData,
+                    imagesData
+                });
+            }
+            
+        } catch (error) {
             console.error('Error:', error);
             res.status(500).send('Internal Server Error');
-        });
+        }
+    }    
+
+    ReportRating(req, res) {
+        const payload = req.body;
+        let userData, postData;
+        // rate & comment
+        if (Object.keys(payload).length === 2) {
+            Post.findOne({ slug: req.params.slug })
+            .then(post => {
+                if (!post) {
+                    throw new Error('Post not found');
+                }
+                postData = post.toObject();
+                return User.findOne({ _id: req.userId });
+            })
+            .then(user => {
+                if (!user) {
+                    throw new Error('User not found');
+                }
+                userData = user.toObject();
+                // Tạo một instance của model Report
+                const newRate = new Rate({
+                    _id: new mongoose.Types.ObjectId(),
+                    user_id: userData._id,
+                    post_id: postData._id,
+                    username: userData.name,
+                    rate: payload['rating'],
+                    comment: payload['comment-value']
+                });
+                // Lưu dữ liệu vào MongoDB
+                return newRate.save();
+            })
+            .then(() => {
+                res.redirect('back')
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                res.status(500).send('Internal Server Error');
+            });
+        }
+        // report
+        else if (Object.keys(payload).length === 1) {
+            Post.findOne({ slug: req.params.slug })
+            .then(post => {
+                if (!post) {
+                    throw new Error('Post not found');
+                }
+                postData = post.toObject();
+                return User.findOne({ _id: req.userId });
+            })
+            .then(user => {
+                if (!user) {
+                    throw new Error('User not found');
+                }
+                userData = user.toObject();
+                // Tạo một instance của model Report
+                const newReport = new Report({
+                    _id: new mongoose.Types.ObjectId(),
+                    user_id: userData._id,
+                    post_id: postData._id,
+                    username: userData.name,
+                    comment: payload['report-value']
+                });
+                // Lưu dữ liệu vào MongoDB
+                return newReport.save();
+            })
+            .then(() => {
+                res.redirect('back');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                res.status(500).send('Internal Server Error');
+            });
+        }
+        else {
+            res.send('Up coming');
+        }
     }
 }
 

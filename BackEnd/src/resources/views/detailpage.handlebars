@@ -26,130 +26,167 @@
                     {{/each}}
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
                 </a>
             </div>
         </div>
         <div class="content">
-            {{#with postData}}
             <div class="post-details">
+                {{#with postData}}
                 <div class="title">
                     Chi tiết bài đăng
                 </div>
                 <div>
-                    {{description}}
+                    {{nl2br description}}
                 </div>
-                <button class="contact-btn">Liên hệ nhanh</button>
-            </div>
-            <div class="post-summary">
-                <div class="title">
-                    Tóm tắt bài đăng
+                {{/with}}
+                <div style="display: flex; justify-content: space-between;">
+                    <button class="contact-btn">Liên hệ nhanh</button>
+                    {{#if userData}}
+                    <button class="contact-btn" id="open-popup-btn">Phản hồi</button>
+                    {{/if}}
                 </div>
-                <div>
-                    <span>Địa chỉ:</span>
-                    <span>{{address}}</span>
-                </div>
-                <div>
-                    <span>Loại phòng:</span>
-                    <span>{{type_house}}</span>
-                </div>
-                <div>
-                    <span>Giá thuê:</span>
-                    <span>{{price}} triệu VND</span>
-                </div>
-                <div>
-                    <span>Diện tích:</span>
-                    <span>{{area}}m2</span>
-                </div>
-            </div>
-            {{/with}}
-        </div>
-        <div class="service-container">
-            <div class="service">
-                <div class="service-title">
-                    <!-- Button to navigate to Map slide -->
-                    <button id="mapBtn">Bản đồ</button>
-                    <!-- Button to navigate to Owner slide -->
-                    <button id="ownerBtn">Liên lạc</button>
-                </div>
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <!-- Slide 1: Map -->
-                        <div class="carousel-item active">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2337779251357!2d106.66692710935789!3d10.793398789312011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292dca10e2d5%3A0xdf19a7972db22451!2zxJAuIEzDqiBWxINuIFPhu7ksIFTDom4gQsOsbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1714137181346!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contact-frame">
+                    {{#with ownerData}}
+                    <div class="infor-frame">
+                        <div class="title">
+                            Thông tin người cho thuê
                         </div>
-                        <!-- Slide 2: Owner -->
-                        <div class="carousel-item">
-                            <div class="contact-frame">
-                                {{#with userData}}
-                                <div class="avatar">
-                                    <img src="{{avatar_image}}" alt="ảnh đại diện">
-                                </div>
-                                <div class="infor-frame">
-                                    <div class="title">
-                                        Thông tin người cho thuê
-                                    </div>
-                                    <div>
-                                        <span>Tên đăng nhập:</span>
-                                        <span>{{name}}</span>
-                                    </div>
-                                    <div>
-                                        <span>Email:</span>
-                                        <span>{{email}}</span>
-                                    </div>
-                                    <div>
-                                        <span>Zalo liên lạc:</span>
-                                        <span>{{phone}}</span>
-                                    </div>
-                                    <div>
-                                        <span>Địa chỉ:</span>
-                                        <span>{{address}}</span>
-                                    </div>
-                                    <form method="post" action="">
-                                        <div class="form-group">
-                                            <label for="report-form" class="label-text">Gửi phản hồi</label>
-                                            <textarea id="report-form" name="content" rows="3" placeholder="Có điều gì đó không ổn? Phản hồi cho chúng tôi ngay."></textarea>
-                                        </div>
-                                        <button type="submit" class="submit-button">Submit</button>
-                                    </form>
-                                </div>
-                                {{/with}}
+                        <div>
+                            <span>Họ và tên:</span>
+                            <span>{{name}}</span>
+                        </div>
+                        <div>
+                            <span>Email:</span>
+                            <span>{{email}}</span>
+                        </div>
+                        <div>
+                            <span>Liên hệ:</span>
+                            <span>{{phone}}</span>
+                        </div>
+                    </div>
+                    {{/with}}
+                </div>
+                {{#if userData}}
+                <div>
+                    <form method="post" action="">
+                        <div class="rating-space">
+                            <div class="rating">
+                                <span class="star" data-value="5.0">&#9733;</span>
+                                <span class="star" data-value="4.0">&#9733;</span>
+                                <span class="star" data-value="3.0">&#9733;</span>
+                                <span class="star" data-value="2.0">&#9733;</span>
+                                <span class="star" data-value="1.0">&#9733;</span>
+                            </div>
+                            <div class="rating-value" id="rating-value" name="rating-value">Đánh giá của bạn: 0</div>
+                            <input type="hidden" name="rating" id="rating-input" value="0">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Bình luận của bạn</label>
+                          <textarea class="form-control" name="comment-value" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="rating-button-space">
+                            <button class="contact-btn" type="submit">Gửi bình luận</button>
+                        </div>
+                    </form>
+                </div>
+                {{/if}}
+            </div>
+            <div class="sumaryRateComment">
+                {{#with postData}}
+                <div class="post-summary">
+                    <div class="title">
+                        Tóm tắt bài đăng
+                    </div>
+                    <div>
+                        <span>Địa chỉ:</span>
+                        <span>{{address}}</span>
+                    </div>
+                    <div>
+                        <span>Giá thuê:</span>
+                        <span>{{price}} triệu VND</span>
+                    </div>
+                    <div>
+                        <span>Loại phòng:</span>
+                        <span>{{type_house}}</span>
+                    </div>
+                    <div>
+                        <span>Diện tích:</span>
+                        <span>{{area}}m2</span>
+                    </div>
+                </div>
+                {{/with}}
+                <div class="service-container">
+                    <div class="service-title">
+                        Đánh giá & Bình luận
+                    </div>
+                    {{#if ratesData}}
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div class="rating-value" id="rate-reviewers">Đánh giá: {{ratesData.avg}}</div>
+                        <div class="rating">
+                            <span class="reviewers-star" data-value="5.0">&#9733;</span>
+                            <span class="reviewers-star" data-value="4.0">&#9733;</span>
+                            <span class="reviewers-star" data-value="3.0">&#9733;</span>
+                            <span class="reviewers-star" data-value="2.0">&#9733;</span>
+                            <span class="reviewers-star" data-value="1.0">&#9733;</span>
+                        </div>
+                    </div>
+                    {{#each ratesData}}
+                    <div class="alert alert-secondary" role="alert">
+                        <div class="rattingComment">
+                            <div class="ratting">
+                                <span>{{this.username}}</span>
+                                <span>Đánh giá: {{this.rate}}.0</span>
+                            </div>
+                            <div class="comment">
+                                {{this.comment}}
                             </div>
                         </div>
                     </div>
+                    {{/each}}
+                    {{else}}
+                    <div class="alert alert-primary" role="alert">
+                        Chưa có bình luận nào cho bài đăng này.
+                    </div>
+                    {{/if}}
                 </div>
             </div>
         </div>
+        <div id="report-popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <form method="post" action="">
+                    {{#with userData}}
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Họ và tên</label>
+                        <input type="name" class="form-control" id="exampleFormControlInput1" value="{{name}}" placeholder="Nguyễn Văn A">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Số điện thoại</label>
+                        <input type="phone" class="form-control" id="exampleFormControlInput1" value="{{phone}}" placeholder="0123 456 789">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Địa chỉ email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" value="{{email}}" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Phản hồi của bạn</label>
+                      <textarea class="form-control" name="report-value" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button class="contact-btn" type="submit">Gửi phản hồi</button>
+                    {{/with}}
+                </form>
+            </div>
+        </div>
     </div>
+    <script src="/script/detail.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function(){
-            // Bắt sự kiện click cho nút Bản đồ
-            $('#mapBtn').click(function(){
-                // Điều hướng carousel đến slide Bản đồ (index 0)
-                $('#carouselExampleIndicators').carousel(0);
-            });
-            // Bắt sự kiện click cho nút Liên lạc
-            $('#ownerBtn').click(function(){
-                // Điều hướng carousel đến slide Liên lạc (index 1)
-                $('#carouselExampleIndicators').carousel(1);
-            });
-        });
-    </script>
 </body>
 </html>

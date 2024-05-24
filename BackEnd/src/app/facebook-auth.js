@@ -1,4 +1,4 @@
-const googleUser = require('./modules/google');
+const facebookUser = require('./modules/facebook');
 const mongoose = require('mongoose');
 const { initializeApp } = require("firebase/app");
 const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
@@ -23,10 +23,10 @@ async function getImageUrl(ImagePath) {
     return ImageUrl;
 }
 
-const googleAuthDal = {
-    registerWithGoogle: async (req, res, oauthUser) => {
+const facebookAuthDal = {
+    registerWithFacebook: async (req, res, oauthUser) => {
         try {
-            let user = await googleUser.findOne({
+            let user = await facebookUser.findOne({
                 id: oauthUser._id
             });
 
@@ -34,15 +34,15 @@ const googleAuthDal = {
                 req.session.userId = user._id;
                 req.session.username = user.name;
             } else {
-                const newUser = new googleUser({
+                const newUser = new facebookUser({
                     id: oauthUser._id,
                     name: oauthUser.displayName,
-                    email: oauthUser.emails[0].value, // optional - storing it as extra info
+                    email: oauthUser.emails ? oauthUser.emails[0].value : null, // Facebook might not provide email
                     role: 0,
                     address: "Việt Nam",
                     phone: '0123456789',
                     avatar: "user-avatar/default-avatar.jpg",
-                    provider: oauthUser.provider
+                    provider: "facebook"
                 });
                 await newUser.save();
                 req.session.userId = newUser._id;
@@ -58,4 +58,4 @@ const googleAuthDal = {
     }
 };
 
-module.exports = googleAuthDal;
+module.exports = facebookAuthDal;

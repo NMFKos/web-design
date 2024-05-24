@@ -194,7 +194,7 @@
   /* CONTENT IS CLOSE */
   .chatbox-support {
     position: fixed;
-    display: flex;
+    display: none;
     flex-direction: column;
     background: #f9f9f9;
     right: 0;
@@ -211,6 +211,7 @@
   /* CONTENT IS OPEN */
   .chatbox--active {
     transform: translateY(-20px);
+    display: flex;
     z-index: 10;
     opacity: 1;
     border-radius: 15px;

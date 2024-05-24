@@ -4,8 +4,9 @@ const homeController = require('../app/controllers/HomeController');
 const passport = require('passport')
 const  session = require('express-session');
 const googleAuthDal = require('../app/google-auth');
+const facebookAuthDal = require('../app/facebook-auth')
 require('../public/script/google-auth');
-
+require('../public/script/facebook-auth');
 router.post('/dang-nhap', homeController.login);
 router.get('/dang-nhap', homeController.showLogin);
 router.get('/dang-xuat', homeController.logout);
@@ -56,11 +57,38 @@ router.get('/auth/google/success', isLogged, async (req, res) => {
     if (result) {
         req.session.userId = result.userId;
         req.session.username = result.username;
+        req.session.avatar = result.avatar;
     }
     res.redirect('/');
 });
 
 router.get('/auth/google/failure', (req, res) => {
+    res.redirect('/dang-nhap');
+});
+router.get('/auth/facebook',
+  passport.authenticate('facebook', { scope: ['email'] })
+);
+
+router.get('/auth/facebook/callback',
+  passport.authenticate('facebook', {
+    failureRedirect: '/auth/facebook/failure'
+  }),
+  async (req, res) => {
+    const userProfile = req.user;
+    const result = await facebookAuthDal.registerWithFacebook(req, res, userProfile);
+    if (result) {
+        req.session.userId = result.userId;
+        req.session.username = result.username;
+        req.session.avatar = result.avatar;
+    }
+    res.redirect('/');
+});
+
+router.get('/auth/facebook/success', isLogged, (req, res) => {
+    res.redirect('/');
+});
+
+router.get('/auth/facebook/failure', (req, res) => {
     res.redirect('/dang-nhap');
 });
 module.exports = router;

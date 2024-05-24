@@ -1,6 +1,6 @@
 const Posts = require('../modules/post')
 const Users = require('../modules/user')
-const Images = require('../modules/image')
+const googleUser = require('../modules/google')
 const mongoose = require('mongoose')
 const { initializeApp } = require("firebase/app");
 const { getStorage, ref, getDownloadURL, listAll } = require("firebase/storage");
@@ -31,14 +31,24 @@ async function getFirstImageUrl(folderPath) {
     return firstImageUrl;
 }
 
+async function getImageUrl(ImagePath) {
+    const app = initializeApp(firebaseConfig);
+    const storage = getStorage(app);
+
+    const ImageRef = ref(storage, ImagePath);
+    ImageUrl = await getDownloadURL(ImageRef)
+    
+    return ImageUrl;
+}
+
 class SiteController {
     index(req, res) {
-        Posts.find({}).exec()
+        Posts.find({}).sort({ type_post: -1 }).exec()
         .then(async posts => {
             if (!posts) {
                 throw new Error('404 Not found');
             }
-            const postData = posts.slice(30, 42).map(p => p.toObject());
+            const postData = posts.slice(0, 11).map(p => p.toObject());
             for (const post of postData) {
                 const folderPath = post.images;
                 const imagesData = await getFirstImageUrl(folderPath);
@@ -178,7 +188,6 @@ class SiteController {
             res.send('Error');
         }
     }
-    
 
     showLogin(req, res) {
         res.render('login', { showHeader: false });
