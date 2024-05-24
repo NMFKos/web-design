@@ -57,6 +57,7 @@ router.get('/auth/google/success', isLogged, async (req, res) => {
     if (result) {
         req.session.userId = result.userId;
         req.session.username = result.username;
+        req.session.avatar = result.avatar;
     }
     res.redirect('/');
 });
@@ -78,6 +79,7 @@ router.get('/auth/facebook/callback',
     if (result) {
         req.session.userId = result.userId;
         req.session.username = result.username;
+        req.session.avatar = result.avatar;
     }
     res.redirect('/');
 });
