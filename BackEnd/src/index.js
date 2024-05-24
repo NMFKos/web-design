@@ -7,6 +7,7 @@ const methodOverride = require('method-override')
 const userIdMiddleware = require('./app/middleware/sessionUser');
 const {GoogleGenerativeAI, HarmCategory, HarmBlockThreshold,} = require("@google/generative-ai");
 const flash = require('connect-flash');
+const Handlebars = require('handlebars');
 
 const app = express();
 
@@ -43,7 +44,33 @@ app.engine('handlebars', engine(
     {
         defaultLayout: path.join(__dirname, 'resources/views/layouts/main.handlebars'),
         layoutsDir: path.join(__dirname, "resources/views/layouts"),
-        partialsDir: path.join(__dirname,  "resources/views/partials")
+        partialsDir: path.join(__dirname,  "resources/views/partials"),
+        helpers: {
+            nl2br: function(text) {
+                return new Handlebars.SafeString(text.replace(/\\n/gm, '<br>'));
+            },
+            limitedText: function(text) {
+                let replacedText = text.replace(/\\n/gm, '<br>');
+                let lines = replacedText.split('<br>');
+                if (lines.length > 2) {
+                    lines = lines.slice(0, 2);
+                    lines[1] = lines[1].replace(/\\n/gm, '');
+                    lines.push("...");
+                }
+                return new Handlebars.SafeString(lines.join('<br>'));
+            },
+            statusString: function(a) {
+                if (a === 1) {
+                    return "Đã duyệt";
+                }
+                else if (a === 0) {
+                    return "Chưa duyệt";
+                }
+                else {
+                    return "Khác";
+                }
+            }
+        }
     }
 ));
 app.set('view engine', 'handlebars');
