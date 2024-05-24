@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng tin mới</title>
+    <title>Thanh Toán</title>
     <link rel="stylesheet" href="payment.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -117,67 +117,47 @@
             </nav>
     </header>
 <!-- Narbav End -->
-<div class ="container">
-    <form action ="">
-        <div class ="row">
-            <div class ="column">
+<div class="container">
+    <form action="">
+        <div class="row">
+            <div class="column">
                 <h3 class="title">Thanh toán tin</h3>
-                <span>Chọn loại tin: </span>
-                <select id="select" class ="select">
-                    <option>Chọn loại tin</option>
-                    <option>Tin Thường</option>
-                    <option>Tin VIP</option>
-                </select>
-                <select id ="select2" class ="select2">
-                    <option>Chọn thời gian</option>
-                    <option>Đăng theo ngày</option>
-                    <option>Đăng theo tuần</option>
-                </select>
-                <select id ="select3" class ="select3">
-                    <option>5 ngày</option>
-                    <option>6 ngày</option>
-                    <option>7 ngày</option>
-                    <option>8 ngày</option>
-                    <option>9 ngày</option>
-                    <option>9 ngày</option>
-                </select>
-                <select id="select4" class ="select4">
-                    <option>1 tuần</option>
-                    <option>2 tuần</option>
-                    <option>3 tuần</option>
-                    <option>4 tuần</option>
-                </select>
-                <div class ="input-box">
-                    <span>Email :</span>
-                    <input type="email"
-                    placeholder="duc123456456456@gmail.com">
+                <div class="select-container">
+                    <span>Chọn loại tin: </span>
+                    <select id="select" class="select">
+                        <option>Chọn loại tin</option>
+                        <option>Tin Thường</option>
+                        <option>Tin VIP</option>
+                    </select>
+                    <select id="select2" class="select">
+                        <option>Chọn thời gian</option>
+                        <option>Đăng theo ngày</option>
+                        <option>Đăng theo tuần</option>
+                    </select>
+                    <select id="select3" class="select">
+                        <option>5 ngày</option>
+                        <option>6 ngày</option>
+                        <option>7 ngày</option>
+                        <option>8 ngày</option>
+                        <option>9 ngày</option>
+                    </select>
+                    <select id="select4" class="select">
+                        <option>1 tuần</option>
+                        <option>2 tuần</option>
+                        <option>3 tuần</option>
+                        <option>4 tuần</option>
+                    </select>
                 </div>
-                <div class ="input-box">
-                    <span>Address :</spa>
-                    <input type="text"
-                    placeholder="Thu Duc">
-                </div>
-                <div class ="input-box">
-                    <span>City :</span>
-                    <input type="text"
-                    placeholder="HCM">
-                </div>
-                <div class="flex">
-                    <div class ="input-box">
-                        <span>State :</spa>
-                        <input type="text"
-                        placeholder="VietNam">
-                    </div>
-                    <div class ="input-box">
-                        <span>Zipcode :</span>
-                        <input type="number"
-                        placeholder="123456">
-                    </div>
+                <div class="payment-method">
+                    <label>
+                        <input type="radio" name="payment" value="payos">
+                        Thanh toán qua PayOs
+                    </label>
+                    <img src="payos.png" alt="PayOs" class="payos-logo">
                 </div>
             </div>
+            <button type="submit" class="btn">Thanh toán</button>
         </div>
-        <button type="submit" class="btn">Thanh toán
-        </button>
     </form>
 </div>
 <script>
