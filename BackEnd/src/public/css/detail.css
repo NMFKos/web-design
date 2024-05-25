@@ -89,11 +89,11 @@
 }
 .rattingComment {
     display: flex;
-    flex-direction: column;
     width: 100%;
 }
 .ratting {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
 }
@@ -124,6 +124,7 @@
 }
 .infor-frame div {
     display: flex;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 8px;
     justify-content: space-between;

@@ -46,7 +46,9 @@
                 </div>
                 {{/with}}
                 <div style="display: flex; justify-content: space-between;">
-                    <button class="contact-btn">Liên hệ nhanh</button>
+                    <button class="contact-btn">
+                        <a href="/phong-tro/payment-link" style="text-decoration: none; color: white;">Thanh toán online</a>
+                    </button>
                     {{#if userData}}
                     <button class="contact-btn" id="open-popup-btn">Phản hồi</button>
                     {{/if}}
@@ -126,7 +128,7 @@
                         Đánh giá & Bình luận
                     </div>
                     {{#if ratesData}}
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
                         <div class="rating-value" id="rate-reviewers">Đánh giá: {{ratesData.avg}}</div>
                         <div class="rating">
                             <span class="reviewers-star" data-value="5.0">&#9733;</span>
@@ -142,9 +144,7 @@
                             <div class="ratting">
                                 <span>{{this.username}}</span>
                                 <span>Đánh giá: {{this.rate}}.0</span>
-                            </div>
-                            <div class="comment">
-                                {{this.comment}}
+                                <span>{{this.comment}}</span>
                             </div>
                         </div>
                     </div>
