@@ -199,3 +199,22 @@
     cursor: pointer;
     color: #ccc;
 }
+
+@media screen and (max-width: 768px){
+    .content{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .post-details, .sumaryRateComment {
+        width: 100%;
+    }
+
+    .contact-frame {
+        width: 100%;
+    }
+
+    .popup-content {
+        width: 90%;
+    }
+}
