@@ -22,9 +22,7 @@
 1. [Tìm Hiểu Về Đề Tài](#tìm-hiểu-về-đề-tài)
 2. [Phân Tích Thiết Kế Hệ Thống](#phân-tích-thiết-kế-hệ-thống)
 3. [Giao Diện Chương Trình Ứng Dụng](#giao-diện-chương-trình-ứng-dụng)
-4. [Kết Luận và Hướng Phát Triển](#kết-luận-và-hướng-phát-triển)
-5. [Tài Liệu Tham Khảo](#tài-liệu-tham-khảo)
-6. [Liên kết](#liên-kết)
+4. [Các Tính Năng](#các-tính-năng)
 
 ## Tìm Hiểu Về Đề Tài
 ### Định Nghĩa
@@ -70,21 +68,29 @@ Website cho thuê phòng trọ là một nền tảng trực tuyến cung cấp 
 - **Trang quản lý thông tin, quản lý mật khẩu** Giao diện thân thiện, giúp người dùng có thể đổi thông tin và mật khẩu 1 cách bảo mật chỉ trong vòng 5s.
 
 ### Giao Diện Quản Lý Admin
+- **Trang chủ:** Quản lý số liệu thống kê, tiếp cận người dùng.
+  ![adminsolieu](https://github.com/NMFKos/web-design/assets/117797567/dd2a348d-7717-4faa-8ab1-3bc5f4ffeeef)
+-  **Trang duyệt tin đăng, duyệt phản hồi từ người dùng** Giao diện dễ tinh chỉnh, phù hợp cho việc quản lí.
+  ![adminduyetbai](https://github.com/NMFKos/web-design/assets/117797567/fdf037ed-b091-48c6-aa0d-d7ffd36a8c2d)
+  ![adminreport](https://github.com/NMFKos/web-design/assets/117797567/51aef7a7-c221-4cf7-bbe6-d2a23a989841)
 
+## Các Tính Năng:
+Customer-side:
+- Đăng nhập, đăng ký
+- Đăng nhập bằng tài khoản Google
+- Quên mật khẩu (gửi mã xác thực qua email)
+- Tìm kiếm phòng trọ bằng thanh search với 4 tiêu chí (có thể tăng giảm số lượng tiêu chí) là loại phòng trọ, khu vực, giá tiền và diện tích
+- Thanh toán online
+- Đăng bài và thanh toán bài đăng
+- Phản hồi bài đăng cho admin
+- Bình luận và vote sao cho bài đăng
+- Thay đổi mật khẩu và thông tin cá nhân
+- Chatbot AI
+Admin-side:
+- Duyệt bài đăng
+- Duyệt phản hồi người dùng
+- Xem người dùng mới đăng ký và doanh số
 
-### Các tính năng:
-- User side:
-  -  Tìm kiếm phòng trọ theo yêu cầu
-  - Đăng tin cho thuê
-  - Đăng nhập, đăng ký
-  - Quản lý tài khoản
-  - Liên hệ tư vấn
-  - Phản hồi, báo cáo
-- Admin side:
-  - Quản lý web
-  - Thống kê số liệu, dữ liệu
-  - Phản hồi người dùng
-  - Cập nhật trang web
 
 
 
