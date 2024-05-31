@@ -56,7 +56,8 @@ Website cho thuê phòng trọ là một nền tảng trực tuyến cung cấp 
 ### Thiết kế giao diện
 - **Trang chủ:** Hiển thị danh sách các phòng trọ được cho thuê.
   ![Screenshot 2024-05-31 215223](https://github.com/NMFKos/web-design/assets/117797567/56bb075d-d416-4da2-9af1-eb9f46ffdfa2)
-  - **Đăng nhập, Đăng kí:** Giao diện đăng nhập đăng kí thân thiện với người dùng.
+
+- **Đăng nhập, Đăng kí:** Giao diện đăng nhập đăng kí thân thiện với người dùng.
   ![dangnhap](https://github.com/NMFKos/web-design/assets/117797567/4fd85dcc-f176-43ac-a2bd-0ee3895544aa)
   ![dangky](https://github.com/NMFKos/web-design/assets/117797567/05222228-bc4f-4768-8afe-86e779addfd5)
 ### Các tính năng:
