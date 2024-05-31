@@ -49,6 +49,7 @@ Website cho thuê phòng trọ là một nền tảng trực tuyến cung cấp 
 - Trang đăng kí, đăng nhập
 - Trang đăng bài
 - Trang quản lý tin đăng
+- Trang chi tiết tin đăng
 - Quản lý thông tin và thay đổi mật khẩu
 - Quản lý bình luận và đánh giá sao
 - Quản lý thanh toán
@@ -57,9 +58,20 @@ Website cho thuê phòng trọ là một nền tảng trực tuyến cung cấp 
 - **Trang chủ:** Hiển thị danh sách các phòng trọ được cho thuê.
   ![Screenshot 2024-05-31 215223](https://github.com/NMFKos/web-design/assets/117797567/56bb075d-d416-4da2-9af1-eb9f46ffdfa2)
 
-- **Đăng nhập, Đăng kí:** Giao diện đăng nhập đăng kí thân thiện với người dùng.
+- **Đăng nhập, Đăng kí:** Giao diện đăng nhập, đăng kí thân thiện với người dùng.
   ![dangnhap](https://github.com/NMFKos/web-design/assets/117797567/4fd85dcc-f176-43ac-a2bd-0ee3895544aa)
   ![dangky](https://github.com/NMFKos/web-design/assets/117797567/05222228-bc4f-4768-8afe-86e779addfd5)
+
+- **Chi tiết tin đăng:** Giao diện chi tiết tin đăng cho phép người dùng xem kĩ hơn về phòng trọ, đồng thời có thể phản hồi, bình luận hoặc đánh giá sao lên tin đăng đó.
+  ![chitiettindang](https://github.com/NMFKos/web-design/assets/117797567/710d6bbb-ecd7-41ad-9871-9dc3b968b8b6)
+
+- **Trang đăng bài, quản lý tin đăng;** Dễ sử dụng, dễ thanh toán, xác nhận nhanh và cực nhiều ưu đãi dành cho những người dùng sử dụng gói VIP.
+
+- **Trang quản lý thông tin, quản lý mật khẩu** Giao diện thân thiện, giúp người dùng có thể đổi thông tin và mật khẩu 1 cách bảo mật chỉ trong vòng 5s.
+
+### Giao Diện Quản Lý Admin
+
+
 ### Các tính năng:
 - User side:
   -  Tìm kiếm phòng trọ theo yêu cầu
