@@ -58,10 +58,13 @@ Website cho thuê phòng trọ là một nền tảng trực tuyến cung cấp 
   ![Screenshot 2024-05-31 215223](https://github.com/NMFKos/web-design/assets/117797567/56bb075d-d416-4da2-9af1-eb9f46ffdfa2)
 
 - **Đăng nhập, Đăng kí:** Giao diện đăng nhập, đăng kí thân thiện với người dùng.
+  
   ![dangnhap](https://github.com/NMFKos/web-design/assets/117797567/4fd85dcc-f176-43ac-a2bd-0ee3895544aa)
+  
   ![dangky](https://github.com/NMFKos/web-design/assets/117797567/05222228-bc4f-4768-8afe-86e779addfd5)
 
 - **Chi tiết tin đăng:** Giao diện chi tiết tin đăng cho phép người dùng xem kĩ hơn về phòng trọ, đồng thời có thể phản hồi, bình luận hoặc đánh giá sao lên tin đăng đó.
+  
   ![chitiettindang](https://github.com/NMFKos/web-design/assets/117797567/710d6bbb-ecd7-41ad-9871-9dc3b968b8b6)
 
 - **Trang đăng bài, quản lý tin đăng;** Dễ sử dụng, dễ thanh toán, xác nhận nhanh và cực nhiều ưu đãi dành cho những người dùng sử dụng gói VIP.
@@ -70,9 +73,13 @@ Website cho thuê phòng trọ là một nền tảng trực tuyến cung cấp 
 
 ### Giao Diện Quản Lý Admin
 - **Trang chủ:** Quản lý số liệu thống kê, tiếp cận người dùng.
+  
   ![adminsolieu](https://github.com/NMFKos/web-design/assets/117797567/dd2a348d-7717-4faa-8ab1-3bc5f4ffeeef)
+  
 -  **Trang duyệt tin đăng, duyệt phản hồi từ người dùng** Giao diện dễ tinh chỉnh, phù hợp cho việc quản lí.
+  
   ![adminduyetbai](https://github.com/NMFKos/web-design/assets/117797567/fdf037ed-b091-48c6-aa0d-d7ffd36a8c2d)
+  
   ![adminreport](https://github.com/NMFKos/web-design/assets/117797567/51aef7a7-c221-4cf7-bbe6-d2a23a989841)
 
 ## Các Tính Năng:
