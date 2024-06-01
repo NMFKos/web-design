@@ -107,12 +107,20 @@ Admin-side:
 
 ## Hướng Dẫn Setup
 Hướng dẫn setup môi trường
-- Cài đặt NodeJs 20.11.1
+- Cài đặt NodeJs 20.11.1 <br>
   https://nodejs.org/en/download/prebuilt-installer
-- Cài đặt các gói phụ thuộc
+- Cài đặt các gói phụ thuộc <br>
+  ```sh
   npm install @google/generative-ai @payos/node atlas bcrypt connect-flash dotenv express express-handlebars express-session firebase fs jsonwebtoken method-override mongodb mongoose multer nodemailer passport passport-google-oauth passport-google-oauth2 passport-jwt
-- Chạy project 
-  npm start hoặc node src/index.js
+  ```
+- Chạy project <br>
+  ```sh
+  npm start
+  ```
+  hoặc
+  ```sh
+  node src/index.js
+  ```
 
 - Các gói phụ thuộc:<br>
 "@google/generative-ai": "^0.11.4",<br>
