@@ -3,6 +3,8 @@ const router = express.Router();
 const homeController = require('../app/controllers/HomeController');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
+const GOOGLE_CLIENT_ID = '850336766939-4orv854q5rhc1s0jdsu2mh0ab2cgif25.apps.googleusercontent.com';
+const GOOGLE_CLIENT_SECRET = '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';
 
 passport.use(new GoogleStrategy({
     clientID: GOOGLE_CLIENT_ID,
