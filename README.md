@@ -114,7 +114,7 @@ Hướng dẫn setup môi trường
 - Chạy project 
   npm start hoặc node src/index.js
 
-- Các gói phụ thuộc:
+- Các gói phụ thuộc:<br>
 "@google/generative-ai": "^0.11.4",<br>
 "@payos/node": "^1.0.6",<br>
 "atlas": "^1.0.0-alpha.0",<br>
