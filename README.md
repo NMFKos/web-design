@@ -7,7 +7,7 @@
 - Có tích hợp chatbot AI hỗ trợ user. 
 
 ### Giảng Viên Hướng Dẫn
-- Trần Tuấn Dũng
+- Ths.Trần Tuấn Dũng
 
 ### Danh sách thành viên: 
 | Họ Tên | MSSV | 
@@ -105,7 +105,7 @@ Admin-side:
 - Duyệt phản hồi người dùng
 - Xem người dùng mới đăng ký và doanh số
 
-##Hướng Dẫn Setup
+## Hướng Dẫn Setup
 
 
 
