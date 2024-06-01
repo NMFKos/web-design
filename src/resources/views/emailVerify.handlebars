@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="/css/emailOTP.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <form action="/forgot-password" method="post">
+                <h1>Xác thực email của bạn</h1>
+                {{#if email}}
+                <div class="email">
+                    <input id="email" name="email" type="email" value="{{email}}" autocomplete="off">
+                    <i class="uil uil-envelope email-icon"></i>
+                </div>
+                <div class="email-verify">
+                    <input id="otp-input" name="otp" type="number" placeholder="Enter Code" autocomplete="off">
+                    <button type="submit" id="btn-verify-otp">Xác thực</button>
+                </div>
+                {{else}}
+                <div class="email">
+                    <input id="email" name="email" type="email" placeholder="Nhập email của bạn" autocomplete="off">
+                </div>
+                {{/if}}
+                <button type="submit" id="send-otp" class="btn-send-otp" >Gửi mã</button>
+            </form>
+        </div>
+    </section>
+    <script src="/script/emailOTP.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form method="post" action="/dang-nhap">
+                <h1>Đăng ký</h1>
+                <input type="text" name="name" placeholder="Họ tên" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="phone" id = "phone" name = "phone" placeholder="Số điện thoại" required>
+                <input type="password" name="password" placeholder="Đặt mật khẩu" required>
+                <input type= "password" name="password-auth" placeholder="Xác nhận mật khẩu" required>
+                <button type="submit">Đăng ký</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form method="post" action="/dang-nhap">
+                <h1>Đăng nhập</h1>
+                <input type="phone" name="phone" placeholder="Phone">
+                <input type="password" name="password" placeholder="Password">
+                <a href="/forgot-password">Quên mật khẩu?</a>
+                <button type="submit">Đăng nhập</button>
+                <a href="/auth/google">Đăng nhập bằng Google</a>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Mừng bạn quay lại với OneHouse</h1>
+                    <p>Đăng nhập ngay để trải nghiệm mọi dịch vụ tiện ích của chúng tôi</p>
+                    <button class="hidden" id="login">Đăng nhập</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Chào mừng bạn đến với OneHouse</h1>
+                    <p>Đăng ký ngay để trải nghiệm mọi dịch vụ tiện ích của chúng tôi</p>
+                    <button class="hidden" id="register">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/script/login.js">
+    </script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

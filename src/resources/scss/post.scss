@@ -1,0 +1,225 @@
+.grid-container {
+    display: grid;
+    height: 1000px;
+}
+@media screen and (max-width: 992px) {
+    .grid-container {
+        display: flex; /* Changed from grid to flex */
+        flex-direction: column; /* Stack the items vertically */
+        height: auto; /* Adjust the height to fit the content */
+    }
+    .header {
+        flex: auto;
+    }
+}
+@media screen and (max-width: 786px) {
+    .grid-container {
+        display: flex; /* Changed from grid to flex */
+        flex-direction: column; /* Stack the items vertically */
+        height: auto; /* Adjust the height to fit the content */
+    }
+    .right2-side {
+        display: none;
+    }
+}
+.header {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1F2937;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    flex: auto;
+    margin-top: 15px;
+}
+.address-title {
+    margin-top: 32px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.quanhuyen {
+    margin-top:10px;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 15px;
+
+}
+.select {
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size:15px;
+    box-shadow: 0 0 0 0.5px #000
+}
+.addressexact {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.addressexact input[type="text"] {
+    background-color: #DDDDDD;
+    margin-top: 10px;
+    font-size:18px;
+    padding: 5px;
+    width: 50%;
+    box-shadow: 0 0 0 0.5px #000;
+}
+.infomation {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.chuyenmuc{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top:10px;
+}
+.tieude {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.tieude input[type="text"] {
+    background-color: white;
+    margin-top: 10px;
+    font-size:18px;
+    padding: 5px;
+    width: 50%;
+    box-shadow: 0 0 0 0.5px #000
+}
+.mota {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.mota input[type="text"] {
+    background-color: white;
+    height: 200px;
+    margin-top: 10px;
+    font-size:18px;
+    padding: 5px;
+    width: 50%;
+    box-shadow: 0 0 0 0.5px #000
+}
+.lienhe {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.lienhe input[type="text"] {
+    background-color: #DDDDDD;
+    margin-top: 10px;
+    font-size:18px;
+    padding:5px;
+    width: 50%;
+    box-shadow: 0 0 0 0.5px #000;
+}
+.phone {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.phone input[type="text"] {
+    background-color: #DDDDDD;
+    margin-top: 10px;
+    font-size:18px;
+    padding:5px;
+    width: 50%;
+    box-shadow: 0 0 0 0.5px #000;
+}
+.price {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.price input[type="text"] {
+    background-color: white;
+    margin-top: 10px;
+    font-size:18px;
+    padding:5px;
+    width: 50%;
+    box-shadow: 0 0 0 0.5px #000;
+}
+.dientich {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.dientich input[type="text"] {
+    background-color: white;
+    margin-top: 10px;
+    font-size:18px;
+    padding:5px;
+    width: 50%;
+    box-shadow: 0 0 0 0.5px #000;
+}
+.update-image-container {
+    position: relative;
+    width: 50%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.update-image-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.update-image-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.picture {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.picture-text {
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.continue-button {
+    background-color: #008000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    width: 50%;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.continue-button:hover {
+    background-color: #006400;
+}

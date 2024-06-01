@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container form {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 0 0 100px ;
+}
+
+form .row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.row .column {
+    flex: 1 1 250px;
+}
+
+.column .title {
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/* select */
+.select, .select2, .select3, .select4 {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.column .select span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.column .select input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.flex .select {
+    margin-top: 5px;
+}
+
+.column .input-box {
+    margin: 15px 0;
+}
+
+.input-box span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.column .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.flex .input-box {
+    margin-top: 5px;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.payment-method label {
+    display: flex;
+    align-items: center;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 15px;
+}
+
+.payos-logo {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+form .btn {
+    width: 100%;
+    padding: 12px;
+    background: #8175d3;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+form .btn:hover {
+    background: #6a5acd;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .container form {
+        padding: 20px;
+    }
+
+    .select, .select2, .select3, .select4 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .row .column {
+        flex: 1 1 100%;
+    }
+
+    .payment-method {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .payment-method label {
+        margin-bottom: 10px;
+    }
+
+    .payos-logo {
+        margin-left: 0;
+        align-self: center;
+    }
+}

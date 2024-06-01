@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneHouse</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div class="webpage">
+        <div style="margin-top: 50px;">
+            {{#if postData}}
+            <ul class="list-group list-group-char">
+                {{#each postData}}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="d-flex">
+                        <!-- Hình ảnh (đặt mã hình ảnh ở đây) -->
+                        <img src="{{this.thumbnailData}}" alt="Thumbnail of post" class="image-char">
+                        <!-- Chữ bên trái của hình ảnh -->
+                        <div class="content-frame">
+                            <div class="content-first">
+                                <div class="price-border">
+                                    {{this.price}} triệu VND/tháng
+                                </div>
+                                {{!-- <div style="gap: 20px; display:flex">
+                                    <a href="#" style="text-decoration: none; color: black">
+                                        <i class="fa-solid fa-arrow-up-from-bracket" id="share-icon"></i>
+                                    </a>
+                                    <a href="#" style="text-decoration: none; color: black">
+                                        <i class="fa-regular fa-heart" id="heart-icon"></i>
+                                    </a>
+                                </div> --}}
+                            </div>
+                            <div class="content-second">
+                                <div style="font-weight:bold; font-size:large;">
+                                    {{this.title}}
+                                </div>
+                                <div style="font-size:medium;">
+                                    {{this.description}}
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span style="font-size: large;">{{this.address}}</span>
+                                </div>
+                            </div>
+                            <div class="content-third">
+                                <div class="view-border">
+                                    <a href="/phong-tro/{{this.slug}}" style="text-decoration: none; color: white">
+                                        Xem chi tiết
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+            {{else}}
+            <div class="alert alert-primary" role="alert">
+                Bạn chưa có bài đăng nào.
+            </div>
+            {{/if}}
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

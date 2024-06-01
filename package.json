@@ -5,7 +5,6 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
-    "watch": "node-sass --watch src/resources/scss/ -o src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "nguyencuong",
@@ -27,14 +26,15 @@
     "mongodb": "^6.5.0",
     "mongoose": "^8.4.0",
     "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.13",
     "passport": "^0.7.0",
     "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
     "passport-google-oauth2": "^0.2.0",
     "passport-jwt": "^4.0.1"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
-    "node-sass": "^9.0.0",
     "nodemon": "^3.1.0"
   }
 }

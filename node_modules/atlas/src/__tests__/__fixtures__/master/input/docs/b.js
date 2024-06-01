@@ -1,0 +1,3 @@
+// docs/b.js
+
+// YAY

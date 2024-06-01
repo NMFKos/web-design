@@ -1,0 +1,219 @@
+@charset "UTF-8";
+.webpage {
+  margin: 0 auto;
+  width: 95%; }
+
+.preview {
+  margin: 0 auto;
+  width: 55%;
+  margin-bottom: 50px;
+  margin-top: 10px; }
+
+/* Nội dung chi tiết và tóm tắt phòng trọ */
+.content {
+  display: flex;
+  justify-content: space-between; }
+
+.title {
+  border: solid 2px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: #bb00ff;
+  display: inline-block;
+  font-size: large; }
+
+/* Chi tiết bài đăng */
+.post-details {
+  justify-content: left;
+  width: 45%; }
+
+.post-details div {
+  width: 100%;
+  margin-bottom: 25px; }
+
+.post-details div:nth-child(4) {
+  width: 100%;
+  margin-bottom: 0px; }
+
+.post-details div:nth-child(2) {
+  font-size: large; }
+
+/* button liên hệ nhanh (gửi qua email) */
+.contact-btn {
+  background-color: brown;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  float: right;
+  font-weight: bold; }
+
+/* Tóm tắt nhanh bài đăng theo tiêu chí địa chỉ, khu vực, trạng thái và loại phòng */
+.sumaryRateComment {
+  width: 45%;
+  display: block; }
+
+.post-summary {
+  justify-content: left; }
+
+.post-summary div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 25px;
+  justify-content: space-between;
+  align-items: center; }
+
+.post-summary div:nth-child(2) span:first-child {
+  flex-shrink: 0;
+  /* Prevent shrinking */
+  margin-right: 80px; }
+
+.post-summary > div > span:nth-child(1) {
+  font-weight: bold; }
+
+/* Các tiên ích như bản đồ, video (nếu có) */
+.service-container {
+  display: block; }
+
+.service-container div {
+  display: flex; }
+
+.service-title {
+  border: solid 2px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: #bb00ff;
+  display: inline-block;
+  font-size: large;
+  margin-bottom: 10px; }
+
+.rattingComment {
+  display: flex;
+  width: 100%; }
+
+.ratting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%; }
+
+.comment {
+  display: flex;
+  width: 100%; }
+
+.contact-frame {
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 50%; }
+
+.avatar {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 50%; }
+
+.avatar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* Đảm bảo tỷ lệ khung hình của ảnh được bảo toàn */ }
+
+.infor-frame {
+  width: 40%; }
+
+.infor-frame div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 8px;
+  justify-content: space-between; }
+
+.infor-frame > div > span:nth-child(1) {
+  font-weight: bold; }
+
+.rating-space {
+  display: block; }
+
+.rating-button {
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: brown;
+  color: white;
+  border: none; }
+
+.rating-button-space {
+  display: flex;
+  justify-content: center; }
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center; }
+
+.rating-value {
+  display: flex;
+  justify-content: center;
+  font-size: large; }
+
+.reviewers-star, .star {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #ccc; }
+
+.star:hover,
+.star:hover ~ .star {
+  color: gold; }
+
+.star.selected, .reviewers-star.selected,
+.star.selected ~ .star {
+  color: gold; }
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center; }
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  width: 50%; }
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ccc; }
+
+
+@media screen and (max-width: 768px){
+  .content{
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .post-details, .sumaryRateComment {
+      width: 100%;
+  }
+
+  .contact-frame {
+      width: 100%;
+  }
+
+  .popup-content {
+      width: 90%;
+  }
+}

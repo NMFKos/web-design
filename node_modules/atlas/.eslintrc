@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    "flowtype"
+  ],
+  "extends": [
+    "lystable",
+    "prettier",
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/flowtype"
+  ],
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "max-len": [2, 140],
+    "spaced-comment": 0,
+    "arrow-body-style": 0,
+    "no-confusing-arrow": 0
+  }
+}

@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "6644e03f6c9a7aad431c8491"
+  },
+  "year": 2021,
+  "profits": 10000000,
+  "accesses": 1000,
+  "searchs": 10000
+},
+{
+  "_id": {
+    "$oid": "6644e03f6c9a7aad431c8492"
+  },
+  "year": 2022,
+  "profits": 50000000,
+  "accesses": 2000,
+  "searchs": 20000
+},
+{
+  "_id": {
+    "$oid": "6644e03f6c9a7aad431c8493"
+  },
+  "year": 2023,
+  "profits": 100000000,
+  "accesses": 10000,
+  "searchs": 30000
+},
+{
+  "_id": {
+    "$oid": "6644e03f6c9a7aad431c8494"
+  },
+  "year": 2024,
+  "profits": 200000000,
+  "accesses": 12345,
+  "searchs": 40000
+}]

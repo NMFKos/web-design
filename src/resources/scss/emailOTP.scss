@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+  :root{
+    --box-shadow:5px 5px 7px rgb(67, 25, 114), -5px -5px 7px rgb(182, 141, 228);
+    --inset-box-shadow:inset 5px 5px 7px rgba(0, 0, 0, 30),inset -5px -5px 7px rgb(164, 164, 164);
+    color: rgb(190, 188, 188);
+    --main-bg: rgb(150, 72, 240);
+    --font-color: white;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+  ::placeholder {
+    color: #b4b4b4;
+}
+  section{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #e2e2e2, #c9d6ff);
+}
+  .container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  background-color: #5D6EC7;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.15);
+}
+  h1{
+    color: white;
+    font-size: 3em;
+    font-weight: 540;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.email .email-icon
+{
+  position: absolute;
+  font-size: 30px;
+  color: #b4b4b4;
+  padding-top: 0.3rem;
+  transform: translateX(-140%);
+}
+  
+  .email input{
+    width: 28em;
+    color: #222831;
+}
+  .email-verify{
+    margin: 5px 0;
+    display: flex;
+    gap: 10px;
+    
+}
+  .email-verify input{
+    flex: 8;
+    color: #222831;
+}
+ .email-verify #btn-verify-otp{
+    flex: 4;
+}
+  .btn-send-otp{
+    padding: 7px;
+    margin: 10px 0;
+}
+  input{
+    font-size: 1.2rem;
+    font-weight: 0;
+    letter-spacing: .3px;
+    color: var(--font-color);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 7px rgba(190, 190, 190, 0.1);
+    &:focus{
+      box-shadow: #DBE2EF;
+    }
+   
+}
+  button{
+    font-weight: bold;
+    color: var(--font-color);
+    background-color: #2A528A;
+    border: none;
+    font-size: 1.4rem;
+    transition: all .3s;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.15);;
+    &:active{
+        box-shadow: var(--inset-box-shadow);
+    }
+}
+ 
+@media screen and (max-width: 768px)
+{
+  h1{
+    font-size: 2em;
+  }
+  .container
+  {
+    width: 87%;
+  }
+  .email input
+  {
+    width: 17.4em;
+  }
+
+  .email-verify input
+  {
+    width: 9em;
+  }
+
+  .email-verify button{
+    font-size: 1.3em;
+  }
+}

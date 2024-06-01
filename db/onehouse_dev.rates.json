@@ -1,0 +1,1190 @@
+[{
+  "_id": {
+    "$oid": "80c0f82e4be1b0ecbdfbe6ba"
+  },
+  "post_id": {
+    "$oid": "4e44d30796cd2c71b8cfa32f"
+  },
+  "user_id": {
+    "$oid": "fe88fc4996855e8d511afc1e"
+  },
+  "username": "Nguyễn Thị Như Quỳnh",
+  "rate": 3,
+  "comment": "Phòng tắm hơi nhỏ. Trên sàn nhà có nhiều cát chưa được dọn sạch",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "447f3b3f94bfee8fc99ecce7"
+  },
+  "post_id": {
+    "$oid": "7425d04b4ce6e3bca52553bd"
+  },
+  "user_id": {
+    "$oid": "d01bbb20f536f647cb3ff188"
+  },
+  "username": "Lê Hoàng Quân",
+  "rate": 4,
+  "comment": "Phòng sạch sẽ, có ban công, thoáng mát.\nChú chủ vui tính và nhân viên thân thiện.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3fde6dcfdcce0f01f4ee4dde"
+  },
+  "post_id": {
+    "$oid": "a5c6da77dd5b9b36794a2eba"
+  },
+  "user_id": {
+    "$oid": "cfedc06fc2a51f7236ddad33"
+  },
+  "username": "Đinh Văn Phượng",
+  "rate": 5,
+  "comment": "Phòng ốc sáng sủa, yên tĩnh. Mình đặc biệt thích và cảm thấy thoải mái với phòng có ban công đây là điểm cộng lớn nhất. Ngoài ra thiết kế phòng tắm rất bắt mắt, hiện đại và đồ dùng cũng được trang bị đầy đủ.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b7dacb058d8be1fd0bdbe8de"
+  },
+  "post_id": {
+    "$oid": "abbaa9c1dc76ba9870cf61e2"
+  },
+  "user_id": {
+    "$oid": "265ec2738ffc620b2cddacde"
+  },
+  "username": "Nguyễn Echam Samuel",
+  "rate": 3,
+  "comment": "Máy lạnh không mát ở lầu 4 đi cầu thang bộ hơi mệt.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "eacba7246daab7a2edacb392"
+  },
+  "post_id": {
+    "$oid": "18d4d368cbab68ae6899dadc"
+  },
+  "user_id": {
+    "$oid": "a286bc0564d7dd3e2b6097be"
+  },
+  "username": "Nguyễn Xuân Sang",
+  "rate": 4,
+  "comment": "Ông chủ rất vui vẻ và thoải mái.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f2e4afaee039a572fdcc7afe"
+  },
+  "post_id": {
+    "$oid": "ba2c5e2cd80dbcedfce6e927"
+  },
+  "user_id": {
+    "$oid": "a1c71885eed7a3a1ad870bfe"
+  },
+  "username": "Lê Phú Quý",
+  "rate": 5,
+  "comment": "Phòng quá đẹp. Rất hài lòng",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a5e897a1b7f88ca30092ee00"
+  },
+  "post_id": {
+    "$oid": "2aea526808be7a0e2d9bf1ef"
+  },
+  "user_id": {
+    "$oid": "bdcd6c31bde8d61bf8e8c0e7"
+  },
+  "username": "Lý Quốc Quyền",
+  "rate": 5,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ce45baccbcbf2aa9aa2fe6db"
+  },
+  "post_id": {
+    "$oid": "a3960bb1b9789c9fe4fc71cb"
+  },
+  "user_id": {
+    "$oid": "277c01e5c1fe6fcc1bae46f4"
+  },
+  "username": "Bùi Minh Quân",
+  "rate": 5,
+  "comment": "Không gian đẹp, yên tĩnh, phòng tắm rộng, giường êm, chú chủ cũng dễ thương ,nhiệt tình lắm.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3555a7aeedf4516e6aed5e8b"
+  },
+  "post_id": {
+    "$oid": "eec26d9c390a5daaaaeef330"
+  },
+  "user_id": {
+    "$oid": "fc7cdb0c10d832cff3c7d58e"
+  },
+  "username": "Nguyễn Ngọc Sơn",
+  "rate": 5,
+  "comment": "Nẳm ngay trung tâm. Chủ nhà rất dễ thương! Nhiệt tình giúp khách mọi thứ.!",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "07bad1af904b98bfababddb5"
+  },
+  "post_id": {
+    "$oid": "c3a573b6bf3ea0b20ea23fab"
+  },
+  "user_id": {
+    "$oid": "cbca1cabdc22db0c47dbace4"
+  },
+  "username": "Bùi Duy Qúy",
+  "rate": 5,
+  "comment": "Có cửa sổ ban công thoáng mát, sáng sủa, wifi mạnh. Địa điểm thuận tiện ra biển hoặc ăn uống.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d5e9c1ebffcf6d2bfdb0c80d"
+  },
+  "post_id": {
+    "$oid": "c776c8b6034adbbebde6b89e"
+  },
+  "user_id": {
+    "$oid": "1fdb5acc4efbcd77a5e603bc"
+  },
+  "username": "Võ Hoàng Phương",
+  "rate": 4,
+  "comment": "Phòng nhỏ nhưng thiết kế vô cùng hợp lý, sạch sẽ.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "213ce573c8aa5ee26e9dcda4"
+  },
+  "post_id": {
+    "$oid": "beab81f2da2f543559e665ce"
+  },
+  "user_id": {
+    "$oid": "3f340d6eaab7bdfd694ad3b8"
+  },
+  "username": "Trần Minh Phương",
+  "rate": 3,
+  "comment": "Phòng chưa cách âm tốt cho lắm,phòng nhỏ hơn xíu so với lúc nhìn trong hình",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "067cc9ecbd038b8cf44123fa"
+  },
+  "post_id": {
+    "$oid": "35dd45a8344aacf7aa1ebab7"
+  },
+  "user_id": {
+    "$oid": "dbf0abbc390dd3ca87b6dd50"
+  },
+  "username": "Phan Duy Quốc",
+  "rate": 3,
+  "comment": "Phòng ko giống trên hình, ko có ban công, phòng khá là bí và nhỏ, ồn và cách âm ko tốt",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "aba8277fc8eedfaa7f18ad9b"
+  },
+  "post_id": {
+    "$oid": "6d9ca12a6b63b614d79cdf72"
+  },
+  "user_id": {
+    "$oid": "2a96fad6f21ee7f4a4f8d0de"
+  },
+  "username": "Nguyễn Vũ Ngọc Quyên",
+  "rate": 3,
+  "comment": "Vòi sen với vòi nước bồn rửa mặt nước chảy yếu quá.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c8380bea15fddd7fcd5a3bbe"
+  },
+  "post_id": {
+    "$oid": "a46e51f6b1cbe1cc66c2ba3b"
+  },
+  "user_id": {
+    "$oid": "1a0ae1cb86b354bd7a80d6ed"
+  },
+  "username": "Trương Trọng Quân",
+  "rate": 4,
+  "comment": "Chủ rất nhiệt tình, lại dễ mến!",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "af45aac150ce21e5e6ebaabb"
+  },
+  "post_id": {
+    "$oid": "f7adf8ed4da7884c1e0ea931"
+  },
+  "user_id": {
+    "$oid": "6397a86fbf9fb8e3da9fdb5c"
+  },
+  "username": "Phạm Ngọc Minh",
+  "rate": 5,
+  "comment": "Phong sach se thoat mát , thich nhất bàn trang điểm",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2c4d8750bcfa734dc692ba47"
+  },
+  "post_id": {
+    "$oid": "6b0c4ed4c7db2dff494deefa"
+  },
+  "user_id": {
+    "$oid": "ddcdec942e7f7ecddfaa99d7"
+  },
+  "username": "Võ Thanh Sanh",
+  "rate": 5,
+  "comment": "Thái độ phục vụ rất nhiệt tình, chu đáo.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "63f2c4013be72aafa48cb1f2"
+  },
+  "post_id": {
+    "$oid": "8ef76eb2dd4fcfe73f647bbe"
+  },
+  "user_id": {
+    "$oid": "388dacffad83b3c6710b7db6"
+  },
+  "username": "Nguyễn Minh Phương",
+  "rate": 4,
+  "comment": "Phòng tắm hơi nhỏ. Trên sàn nhà có nhiều cát chưa được dọn sạch",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "529ebba72c2a3bce32b2aac7"
+  },
+  "post_id": {
+    "$oid": "232ccf2dbf8e6383c3feec4d"
+  },
+  "user_id": {
+    "$oid": "d5cbd15ba66ead9be08faf07"
+  },
+  "username": "Nguyễn Viết Sơn",
+  "rate": 5,
+  "comment": "Phòng sạch sẽ, có ban công, thoáng mát.\nChú chủ vui tính và nhân viên thân thiện.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9dcb2d0588ff2adf9be9b3d1"
+  },
+  "post_id": {
+    "$oid": "831cad7e19e4bedcd35a4d88"
+  },
+  "user_id": {
+    "$oid": "b6daced46fb3a8d71fd264ab"
+  },
+  "username": "Vũ Hoàng Hải Sơn",
+  "rate": 4,
+  "comment": "Phòng ốc sáng sủa, yên tĩnh. Mình đặc biệt thích và cảm thấy thoải mái với phòng có ban công đây là điểm cộng lớn nhất. Ngoài ra thiết kế phòng tắm rất bắt mắt, hiện đại và đồ dùng cũng được trang bị đầy đủ.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c3ea58a4dfceefcd1cdd9eb4"
+  },
+  "post_id": {
+    "$oid": "6eec8db1f918be33ae6daf56"
+  },
+  "user_id": {
+    "$oid": "bbb9ea726cb763d43b69f81c"
+  },
+  "username": "Nguyễn Vũ Trường Sơn",
+  "rate": 4,
+  "comment": "Ông chủ rất vui vẻ và thoải mái.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a3733b11efd3a97f3dee9a84"
+  },
+  "post_id": {
+    "$oid": "c9b9c972ffcac3cffd201a43"
+  },
+  "user_id": {
+    "$oid": "0a91e1db7c5761513ad98e6a"
+  },
+  "username": "Trần Minh Sang",
+  "rate": 4,
+  "comment": "Phòng quá đẹp. Rất hài lòng",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "dc5a2de19701efe7c2aa821f"
+  },
+  "post_id": {
+    "$oid": "9a3c0dd054fe32fbdafee9e5"
+  },
+  "user_id": {
+    "$oid": "e13f84b4ee6c2de6f4eb781f"
+  },
+  "username": "Nguyễn Trung Sơn",
+  "rate": 4,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d7ffc59ad6cdcbdcdd9d7ad0"
+  },
+  "post_id": {
+    "$oid": "b48e7be881a34ebaa3d6750e"
+  },
+  "user_id": {
+    "$oid": "9adfc15d8aeecaab5eede0c1"
+  },
+  "username": "Lê Quang",
+  "rate": 4,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e68b863ef5ca52aeaefbfbae"
+  },
+  "post_id": {
+    "$oid": "c4bc676b7e0f548cd5e5abb2"
+  },
+  "user_id": {
+    "$oid": "22b9b33c6864360e9ae6ade0"
+  },
+  "username": "Vũ Thị Phương",
+  "rate": 4,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2ea6858eafcb63eecd58b0fb"
+  },
+  "post_id": {
+    "$oid": "4edadf3afbdf19ebba1ae909"
+  },
+  "user_id": {
+    "$oid": "462a2ecedacbe6acd8d78d46"
+  },
+  "username": "Nguyễn Văn Sơn",
+  "rate": 4,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c32cde8f4cd8cfb2da09d5dc"
+  },
+  "post_id": {
+    "$oid": "ae43fff5a77c5f344d988dcc"
+  },
+  "user_id": {
+    "$oid": "e921d0bfe3c64021ee4fe9e0"
+  },
+  "username": "Lê Anh Sơn",
+  "rate": 4,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "efabd73a55a2ce0f22ffaa05"
+  },
+  "post_id": {
+    "$oid": "9d54737598f4ebc11ebcdfdb"
+  },
+  "user_id": {
+    "$oid": "e6cf5bbad24baf3b7ec967f6"
+  },
+  "username": "Võ Tiến Sĩ",
+  "rate": 3,
+  "comment": "Giường ngủ phòng 301 quá tệ, quá kêu, ngủ nhúc nhích cũng kêu cọt kẹt.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "a1d2f1f0bae4eb966fb54bbb"
+  },
+  "post_id": {
+    "$oid": "fca485f02faacdb216ae25db"
+  },
+  "user_id": {
+    "$oid": "730feffdfa1dd6471450ce32"
+  },
+  "username": "Phan Đức Sơn",
+  "rate": 4,
+  "comment": "Ông chủ rất vui vẻ và thoải mái.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cbdef2bcbbbcb9b31d1adbb3"
+  },
+  "post_id": {
+    "$oid": "a239ae79fdef54bad3555428"
+  },
+  "user_id": {
+    "$oid": "eadbecdba5e057e5bfc97795"
+  },
+  "username": "Trần Thế Sơn",
+  "rate": 3,
+  "comment": "Phòng quá đẹp. Rất hài lòng",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "7c8a7efc2a953bf928589c31"
+  },
+  "post_id": {
+    "$oid": "b19b20e8a2128a549d45bf7c"
+  },
+  "user_id": {
+    "$oid": "3786a11feb00d1de8de1a310"
+  },
+  "username": "Vũ Hồng Tâm",
+  "rate": 4,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e2df5213e9fd4edd91d686dc"
+  },
+  "post_id": {
+    "$oid": "64386cbef17e9c7e9e2edbf0"
+  },
+  "user_id": {
+    "$oid": "ab4a5c5e0bb57bdbaac6df0c"
+  },
+  "username": "Nguyễn Minh Tân",
+  "rate": 4,
+  "comment": "Không gian đẹp, yên tĩnh, phòng tắm rộng, giường êm, chú chủ cũng dễ thương ,nhiệt tình lắm.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "41c1388b9e81c5fda696255e"
+  },
+  "post_id": {
+    "$oid": "ca29d11becca1fcfd48de0fe"
+  },
+  "user_id": {
+    "$oid": "bde6ad70efdbd5cda247543e"
+  },
+  "username": "Lê Hà Xuân Thái",
+  "rate": 5,
+  "comment": "Nẳm ngay trung tâm. Chủ nhà rất dễ thương! Nhiệt tình giúp khách mọi thứ.!",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "bbeaa5cd0bdcffffa95aefdf"
+  },
+  "post_id": {
+    "$oid": "03cad6461245c92ae06afb69"
+  },
+  "user_id": {
+    "$oid": "0783dbee040efd41efa13a39"
+  },
+  "username": "Nguyễn Ngọc Phương",
+  "rate": 4,
+  "comment": "Có cửa sổ ban công thoáng mát, sáng sủa, wifi mạnh. Địa điểm thuận tiện ra biển hoặc ăn uống.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "fb2c7bf2cce5078e71d1da63"
+  },
+  "post_id": {
+    "$oid": "02450d59aad77394cb8aff31"
+  },
+  "user_id": {
+    "$oid": "82aebac3d5aa71c312ed26fc"
+  },
+  "username": "Bùi Anh Tài",
+  "rate": 4,
+  "comment": "Phòng nhỏ nhưng thiết kế vô cùng hợp lý, sạch sẽ.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0e12b61c4a6f1eafe6ac7ece"
+  },
+  "post_id": {
+    "$oid": "f3ff4042ef9edbdbf4e5a15c"
+  },
+  "user_id": {
+    "$oid": "d4bddaeca949deb450bf053f"
+  },
+  "username": "Dương Chí Tâm",
+  "rate": 3,
+  "comment": "Phòng chưa cách âm tốt cho lắm,phòng nhỏ hơn xíu so với lúc nhìn trong hình",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5eac6b516c2bf258df46c92c"
+  },
+  "post_id": {
+    "$oid": "ffb7125abb29df533b1cbadb"
+  },
+  "user_id": {
+    "$oid": "fffb23ce9bf6cfabba93fbfc"
+  },
+  "username": "Phạm Thanh Quốc",
+  "rate": 4,
+  "comment": "Phòng đẹp, đáng tiền.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "4ca36b16afb90a5fa1f27bd4"
+  },
+  "post_id": {
+    "$oid": "48acee53cd6272cc969db10d"
+  },
+  "user_id": {
+    "$oid": "8b4dd35eddde22eedc38dd9e"
+  },
+  "username": "Lê Trường Sa",
+  "rate": 5,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9a5efce4d2330ab0f1ccdee3"
+  },
+  "post_id": {
+    "$oid": "aba2916abff3fc3a473a8c20"
+  },
+  "user_id": {
+    "$oid": "56fc2db16e6f93b4073be535"
+  },
+  "username": "Ngô Vũ Sang",
+  "rate": 5,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "48ef7fd35e6c9a52cc5b7eba"
+  },
+  "post_id": {
+    "$oid": "f9c4b61cadb92ebbb4d256cd"
+  },
+  "user_id": {
+    "$oid": "b1becc00518badd66800c78b"
+  },
+  "username": "Lê Công Tài",
+  "rate": 4,
+  "comment": "Phòng đẹp, đáng tiền.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cc1eb68aa25d49c34485d9da"
+  },
+  "post_id": {
+    "$oid": "fc4dde8bed3f61db85c475da"
+  },
+  "user_id": {
+    "$oid": "1f5c762f15c3e7aa3eabbbda"
+  },
+  "username": "Đỗ Minh Tâm",
+  "rate": 3,
+  "comment": "Phòng chưa cách âm tốt cho lắm,phòng nhỏ hơn xíu so với lúc nhìn trong hình",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9cbcde4ae42fbcfb2d4fee4c"
+  },
+  "post_id": {
+    "$oid": "bedfb35c25a9aa4bed29eaed"
+  },
+  "user_id": {
+    "$oid": "8bb08fce45d2b57bd583045e"
+  },
+  "username": "Trần Thị Minh Sương",
+  "rate": 3,
+  "comment": "Phòng ko giống trên hình, ko có ban công, phòng khá là bí và nhỏ, ồn và cách âm ko tốt",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "bd725a0acdd7ec30d69eecdc"
+  },
+  "post_id": {
+    "$oid": "cffccd2862c279525aabf9a1"
+  },
+  "user_id": {
+    "$oid": "c386a55cf24ffea1c34a88ce"
+  },
+  "username": "Trần Văn Tài",
+  "rate": 4,
+  "comment": "Vòi sen với vòi nước bồn rửa mặt nước chảy yếu quá.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2deded2a4f3da0913eedcf9c"
+  },
+  "post_id": {
+    "$oid": "df49fcca775729d3ca5c1dda"
+  },
+  "user_id": {
+    "$oid": "aa3dadecac906efbc3f4e29e"
+  },
+  "username": "Lê Văn Tài",
+  "rate": 5,
+  "comment": "Chủ rất nhiệt tình, lại dễ mến!",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d645ce18a5baaaf01b1f14ca"
+  },
+  "post_id": {
+    "$oid": "37faca18348fa5ab1ec9d5cd"
+  },
+  "user_id": {
+    "$oid": "00928795b2c227aaeb0bbed7"
+  },
+  "username": "Vũ Thị Hoài Sơn",
+  "rate": 5,
+  "comment": "Phong sach se thoat mát , thich nhất bàn trang điểm",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e77dbbacaddf6ade3fccffea"
+  },
+  "post_id": {
+    "$oid": "be572daf1f2afbfbaea6ec5a"
+  },
+  "user_id": {
+    "$oid": "dbe7d8f32ed11e4ccbdfbdc2"
+  },
+  "username": "Dương Thanh Tâm",
+  "rate": 3,
+  "comment": "Thái độ phục vụ rất nhiệt tình, chu đáo.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e57db47dfff85feeabe506c5"
+  },
+  "post_id": {
+    "$oid": "1b6a1a038f02b5d0d9688b64"
+  },
+  "user_id": {
+    "$oid": "efd89574acb68e8bbfb44230"
+  },
+  "username": "Huỳnh Lê Tấn Tài",
+  "rate": 5,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "214efbe3fb653def56088f5b"
+  },
+  "post_id": {
+    "$oid": "ed27a7b6c6d57d9bfcdf1f18"
+  },
+  "user_id": {
+    "$oid": "6dfbcdfac902d7b6cde5e21a"
+  },
+  "username": "Huỳnh Hữu Tâm",
+  "rate": 4,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "dad4edb49acc618a3e0ed4e4"
+  },
+  "post_id": {
+    "$oid": "85fe04ccf63ee20d6ebecfae"
+  },
+  "user_id": {
+    "$oid": "c9bbac3b604bb5943e998e75"
+  },
+  "username": "Nguyễn Anh Tấn",
+  "rate": 4,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "04506059afe13a964d2cdba3"
+  },
+  "post_id": {
+    "$oid": "b3f8ca36af7cee0dfe44f3af"
+  },
+  "user_id": {
+    "$oid": "836fb2accf17e29a48dd6fe4"
+  },
+  "username": "Nguyễn Ngọc Thân",
+  "rate": 5,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c4383b177a0ba2c44a1e9ed1"
+  },
+  "post_id": {
+    "$oid": "96feea8d7b2d32fbfbb97cff"
+  },
+  "user_id": {
+    "$oid": "b06b3d3107ffdbb4b3f28283"
+  },
+  "username": "Đoàn Thanh Tân",
+  "rate": 5,
+  "comment": "Chú chủ quá ư là dễ thương luôn, rất vui vẻ, thân thiệt, mọi ngừoi ai cũng nhiệt tình và chu đáo. Chổ ở không chê vào đâu được, phòng rất lớn, đẹp, thoải mái, nhà vệ sinh rất sạch sẽ,....",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ea8968b90d7cc4bff2df2b07"
+  },
+  "post_id": {
+    "$oid": "f404adfbfe4ec0e89cecabec"
+  },
+  "user_id": {
+    "$oid": "f56e9dc5f64e02b0b5b284dc"
+  },
+  "username": "Vũ Minh Thái",
+  "rate": 4,
+  "comment": "Không có máy nước nóng lạnh",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "5fbee4d372cac5c57fb661a7"
+  },
+  "post_id": {
+    "$oid": "e2b90afdfdafd7eb1e5af4fc"
+  },
+  "user_id": {
+    "$oid": "a490cacef56b47c3c8fd3f48"
+  },
+  "username": "Đặng Xuân Thanh",
+  "rate": 4,
+  "comment": "Tiện nghi, sạch, vị trí dễ đi lại.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "e0dbf05dc20840cb4e9ffbab"
+  },
+  "post_id": {
+    "$oid": "dfd37f4ea785f5dd00bfaf17"
+  },
+  "user_id": {
+    "$oid": "9cfdeb6d1df6b1fcbcf9ab96"
+  },
+  "username": "Vũ Văn Thành",
+  "rate": 4,
+  "comment": "Chưa cách âm tốt, hơi ồn.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "adab3a0788f62de16bfbd04f"
+  },
+  "post_id": {
+    "$oid": "0bf0af4803c6ab1a8e3edd5c"
+  },
+  "user_id": {
+    "$oid": "3de93d9dafc6ed6befd21921"
+  },
+  "username": "Lê Duy Thắng",
+  "rate": 5,
+  "comment": "Phòng đẹp y hình..Chú chủ và mấy anh chị lễ tân thân thiện. Sẽ luôn ghé ks khi đi du lịch 😍😍😍",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "fc10f8ca1bdd3b7c2901cda1"
+  },
+  "post_id": {
+    "$oid": "fa8baeaca5f032dfed80f66d"
+  },
+  "user_id": {
+    "$oid": "cacba7cbbfb0f7196baf1e8f"
+  },
+  "username": "Hồ Nguyễn Xuân Thanh",
+  "rate": 3,
+  "comment": "Thoải mái. Thân thiện",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ffbadc9fdc176dec0ed08ac4"
+  },
+  "post_id": {
+    "$oid": "cfc3c73aab9e5fbd539dda8b"
+  },
+  "user_id": {
+    "$oid": "ac04da6ddc54cf5fbb7aba7a"
+  },
+  "username": "Trần Tất Thắng",
+  "rate": 3,
+  "comment": "Giường rất thoải mái",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "19acb39af8c7d546137fdb30"
+  },
+  "post_id": {
+    "$oid": "5b29b7e1ee1e0b33ec58ddff"
+  },
+  "user_id": {
+    "$oid": "9eafad454ea08f8b38e9d565"
+  },
+  "username": "Nguyễn Chí Thanh",
+  "rate": 5,
+  "comment": "Phòng đẹp, đáng tiền.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "bdebfedf8deaaca5cc8def51"
+  },
+  "post_id": {
+    "$oid": "cb2ac3fe81affad1c63facd3"
+  },
+  "user_id": {
+    "$oid": "d9dbaa1bacf653cbd0edbcca"
+  },
+  "username": "Phan Xuân Thắng",
+  "rate": 3,
+  "comment": "Không có máy nước nóng lạnh",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d889dc10532f3e9aff3c2b57"
+  },
+  "post_id": {
+    "$oid": "feb94ef6b71cb1ab92d1c31a"
+  },
+  "user_id": {
+    "$oid": "cb04fce2bb9d69f064ddf4cd"
+  },
+  "username": "Bùi Minh Thảo",
+  "rate": 3,
+  "comment": "Không có máy nước nóng lạnh",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "c9419bc483399ae547b9df3a"
+  },
+  "post_id": {
+    "$oid": "2da4dac598fc4ebbe0eed43d"
+  },
+  "user_id": {
+    "$oid": "03043ff6c5206a0ca25e6274"
+  },
+  "username": "Đặng Văn Thắng",
+  "rate": 5,
+  "comment": "Thoải mái. Thân thiện",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65c2cd0c62bdce0dde8cbe0c"
+  },
+  "post_id": {
+    "$oid": "cc9716bb4cebd5fb1d3e0ae3"
+  },
+  "user_id": {
+    "$oid": "7af6e2b65afcaa515e779fcf"
+  },
+  "username": "Diệp Vương Thắng",
+  "rate": 4,
+  "comment": "Phòng đẹp, đáng tiền.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "ad3f4b69eefac377ddb5aeb8"
+  },
+  "post_id": {
+    "$oid": "6b2e0e174de6fdcbd03a4a40"
+  },
+  "user_id": {
+    "$oid": "01d022884e0e6a0dc05a5dec"
+  },
+  "username": "Đinh Xuân Thắng",
+  "rate": 4,
+  "comment": "Không có máy nước nóng lạnh",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6f77722a1d1ce452f17fbc11"
+  },
+  "post_id": {
+    "$oid": "c00ac5dc3fff10ce2e1e6d4a"
+  },
+  "user_id": {
+    "$oid": "7c6cfeaaa9c26fcee82effb5"
+  },
+  "username": "Lâm Văn Thành",
+  "rate": 3,
+  "comment": "Phòng chưa cách âm tốt cho lắm,phòng nhỏ hơn xíu so với lúc nhìn trong hình",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0f89e466d52b11aeddee9d45"
+  },
+  "post_id": {
+    "$oid": "4df30a34adbdfdf1c4ffdddc"
+  },
+  "user_id": {
+    "$oid": "a56aaaecf34c32b9e4c0eb7e"
+  },
+  "username": "Nguyễn Tiến Thành",
+  "rate": 3,
+  "comment": "Phòng ko giống trên hình, ko có ban công, phòng khá là bí và nhỏ, ồn và cách âm ko tốt",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "dae18e178fd79cb3b35ec84c"
+  },
+  "post_id": {
+    "$oid": "fe754ececebd2debb2ec8a69"
+  },
+  "user_id": {
+    "$oid": "d41faafeaa7f9eecaccbb98c"
+  },
+  "username": "Võ Đức Thảo",
+  "rate": 4,
+  "comment": "Phong sach se thoat mát , thich nhất bàn trang điểm",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8ea3814bc3bdbacbcf2bafbe"
+  },
+  "post_id": {
+    "$oid": "8b5f5d0e2eae0accfaaa1960"
+  },
+  "user_id": {
+    "$oid": "a14ffdea3bae6ddadd30ad4d"
+  },
+  "username": "Bùi Trung Thành",
+  "rate": 5,
+  "comment": "Thái độ phục vụ rất nhiệt tình, chu đáo.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6650158a19e14e58b20564f8"
+  },
+  "post_id": {
+    "$oid": "18d4d368cbab68ae6899dadc"
+  },
+  "user_id": {
+    "$oid": "6644c76a1d14cda2549bc15e"
+  },
+  "username": "Nguyễn Cao Cường",
+  "rate": 5,
+  "comment": "Phòng mới, sạch sẽ; nội thất dùng tốt.",
+  "time": {
+    "$date": "2024-05-24T04:20:26.283Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66509a8cf0402fab4ad7925c"
+  },
+  "post_id": {
+    "$oid": "18d4d368cbab68ae6899dadc"
+  },
+  "user_id": {
+    "$oid": "6644c76a1d14cda2549bc15e"
+  },
+  "username": "Nguyễn Cao Cường",
+  "rate": 3,
+  "comment": "phòng tệ, không như hình",
+  "time": {
+    "$date": "2024-05-24T13:47:56.536Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6650a56779922153f3d8639f"
+  },
+  "post_id": {
+    "$oid": "a3960bb1b9789c9fe4fc71cb"
+  },
+  "user_id": {
+    "$oid": "664ae24524a69bc3515a8051"
+  },
+  "username": "Lê Trường An",
+  "rate": 5,
+  "comment": "phòng xịn, máy lạnh ngon",
+  "time": {
+    "$date": "2024-05-24T14:34:15.073Z"
+  }
+}]

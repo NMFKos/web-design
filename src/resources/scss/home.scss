@@ -1,0 +1,249 @@
+@media all and (min-width: 320px) {
+    .webpage {
+        margin: 0 auto;
+        width: 95%;
+    }
+    .preview {
+        margin: 0 auto;
+        width: 55%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .search-container {
+        border: 1px solid #343A40; /* Border với độ dày là 1px và màu đen */
+        border-radius: 10px; /* Border-radius là 10px */
+        background-color: #343A40; /* Background color là yellow */
+        padding: 10px 20px; /* Padding là 10px từ trên và dưới, 20px từ trái và phải */
+        display: flex; /* Hiển thị các phần tử trong container theo chiều ngang */
+        justify-content: space-between; /* Các phần tử trong container được căn cách nhau theo khoảng cách giống nhau */
+        align-items: center; /* Căn các phần tử theo trục dọc */
+        margin-bottom: 10px;
+        margin-top: 10px;
+        gap: 10px;
+        z-index: 1;
+    }
+    .form-select {
+        width: 200px;
+        border-radius: 5px;
+        height: 35px;
+        color: gray;
+        text-align: center; /* Center the text in the select dropdown */
+    }
+    .form-select option {
+        text-align: center; /* Center the text of the options */
+    }
+    .search-button {
+        padding: 10px 20px;; /* Padding của button */
+        border: none; /* Border của button */
+        background-color: #343A40; /* Background color của button */
+        color: white; /* Màu chữ của button */
+        border: 1px solid white; /* Border của button */
+        border-radius: 10px;
+        cursor: pointer; /* Con trỏ chuột khi hover */
+    }
+    @media (min-width: 576px) {
+        .form-select, .search-button {
+            width: auto;
+            flex: 1;
+        }
+    }
+    @media (max-width: 576px) {
+        .form-select, .search-button {
+            width: 100%;
+        }
+    }
+    .background-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-image: url('https://cdn3.ivivu.com/2023/10/du-lich-sai-gon-ivivu.jpg');
+        background-size: cover;
+        opacity: 0.5;
+        z-index: 1;
+    }
+    .btn-container {
+        display: none;
+    }
+    .fa-regular, .fa-solid {
+        font-size: 24px;
+    }
+    .middle-over {
+        position: relative;
+        z-index: 2;
+    }
+    .top-over {
+        position: relative;
+        z-index: 3;
+    }
+    .list-group-char {
+        gap: 10px;
+        position: relative;
+        z-index: 2;
+    }
+    .image-char {
+        width: 25%;
+    }
+    .content-frame {
+        display: block;
+        margin-left: 18px;
+        width: 75%;
+    }
+    .content-first, .content-second, .content-third {
+        flex-grow: 1;
+    }
+    .content-first {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .content-second {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .content-second div {
+        margin-bottom: 10px;
+    }
+    .content-third {
+        display: flex;
+        justify-content: right;
+    }
+    .price-border {
+        border: 2px solid #ccc;
+        padding: 5px;
+        border-radius: 12px;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        width: 170px;
+        justify-content: center;
+    }
+    .view-border {
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        padding: 5px;
+        color: white;
+        background-color: blueviolet;
+        display: flex;
+        font-weight: bold;
+        justify-content: center;
+    }
+    .chatbox {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        font-family: Arial, sans-serif;
+        z-index: 9999;
+    }
+    .chatbox-support {
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        background: #f9f9f9;
+        right: 0;
+        bottom: 100px;
+        width: 350px;
+        height: 450px;
+        z-index: -1;
+        opacity: 0;
+        transition: all .5s ease-in-out;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .chatbox--active {
+        transform: translateY(-20px);
+        display: flex;
+        z-index: 10;
+        opacity: 1;
+        border-radius: 15px;
+        border: 2px solid #3d59d4;
+    }
+    .chatbox-button {
+        text-align: right;
+    }
+    .chatbox-button button {
+        background-color: #3d59d4;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color .3s;
+    }
+    .chatbox-button button:hover {
+        background-color: #233480;
+    }
+    .chatbox-header {
+        position: sticky;
+        top: 0;
+        background: #3d59d4;
+        color: white;
+        padding: 10px;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #chatbox-history {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        padding: 10px;
+        height: 80%;
+        border-bottom: 1px solid #ccc;
+        max-height: calc(100% - 70px);
+    }
+    .chatbox-footer {
+        display: flex;
+        padding: 10px;
+        border-top: 1px solid #ccc;
+        background: #f9f9f9;
+    }
+    #chat-form {
+        position: sticky;
+        bottom: 0;
+        display: flex;
+        background: #f9f9f9;
+        padding: 10px;
+        border-top: 1px solid #ccc;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    #user-input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    #chat-form button {
+        background-color: #3d59d4;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color .3s;
+    }
+    #chat-form button:hover {
+        background-color: #233480;
+    }
+    div.user-message {
+        text-align: right;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+    div.bot-message {
+        text-align: left;
+        padding: 10px;
+        background-color: #e0f0e0;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+}

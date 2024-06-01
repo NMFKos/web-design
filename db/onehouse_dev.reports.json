@@ -1,0 +1,187 @@
+[{
+  "_id": {
+    "$oid": "067cc9ecbd038b8cf44123fa"
+  },
+  "post_id": {
+    "$oid": "35dd45a8344aacf7aa1ebab7"
+  },
+  "user_id": {
+    "$oid": "dbf0abbc390dd3ca87b6dd50"
+  },
+  "username": "Phan Duy Quốc",
+  "comment": "Phòng ko giống trên hình, ko có ban công, phòng khá là bí và nhỏ, ồn và cách âm ko tốt",
+  "time": {
+    "$date": "2024-05-15T00:00:00.000Z"
+  },
+  "state": 0
+},
+{
+  "_id": {
+    "$oid": "0e12b61c4a6f1eafe6ac7ece"
+  },
+  "post_id": {
+    "$oid": "f3ff4042ef9edbdbf4e5a15c"
+  },
+  "user_id": {
+    "$oid": "d4bddaeca949deb450bf053f"
+  },
+  "username": "Dương Chí Tâm",
+  "comment": "Phòng chưa cách âm tốt cho lắm,phòng nhỏ hơn xíu so với lúc nhìn trong hình",
+  "time": {
+    "$date": "2024-05-25T00:00:00.000Z"
+  },
+  "state": 0
+},
+{
+  "_id": {
+    "$oid": "9cbcde4ae42fbcfb2d4fee4c"
+  },
+  "post_id": {
+    "$oid": "bedfb35c25a9aa4bed29eaed"
+  },
+  "user_id": {
+    "$oid": "8bb08fce45d2b57bd583045e"
+  },
+  "username": "Trần Thị Minh Sương",
+  "comment": "Phòng ko giống trên hình, ko có ban công, phòng khá là bí và nhỏ, ồn và cách âm ko tốt",
+  "time": {
+    "$date": "2024-05-15T00:00:00.000Z"
+  },
+  "state": 0
+},
+{
+  "_id": {
+    "$oid": "e0dbf05dc20840cb4e9ffbab"
+  },
+  "post_id": {
+    "$oid": "dfd37f4ea785f5dd00bfaf17"
+  },
+  "user_id": {
+    "$oid": "9cfdeb6d1df6b1fcbcf9ab96"
+  },
+  "username": "Vũ Văn Thành",
+  "comment": "Chưa cách âm tốt, hơi ồn.",
+  "time": {
+    "$date": "2024-05-25T00:00:00.000Z"
+  },
+  "state": 0
+},
+{
+  "_id": {
+    "$oid": "bdebfedf8deaaca5cc8def51"
+  },
+  "post_id": {
+    "$oid": "cb2ac3fe81affad1c63facd3"
+  },
+  "user_id": {
+    "$oid": "d9dbaa1bacf653cbd0edbcca"
+  },
+  "username": "Phan Xuân Thắng",
+  "comment": "Không có máy nước nóng lạnh",
+  "time": {
+    "$date": "2024-05-25T00:00:00.000Z"
+  },
+  "state": 0
+},
+{
+  "_id": {
+    "$oid": "d889dc10532f3e9aff3c2b57"
+  },
+  "post_id": {
+    "$oid": "feb94ef6b71cb1ab92d1c31a"
+  },
+  "user_id": {
+    "$oid": "cb04fce2bb9d69f064ddf4cd"
+  },
+  "username": "Bùi Minh Thảo",
+  "comment": "Không có máy nước nóng lạnh",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "state": 0
+},
+{
+  "_id": {
+    "$oid": "ad3f4b69eefac377ddb5aeb8"
+  },
+  "post_id": {
+    "$oid": "6b2e0e174de6fdcbd03a4a40"
+  },
+  "user_id": {
+    "$oid": "01d022884e0e6a0dc05a5dec"
+  },
+  "username": "Đinh Xuân Thắng",
+  "comment": "Không có máy nước nóng lạnh",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "state": 0
+},
+{
+  "_id": {
+    "$oid": "6f77722a1d1ce452f17fbc11"
+  },
+  "post_id": {
+    "$oid": "c00ac5dc3fff10ce2e1e6d4a"
+  },
+  "user_id": {
+    "$oid": "7c6cfeaaa9c26fcee82effb5"
+  },
+  "username": "Lâm Văn Thành",
+  "comment": "Phòng chưa cách âm tốt cho lắm,phòng nhỏ hơn xíu so với lúc nhìn trong hình",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "state": 0
+},
+{
+  "_id": {
+    "$oid": "0f89e466d52b11aeddee9d45"
+  },
+  "post_id": {
+    "$oid": "4df30a34adbdfdf1c4ffdddc"
+  },
+  "user_id": {
+    "$oid": "a56aaaecf34c32b9e4c0eb7e"
+  },
+  "username": "Nguyễn Tiến Thành",
+  "comment": "Phòng ko giống trên hình, ko có ban công, phòng khá là bí và nhỏ, ồn và cách âm ko tốt",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "state": 0
+},
+{
+  "_id": {
+    "$oid": "7c8a7efc2a953bf928589c31"
+  },
+  "post_id": {
+    "$oid": "cae9c6838b0413a1d4f82414"
+  },
+  "user_id": {
+    "$oid": "6ab1bba46ae0c085df98d7e6"
+  },
+  "username": "Đàm Văn Thiện",
+  "comment": "Vòi sen với vòi nước bồn rửa mặt nước chảy yếu quá.",
+  "time": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "state": 0
+},
+{
+  "_id": {
+    "$oid": "665015a819e14e58b2056500"
+  },
+  "post_id": {
+    "$oid": "18d4d368cbab68ae6899dadc"
+  },
+  "user_id": {
+    "$oid": "6644c76a1d14cda2549bc15e"
+  },
+  "username": "Nguyễn Cao Cường",
+  "comment": "dịch vụ tệ, không chuyên nghiệp",
+  "state": 0,
+  "time": {
+    "$date": "2024-05-24T04:20:56.628Z"
+  }
+}]

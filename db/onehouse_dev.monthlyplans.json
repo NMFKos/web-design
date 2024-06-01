@@ -1,0 +1,1425 @@
+[{
+  "_id": {
+    "$oid": "6ac426febcb10f0ba6ebe0ac"
+  },
+  "post_id": {
+    "$oid": "4e44d30796cd2c71b8cfa32f"
+  },
+  "user_id": {
+    "$oid": "80c0f82e4be1b0ecbdfbe6ba"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "087bf13f54050ff3bd878d2b"
+  },
+  "post_id": {
+    "$oid": "7425d04b4ce6e3bca52553bd"
+  },
+  "user_id": {
+    "$oid": "447f3b3f94bfee8fc99ecce7"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "3b5651fa5ec15ba6dabb4925"
+  },
+  "post_id": {
+    "$oid": "a5c6da77dd5b9b36794a2eba"
+  },
+  "user_id": {
+    "$oid": "3fde6dcfdcce0f01f4ee4dde"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "8d6bd3ab4fbddc1ba466ef01"
+  },
+  "post_id": {
+    "$oid": "abbaa9c1dc76ba9870cf61e2"
+  },
+  "user_id": {
+    "$oid": "b7dacb058d8be1fd0bdbe8de"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "55cdfd457185aae0db929c97"
+  },
+  "post_id": {
+    "$oid": "18d4d368cbab68ae6899dadc"
+  },
+  "user_id": {
+    "$oid": "eacba7246daab7a2edacb392"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "92e66e89ed0f1a3f0eaec24a"
+  },
+  "post_id": {
+    "$oid": "ba2c5e2cd80dbcedfce6e927"
+  },
+  "user_id": {
+    "$oid": "f2e4afaee039a572fdcc7afe"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "be6b6ed3dd9d4fbdcc71a81b"
+  },
+  "post_id": {
+    "$oid": "2aea526808be7a0e2d9bf1ef"
+  },
+  "user_id": {
+    "$oid": "a5e897a1b7f88ca30092ee00"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "bc6b2c6fcbc4cb13dded7cad"
+  },
+  "post_id": {
+    "$oid": "a3960bb1b9789c9fe4fc71cb"
+  },
+  "user_id": {
+    "$oid": "ce45baccbcbf2aa9aa2fe6db"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "9b21a14fcdd8b2cf8564262e"
+  },
+  "post_id": {
+    "$oid": "eec26d9c390a5daaaaeef330"
+  },
+  "user_id": {
+    "$oid": "3555a7aeedf4516e6aed5e8b"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "fff050eed1e53dc50abcfbc0"
+  },
+  "post_id": {
+    "$oid": "c3a573b6bf3ea0b20ea23fab"
+  },
+  "user_id": {
+    "$oid": "07bad1af904b98bfababddb5"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "a0b42c401b4ddaf27c983fc7"
+  },
+  "post_id": {
+    "$oid": "c776c8b6034adbbebde6b89e"
+  },
+  "user_id": {
+    "$oid": "d5e9c1ebffcf6d2bfdb0c80d"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "ccb570aebccf9abda0ac93a2"
+  },
+  "post_id": {
+    "$oid": "beab81f2da2f543559e665ce"
+  },
+  "user_id": {
+    "$oid": "213ce573c8aa5ee26e9dcda4"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "528bdd3cadc802bdfd2c08b4"
+  },
+  "post_id": {
+    "$oid": "35dd45a8344aacf7aa1ebab7"
+  },
+  "user_id": {
+    "$oid": "067cc9ecbd038b8cf44123fa"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "f2beb1f3e1d56efe2642ff34"
+  },
+  "post_id": {
+    "$oid": "6d9ca12a6b63b614d79cdf72"
+  },
+  "user_id": {
+    "$oid": "aba8277fc8eedfaa7f18ad9b"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "cdd96cefffc184ebcec698e1"
+  },
+  "post_id": {
+    "$oid": "a46e51f6b1cbe1cc66c2ba3b"
+  },
+  "user_id": {
+    "$oid": "c8380bea15fddd7fcd5a3bbe"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "bf945bbec1ad2eabe9cfb6a9"
+  },
+  "post_id": {
+    "$oid": "f7adf8ed4da7884c1e0ea931"
+  },
+  "user_id": {
+    "$oid": "af45aac150ce21e5e6ebaabb"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "4655ad9be4f7c962ed9adc52"
+  },
+  "post_id": {
+    "$oid": "6b0c4ed4c7db2dff494deefa"
+  },
+  "user_id": {
+    "$oid": "2c4d8750bcfa734dc692ba47"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "c6b4fff72c1eaa905405dc1e"
+  },
+  "post_id": {
+    "$oid": "8ef76eb2dd4fcfe73f647bbe"
+  },
+  "user_id": {
+    "$oid": "63f2c4013be72aafa48cb1f2"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "6edc7edaf627ddec7ea1e0fa"
+  },
+  "post_id": {
+    "$oid": "232ccf2dbf8e6383c3feec4d"
+  },
+  "user_id": {
+    "$oid": "529ebba72c2a3bce32b2aac7"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "abfdba6cbe5f9e3e7adef7db"
+  },
+  "post_id": {
+    "$oid": "831cad7e19e4bedcd35a4d88"
+  },
+  "user_id": {
+    "$oid": "9dcb2d0588ff2adf9be9b3d1"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "6ce4f79b64788c91f7f6acdb"
+  },
+  "post_id": {
+    "$oid": "ac70b5afc0711ffdded637ec"
+  },
+  "user_id": {
+    "$oid": "ce45baccbcbf2aa9aa2fe6db"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "86aa1c83a039cb20d1adb4a6"
+  },
+  "post_id": {
+    "$oid": "6eec8db1f918be33ae6daf56"
+  },
+  "user_id": {
+    "$oid": "c3ea58a4dfceefcd1cdd9eb4"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "ab2a1b477c26b9ad3876de4e"
+  },
+  "post_id": {
+    "$oid": "c9b9c972ffcac3cffd201a43"
+  },
+  "user_id": {
+    "$oid": "a3733b11efd3a97f3dee9a84"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "b2e9d8409753be2c92ff11bf"
+  },
+  "post_id": {
+    "$oid": "9a3c0dd054fe32fbdafee9e5"
+  },
+  "user_id": {
+    "$oid": "dc5a2de19701efe7c2aa821f"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "e62ada3daeab33ba1362c1e2"
+  },
+  "post_id": {
+    "$oid": "b48e7be881a34ebaa3d6750e"
+  },
+  "user_id": {
+    "$oid": "d7ffc59ad6cdcbdcdd9d7ad0"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "ee0c3de8e27ffbb0deea6b3b"
+  },
+  "post_id": {
+    "$oid": "c4bc676b7e0f548cd5e5abb2"
+  },
+  "user_id": {
+    "$oid": "e68b863ef5ca52aeaefbfbae"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "5befc1cdcbb356af0045bdcc"
+  },
+  "post_id": {
+    "$oid": "4edadf3afbdf19ebba1ae909"
+  },
+  "user_id": {
+    "$oid": "2ea6858eafcb63eecd58b0fb"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "0f2a7ed8e93eeba8eb90cd63"
+  },
+  "post_id": {
+    "$oid": "ae43fff5a77c5f344d988dcc"
+  },
+  "user_id": {
+    "$oid": "c32cde8f4cd8cfb2da09d5dc"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "bfdbc61df97bd5e3afa9c4ec"
+  },
+  "post_id": {
+    "$oid": "9d54737598f4ebc11ebcdfdb"
+  },
+  "user_id": {
+    "$oid": "efabd73a55a2ce0f22ffaa05"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "eb3dd0bcbf1aeeea6de90a10"
+  },
+  "post_id": {
+    "$oid": "fca485f02faacdb216ae25db"
+  },
+  "user_id": {
+    "$oid": "a1d2f1f0bae4eb966fb54bbb"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "f7a3ab59ededf4d224ceb2a3"
+  },
+  "post_id": {
+    "$oid": "a239ae79fdef54bad3555428"
+  },
+  "user_id": {
+    "$oid": "cbdef2bcbbbcb9b31d1adbb3"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "eedcbe1156ecab65d2d08029"
+  },
+  "post_id": {
+    "$oid": "b19b20e8a2128a549d45bf7c"
+  },
+  "user_id": {
+    "$oid": "7c8a7efc2a953bf928589c31"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "efbacd3200b0c0d7d61ac75c"
+  },
+  "post_id": {
+    "$oid": "64386cbef17e9c7e9e2edbf0"
+  },
+  "user_id": {
+    "$oid": "e2df5213e9fd4edd91d686dc"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "066f6bed8f387f8c8b30efa0"
+  },
+  "post_id": {
+    "$oid": "ca29d11becca1fcfd48de0fe"
+  },
+  "user_id": {
+    "$oid": "41c1388b9e81c5fda696255e"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "8dc3b9d51ecdaa00ce4819f5"
+  },
+  "post_id": {
+    "$oid": "03cad6461245c92ae06afb69"
+  },
+  "user_id": {
+    "$oid": "bbeaa5cd0bdcffffa95aefdf"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "dfcaba6f5ebabd2510ed312b"
+  },
+  "post_id": {
+    "$oid": "02450d59aad77394cb8aff31"
+  },
+  "user_id": {
+    "$oid": "fb2c7bf2cce5078e71d1da63"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "5354aad58e35e3af4d3ffaec"
+  },
+  "post_id": {
+    "$oid": "f3ff4042ef9edbdbf4e5a15c"
+  },
+  "user_id": {
+    "$oid": "0e12b61c4a6f1eafe6ac7ece"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "3cb79b25925add78e5561c9c"
+  },
+  "post_id": {
+    "$oid": "ffb7125abb29df533b1cbadb"
+  },
+  "user_id": {
+    "$oid": "5eac6b516c2bf258df46c92c"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "c309e2ace9dcccd9cb8c1c9c"
+  },
+  "post_id": {
+    "$oid": "48acee53cd6272cc969db10d"
+  },
+  "user_id": {
+    "$oid": "4ca36b16afb90a5fa1f27bd4"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "c3cf2acbf7ab62aedc5a2f3a"
+  },
+  "post_id": {
+    "$oid": "9eed87ad0c72601b251b45fd"
+  },
+  "user_id": {
+    "$oid": "f2e4afaee039a572fdcc7afe"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "8a5dcd71deee818b3ab436ab"
+  },
+  "post_id": {
+    "$oid": "aba2916abff3fc3a473a8c20"
+  },
+  "user_id": {
+    "$oid": "9a5efce4d2330ab0f1ccdee3"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "3ca9f02cc58acb138ce8d78c"
+  },
+  "post_id": {
+    "$oid": "f9c4b61cadb92ebbb4d256cd"
+  },
+  "user_id": {
+    "$oid": "48ef7fd35e6c9a52cc5b7eba"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "b7cddee5286e5faff4d8a9ad"
+  },
+  "post_id": {
+    "$oid": "fc4dde8bed3f61db85c475da"
+  },
+  "user_id": {
+    "$oid": "cc1eb68aa25d49c34485d9da"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "0385ab2a51e1df6953ddef2a"
+  },
+  "post_id": {
+    "$oid": "bedfb35c25a9aa4bed29eaed"
+  },
+  "user_id": {
+    "$oid": "9cbcde4ae42fbcfb2d4fee4c"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "b4cdef2c050cbf5fa67a098e"
+  },
+  "post_id": {
+    "$oid": "cffccd2862c279525aabf9a1"
+  },
+  "user_id": {
+    "$oid": "bd725a0acdd7ec30d69eecdc"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "0e1d6f4d4cdfce4d2d923d4c"
+  },
+  "post_id": {
+    "$oid": "df49fcca775729d3ca5c1dda"
+  },
+  "user_id": {
+    "$oid": "2deded2a4f3da0913eedcf9c"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "0c2440a6a0afadcf9f9e1e6a"
+  },
+  "post_id": {
+    "$oid": "37faca18348fa5ab1ec9d5cd"
+  },
+  "user_id": {
+    "$oid": "d645ce18a5baaaf01b1f14ca"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "84e55bde147d86ae2bcca6e3"
+  },
+  "post_id": {
+    "$oid": "be572daf1f2afbfbaea6ec5a"
+  },
+  "user_id": {
+    "$oid": "e77dbbacaddf6ade3fccffea"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "ebdacab1bec9d1ddbcdd1284"
+  },
+  "post_id": {
+    "$oid": "a7b238d05f9bdedff94eba1f"
+  },
+  "user_id": {
+    "$oid": "dc5a2de19701efe7c2aa821f"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "c0d5c16abd98ffcc36ef4a4a"
+  },
+  "post_id": {
+    "$oid": "1b6a1a038f02b5d0d9688b64"
+  },
+  "user_id": {
+    "$oid": "e57db47dfff85feeabe506c5"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "aabf5fc0783b9e4d1ad8179f"
+  },
+  "post_id": {
+    "$oid": "ed27a7b6c6d57d9bfcdf1f18"
+  },
+  "user_id": {
+    "$oid": "214efbe3fb653def56088f5b"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "ebdf48dfc32b8bcce7b2f3ca"
+  },
+  "post_id": {
+    "$oid": "85fe04ccf63ee20d6ebecfae"
+  },
+  "user_id": {
+    "$oid": "dad4edb49acc618a3e0ed4e4"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "1faec41c9eae3f6dc0a39cc9"
+  },
+  "post_id": {
+    "$oid": "b3f8ca36af7cee0dfe44f3af"
+  },
+  "user_id": {
+    "$oid": "04506059afe13a964d2cdba3"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "dc026fae78f1dffed7dee8e2"
+  },
+  "post_id": {
+    "$oid": "96feea8d7b2d32fbfbb97cff"
+  },
+  "user_id": {
+    "$oid": "c4383b177a0ba2c44a1e9ed1"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "cb183635c6a3df1a5f653f74"
+  },
+  "post_id": {
+    "$oid": "f404adfbfe4ec0e89cecabec"
+  },
+  "user_id": {
+    "$oid": "ea8968b90d7cc4bff2df2b07"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "f1dcb11052ee948b6cafd546"
+  },
+  "post_id": {
+    "$oid": "e2b90afdfdafd7eb1e5af4fc"
+  },
+  "user_id": {
+    "$oid": "5fbee4d372cac5c57fb661a7"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "6fd8f9d084ccce9db3e3ad93"
+  },
+  "post_id": {
+    "$oid": "dfd37f4ea785f5dd00bfaf17"
+  },
+  "user_id": {
+    "$oid": "e0dbf05dc20840cb4e9ffbab"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "db7341bf5954dffc046a7d5a"
+  },
+  "post_id": {
+    "$oid": "0bf0af4803c6ab1a8e3edd5c"
+  },
+  "user_id": {
+    "$oid": "adab3a0788f62de16bfbd04f"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "e9af6a93fedbfaac9ffbb44b"
+  },
+  "post_id": {
+    "$oid": "fa8baeaca5f032dfed80f66d"
+  },
+  "user_id": {
+    "$oid": "fc10f8ca1bdd3b7c2901cda1"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "1acedecff3a8691b0bfe86cd"
+  },
+  "post_id": {
+    "$oid": "cfc3c73aab9e5fbd539dda8b"
+  },
+  "user_id": {
+    "$oid": "ffbadc9fdc176dec0ed08ac4"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "9340ffb78effafb6ef78dbb4"
+  },
+  "post_id": {
+    "$oid": "5b29b7e1ee1e0b33ec58ddff"
+  },
+  "user_id": {
+    "$oid": "19acb39af8c7d546137fdb30"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "b612fadb6cc4bc59deaae4f5"
+  },
+  "post_id": {
+    "$oid": "cb2ac3fe81affad1c63facd3"
+  },
+  "user_id": {
+    "$oid": "bdebfedf8deaaca5cc8def51"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "cd843cfbac0359809a528acb"
+  },
+  "post_id": {
+    "$oid": "feb94ef6b71cb1ab92d1c31a"
+  },
+  "user_id": {
+    "$oid": "d889dc10532f3e9aff3c2b57"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "b7bcb51b62c9ab4fc36a4a0d"
+  },
+  "post_id": {
+    "$oid": "2da4dac598fc4ebbe0eed43d"
+  },
+  "user_id": {
+    "$oid": "c9419bc483399ae547b9df3a"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "9cabd56cdffb042d4ba3a01a"
+  },
+  "post_id": {
+    "$oid": "cc9716bb4cebd5fb1d3e0ae3"
+  },
+  "user_id": {
+    "$oid": "65c2cd0c62bdce0dde8cbe0c"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "58fcce8c2eb320a244363c3a"
+  },
+  "post_id": {
+    "$oid": "6b2e0e174de6fdcbd03a4a40"
+  },
+  "user_id": {
+    "$oid": "ad3f4b69eefac377ddb5aeb8"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "1a9cabde113fc1db7ddbc8af"
+  },
+  "post_id": {
+    "$oid": "c00ac5dc3fff10ce2e1e6d4a"
+  },
+  "user_id": {
+    "$oid": "6f77722a1d1ce452f17fbc11"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "bcd7abbd11efda33b3baffaa"
+  },
+  "post_id": {
+    "$oid": "4df30a34adbdfdf1c4ffdddc"
+  },
+  "user_id": {
+    "$oid": "0f89e466d52b11aeddee9d45"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "a325716b4fddef6277cdef9c"
+  },
+  "post_id": {
+    "$oid": "cae9c6838b0413a1d4f82414"
+  },
+  "user_id": {
+    "$oid": "7c8a7efc2a953bf928589c31"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "68ad3ef3d3bf9ba3b8ddab11"
+  },
+  "post_id": {
+    "$oid": "8a2caa21fcb9aef69d4cd5ec"
+  },
+  "user_id": {
+    "$oid": "7c8a7efc2a953bf928589c31"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "00ae871abcf830cf32b1845f"
+  },
+  "post_id": {
+    "$oid": "fe754ececebd2debb2ec8a69"
+  },
+  "user_id": {
+    "$oid": "dae18e178fd79cb3b35ec84c"
+  },
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "d8e92090972de0b3b408351c"
+  },
+  "post_id": {
+    "$oid": "8b5f5d0e2eae0accfaaa1960"
+  },
+  "user_id": {
+    "$oid": "8ea3814bc3bdbacbcf2bafbe"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "b23fe513b6ec357cdf54de1c"
+  },
+  "post_id": {
+    "$oid": "66373ad104619faf43b8e19c"
+  },
+  "user_id": {
+    "$oid": "fb2c7bf2cce5078e71d1da63"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "1da977cb2ae3f53d6fc045ee"
+  },
+  "post_id": {
+    "$oid": "66373bd404619faf43b8e19d"
+  },
+  "user_id": {
+    "$oid": "5eac6b516c2bf258df46c92c"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+},
+{
+  "_id": {
+    "$oid": "0bd60aed8ed04f0cef6b1f4c"
+  },
+  "post_id": {
+    "$oid": "6639bd96caeacc09c6c2c163"
+  },
+  "user_id": {
+    "$oid": "9a5efce4d2330ab0f1ccdee3"
+  },
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-06-05T00:00:00.000Z"
+  },
+  "price": 60
+}]

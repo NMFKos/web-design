@@ -1,0 +1,1875 @@
+[{
+  "_id": {
+    "$oid": "4e44d30796cd2c71b8cfa32f"
+  },
+  "user_id": "80c0f82e4be1b0ecbdfbe6ba",
+  "title": "Cho thuê studio tại Hoàng Sa, Q1, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr5\\nStudio Cửa Sổ Lớn, Rộng Thoáng\\nTrang bị full nội thất như ảnh\\nTự do giờ giấc, Không chung chủ",
+  "price": 5.5,
+  "address": "Hoàng Sa, Phường Đa Kao, Quận 1",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "hoang-sa-phuong-da-kao-quan-1",
+  "images": "images/Q1/Studio/Hoàng Sa/",
+  "status": 0,
+  "area": 23
+},
+{
+  "_id": {
+    "$oid": "7425d04b4ce6e3bca52553bd"
+  },
+  "user_id": "447f3b3f94bfee8fc99ecce7",
+  "title": "Cho thuê studio tại Trần Hưng Đạo, Q1, TP. Hồ Chí Minh",
+  "description": "Căn Hộ Sang trọng giá 8tr5 — Thang máy, Hầm xe\\nHợp đồng dài hạn giảm còn 8tr\\nStudio ban công rộng rãi thoáng mát\\nNội thất đầy đủ, tiện nghi. Thay chăn ga thường xuyên mỗi tuần\\nGiờ giấc tự do, không chung chủ",
+  "price": 8.5,
+  "address": "Trần Hưng Đạo, Phường Nguyễn Cư Trinh, Quận 1",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "tran-hung-dao-phuong-nguyen-cu-trinh-quan-1",
+  "images": "images/Q1/Studio/Trần Hưng Đạo/",
+  "status": 1,
+  "area": 32
+},
+{
+  "_id": {
+    "$oid": "a5c6da77dd5b9b36794a2eba"
+  },
+  "user_id": "3fde6dcfdcce0f01f4ee4dde",
+  "title": "Cho thuê studio tại Huỳnh Tịnh Của, Q1, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 4tr6\\nDuplex cửa sổ thoáng mát 30m2\\nFull nội thất như ảnh\\nGiờ giấc tự do, Ko chung chủ",
+  "price": 4.6,
+  "address": "Trường Sa, Phường 2, Quận Phú Nhuận",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "truong-sa-phuong-2-quan-phu-nhuan",
+  "images": "images/Q1/Studio/Huỳnh Tịnh Của",
+  "status": 1,
+  "area": 26
+},
+{
+  "_id": {
+    "$oid": "abbaa9c1dc76ba9870cf61e2"
+  },
+  "user_id": "b7dacb058d8be1fd0bdbe8de",
+  "title": "Cho thuê studio tại Nguyễn Thị Minh Khai, Q1, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr5\\nStudio cửa sổ rộng rãi thoáng mát\\nFull nội thất mới như ảnh\\ngiờ giấc tự do, ko chung chủ",
+  "price": 5.5,
+  "address": "Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nguyen-thi-minh-khai-phuong-ben-nghe-quan-1",
+  "images": "images/Q1/Studio/Nguyễn Thị Minh Khai/",
+  "status": 1,
+  "area": 27
+},
+{
+  "_id": {
+    "$oid": "18d4d368cbab68ae6899dadc"
+  },
+  "user_id": "eacba7246daab7a2edacb392",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Phạm Ngũ Lão, Q1, TP.HCM",
+  "description": "Giá thuê căn hộ 6tr8\\nStudio 1PN tách bếp, cửa sổ rộng rãi thoáng mát, dtich 35m2\\nFull nội thất đầy đủ tiện nghi\\nGiờ giấc tự do, ko chung chủ",
+  "price": 6.8,
+  "address": "Phạm Ngũ Lão, Quận 1",
+  "type_house": "1PN",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "pham-ngu-lao-quan-1",
+  "images": "images/Q1/1PN/Phạm Ngũ Lão/",
+  "status": 1,
+  "area": 32
+},
+{
+  "_id": {
+    "$oid": "ba2c5e2cd80dbcedfce6e927"
+  },
+  "user_id": "f2e4afaee039a572fdcc7afe",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Trần Khắc Chân, Q1, TP.HCM",
+  "description": "7tr5– 35m2, Máy giặt riêng\\n1PN tách bếp cửa sổ thoáng mát\\nFull nội thất như ảnh\\nGiờ giấc tự do, Ko chung chủ",
+  "price": 7.5,
+  "address": "Trần Khắc Chân, Phường Tân Định, Quận 1",
+  "type_house": "1PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "tran-khac-chan-phuong-tan-dinh-quan-1",
+  "images": "images/Q1/1PN/Trần Khắc Chân/",
+  "status": 1,
+  "area": 30
+},
+{
+  "_id": {
+    "$oid": "2aea526808be7a0e2d9bf1ef"
+  },
+  "user_id": "a5e897a1b7f88ca30092ee00",
+  "title": "Cho thuê duplex tại Nguyễn Trãi, Q1, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 4tr6\\nDuplex rộng rãi thoáng mát\\nNội thất cơ bản như ảnh\\nGiờ giấc tự do, ko chung chủ",
+  "price": 4.6,
+  "address": "Nguyễn Trãi, Quận 1",
+  "type_house": "Duplex",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nguyen-trai-quan-1",
+  "images": "images/Q1/Duplex/Nguyễn Trãi/",
+  "status": 1,
+  "area": 26
+},
+{
+  "_id": {
+    "$oid": "a3960bb1b9789c9fe4fc71cb"
+  },
+  "user_id": "ce45baccbcbf2aa9aa2fe6db",
+  "title": "Cho thuê duplex tại Phan Kế Bính, Q1, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr9\\nDuplex ban công tách bếp, rộng rãi thoáng mát\\nFull nội thất mới như ảnh\\ngiờ giấc tự do, ko chung chủ",
+  "price": 5.9,
+  "address": "Phan Kế Bính, Phường Đa Kao, Quận 1",
+  "type_house": "Duplex",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "phan-ke-binh-phuong-da-kao-quan-1",
+  "images": "images/Q1/Duplex/Phan Kế Bính/",
+  "status": 1,
+  "area": 30
+},
+{
+  "_id": {
+    "$oid": "eec26d9c390a5daaaaeef330"
+  },
+  "user_id": "3555a7aeedf4516e6aed5e8b",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Hoàng Dư Khương, Q10, TP.HCM",
+  "description": "Giá thuê căn hộ 9tr5\\n2PN Tách Bếp Ban Công Lớn , Rộng Thoáng\\nTrang bị full nội thất như ảnh\\nTự do giờ giấc , Không chung chủ",
+  "price": 9.5,
+  "address": "Hoàng Dư Khương, Phường 12, Quận 10",
+  "type_house": "2PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "hoang-du-khuong-phuong-12-quan-10",
+  "images": "images/Q10/2PN/Hoàng Dư Khương/",
+  "status": 1,
+  "area": 49
+},
+{
+  "_id": {
+    "$oid": "c3a573b6bf3ea0b20ea23fab"
+  },
+  "user_id": "07bad1af904b98bfababddb5",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại 3 tháng 2, Q10, TP.HCM",
+  "description": "Giá thuê căn hộ 7tr2\\n2PN 2WC ban công cửa sổ thoáng mát\\nFull nội thất đầy đủ tiện nghi\\nGiờ giấc tự do, ko chung chủ",
+  "price": 7.2,
+  "address": "Đường 3 tháng 2, Quận 10",
+  "type_house": "2PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "duong-3-thang-2-quan-10",
+  "images": "images/Q10/2PN/3 tháng 2/",
+  "status": 0,
+  "area": 48
+},
+{
+  "_id": {
+    "$oid": "c776c8b6034adbbebde6b89e"
+  },
+  "user_id": "d5e9c1ebffcf6d2bfdb0c80d",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Hồ Bá Kiện, Q10, TP.HCM",
+  "description": "Giá thuê căn hộ 6tr5\\n1PN Tách Bếp, Ban Công Riêng\\nTrang bị full nội thất như ảnh\\nTự do giờ giấc, Không chung chủ",
+  "price": 6.5,
+  "address": "Hồ Bá Kiện, Quận 10",
+  "type_house": "1PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "ho-ba-kien-quan-10",
+  "images": "images/Q10/1PN/Hồ Bá Kiện/",
+  "status": 1,
+  "area": 31
+},
+{
+  "_id": {
+    "$oid": "beab81f2da2f543559e665ce"
+  },
+  "user_id": "213ce573c8aa5ee26e9dcda4",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Sư Vạn Hạnh, Q10, TP.HCM",
+  "description": "Giá thuê căn hộ 7tr5 - diện tích 50m2\\n1PN tách bếp, ban công cửa sổ thoáng mát\\nFull nội thất đầy đủ tiện nghi\\nGiờ giấc tự do, ko chung chủ",
+  "price": 7.5,
+  "address": "Sư Vạn Hạnh, Quận 10",
+  "type_house": "1PN",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "su-van-hanh-quan-10",
+  "images": "images/Q10/1PN/Sư Vạn Hạnh/",
+  "status": 1,
+  "area": 34
+},
+{
+  "_id": {
+    "$oid": "35dd45a8344aacf7aa1ebab7"
+  },
+  "user_id": "067cc9ecbd038b8cf44123fa",
+  "title": "Cho thuê studio tại Điện Biên Phủ, Q10, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr\\nStudio cửa sổ đón nắng\\nCó sẵn nội thất như hình, máy lạnh, tủ lạnh, máy nóng lạnh, tủ quần áo, giá treo đồ, bàn ghế…\\nFree để xe, có sẵn máy giặt, wifi, ra vào bằng thẻ từ, khu dân cư an ninh, yên tĩnh, hẻm rộng",
+  "price": 5,
+  "address": "Điện Biên Phủ, Quận 10",
+  "type_house": "Studio",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "dien-bien-phu-quan-10",
+  "images": "images/Q10/Studio/Điện Biên Phủ/",
+  "status": 1,
+  "area": 26
+},
+{
+  "_id": {
+    "$oid": "6d9ca12a6b63b614d79cdf72"
+  },
+  "user_id": "aba8277fc8eedfaa7f18ad9b",
+  "title": "Cho thuê studio tại 3 tháng 2, Q10, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 6tr5\\nStudio ban công cửa sổ thoáng mát\\nFull nội thất đầy đủ tiện nghi\\nGiờ giấc tự do, ko chung chủ",
+  "price": 6.5,
+  "address": "Đường 3 tháng 2, Quận 10",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "duong-3-thang-2-quan-10",
+  "images": "images/Q10/Studio/3 tháng 2/",
+  "status": 1,
+  "area": 23
+},
+{
+  "_id": {
+    "$oid": "a46e51f6b1cbe1cc66c2ba3b"
+  },
+  "user_id": "c8380bea15fddd7fcd5a3bbe",
+  "title": "Cho thuê studio tại Vĩnh Viễn, Q10, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 6tr, có thang máy\\nStudio, cửa sổ lớn thoáng mát\\nFull nội thất đầy đủ tiện nghi\\nGiờ giấc tự do, ko chung chủ",
+  "price": 6,
+  "address": "Vĩnh Viễn, Quận 10",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "vinh-vien-quan-10",
+  "images": "images/Q10/Studio/Vĩnh Viễn/",
+  "status": 1,
+  "area": 30
+},
+{
+  "_id": {
+    "$oid": "f7adf8ed4da7884c1e0ea931"
+  },
+  "user_id": "af45aac150ce21e5e6ebaabb",
+  "title": "Cho thuê studio tại Nguyễn Tiểu La, Q10, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 7tr5, có ban công\\nStudio cực rộng 40m2, ban công đón nắng thoáng mát\\nNội thất đầy đủ, tiện nghi\\nGiờ giấc tự do, không chung chủ",
+  "price": 7.5,
+  "address": "Nguyễn Tiểu La, Quận 10",
+  "type_house": "Studio",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nguyen-tieu-la-quan-10",
+  "images": "images/Q10/Studio/Nguyễn Tiểu La/",
+  "status": 1,
+  "area": 28
+},
+{
+  "_id": {
+    "$oid": "6b0c4ed4c7db2dff494deefa"
+  },
+  "user_id": "2c4d8750bcfa734dc692ba47",
+  "title": "Cho thuê duplex tại Đồng Nai, Q10, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 4tr8\\nDuplex Gác Cao , Cửa Sổ Trời\\nTrang bị full nội thất như ảnh\\nTự do giờ giấc , Không chung chủ",
+  "price": 4.8,
+  "address": "Đồng Nai, Phường 15, Quận 10",
+  "type_house": "Duplex",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "dong-nai-phuong-15-quan-10",
+  "images": "images/Q10/Duplex/Đồng Nai/",
+  "status": 1,
+  "area": 26
+},
+{
+  "_id": {
+    "$oid": "8ef76eb2dd4fcfe73f647bbe"
+  },
+  "user_id": "63f2c4013be72aafa48cb1f2",
+  "title": "Cho thuê duplex tại Nhật Tảo, Q10, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr2\\nMáy giặt riêng, Ban công\\nDuplex ban công, rộng rãi thoáng mát\\nNội thất đầy đủ, tiện nghi\\nGiờ giấc tự do, không chung chủ",
+  "price": 5.2,
+  "address": "Nhật Tảo, Quận 10",
+  "type_house": "Duplex",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nhat-tao-quan-10",
+  "images": "images/Q10/Duplex/Nhật Tảo/",
+  "status": 1,
+  "area": 26
+},
+{
+  "_id": {
+    "$oid": "232ccf2dbf8e6383c3feec4d"
+  },
+  "user_id": "529ebba72c2a3bce32b2aac7",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Lê Văn Sỹ, Q3, TP.HCM",
+  "description": "Giá thuê căn hộ 7tr5 - diện tích 45m2\\n2PN tách bếp , sạch sẽ thoáng mát rộng rãi\\nNội thất đầy đủ như hình, khu nhà giàu, hẻm ô tô, xung quanh nhiều tiện ích\\nGiờ giấc tự do, không chung chủ",
+  "price": 7.5,
+  "address": "Lê Văn Sỹ, Quận 3",
+  "type_house": "2PN",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "le-van-sy-quan-3",
+  "images": "images/Q3/2PN/Lê Văn Sỹ/",
+  "status": 0,
+  "area": 50
+},
+{
+  "_id": {
+    "$oid": "831cad7e19e4bedcd35a4d88"
+  },
+  "user_id": "9dcb2d0588ff2adf9be9b3d1",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Cách Mạng Tháng 8, Q3, TP.HCM",
+  "description": "Giá thuê căn hộ 7tr5\\n2PN 2 ban công cửa sổ thoáng mát, dtich 25m2\\nĐầy đủ nội thất, p rộng rãi\\nGiờ giấc tự do, ko chung chủ",
+  "price": 7.5,
+  "address": "Cách Mạng Tháng 8, Phường 10, Quận 3",
+  "type_house": "2PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "cach-mang-thang-8-phuong-10-quan-3",
+  "images": "images/Q3/2PN/Cách Mạng Tháng 8/",
+  "status": 1,
+  "area": 49
+},
+{
+  "_id": {
+    "$oid": "ac70b5afc0711ffdded637ec"
+  },
+  "user_id": "ce45baccbcbf2aa9aa2fe6db",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Trần Quang Diệu, Q3, TP.HCM",
+  "description": "Giá thuê căn hộ 9tr\\n2PN 1WC tách bếp, cửa sổ thoáng mát\\nFull nội thất đầy đủ tiện nghi\\nGiờ giấc tự do, ko chung chủ",
+  "price": 9,
+  "address": "Trần Quang Diệu, Phường 14, Quận 3",
+  "type_house": "2PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "tran-quang-dieu-phuong-14-quan-3",
+  "images": "images/Q3/2PN/Trần Quang Diệu/",
+  "status": 1,
+  "area": 48
+},
+{
+  "_id": {
+    "$oid": "6eec8db1f918be33ae6daf56"
+  },
+  "user_id": "c3ea58a4dfceefcd1cdd9eb4",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Pastuer, Q3, TP.HCM",
+  "description": "12tr — 50m2 , Thang máy\\n2PN + 1Pk cửa sổ rộng rãi, thoáng mát\\nNội thất đầy đủ tiện nghi, phòng mới\\nGiờ giấc tự do, ko chung chủ",
+  "price": 12,
+  "address": "Pastuer, Quận 3",
+  "type_house": "2PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "pastuer-quan-3",
+  "images": "images/Q3/2PN/Pastuer/",
+  "status": 1,
+  "area": 49
+},
+{
+  "_id": {
+    "$oid": "c9b9c972ffcac3cffd201a43"
+  },
+  "user_id": "a3733b11efd3a97f3dee9a84",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Trần Quang Diệu, Q3, TP.HCM",
+  "description": "5tr5– Máy giặt riêng\\nỞ ngoài đẹp hơn hình nhe\\n1PN tách bếp,rộng rãi thoáng mát\\nFull nội thất đầy đủ tiện nghi\\nGiờ giấc tự do, ko chung chủ",
+  "price": 5.5,
+  "address": "Trần Quang Diệu, Phường 14, Quận 3",
+  "type_house": "1PN",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "tran-quang-dieu-phuong-14-quan-3",
+  "images": "images/Q3/1PN/Trần Quang Diệu/",
+  "status": 1,
+  "area": 34
+},
+{
+  "_id": {
+    "$oid": "9a3c0dd054fe32fbdafee9e5"
+  },
+  "user_id": "dc5a2de19701efe7c2aa821f",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Lý Chính Thắng, Q3, TP.HCM",
+  "description": "Giá thuê căn hộ 5tr9\\n1PN+ bếp riêng + ban công rộng rãi thoáng mát\\nNội thất đầy đủ, tiện nghi\\nGiờ giấc tự do, không chung chủ",
+  "price": 5.9,
+  "address": "Lý Chính Thắng, Quận 3",
+  "type_house": "1PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "ly-chinh-thang-quan-3",
+  "images": "images/Q3/1PN/Lý Chính Thắng/",
+  "status": 1,
+  "area": 32
+},
+{
+  "_id": {
+    "$oid": "b48e7be881a34ebaa3d6750e"
+  },
+  "user_id": "d7ffc59ad6cdcbdcdd9d7ad0",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Nguyễn Đình Chiểu, Q3, TP.HCM",
+  "description": "6tr6– 35m2\\n1PN tách bếp, Ban công cửa sổ đón nắng\\nNội thất đầy đủ, tiện nghi\\nGiờ giấc tự do, không chung chủ",
+  "price": 6.6,
+  "address": "Nguyễn Đình Chiểu, Quận 3",
+  "type_house": "1PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nguyen-dinh-chieu-quan-3",
+  "images": "images/Q3/1PN/Nguyễn Đình Chiểu/",
+  "status": 1,
+  "area": 33
+},
+{
+  "_id": {
+    "$oid": "c4bc676b7e0f548cd5e5abb2"
+  },
+  "user_id": "e68b863ef5ca52aeaefbfbae",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Nguyễn Thiện Thuật, Q3, TP.HCM",
+  "description": "Giá thuê căn hộ 8tr5 - diện tích 45m2\\n1PN cửa sổ thoáng mát, view 2 mặt tiền\\nĐầy đủ nội thất mới 100%, có Ministop bên dưới\\nGiờ giấc tự do, ko chung chủ",
+  "price": 8.5,
+  "address": "Nguyễn Thiện Thuật, Quận 3",
+  "type_house": "1PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nguyen-thien-thuat-quan-3",
+  "images": "images/Q3/1PN/Nguyễn Thiện Thuật/",
+  "status": 0,
+  "area": 32
+},
+{
+  "_id": {
+    "$oid": "4edadf3afbdf19ebba1ae909"
+  },
+  "user_id": "2ea6858eafcb63eecd58b0fb",
+  "title": "Cho thuê studio tại Lê Văn Sỹ, Q3, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 6tr2\\nStudio cửa sổ ban công rộng rãi thoáng mát\\nNội thất đầy đủ, hẻm ô tô, nhà xe rộng\\nGiờ giấc tự do, không chung chủ",
+  "price": 6.2,
+  "address": "Lê Văn Sỹ, Quận 3",
+  "type_house": "Studio",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "le-van-sy-quan-3",
+  "images": "images/Q3/Studio/Lê Văn Sỹ/",
+  "status": 1,
+  "area": 33
+},
+{
+  "_id": {
+    "$oid": "ae43fff5a77c5f344d988dcc"
+  },
+  "user_id": "c32cde8f4cd8cfb2da09d5dc",
+  "title": "Cho thuê studio tại Võ Văn Tần, Q3, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 6tr2\\nStudio cửa sổ rộng rãi thoáng mát\\nNội thất đầy đủ, tiện nghi, máy giặt riêng\\nGiờ giấc tự do, không chung chủ",
+  "price": 6.2,
+  "address": "Võ Văn Tần, Quận 3",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "vo-van-tan-quan-3",
+  "images": "images/Q3/Studio/Võ Văn Tần/",
+  "status": 1,
+  "area": 32
+},
+{
+  "_id": {
+    "$oid": "9d54737598f4ebc11ebcdfdb"
+  },
+  "user_id": "efabd73a55a2ce0f22ffaa05",
+  "title": "Cho thuê studio tại Trương Quyền, Q3, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr5\\nStudio cửa sổ ban công rộng rãi thoáng mát\\nFull nội thất mới như ảnh, có tivi\\ngiờ giấc tự do, ko chung chủ",
+  "price": 5.5,
+  "address": "Trương Quyền, Phường Võ Thị Sáu, Quận 3",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "truong-quyen-phuong-vo-thi-sau-quan-3",
+  "images": "images/Q3/Studio/Trương Quyền/",
+  "status": 1,
+  "area": 32
+},
+{
+  "_id": {
+    "$oid": "fca485f02faacdb216ae25db"
+  },
+  "user_id": "a1d2f1f0bae4eb966fb54bbb",
+  "title": "Cho thuê studio tại Trần Văn Đang, Q3, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr5\\nStudio rộng rãi tiện nghi\\nFull nội thất đầy đủ như ảnh\\nGiờ giấc tự do, ko chung chủ",
+  "price": 5.5,
+  "address": "Trần Văn Đang, Phường 11, Quận 3",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "tran-van-dang-phuong-11-quan-3",
+  "images": "images/Q3/Studio/Trần Văn Đang/",
+  "status": 1,
+  "area": 27
+},
+{
+  "_id": {
+    "$oid": "a239ae79fdef54bad3555428"
+  },
+  "user_id": "cbdef2bcbbbcb9b31d1adbb3",
+  "title": "Cho thuê studio tại Cách Mạng Tháng 8, Q3, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr\\nStudio cửa sổ rộng rãi thoáng mát\\nNội thất đầy đủ, diện tích 28m2\\nGiờ giấc tự do, không chung chủ",
+  "price": 5,
+  "address": "Cách Mạng Tháng 8, Phường 11, Quận 3",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "cach-mang-thang-8-phuong-11-quan-3",
+  "images": "images/Q3/Studio/Cách Mạng Tháng 8/",
+  "status": 1,
+  "area": 28
+},
+{
+  "_id": {
+    "$oid": "b19b20e8a2128a549d45bf7c"
+  },
+  "user_id": "7c8a7efc2a953bf928589c31",
+  "title": "Cho thuê duplex tại Cách Mạng Tháng 8, Q3, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 4tr5\\nDuplex Gác Cao , Thoáng\\nTrang bị full nội thất như ảnh\\nTự do giờ giấc , Không chung chủ",
+  "price": 4.5,
+  "address": "Cách Mạng Tháng 8, Quận 3",
+  "type_house": "Duplex",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "cach-mang-thang-8-quan-3",
+  "images": "images/Q3/Duplex/Cách Mạng Tháng 8/",
+  "status": 0,
+  "area": 27
+},
+{
+  "_id": {
+    "$oid": "64386cbef17e9c7e9e2edbf0"
+  },
+  "user_id": "e2df5213e9fd4edd91d686dc",
+  "title": "Cho thuê duplex tại Nguyễn Đình Chiểu, Q3, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 6tr\\nDuplex Gác Cao , Cửa Sổ Thoáng\\nTrang bị full nội thất, bếp điện , Bếp hút mùi ,….\\nTự do giờ giấc , Không chung chủ",
+  "price": 6,
+  "address": "Nguyễn Đình Chiểu, Q3",
+  "type_house": "Duplex",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nguyen-dinh-chieu-q3",
+  "images": "images/Q3/Duplex/Nguyễn Đình Chiểu/",
+  "status": 1,
+  "area": 29
+},
+{
+  "_id": {
+    "$oid": "ca29d11becca1fcfd48de0fe"
+  },
+  "user_id": "41c1388b9e81c5fda696255e",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Xô Viết Nghệ Tĩnh, Bình Thạnh, TP.HCM",
+  "description": "6tr3–40m2\\n1PN + bếp riêng, cửa sổ thoáng mát\\nFull nội thất như ảnh\\nGiờ giấc tự do, ko chung chủ",
+  "price": 6.3,
+  "address": "Xô Viết Nghệ Tĩnh, Quận Bình Thạnh",
+  "type_house": "1PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "xo-viet-nghe-tinh-quan-binh-thanh",
+  "images": "images/Bình Thạnh/1PN/Xô Viết Nghệ Tĩnh/",
+  "status": 1,
+  "area": 33
+},
+{
+  "_id": {
+    "$oid": "03cad6461245c92ae06afb69"
+  },
+  "user_id": "bbeaa5cd0bdcffffa95aefdf",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Nguyễn Trung Trực, Bình Thạnh, TP.HCM",
+  "description": "Giá thuê căn hộ 5tr\\n1pn tách bếp riêng, rộng rãi, cửa sổ thoáng mát\\nFull nội thất đầy đủ tiện nghi như ảnh\\nGiờ giấc tự do, ko chung chủ\\n",
+  "price": 5,
+  "address": "Nguyễn Trung Trực, Phường 5, Quận Bình Thạnh",
+  "type_house": "1PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nguyen-trung-truc-phuong-5-quan-binh-thanh",
+  "images": "images/Bình Thạnh/1PN/Nguyễn Trung Trực/",
+  "status": 1,
+  "area": 33
+},
+{
+  "_id": {
+    "$oid": "02450d59aad77394cb8aff31"
+  },
+  "user_id": "fb2c7bf2cce5078e71d1da63",
+  "title": "Cho thuê studio tại Bùi Đình Túy, Bình Thạnh, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr5\\nStudio cửa sổ rộng rãi thoáng mát\\nFull nội thất mới như ảnh\\ngiờ giấc tự do, ko chung chủ",
+  "price": 5.5,
+  "address": "Bùi Đình Tuý, P12, Bình Thạnh",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "no1-bui-dinh-tuy-p12-binh-thanh",
+  "images": "/images/Bình Thạnh/Studio/Bùi Hữu Nghĩa/No.1/",
+  "status": 1,
+  "area": 32
+},
+{
+  "_id": {
+    "$oid": "f3ff4042ef9edbdbf4e5a15c"
+  },
+  "user_id": "0e12b61c4a6f1eafe6ac7ece",
+  "title": "Cho thuê studio tại Nguyên Hồng, Bình Thạnh, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr\\nStudio ban công thoáng mát 30m2\\nfull nội thất như ảnh\\nGiờ giấc tự do , ko chung chủ",
+  "price": 5,
+  "address": "Nguyên Hồng, Phường 11, Quận Bình Thạnh",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nguyen-hong-phuong-11-quan-binh-thanh",
+  "images": "images/Bình Thạnh/Studio/Nguyên Hồng/",
+  "status": 0,
+  "area": 32
+},
+{
+  "_id": {
+    "$oid": "ffb7125abb29df533b1cbadb"
+  },
+  "user_id": "5eac6b516c2bf258df46c92c",
+  "title": "Cho thuê studio tại Bùi Hữu Nghĩa, Bình Thạnh, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 4tr8\\nStudio rộng rãi, thoáng mát\\nFull nội thất đầy đủ tiện nghi như ảnh\\nGiờ giấc tự do, ko chung chủ",
+  "price": 4.8,
+  "address": "Bùi Hữu Nghĩa, Quận Bình Thạnh",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "no1-bui-huu-nghia-quan-binh-thanh",
+  "images": "images/Bình Thạnh/Studio/Bùi Hữu Nghĩa/No.1/",
+  "status": 0,
+  "area": 20
+},
+{
+  "_id": {
+    "$oid": "48acee53cd6272cc969db10d"
+  },
+  "user_id": "4ca36b16afb90a5fa1f27bd4",
+  "title": "Cho thuê studio tại Phan Văn Trị, Bình Thạnh, TP. Hồ Chí Minh",
+  "description": "Khai trương CHDV mới giá 6tr2– 35m2\\nStudio cửa sổ to thoáng mát\\nfull nội thất đầy đủ\\nGiờ giấc tự do, không chung chủ",
+  "price": 6.2,
+  "address": "Phan Văn Trị, Quận Bình Thạnh",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "phan-van-tri-quan-binh-thanh",
+  "images": "images/Bình Thạnh/Studio/Phan Văn Trị/",
+  "status": 1,
+  "area": 22
+},
+{
+  "_id": {
+    "$oid": "9eed87ad0c72601b251b45fd"
+  },
+  "user_id": "f2e4afaee039a572fdcc7afe",
+  "title": "Cho thuê duplex tại Đinh Bộ Lĩnh, Bình Thạnh, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 6tr\\nDuplex Gác Cao , Ban Công\\nTrang bị full nội thất mới 100%\\nTự do giờ giấc, Không chung chủ",
+  "price": 6,
+  "address": "Đinh Bộ Lĩnh, Quận Bình Thạnh",
+  "type_house": "Duplex",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "dinh-bo-linh-quan-binh-thanh",
+  "images": "images/Bình Thạnh/Duplex/Đinh Bộ Lĩnh/",
+  "status": 0,
+  "area": 30
+},
+{
+  "_id": {
+    "$oid": "aba2916abff3fc3a473a8c20"
+  },
+  "user_id": "9a5efce4d2330ab0f1ccdee3",
+  "title": "Cho thuê nhà mới 100% tại Điện Biên Phủ, Bình Thạnh, TP. Hồ Chí Minh",
+  "description": "Giá thuê 5tr4, cam kết nhà mới 100% \\nduplex 30m2, ở được 3 người\\nfull nội thất mới như ảnh\\ngiờ giấc tự do, ko chung chủ",
+  "price": 5.4,
+  "address": "Điện Biên Phủ, Phường 22, Bình Thạnh",
+  "type_house": "Duplex",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "dien-bien-phu-phuong22-binh-thanh",
+  "images": "images/Bình Thạnh/Duplex/Điện Biên Phủ/P22/",
+  "status": 1,
+  "area": 25
+},
+{
+  "_id": {
+    "$oid": "f9c4b61cadb92ebbb4d256cd"
+  },
+  "user_id": "48ef7fd35e6c9a52cc5b7eba",
+  "title": "Cho thuê duplex tại Phan Văn Trị, Bình Thạnh, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr\\nDuplex cửa sổ thoáng mát\\nĐầy đủ nội thất, p rộng rãi\\nGiờ giấc tự do, ko chung chủ",
+  "price": 5,
+  "address": "XVNT, Phường 25, Quận Bình Thạnh",
+  "type_house": "Duplex",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "xvnt-phuong-25-quan-binh-thanh",
+  "images": "images/Bình Thạnh/Duplex/Phan Văn Trị/",
+  "status": 1,
+  "area": 28
+},
+{
+  "_id": {
+    "$oid": "fc4dde8bed3f61db85c475da"
+  },
+  "user_id": "cc1eb68aa25d49c34485d9da",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Bình Lợi, Bình Thạnh, TP.HCM",
+  "description": "Giá thuê căn hộ 6tr\\n2PN cửa sổ thoáng mát, sạch sẽ, dtich 45m2\\nFull nội thất đầy đủ tiện nghi\\nGiờ giấc tự do, camera an ninh 24/24, khoá vân tay",
+  "price": 6,
+  "address": "Bình Lợi, Phường 13, Quận Bình Thạnh",
+  "type_house": "2PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "binh-loi-phuong-13-quan-binh-thanh",
+  "images": "images/Bình Thạnh/2PN/Bình Lợi/",
+  "status": 1,
+  "area": 47
+},
+{
+  "_id": {
+    "$oid": "bedfb35c25a9aa4bed29eaed"
+  },
+  "user_id": "9cbcde4ae42fbcfb2d4fee4c",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Đinh Bộ Lĩnh, Bình Thạnh, TP.HCM",
+  "description": "Giá thuê căn hộ 8tr5\\n2pn riêng biệt rộng 50m2\\nFull nội thất như hình, cửa sổ thoáng mát rộng rãi\\nGiờ giấc tự do, không chung chủ, xung quanh nhiều quán xá",
+  "price": 8.5,
+  "address": "Đinh Bộ Lĩnh, Quận Bình Thạnh",
+  "type_house": "2PN",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "dinh-bo-linh-quan-binh-thanh",
+  "images": "images/Bình Thạnh/2PN/Đinh Bộ Lĩnh/",
+  "status": 0,
+  "area": 45
+},
+{
+  "_id": {
+    "$oid": "cffccd2862c279525aabf9a1"
+  },
+  "user_id": "bd725a0acdd7ec30d69eecdc",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Nơ Trang Long, Bình Thạnh, TP.HCM",
+  "description": "Giá thuê căn hộ 10tr\\n2PN penthouse cửa sổ thoáng mát\\nfull nội thất mới , giờ giấc tự do\\nkhu vực an ninh, xung quanh nhiều tiện ích",
+  "price": 10,
+  "address": "Nơ Trang Long, Quận Bình Thạnh",
+  "type_house": "2PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "no-trang-long-quan-binh-thanh",
+  "images": "images/Bình Thạnh/2PN/Nơ Trang Long/",
+  "status": 1,
+  "area": 46
+},
+{
+  "_id": {
+    "$oid": "df49fcca775729d3ca5c1dda"
+  },
+  "user_id": "2deded2a4f3da0913eedcf9c",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Chu Văn An, Bình Thạnh, TP.HCM",
+  "description": "Khai trương CHDV 2PN xinh xẻo giá 8tr2\\n2PN Ban Công rộng rãi thoáng mát\\nFull nội thất, đầy đủ tiện nghi\\nGiờ giấc tự do, ko chung chủ",
+  "price": 8.2,
+  "address": "Chu Văn An, Quận Bình Thạnh",
+  "type_house": "2PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "chu-van-an-quan-binh-thanh",
+  "images": "images/Bình Thạnh/2PN/Chu Văn An/",
+  "status": 1,
+  "area": 46
+},
+{
+  "_id": {
+    "$oid": "37faca18348fa5ab1ec9d5cd"
+  },
+  "user_id": "d645ce18a5baaaf01b1f14ca",
+  "title": "Cho thuê căn hộ đối diện Etown tại Cộng Hòa, Tân Bình, TP.HCM",
+  "description": "Giá thuê căn hộ 7tr\\n1PN tách bếp , thoáng mát rộng rãi\\nNội thất đầy đủ như hình, không thiếu một thứ gì\\nGiờ giấc tự do, không chung chủ",
+  "price": 7,
+  "address": "Cộng Hoà, Quận Tân Bình",
+  "type_house": "1PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "cong-hoa-quan-tan-binh",
+  "images": "images/Tân Bình/1PN/Cộng_Hòa/",
+  "status": 1,
+  "area": 34
+},
+{
+  "_id": {
+    "$oid": "be572daf1f2afbfbaea6ec5a"
+  },
+  "user_id": "e77dbbacaddf6ade3fccffea",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Hoàng Sa, Tân Bình, TP.HCM",
+  "description": "Giá thuê căn hộ 6tr4\\n1PN tách bếp, cửa sổ thoáng mát\\nFull nội thất đầy đủ tiện nghi\\nGiờ giấc tự do, ko chung chủ",
+  "price": 6.4,
+  "address": "Hoàng Sa, Phường 5, Quận Tân Bình",
+  "type_house": "1PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "hoang-sa-phuong-5-quan-tan-binh",
+  "images": "images/Tân Bình/1PN/Hoàng Sa/",
+  "status": 1,
+  "area": 32
+},
+{
+  "_id": {
+    "$oid": "a7b238d05f9bdedff94eba1f"
+  },
+  "user_id": "dc5a2de19701efe7c2aa821f",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Cộng Hòa, Tân Bình, TP.HCM",
+  "description": "Giá thuê căn hộ 6tr\\n1PN tách bếp rộng rãi ,giếng trời thoáng mát\\nNội thất đầy đủ tiện nghi\\nGiờ giấc tự do, không chung chủ",
+  "price": 6,
+  "address": "Cộng Hoà, Phường 4, Quận Tân Bình",
+  "type_house": "1PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "cong-hoa-phuong-4-quan-tan-binh",
+  "images": "images/Tân Bình/1PN/Cộng Hòa",
+  "status": 1,
+  "area": 32
+},
+{
+  "_id": {
+    "$oid": "1b6a1a038f02b5d0d9688b64"
+  },
+  "user_id": "e57db47dfff85feeabe506c5",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Hoàng Sa, Tân Bình, TP.HCM",
+  "description": "Giá thuê căn hộ 7tr2 ngay bờ kè, gần sân bay\\n2PN+ bếp riêng, ban công thoáng mát\\nFull nội thất đầy đủ tiện nghi\\nGiờ giấc tự do, ko chung chủ",
+  "price": 7.2,
+  "address": "Hoàng Sa ,Phường 5, Quận Tân Bình",
+  "type_house": "2PN",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "hoang-sa-phuong-5-quan-tan-binh",
+  "images": "images/Tân Bình/2PN/Hoàng Sa/",
+  "status": 1,
+  "area": 49
+},
+{
+  "_id": {
+    "$oid": "ed27a7b6c6d57d9bfcdf1f18"
+  },
+  "user_id": "214efbe3fb653def56088f5b",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Trần Văn Quang, Tân Bình, TP.HCM",
+  "description": "Giá thuê căn hộ 6tr8\\n2PN cửa sổ rộng rãi thoáng mát\\nNội thất đầy đủ, tiện nghi, máy giặt riêng\\nGiờ giấc tự do, không chung chủ",
+  "price": 6.8,
+  "address": "Trần Văn Quang, Quận Tân Bình",
+  "type_house": "2PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "tran-van-quang-quan-tan-binh",
+  "images": "images/Tân Bình/2PN/Trần Văn Quang/",
+  "status": 1,
+  "area": 46
+},
+{
+  "_id": {
+    "$oid": "85fe04ccf63ee20d6ebecfae"
+  },
+  "user_id": "dad4edb49acc618a3e0ed4e4",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Hoàng Văn Thụ, Tân Bình, TP.HCM",
+  "description": "Giá thuê căn hộ 12tr5\\nĐối diện rạp chiếu phim Hoàng Văn Thụ\\n2PN 1PK Rộng Khủng  60m2 , View Thành phố siêu Đẹp\\nTrang bị full nội thất Cao Cấp Như Ảnh\\nCăn Hộ THANG MÁY , HẦM XE",
+  "price": 12.5,
+  "address": "Hoàng Văn Thụ ,Phường 4 , Quận Tân Bình (Đối diện rạp chiếu phim Hoàng Văn Thụ)",
+  "type_house": "2PN",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "hoang-van-thu-phuong-4-quan-tan-binh",
+  "images": "images/Tân Bình/2PN/Hoàng Văn Thụ/",
+  "status": 1,
+  "area": 49
+},
+{
+  "_id": {
+    "$oid": "b3f8ca36af7cee0dfe44f3af"
+  },
+  "user_id": "04506059afe13a964d2cdba3",
+  "title": "Cho thuê duplex tại Lê Văn Sỹ, Tân Bình, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 4tr8\\nDuplex cửa sổ thoáng mát\\nFull nội thất như hình\\nGiờ giấc tự do, ko chung chủ",
+  "price": 4.8,
+  "address": "Lê Văn Sỹ, Quận Tân Bình",
+  "type_house": "Duplex",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "le-van-sy-quan-tan-binh",
+  "images": "images/Tân Bình/Duplex/Lê Văn Sỹ/",
+  "status": 0,
+  "area": 27
+},
+{
+  "_id": {
+    "$oid": "96feea8d7b2d32fbfbb97cff"
+  },
+  "user_id": "c4383b177a0ba2c44a1e9ed1",
+  "title": "Cho thuê duplex tại Nguyễn Minh Hoàng, Tân Bình, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 4tr5\\nDuplex cửa sổ rộng rãi thoáng mát\\nFull nội thất đầy đủ tiện nghi\\nGiờ giấc tự do, không chung chủ",
+  "price": 4.5,
+  "address": "Nguyễn Minh Hoàng, Phường 12, Quận Tân Bình",
+  "type_house": "Duplex",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nguyen-minh-hoang-phuong-12-quan-tan-binh",
+  "images": "images/Tân Bình/Duplex/Nguyễn Minh Hoàng/",
+  "status": 0,
+  "area": 27
+},
+{
+  "_id": {
+    "$oid": "f404adfbfe4ec0e89cecabec"
+  },
+  "user_id": "ea8968b90d7cc4bff2df2b07",
+  "title": "Cho thuê studio tại Xuân Diệu, Tân Bình, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr5 - diện tích 30m2\\nStudio cửa sổ cực rộng rãi, thoáng mát\\nFull nội thất như hình, đầy đủ tiện nghi, máy giặt riêng\\nGiờ giấc tự do, ko chung chủ",
+  "price": 5.5,
+  "address": "Xuân Diệu, Phường 4, Quận Tân Bình",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "xuan-dieu-phuong-4-quan-tan-binh",
+  "images": "images/Tân Bình/Studio/Xuân Diệu/",
+  "status": 1,
+  "area": 21
+},
+{
+  "_id": {
+    "$oid": "e2b90afdfdafd7eb1e5af4fc"
+  },
+  "user_id": "5fbee4d372cac5c57fb661a7",
+  "title": "Cho thuê studio tại Bàu Cát 8, Tân Bình, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr\\nStudio cửa sổ , rộng rãi thoáng mát\\nNội thất đầy đủ, tiện nghi\\nGiờ giấc tự do, không chung chủ",
+  "price": 5,
+  "address": "Bàu cát 8, Phường 14, Quận Tân Bình",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "bau-cat-8-phuong-14-quan-tan-binh",
+  "images": "images/Tân Bình/Studio/Bàu Cát 8",
+  "status": 1,
+  "area": 25
+},
+{
+  "_id": {
+    "$oid": "dfd37f4ea785f5dd00bfaf17"
+  },
+  "user_id": "e0dbf05dc20840cb4e9ffbab",
+  "title": "Cho thuê studio tại Yên Thế, Tân Bình, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr5\\nStudio ban công cửa sổ rộng rãi thoáng mát\\nNội thất đầy đủ,tiện nghi\\nGiờ giấc tự do, không chung chủ",
+  "price": 5.5,
+  "address": "Yên Thế, Phường 2, Quận Tân Bình",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "yen-the-phuong-2-quan-tan-binh",
+  "images": "images/Tân Bình/Studio/Yên Thế/",
+  "status": 1,
+  "area": 28
+},
+{
+  "_id": {
+    "$oid": "0bf0af4803c6ab1a8e3edd5c"
+  },
+  "user_id": "adab3a0788f62de16bfbd04f",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Nguyễn Trọng Tuyển, Phú Nhuận, TP.HCM",
+  "description": "Giá thuê căn hộ 5tr3\\n1PN Tách Bếp , Nhiều Cửa Sổ rất thoáng\\nTrang bị full nội thất như ảnh\\nTự do giờ giấc , Không chung chủ",
+  "price": 5.3,
+  "address": "Nguyễn Trọng Tuyển, Phường 8, Quận Phú Nhuận",
+  "type_house": "1PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nguyen-trong-tuyen-phuong-8-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/1PN/Nguyễn Trọng Tuyển/",
+  "status": 1,
+  "area": 34
+},
+{
+  "_id": {
+    "$oid": "fa8baeaca5f032dfed80f66d"
+  },
+  "user_id": "fc10f8ca1bdd3b7c2901cda1",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Nguyễn Kiệm, Phú Nhuận, TP.HCM",
+  "description": "Giá thuê căn hộ 7tr5 - diện tích 35m2, có ban công\\n1PN tách bếp riêng.\\nNgay trung tâm quận Phú Nhuận, thuận tiện di chuyển quận 1, 3, Gò Vấp …\\nFULL nội thất(tủ lạnh, máy lạnh, tủ quần áo, giường nệm, bếp, máy giặt, nước nóng , wifi riêng từng phòng,…)",
+  "price": 7.5,
+  "address": "Nguyễn Kiệm, Phường 9, Quận Phú Nhuận",
+  "type_house": "1PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nguyen-kiem-phuong-9-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/1PN/Nguyễn Kiệm/",
+  "status": 1,
+  "area": 33
+},
+{
+  "_id": {
+    "$oid": "cfc3c73aab9e5fbd539dda8b"
+  },
+  "user_id": "ffbadc9fdc176dec0ed08ac4",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Đào Duy Anh, Phú Nhuận, TP.HCM",
+  "description": "Giá thuê căn hộ 5tr9\\n1PN Tách Bếp , Ban Công Lớn\\nTrang bị full nội thất ,máy giặt riêng\\nTự do giờ giấc , Không chung chủ",
+  "price": 5.9,
+  "address": "Đào Duy Anh, Phường 9, Quận Phú Nhuận",
+  "type_house": "1PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "dao-duy-anh-phuong-9-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/1PN/Đào Duy Anh/",
+  "status": 1,
+  "area": 33
+},
+{
+  "_id": {
+    "$oid": "5b29b7e1ee1e0b33ec58ddff"
+  },
+  "user_id": "19acb39af8c7d546137fdb30",
+  "title": "Cho thuê căn hộ một phòng ngủ tại Phan Đăng Lưu, Phú Nhuận, TP.HCM",
+  "description": "Giá thuê căn hộ 6tr5 — diện tích 35m2\\n1PN+Phòng bếp riêng, cửa sổ thoáng mát\\nFull nội thất như ảnh\\nGiờ giấc tự do, ko chung chủ",
+  "price": 6.5,
+  "address": "Phan Đăng Lưu, Quận Phú Nhuận",
+  "type_house": "1PN",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "phan-dang-luu-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/1PN/Phan Đăng Lưu/",
+  "status": 1,
+  "area": 31
+},
+{
+  "_id": {
+    "$oid": "cb2ac3fe81affad1c63facd3"
+  },
+  "user_id": "bdebfedf8deaaca5cc8def51",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Đào Duy Anh, Phú Nhuận, TP.HCM",
+  "description": "Giá thuê căn hộ 8tr5\\n2PN cửa sổ thoáng mát\\nfull nội thất mới , giờ giấc tự do\\nkhu vực an ninh, xung quanh nhiều tiện ích",
+  "price": 8.5,
+  "address": "Đào Duy Anh, Quận Phú Nhuận",
+  "type_house": "2PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "dao-duy-anh-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/2PN/Đào Duy Anh/",
+  "status": 1,
+  "area": 46
+},
+{
+  "_id": {
+    "$oid": "feb94ef6b71cb1ab92d1c31a"
+  },
+  "user_id": "d889dc10532f3e9aff3c2b57",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Trương Quốc Dung, Phú Nhuận, TP.HCM",
+  "description": "Giá thuê căn hộ 9tr5\\n2PN riêng biệt , 1PK lớn , Rộng 50m2\\nTrang bị full nội thất , máy giặt riêng\\nTự do giờ giấc , Không chung chủ",
+  "price": 9.5,
+  "address": "Trương Quốc Dung , Quận Phú Nhuận",
+  "type_house": "2PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "truong-quoc-dung-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/2PN/Trương Quốc Dung/",
+  "status": 0,
+  "area": 49
+},
+{
+  "_id": {
+    "$oid": "2da4dac598fc4ebbe0eed43d"
+  },
+  "user_id": "c9419bc483399ae547b9df3a",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Huỳnh Văn Bánh, Phú Nhuận, TP.HCM",
+  "description": "Giá thuê căn hộ 9tr8\\nPenthouse 2PN Ban Công cả 2 phòng\\n2 tầng trên cùng ko gian riêng tư\\nFull nội thất 2 phòng, nc nóng lạnh, máy giặt riêng\\ngiờ giấc tự do, ko chung chủ",
+  "price": 9.8,
+  "address": "Huỳnh Văn Bánh, Quận Phú Nhuận",
+  "type_house": "2PN",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "huynh-van-banh-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/2PN/Huỳnh Văn Bánh/",
+  "status": 1,
+  "area": 48
+},
+{
+  "_id": {
+    "$oid": "cc9716bb4cebd5fb1d3e0ae3"
+  },
+  "user_id": "65c2cd0c62bdce0dde8cbe0c",
+  "title": "Cho thuê căn hộ hai phòng ngủ tại Nguyễn Công Hoan, Phú Nhuận, TP.HCM",
+  "description": "Giá thuê căn hộ 6tr9\\n2PN Ban Công riêng , Rộng Thoáng\\nTrang bị full nội thất, máy giặt riêng\\nTự do giờ giấc , Không chung chủ",
+  "price": 6.9,
+  "address": "Nguyễn Công Hoan, Phường 7, Quận Phú Nhuận",
+  "type_house": "2PN",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nguyen-cong-hoan-phuong-7-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/2PN/Nguyễn Công Hoan/",
+  "status": 0,
+  "area": 48
+},
+{
+  "_id": {
+    "$oid": "6b2e0e174de6fdcbd03a4a40"
+  },
+  "user_id": "ad3f4b69eefac377ddb5aeb8",
+  "title": "Cho thuê studio tại Nguyễn Công Hoan, Phú Nhuận, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr5\\nStudio ban công cửa sổ rộng rãi thoáng mát\\nFull nội thất đầy đủ tiện nghi\\nGiờ giấc tự do, không chung chủ",
+  "price": 5.5,
+  "address": "Nguyễn Công Hoan, Phường 7, Quận Phú Nhuận",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "nguyen-cong-hoan-phuong-7-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/Studio/Nguyễn Công Hoan/",
+  "status": 1,
+  "area": 29
+},
+{
+  "_id": {
+    "$oid": "c00ac5dc3fff10ce2e1e6d4a"
+  },
+  "user_id": "6f77722a1d1ce452f17fbc11",
+  "title": "Cho thuê studio tại Bùi Văn Thêm, Phú Nhuận, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 5tr\\nStudio ban công rộng rãi thoáng mát\\nFull nội thất mới như ảnh\\ngiờ giấc tự do, ko chung chủ",
+  "price": 5,
+  "address": "Bùi Văn Thêm, Quận Phú Nhuận",
+  "type_house": "Studio",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "bui-van-them-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/Studio/Bùi Văn Thêm/",
+  "status": 1,
+  "area": 24
+},
+{
+  "_id": {
+    "$oid": "4df30a34adbdfdf1c4ffdddc"
+  },
+  "user_id": "0f89e466d52b11aeddee9d45",
+  "title": "Cho thuê studio tại Hoàng Văn Thụ, Phú Nhuận, TP. Hồ Chí Minh",
+  "description": "Giá thuê 5tr8, có ban công\\nStudio  rộng rãi thoáng mát\\nNội thất như ảnh\\nGiờ giấc tự do, không chung chủ",
+  "price": 5.8,
+  "address": "Hoàng Văn Thụ, Phường 8, Quận Phú Nhuận",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "hoang-van-thu-phuong-8-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/Studio/Hoàng Văn Thụ/",
+  "status": 1,
+  "area": 35
+},
+{
+  "_id": {
+    "$oid": "cae9c6838b0413a1d4f82414"
+  },
+  "user_id": "7c8a7efc2a953bf928589c31",
+  "title": "Cho thuê studio tại Đặng Văn Ngữ, Phú Nhuận, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 4tr6\\nStudio xinh xắn , ban công thoáng mát\\nfull nội thất đầy đủ, giờ giấc tự do",
+  "price": 4.6,
+  "address": "Đặng Văn Ngữ, Quận Phú Nhuận",
+  "type_house": "Studio",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "dang-van-ngu-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/Studio/Đặng Văn Ngữ/",
+  "status": 1,
+  "area": 34
+},
+{
+  "_id": {
+    "$oid": "8a2caa21fcb9aef69d4cd5ec"
+  },
+  "user_id": "7c8a7efc2a953bf928589c31",
+  "title": "Cho thuê duplex tại Trường Sa, Phú Nhuận, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 4tr6\\nDuplex cửa sổ thoáng mát 30m2\\nFull nội thất như ảnh\\nGiờ giấc tự do, Ko chung chủ",
+  "price": 4.6,
+  "address": "Trường Sa, Phường 2, Quận Phú Nhuận",
+  "type_house": "Duplex",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "truong-sa-phuong-2-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/Duplex/Trường Sa/",
+  "status": 1,
+  "area": 27
+},
+{
+  "_id": {
+    "$oid": "fe754ececebd2debb2ec8a69"
+  },
+  "user_id": "dae18e178fd79cb3b35ec84c",
+  "title": "Cho thuê duplex tại Đặng Văn Ngữ, Phú Nhuận, TP. Hồ Chí Minh",
+  "description": "5tr8–35m2, THANG MÁY\\nDuplex BAN CÔNG cực rộng, cửa sổ lớn thoáng mát\\nfull nội thất như ảnh\\nGiờ giấc tự do, ko chung chủ",
+  "price": 5.8,
+  "address": "Đặng Văn Ngữ, Quận Phú Nhuận",
+  "type_house": "Duplex",
+  "type_post": 1,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "dang-van-ngu-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/Duplex/Đặng Văn Ngữ/",
+  "status": 0,
+  "area": 28
+},
+{
+  "_id": {
+    "$oid": "8b5f5d0e2eae0accfaaa1960"
+  },
+  "user_id": "8ea3814bc3bdbacbcf2bafbe",
+  "title": "Cho thuê duplex tại Phan Đăng Lưu, Phú Nhuận, TP. Hồ Chí Minh",
+  "description": "Giá thuê căn hộ 4tr5\\nDuplex ban công thoáng mát\\nNội thất cơ bản, phòng mới 100%\\nGiờ giấc tự do, ko chung chủ",
+  "price": 4.5,
+  "address": "Phan Đăng Lưu, Quận Phú Nhuận",
+  "type_house": "Duplex",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "phan-dang-luu-quan-phu-nhuan",
+  "images": "images/Phú Nhuận/Duplex/Phan Đăng Lưu/",
+  "status": 0,
+  "area": 30
+},
+{
+  "_id": {
+    "$oid": "66373ad104619faf43b8e19c"
+  },
+  "user_id": "fb2c7bf2cce5078e71d1da63",
+  "title": "Cho thuê studio tại Bùi Đình Túy, Bình Thạnh, TP. Hồ Chí Minh",
+  "description": "Giá thuê 6tr—Máy giặt riêng\\nstudio ban công thoáng mát\\nFull nội thất như ảnh\\nGiờ giấc tự do, ko chung chủ ",
+  "price": 6,
+  "address": "Bùi Đình Tuý, P12, Bình Thạnh",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "no2-bui-dinh-tuy-p12-binh-thanh",
+  "images": "/images/Bình Thạnh/Studio/Bùi Hữu Nghĩa/No.2",
+  "status": 0,
+  "area": 20
+},
+{
+  "_id": {
+    "$oid": "66373bd404619faf43b8e19d"
+  },
+  "user_id": "5eac6b516c2bf258df46c92c",
+  "title": "Khai Trương Căn Hộ Sang trọng tại Bùi Hữu Nghĩa, Phường 2, Quận Bình Thạnh, TP. Hồ Chí Minh",
+  "description": "Giá thuê 7tr5 — Máy giặt riêng\\nphòng ban công rộng rãi thoáng mát \\nNội thất đầy đủ,tiện nghi\\nGiờ giấc tự do, không chung chủ",
+  "price": 7.5,
+  "address": "Bùi Hữu Nghĩa, Phường 2, Quận Bình Thạnh",
+  "type_house": "Studio",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "no2-bui-huu-nghia-quan-binh-thanh",
+  "images": "images/Bình Thạnh/Studio/Bùi Hữu Nghĩa/No.2/",
+  "status": 1,
+  "area": 26
+},
+{
+  "_id": {
+    "$oid": "6639bd96caeacc09c6c2c163"
+  },
+  "user_id": "9a5efce4d2330ab0f1ccdee3",
+  "title": "Cho thuê duplex tại Điện Biên Phủ, Bình Thạnh, TP. Hồ Chí Minh",
+  "description": "Duplex ban công rộng rãi, thoáng mát\\nFull nội thất đầy đủ tiện nghi như ảnh\\nGiờ giấc tự do, ko chung chủ ",
+  "price": 5,
+  "address": "Điện Biên Phủ, Phường 25, Bình Thạnh",
+  "type_house": "Duplex",
+  "type_post": 0,
+  "createdAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T00:00:00.000Z"
+  },
+  "endAt": {
+    "$date": "2024-07-05T00:00:00.000Z"
+  },
+  "slug": "dien-bien-phu-phuong25-binh-thanh",
+  "images": "images/Bình Thạnh/Duplex/Điện Biên Phủ/P25/",
+  "status": 1,
+  "area": 27
+}]

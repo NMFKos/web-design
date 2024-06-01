@@ -1,0 +1,127 @@
+<style>
+.top-over {
+    position: relative;
+    z-index: 3;
+}
+.btn-container {
+    display: flex;
+    gap: 30px;
+    color: white;
+    margin-right: 30px;
+    align-items: center;
+}
+.designed-menu {
+    margin-top: 10px;
+}
+.post-btn {
+    border: white solid 1px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.post-btn a {
+    text-decoration: none;
+    color: silver;
+}
+.post-btn a:hover {
+    color: rgb(226, 225, 225);
+}
+
+.account-btn {
+    color: silver;
+}
+.account-btn:hover {
+    color: rgb(226, 225, 225);
+}
+.fa-regular {
+    font-size: 24px;
+}
+.fa-solid {
+    font-size: 24px;
+}
+</style>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark top-over">
+<img src="/imgs/2.png" alt="logo" style="width: 6%; margin-right: 10px; border-radius: 5px;">
+<a class="navbar-brand" href="/">
+    <span style="color: white; margin-right: 5px;">One</span><span style="color: #1f8bff;">House</span>
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        {{#if session.adminUser}}
+        <li class="nav-item active">
+            <a class="nav-link" href="/admin"><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/yeu-cau">Yêu cầu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/admin">Phân tích</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/bao-cao">Báo cáo</a>
+        </li>
+        {{else}}
+        <li class="nav-item active">
+            <a class="nav-link" href="/"><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/can-ho-mot-phong-ngu">Căn hộ 1PN</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/can-ho-hai-phong-ngu">Căn hộ 2PN</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/can-ho-duplex">Duplex</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/can-ho-studio">Studio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/bang-gia">Bảng giá dịch vụ</a>
+        </li>
+        {{/if}}
+    </ul>
+    {{!-- <div class="btn-container">
+        <i id="heart-icon" class="fa-regular fa-heart"></i>
+        <i id="bell-icon" class="fa-regular fa-bell"></i>
+    </div> --}}
+    {{#if session.userId}}
+    <img src="{{session.avatar}}" alt="Anh dai dien" style="width: 55px; height: 55px; object-fit: cover; border-radius: 50%;">
+    <div class="dropdown">
+        <a class="nav-link dropdown-toggle account-btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{session.username}}
+        </a>
+        {{#if session.adminUser}}
+        <div class="dropdown-menu designed-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/account/change-password">Thay đổi mật khẩu</a>
+            <a class="dropdown-item" href="/admin/dang-xuat">Đăng xuất</a>
+        </div>
+        {{else}}
+        <div class="dropdown-menu designed-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/account/your-posts">Quản lý tin đăng</a>
+            <a class="dropdown-item" href="/account">Quản lý thông tin</a>
+            <a class="dropdown-item" href="/account/change-password">Thay đổi mật khẩu</a>
+            {{!-- <a class="dropdown-item" href="#">Nạp tiền</a> --}}
+            <a class="dropdown-item" href="/dang-xuat">Đăng xuất</a>
+        </div>
+        {{/if}}
+    </div>
+        {{#if session.adminUser}}
+        {{else}}
+        <div class="post-btn nav-item">
+            <a href="/post">Đăng bài</a>
+        </div>
+        {{/if}}
+    {{else}}
+    <img src="/imgs/2.png" alt="Anh dai dien" style="border-radius: 50%; width: 5%;">
+    <div class="dropdown">
+        <a class="nav-link account-btn" href="/dang-nhap" id="navbarDropdown" role="button">
+            Đăng nhập
+        </a>
+    </div>
+    {{/if}}
+</div>
+</nav>
+<script src="/script/header.js"></script>
