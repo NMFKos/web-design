@@ -9,7 +9,7 @@ const GOOGLE_CLIENT_SECRET = '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';
 passport.use(new GoogleStrategy({
     clientID: GOOGLE_CLIENT_ID,
     clientSecret: GOOGLE_CLIENT_SECRET,
-    callbackURL: "https://onehousedev.onrender.com/auth/google/callback"
+    callbackURL: "https://onehouse.onrender.com/auth/google/callback"
   },
   function(accessToken, refreshToken, profile, done) {
       userProfile=profile;
