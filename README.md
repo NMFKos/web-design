@@ -27,6 +27,7 @@
 2. [Phân Tích Thiết Kế Hệ Thống](#phân-tích-thiết-kế-hệ-thống)
 3. [Giao Diện Chương Trình Ứng Dụng](#giao-diện-chương-trình-ứng-dụng)
 4. [Các Tính Năng](#các-tính-năng)
+5. [Hướng Dẫn Setup](#hướng-dẫn-setup)
 
 ## Tìm Hiểu Về Đề Tài
 ### Định Nghĩa
@@ -103,6 +104,8 @@ Admin-side:
 - Duyệt bài đăng
 - Duyệt phản hồi người dùng
 - Xem người dùng mới đăng ký và doanh số
+
+##Hướng Dẫn Setup
 
 
 
