@@ -18,6 +18,10 @@
 | Lê Trần Gia Lạc    |   22520731   
 | Lương Hoàng Minh    |   22520868  
 
+## Tiêu chí cộng điểm
+1. Link domain deploy: https://onehouse.onrender.com/
+2. Link video seminar giữa kỳ: https://youtu.be/rq-jEqxfVmg?si=7YJqs499uHT1TVxT
+
 ## Mục Lục
 1. [Tìm Hiểu Về Đề Tài](#tìm-hiểu-về-đề-tài)
 2. [Phân Tích Thiết Kế Hệ Thống](#phân-tích-thiết-kế-hệ-thống)
