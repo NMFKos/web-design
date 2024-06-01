@@ -116,25 +116,25 @@ Hướng dẫn setup môi trường
 
 - Các gói phụ thuộc:
 "@google/generative-ai": "^0.11.4",<br>
-"@payos/node": "^1.0.6",
-"atlas": "^1.0.0-alpha.0",
-"bcrypt": "^5.1.1",
-"connect-flash": "^0.1.1",
-"dotenv": "^16.4.5",
-"express": "^4.19.1",
-"express-handlebars": "^7.1.2",
-"express-session": "^1.18.0",
-"firebase": "^10.11.0",
-"fs": "^0.0.1-security",
-"jsonwebtoken": "^9.0.2",
-"method-override": "^3.0.0",
-"mongodb": "^6.5.0",
-"mongoose": "^8.4.0",
-"multer": "^1.4.5-lts.1",
-"nodemailer": "^6.9.13",
-"passport": "^0.7.0",
-"passport-google-oauth": "^2.0.0",
-"passport-google-oauth2": "^0.2.0",
+"@payos/node": "^1.0.6",<br>
+"atlas": "^1.0.0-alpha.0",<br>
+"bcrypt": "^5.1.1",<br>
+"connect-flash": "^0.1.1",<br>
+"dotenv": "^16.4.5",<br>
+"express": "^4.19.1",<br>
+"express-handlebars": "^7.1.2",<br>
+"express-session": "^1.18.0",<br>
+"firebase": "^10.11.0",<br>
+"fs": "^0.0.1-security",<br>
+"jsonwebtoken": "^9.0.2",<br>
+"method-override": "^3.0.0",<br>
+"mongodb": "^6.5.0",<br>
+"mongoose": "^8.4.0",<br>
+"multer": "^1.4.5-lts.1",<br>
+"nodemailer": "^6.9.13",<br>
+"passport": "^0.7.0",<br>
+"passport-google-oauth": "^2.0.0",<br>
+"passport-google-oauth2": "^0.2.0",<br>
 "passport-jwt": "^4.0.1”
 
 
