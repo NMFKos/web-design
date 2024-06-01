@@ -193,8 +193,8 @@ class DetailController {
             amount: 10000,
             description: 'Thanh toán online',
             orderCode: Math.floor(Math.random() * 10101010),
-            returnUrl: 'https://onehousedev.onrender.com/phong-tro/payment-success',
-            cancelUrl: 'https://onehousedev.onrender.com/phong-tro/payment-failure',
+            returnUrl: 'https://onehouse.onrender.com/phong-tro/payment-success',
+            cancelUrl: 'https://onehouse.onrender.com/phong-tro/payment-failure',
         };
 
         const paymentLink = await payos.createPaymentLink(order);
