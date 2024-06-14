@@ -21,6 +21,7 @@
 ## Tiêu chí cộng điểm
 1. Link domain deploy: https://onehouse.onrender.com/
 2. Link video seminar giữa kỳ: https://youtu.be/rq-jEqxfVmg?si=7YJqs499uHT1TVxT
+3. Câu hỏi seminar giữa kỳ: https://docs.google.com/document/d/1qwyRja_NcoPPt6mnO-2BZjxo9FF9Cm5iQXIRap91SqI/edit?usp=sharing
 
 ## Mục Lục
 1. [Tìm Hiểu Về Đề Tài](#tìm-hiểu-về-đề-tài)
